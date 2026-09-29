@@ -1,90 +1,87 @@
-import React, { useState } from 'react';
-import Navbar from './components/Navbar';
-import HeroSection from './components/HeroSection';
-import CaseStudiesSection from './components/CaseStudiesSection';
-import TestimonialsMarquee from './components/TestimonialsMarquee';
-import PipelineSection from './components/PipelineSection';
-import ThreeThingsSection from './components/ThreeThingsSection';
-import CalculatorSection from './components/CalculatorSection';
-import FaqSection from './components/FaqSection';
-import BottomCtaSection from './components/BottomCtaSection';
-import Footer from './components/Footer';
-import { MessageSquare } from 'lucide-react';
+import React from 'react';
+import { NavigationProvider, useNavigation, PRODUCT_ROUTES } from './context/NavigationContext';
+import OutreachAgentPage from './components/outreach/OutreachAgentPage';
+import B2BPage from './components/b2b/B2BPage';
+import GMPage from './components/gm/GMPage';
+import ApiDocs from './components/docs/ApiDocs';
+import ExplorerPage from './components/explorer/ExplorerPage';
 
-export default function App() {
-  const [chatOpen, setChatOpen] = useState(false);
+function NotFoundPage() {
+  const { navigate } = useNavigation();
 
   return (
-    <div className="autogtm-root landing theme-light landing-light min-h-screen flex flex-col bg-background text-foreground antialiased font-sans">
-      <div className="landing-scroll-content flex flex-col flex-1">
-        {/* Navigation */}
-        <Navbar />
+    <div className="min-h-screen bg-[#090b0b] text-white flex flex-col items-center justify-center p-6 text-center">
+      <div className="max-w-md w-full p-8 rounded-2xl bg-[#111414] border border-white/[0.08] shadow-2xl">
+        <h1 className="text-4xl font-bold mb-2 text-white">404</h1>
+        <p className="text-gray-400 mb-6 text-sm">
+          The requested page could not be found. Select one of the available Explee products:
+        </p>
 
-        {/* Hero Section */}
-        <HeroSection />
-
-        {/* Section 2: What our customers got out of it */}
-        <CaseStudiesSection />
-
-        {/* Section 3: What customers are saying */}
-        <TestimonialsMarquee />
-
-        {/* Section 4: We run the entire pipeline */}
-        <PipelineSection />
-
-        {/* Section 5: Three things nobody else has */}
-        <ThreeThingsSection />
-
-        {/* Section 6: Pay as you go with no subscription */}
-        <CalculatorSection />
-
-        {/* Section 7: Common questions */}
-        <FaqSection />
-
-        {/* Section 8: Bottom CTA - This one really works */}
-        <BottomCtaSection />
-
-        {/* Section 9: Footer */}
-        <Footer />
-      </div>
-
-      {/* Floating Support Chat Widget (as seen on all screenshots) */}
-      <div className="fixed bottom-6 right-6 z-40">
-        <button
-          type="button"
-          onClick={() => setChatOpen(!chatOpen)}
-          aria-label="Chat support"
-          className="w-14 h-14 rounded-full bg-[#00947c] hover:bg-[#007f6a] text-white flex items-center justify-center shadow-lg transition-transform duration-200 hover:scale-105 active:scale-95 cursor-pointer"
-        >
-          <MessageSquare className="w-6 h-6 fill-current" />
-        </button>
-
-        {chatOpen && (
-          <div className="absolute bottom-16 right-0 w-80 bg-card rounded-2xl shadow-2xl border border-border p-4 mb-2 animate-in fade-in slide-in-from-bottom-2">
-            <div className="flex items-center justify-between pb-3 border-b border-border">
-              <div className="font-medium text-foreground text-sm flex items-center gap-2">
-                <span className="w-2.5 h-2.5 rounded-full bg-brand-500" />
-                Explee Support
-              </div>
-              <button
-                type="button"
-                onClick={() => setChatOpen(false)}
-                className="text-xs text-muted-foreground hover:text-foreground"
-              >
-                Close
-              </button>
-            </div>
-            <div className="py-4 text-xs text-muted-foreground leading-relaxed">
-              Hi there! 👋 How can we help you today? Leave us a message and we'll reply shortly.
-            </div>
-            <input
-              type="text"
-              placeholder="Write a message..."
-              className="w-full bg-chip rounded-lg px-3 py-2 text-xs text-foreground placeholder:text-muted-foreground outline-none border border-border/40 focus:border-primary"
-            />
-          </div>
-        )}
+        <div className="space-y-2 text-left">
+          <button
+            onClick={() => navigate(PRODUCT_ROUTES.OUTREACH)}
+            className="w-full p-3 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] transition text-left cursor-pointer"
+          >
+            <div className="font-semibold text-sm text-white">Outreach Agent</div>
+            <div className="text-xs text-gray-400">AI agents that find and email your buyers</div>
+          </button>
+          <button
+            onClick={() => navigate(PRODUCT_ROUTES.DATABASE)}
+            className="w-full p-3 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] transition text-left cursor-pointer"
+          >
+            <div className="font-semibold text-sm text-white">Database</div>
+            <div className="text-xs text-gray-400">The largest B2B company database</div>
+          </button>
+          <button
+            onClick={() => navigate(PRODUCT_ROUTES.GM)}
+            className="w-full p-3 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] transition text-left cursor-pointer"
+          >
+            <div className="font-semibold text-sm text-white">Google Maps Dataset</div>
+            <div className="text-xs text-gray-400">218M+ local businesses from Google Maps</div>
+          </button>
+          <button
+            onClick={() => navigate(PRODUCT_ROUTES.API)}
+            className="w-full p-3 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] transition text-left cursor-pointer"
+          >
+            <div className="font-semibold text-sm text-white">API</div>
+            <div className="text-xs text-gray-400">REST API for company and people data</div>
+          </button>
+          <button
+            onClick={() => navigate(PRODUCT_ROUTES.EXPLORER)}
+            className="w-full p-3 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] transition text-left cursor-pointer"
+          >
+            <div className="font-semibold text-sm text-white">Explorer</div>
+            <div className="text-xs text-gray-400">Explore and filter the company graph</div>
+          </button>
+        </div>
       </div>
     </div>
+  );
+}
+
+function MainRouter() {
+  const { currentProduct, navigate } = useNavigation();
+
+  switch (currentProduct) {
+    case 'outreach':
+      return <OutreachAgentPage />;
+    case 'database':
+      return <B2BPage />;
+    case 'gm':
+      return <GMPage />;
+    case 'api':
+      return <ApiDocs onBackToLanding={() => navigate(PRODUCT_ROUTES.OUTREACH)} />;
+    case 'explorer':
+      return <ExplorerPage />;
+    default:
+      return <NotFoundPage />;
+  }
+}
+
+export default function App() {
+  return (
+    <NavigationProvider>
+      <MainRouter />
+    </NavigationProvider>
   );
 }

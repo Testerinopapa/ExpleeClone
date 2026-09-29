@@ -1,0 +1,328 @@
+[
+  {
+    "id": "general",
+    "name": "General Information",
+    "count": "12 fields",
+    "fields": [
+      {
+        "pct": "100%",
+        "name": "Name",
+        "desc": "Name of the business or place"
+      },
+      {
+        "pct": "29.7%",
+        "name": "Description",
+        "desc": "Short description of the business or place"
+      },
+      {
+        "pct": "100%",
+        "name": "Business Status",
+        "desc": "Current operational status of the business or place"
+      },
+      {
+        "pct": "97.1%",
+        "name": "Categories",
+        "desc": "Categories or types that describe the business or place"
+      },
+      {
+        "pct": "50%",
+        "name": "CID",
+        "desc": "Unique Google Maps identifier for the place"
+      },
+      {
+        "pct": "100%",
+        "name": "Feature ID",
+        "desc": "Internal feature identifier for the place"
+      },
+      {
+        "pct": "100%",
+        "name": "Place ID",
+        "desc": "Google Maps place identifier"
+      },
+      {
+        "pct": "100%",
+        "name": "Google Maps URL",
+        "desc": "Link to the place in Google Maps"
+      },
+      {
+        "pct": "100%",
+        "name": "Google Maps URL (Alt)",
+        "desc": "Alternative link to the place in Google Maps"
+      },
+      {
+        "pct": "62.9%",
+        "name": "Website URL",
+        "desc": "Primary website URL for the place"
+      },
+      {
+        "pct": "62.9%",
+        "name": "URL Type",
+        "desc": "Type of URL (website, social profile, etc.)"
+      },
+      {
+        "pct": "61%",
+        "name": "Domain",
+        "desc": "Domain name of the business"
+      }
+    ]
+  },
+  {
+    "id": "geography",
+    "name": "Location Data",
+    "count": "5 fields",
+    "fields": [
+      {
+        "pct": "100%",
+        "name": "Country",
+        "desc": "Country where the place is located"
+      },
+      {
+        "pct": "99.6%",
+        "name": "City",
+        "desc": "City where the place is located"
+      },
+      {
+        "pct": "48.8%",
+        "name": "District",
+        "desc": "District or neighborhood within the city"
+      },
+      {
+        "pct": "100%",
+        "name": "Latitude",
+        "desc": "Latitude coordinate for mapping the location"
+      },
+      {
+        "pct": "100%",
+        "name": "Longitude",
+        "desc": "Longitude coordinate for mapping the location"
+      }
+    ]
+  },
+  {
+    "id": "contact",
+    "name": "Contact Information",
+    "count": "3 fields",
+    "fields": [
+      {
+        "pct": "100%",
+        "name": "Address",
+        "desc": "Full street address for navigation or mailing purposes"
+      },
+      {
+        "pct": "100%",
+        "name": "Full Address",
+        "desc": "Complete address including the business name"
+      },
+      {
+        "pct": "76.6%",
+        "name": "Phone",
+        "desc": "Phone number for contacting the business"
+      }
+    ]
+  },
+  {
+    "id": "reviews",
+    "name": "Reviews & Ratings",
+    "count": "7 fields",
+    "fields": [
+      {
+        "pct": "66.7%",
+        "name": "Rating",
+        "desc": "Average user rating"
+      },
+      {
+        "pct": "100%",
+        "name": "Review Count",
+        "desc": "Number of reviews"
+      },
+      {
+        "pct": "28.5%",
+        "name": "Review Snippets",
+        "desc": "Short snippets of user reviews"
+      },
+      {
+        "pct": "63.6%",
+        "name": "Newest Reviews",
+        "desc": "Most recent reviews in structured format"
+      },
+      {
+        "pct": "98.6%",
+        "name": "Newest Reviews Size",
+        "desc": "Size of newest reviews dataset"
+      },
+      {
+        "pct": "63.7%",
+        "name": "Relevant Reviews",
+        "desc": "Most relevant reviews in structured format"
+      },
+      {
+        "pct": "98.6%",
+        "name": "Relevant Reviews Size",
+        "desc": "Size of relevant reviews dataset"
+      }
+    ]
+  },
+  {
+    "id": "visitor",
+    "name": "Visitor Information",
+    "count": "5 fields",
+    "fields": [
+      {
+        "pct": "51.3%",
+        "name": "Hours",
+        "desc": "Business hours for each day of the week"
+      },
+      {
+        "pct": "100%",
+        "name": "Popular Times",
+        "desc": "Visitor traffic patterns for planning visits"
+      },
+      {
+        "pct": "3.7%",
+        "name": "Price Range",
+        "desc": "Price range of the business or services"
+      },
+      {
+        "pct": "16.6%",
+        "name": "Questions & Answers",
+        "desc": "Visitor questions and answers, with counts and timestamps"
+      },
+      {
+        "pct": "97.2%",
+        "name": "Related Places",
+        "desc": "Similar or related places that might interest visitors"
+      }
+    ]
+  },
+  {
+    "id": "media",
+    "name": "Media Content",
+    "count": "2 fields",
+    "fields": [
+      {
+        "pct": "86.1%",
+        "name": "Photos",
+        "desc": "URLs of photos for visual reference"
+      },
+      {
+        "pct": "86.1%",
+        "name": "Photos Count",
+        "desc": "Total number of available photos"
+      }
+    ]
+  },
+  {
+    "id": "hospitality",
+    "name": "Hospitality Features",
+    "count": "2 fields",
+    "fields": [
+      {
+        "pct": "0.1%",
+        "name": "Hotel Class",
+        "desc": "Hotel star rating or classification"
+      },
+      {
+        "pct": "0.6%",
+        "name": "Hotel Amenities",
+        "desc": "List of hotel amenities with availability"
+      }
+    ]
+  },
+  {
+    "id": "labels",
+    "name": "Place Labels & Attributes",
+    "count": "18 fields",
+    "fields": [
+      {
+        "pct": "55.9%",
+        "name": "Accessibility",
+        "desc": "Accessibility tags for visitors"
+      },
+      {
+        "pct": "0.6%",
+        "name": "Activities",
+        "desc": "Activities available at the place"
+      },
+      {
+        "pct": "24.3%",
+        "name": "Amenities",
+        "desc": "Amenities provided by the place"
+      },
+      {
+        "pct": "3.5%",
+        "name": "Atmosphere",
+        "desc": "Atmosphere or vibe of the location"
+      },
+      {
+        "pct": "7.1%",
+        "name": "Children",
+        "desc": "Tags related to children"
+      },
+      {
+        "pct": "6.6%",
+        "name": "Crowd",
+        "desc": "Information about visitor demographics or crowd type"
+      },
+      {
+        "pct": "3.8%",
+        "name": "Dining Options",
+        "desc": "Food and dining options"
+      },
+      {
+        "pct": "2.6%",
+        "name": "From The Business",
+        "desc": "Additional info provided by the business itself"
+      },
+      {
+        "pct": "1.3%",
+        "name": "Getting Here",
+        "desc": "Guidance on how to get there"
+      },
+      {
+        "pct": "3.1%",
+        "name": "Highlights",
+        "desc": "Key highlights or notable features"
+      },
+      {
+        "pct": "7.3%",
+        "name": "Offerings",
+        "desc": "Services or offerings provided"
+      },
+      {
+        "pct": "6.1%",
+        "name": "Parking",
+        "desc": "Parking availability and options"
+      },
+      {
+        "pct": "13%",
+        "name": "Payments",
+        "desc": "Accepted payment methods"
+      },
+      {
+        "pct": "1.7%",
+        "name": "Pets",
+        "desc": "Pet policies or allowances"
+      },
+      {
+        "pct": "22.7%",
+        "name": "Planning",
+        "desc": "Planning tips for visiting the place"
+      },
+      {
+        "pct": "2.9%",
+        "name": "Popular For",
+        "desc": "Common visit scenarios or occasions"
+      },
+      {
+        "pct": "1.3%",
+        "name": "Recycling",
+        "desc": "Recycling or sustainability features"
+      },
+      {
+        "pct": "17.3%",
+        "name": "Service Options",
+        "desc": "Additional service options offered"
+      }
+    ]
+  }
+]

@@ -1,0 +1,1430 @@
+[
+  {
+    "name": "United States",
+    "code": "US",
+    "count": "22M+ companies",
+    "href": "/b2b-database/locations/united-states"
+  },
+  {
+    "name": "Germany",
+    "code": "DE",
+    "count": "6M+ companies",
+    "href": "/b2b-database/locations/germany"
+  },
+  {
+    "name": "United Kingdom",
+    "code": "GB",
+    "count": "6M+ companies",
+    "href": "/b2b-database/locations/united-kingdom"
+  },
+  {
+    "name": "India",
+    "code": "IN",
+    "count": "5M+ companies",
+    "href": "/b2b-database/locations/india"
+  },
+  {
+    "name": "China",
+    "code": "CN",
+    "count": "4M+ companies",
+    "href": "/b2b-database/locations/china"
+  },
+  {
+    "name": "Brazil",
+    "code": "BR",
+    "count": "4M+ companies",
+    "href": "/b2b-database/locations/brazil"
+  },
+  {
+    "name": "France",
+    "code": "FR",
+    "count": "4M+ companies",
+    "href": "/b2b-database/locations/france"
+  },
+  {
+    "name": "Japan",
+    "code": "JP",
+    "count": "3M+ companies",
+    "href": "/b2b-database/locations/japan"
+  },
+  {
+    "name": "Spain",
+    "code": "ES",
+    "count": "3M+ companies",
+    "href": "/b2b-database/locations/spain"
+  },
+  {
+    "name": "Russian Federation",
+    "code": "RU",
+    "count": "2M+ companies",
+    "href": "/b2b-database/locations/russian-federation"
+  },
+  {
+    "name": "Canada",
+    "code": "CA",
+    "count": "2M+ companies",
+    "href": "/b2b-database/locations/canada"
+  },
+  {
+    "name": "Italy",
+    "code": "IT",
+    "count": "2M+ companies",
+    "href": "/b2b-database/locations/italy"
+  },
+  {
+    "name": "Australia",
+    "code": "AU",
+    "count": "2M+ companies",
+    "href": "/b2b-database/locations/australia"
+  },
+  {
+    "name": "Netherlands",
+    "code": "NL",
+    "count": "2M+ companies",
+    "href": "/b2b-database/locations/netherlands"
+  },
+  {
+    "name": "Indonesia",
+    "code": "ID",
+    "count": "2M+ companies",
+    "href": "/b2b-database/locations/indonesia"
+  },
+  {
+    "name": "Türkiye",
+    "code": "TR",
+    "count": "1M+ companies",
+    "href": "/b2b-database/locations/turkiye"
+  },
+  {
+    "name": "Poland",
+    "code": "PL",
+    "count": "1M+ companies",
+    "href": "/b2b-database/locations/poland"
+  },
+  {
+    "name": "Switzerland",
+    "code": "CH",
+    "count": "1M+ companies",
+    "href": "/b2b-database/locations/switzerland"
+  },
+  {
+    "name": "Mexico",
+    "code": "MX",
+    "count": "1M+ companies",
+    "href": "/b2b-database/locations/mexico"
+  },
+  {
+    "name": "Belgium",
+    "code": "BE",
+    "count": "851K+ companies",
+    "href": "/b2b-database/locations/belgium"
+  },
+  {
+    "name": "South Africa",
+    "code": "ZA",
+    "count": "701K+ companies",
+    "href": "/b2b-database/locations/south-africa"
+  },
+  {
+    "name": "Sweden",
+    "code": "SE",
+    "count": "680K+ companies",
+    "href": "/b2b-database/locations/sweden"
+  },
+  {
+    "name": "Argentina",
+    "code": "AR",
+    "count": "650K+ companies",
+    "href": "/b2b-database/locations/argentina"
+  },
+  {
+    "name": "Norway",
+    "code": "NO",
+    "count": "620K+ companies",
+    "href": "/b2b-database/locations/norway"
+  },
+  {
+    "name": "Austria",
+    "code": "AT",
+    "count": "590K+ companies",
+    "href": "/b2b-database/locations/austria"
+  },
+  {
+    "name": "United Arab Emirates",
+    "code": "AE",
+    "count": "580K+ companies",
+    "href": "/b2b-database/locations/united-arab-emirates"
+  },
+  {
+    "name": "Singapore",
+    "code": "SG",
+    "count": "550K+ companies",
+    "href": "/b2b-database/locations/singapore"
+  },
+  {
+    "name": "Denmark",
+    "code": "DK",
+    "count": "520K+ companies",
+    "href": "/b2b-database/locations/denmark"
+  },
+  {
+    "name": "Colombia",
+    "code": "CO",
+    "count": "510K+ companies",
+    "href": "/b2b-database/locations/colombia"
+  },
+  {
+    "name": "Malaysia",
+    "code": "MY",
+    "count": "490K+ companies",
+    "href": "/b2b-database/locations/malaysia"
+  },
+  {
+    "name": "Ireland",
+    "code": "IE",
+    "count": "480K+ companies",
+    "href": "/b2b-database/locations/ireland"
+  },
+  {
+    "name": "Israel",
+    "code": "IL",
+    "count": "470K+ companies",
+    "href": "/b2b-database/locations/israel"
+  },
+  {
+    "name": "Czech Republic",
+    "code": "CZ",
+    "count": "450K+ companies",
+    "href": "/b2b-database/locations/czech-republic"
+  },
+  {
+    "name": "Saudi Arabia",
+    "code": "SA",
+    "count": "440K+ companies",
+    "href": "/b2b-database/locations/saudi-arabia"
+  },
+  {
+    "name": "Chile",
+    "code": "CL",
+    "count": "430K+ companies",
+    "href": "/b2b-database/locations/chile"
+  },
+  {
+    "name": "Finland",
+    "code": "FI",
+    "count": "410K+ companies",
+    "href": "/b2b-database/locations/finland"
+  },
+  {
+    "name": "Portugal",
+    "code": "PT",
+    "count": "390K+ companies",
+    "href": "/b2b-database/locations/portugal"
+  },
+  {
+    "name": "New Zealand",
+    "code": "NZ",
+    "count": "380K+ companies",
+    "href": "/b2b-database/locations/new-zealand"
+  },
+  {
+    "name": "Romania",
+    "code": "RO",
+    "count": "370K+ companies",
+    "href": "/b2b-database/locations/romania"
+  },
+  {
+    "name": "Greece",
+    "code": "GR",
+    "count": "360K+ companies",
+    "href": "/b2b-database/locations/greece"
+  },
+  {
+    "name": "Vietnam",
+    "code": "VN",
+    "count": "350K+ companies",
+    "href": "/b2b-database/locations/vietnam"
+  },
+  {
+    "name": "Philippines",
+    "code": "PH",
+    "count": "340K+ companies",
+    "href": "/b2b-database/locations/philippines"
+  },
+  {
+    "name": "Egypt",
+    "code": "EG",
+    "count": "330K+ companies",
+    "href": "/b2b-database/locations/egypt"
+  },
+  {
+    "name": "Pakistan",
+    "code": "PK",
+    "count": "320K+ companies",
+    "href": "/b2b-database/locations/pakistan"
+  },
+  {
+    "name": "Thailand",
+    "code": "TH",
+    "count": "310K+ companies",
+    "href": "/b2b-database/locations/thailand"
+  },
+  {
+    "name": "Nigeria",
+    "code": "NG",
+    "count": "290K+ companies",
+    "href": "/b2b-database/locations/nigeria"
+  },
+  {
+    "name": "Hungary",
+    "code": "HU",
+    "count": "280K+ companies",
+    "href": "/b2b-database/locations/hungary"
+  },
+  {
+    "name": "Ukraine",
+    "code": "UA",
+    "count": "270K+ companies",
+    "href": "/b2b-database/locations/ukraine"
+  },
+  {
+    "name": "Peru",
+    "code": "PE",
+    "count": "260K+ companies",
+    "href": "/b2b-database/locations/peru"
+  },
+  {
+    "name": "Hong Kong",
+    "code": "HK",
+    "count": "250K+ companies",
+    "href": "/b2b-database/locations/hong-kong"
+  },
+  {
+    "name": "South Korea",
+    "code": "KR",
+    "count": "240K+ companies",
+    "href": "/b2b-database/locations/south-korea"
+  },
+  {
+    "name": "Morocco",
+    "code": "MA",
+    "count": "230K+ companies",
+    "href": "/b2b-database/locations/morocco"
+  },
+  {
+    "name": "Kazakhstan",
+    "code": "KZ",
+    "count": "220K+ companies",
+    "href": "/b2b-database/locations/kazakhstan"
+  },
+  {
+    "name": "Slovakia",
+    "code": "SK",
+    "count": "210K+ companies",
+    "href": "/b2b-database/locations/slovakia"
+  },
+  {
+    "name": "Bulgaria",
+    "code": "BG",
+    "count": "200K+ companies",
+    "href": "/b2b-database/locations/bulgaria"
+  },
+  {
+    "name": "Kenya",
+    "code": "KE",
+    "count": "190K+ companies",
+    "href": "/b2b-database/locations/kenya"
+  },
+  {
+    "name": "Croatia",
+    "code": "HR",
+    "count": "180K+ companies",
+    "href": "/b2b-database/locations/croatia"
+  },
+  {
+    "name": "Lithuania",
+    "code": "LT",
+    "count": "170K+ companies",
+    "href": "/b2b-database/locations/lithuania"
+  },
+  {
+    "name": "Serbia",
+    "code": "RS",
+    "count": "165K+ companies",
+    "href": "/b2b-database/locations/serbia"
+  },
+  {
+    "name": "Slovenia",
+    "code": "SI",
+    "count": "160K+ companies",
+    "href": "/b2b-database/locations/slovenia"
+  },
+  {
+    "name": "Ecuador",
+    "code": "EC",
+    "count": "150K+ companies",
+    "href": "/b2b-database/locations/ecuador"
+  },
+  {
+    "name": "Latvia",
+    "code": "LV",
+    "count": "145K+ companies",
+    "href": "/b2b-database/locations/latvia"
+  },
+  {
+    "name": "Estonia",
+    "code": "EE",
+    "count": "140K+ companies",
+    "href": "/b2b-database/locations/estonia"
+  },
+  {
+    "name": "Jordan",
+    "code": "JO",
+    "count": "135K+ companies",
+    "href": "/b2b-database/locations/jordan"
+  },
+  {
+    "name": "Kuwait",
+    "code": "KW",
+    "count": "130K+ companies",
+    "href": "/b2b-database/locations/kuwait"
+  },
+  {
+    "name": "Costa Rica",
+    "code": "CR",
+    "count": "125K+ companies",
+    "href": "/b2b-database/locations/costa-rica"
+  },
+  {
+    "name": "Panama",
+    "code": "PA",
+    "count": "120K+ companies",
+    "href": "/b2b-database/locations/panama"
+  },
+  {
+    "name": "Cyprus",
+    "code": "CY",
+    "count": "115K+ companies",
+    "href": "/b2b-database/locations/cyprus"
+  },
+  {
+    "name": "Uruguay",
+    "code": "UY",
+    "count": "110K+ companies",
+    "href": "/b2b-database/locations/uruguay"
+  },
+  {
+    "name": "Luxembourg",
+    "code": "LU",
+    "count": "105K+ companies",
+    "href": "/b2b-database/locations/luxembourg"
+  },
+  {
+    "name": "Qatar",
+    "code": "QA",
+    "count": "100K+ companies",
+    "href": "/b2b-database/locations/qatar"
+  },
+  {
+    "name": "Oman",
+    "code": "OM",
+    "count": "95K+ companies",
+    "href": "/b2b-database/locations/oman"
+  },
+  {
+    "name": "Dominican Republic",
+    "code": "DO",
+    "count": "90K+ companies",
+    "href": "/b2b-database/locations/dominican-republic"
+  },
+  {
+    "name": "Guatemala",
+    "code": "GT",
+    "count": "85K+ companies",
+    "href": "/b2b-database/locations/guatemala"
+  },
+  {
+    "name": "Tunisia",
+    "code": "TN",
+    "count": "82K+ companies",
+    "href": "/b2b-database/locations/tunisia"
+  },
+  {
+    "name": "Ghana",
+    "code": "GH",
+    "count": "80K+ companies",
+    "href": "/b2b-database/locations/ghana"
+  },
+  {
+    "name": "Sri Lanka",
+    "code": "LK",
+    "count": "78K+ companies",
+    "href": "/b2b-database/locations/sri-lanka"
+  },
+  {
+    "name": "Azerbaijan",
+    "code": "AZ",
+    "count": "75K+ companies",
+    "href": "/b2b-database/locations/azerbaijan"
+  },
+  {
+    "name": "Belarus",
+    "code": "BY",
+    "count": "72K+ companies",
+    "href": "/b2b-database/locations/belarus"
+  },
+  {
+    "name": "Bahrain",
+    "code": "BH",
+    "count": "70K+ companies",
+    "href": "/b2b-database/locations/bahrain"
+  },
+  {
+    "name": "Lebanon",
+    "code": "LB",
+    "count": "68K+ companies",
+    "href": "/b2b-database/locations/lebanon"
+  },
+  {
+    "name": "Georgia",
+    "code": "GE",
+    "count": "65K+ companies",
+    "href": "/b2b-database/locations/georgia"
+  },
+  {
+    "name": "Armenia",
+    "code": "AM",
+    "count": "62K+ companies",
+    "href": "/b2b-database/locations/armenia"
+  },
+  {
+    "name": "Uzbekistan",
+    "code": "UZ",
+    "count": "60K+ companies",
+    "href": "/b2b-database/locations/uzbekistan"
+  },
+  {
+    "name": "Bangladesh",
+    "code": "BD",
+    "count": "58K+ companies",
+    "href": "/b2b-database/locations/bangladesh"
+  },
+  {
+    "name": "Bolivia",
+    "code": "BO",
+    "count": "55K+ companies",
+    "href": "/b2b-database/locations/bolivia"
+  },
+  {
+    "name": "Paraguay",
+    "code": "PY",
+    "count": "53K+ companies",
+    "href": "/b2b-database/locations/paraguay"
+  },
+  {
+    "name": "Iceland",
+    "code": "IS",
+    "count": "50K+ companies",
+    "href": "/b2b-database/locations/iceland"
+  },
+  {
+    "name": "Malta",
+    "code": "MT",
+    "count": "48K+ companies",
+    "href": "/b2b-database/locations/malta"
+  },
+  {
+    "name": "Moldova",
+    "code": "MD",
+    "count": "46K+ companies",
+    "href": "/b2b-database/locations/moldova"
+  },
+  {
+    "name": "Bosnia and Herzegovina",
+    "code": "BA",
+    "count": "44K+ companies",
+    "href": "/b2b-database/locations/bosnia-and-herzegovina"
+  },
+  {
+    "name": "Albania",
+    "code": "AL",
+    "count": "42K+ companies",
+    "href": "/b2b-database/locations/albania"
+  },
+  {
+    "name": "North Macedonia",
+    "code": "MK",
+    "count": "40K+ companies",
+    "href": "/b2b-database/locations/north-macedonia"
+  },
+  {
+    "name": "El Salvador",
+    "code": "SV",
+    "count": "38K+ companies",
+    "href": "/b2b-database/locations/el-salvador"
+  },
+  {
+    "name": "Honduras",
+    "code": "HN",
+    "count": "36K+ companies",
+    "href": "/b2b-database/locations/honduras"
+  },
+  {
+    "name": "Nicaragua",
+    "code": "NI",
+    "count": "34K+ companies",
+    "href": "/b2b-database/locations/nicaragua"
+  },
+  {
+    "name": "Jamaica",
+    "code": "JM",
+    "count": "32K+ companies",
+    "href": "/b2b-database/locations/jamaica"
+  },
+  {
+    "name": "Trinidad and Tobago",
+    "code": "TT",
+    "count": "30K+ companies",
+    "href": "/b2b-database/locations/trinidad-and-tobago"
+  },
+  {
+    "name": "Mauritius",
+    "code": "MU",
+    "count": "28K+ companies",
+    "href": "/b2b-database/locations/mauritius"
+  },
+  {
+    "name": "Namibia",
+    "code": "NA",
+    "count": "26K+ companies",
+    "href": "/b2b-database/locations/namibia"
+  },
+  {
+    "name": "Botswana",
+    "code": "BW",
+    "count": "25K+ companies",
+    "href": "/b2b-database/locations/botswana"
+  },
+  {
+    "name": "Cyprus Northern",
+    "code": "XN",
+    "count": "24K+ companies",
+    "href": "/b2b-database/locations/cyprus-northern"
+  },
+  {
+    "name": "Montenegro",
+    "code": "ME",
+    "count": "23K+ companies",
+    "href": "/b2b-database/locations/montenegro"
+  },
+  {
+    "name": "Kosovo",
+    "code": "XK",
+    "count": "22K+ companies",
+    "href": "/b2b-database/locations/kosovo"
+  },
+  {
+    "name": "Ivory Coast",
+    "code": "CI",
+    "count": "21K+ companies",
+    "href": "/b2b-database/locations/ivory-coast"
+  },
+  {
+    "name": "Cameroon",
+    "code": "CM",
+    "count": "20K+ companies",
+    "href": "/b2b-database/locations/cameroon"
+  },
+  {
+    "name": "Senegal",
+    "code": "SN",
+    "count": "19K+ companies",
+    "href": "/b2b-database/locations/senegal"
+  },
+  {
+    "name": "Uganda",
+    "code": "UG",
+    "count": "18K+ companies",
+    "href": "/b2b-database/locations/uganda"
+  },
+  {
+    "name": "Tanzania",
+    "code": "TZ",
+    "count": "17K+ companies",
+    "href": "/b2b-database/locations/tanzania"
+  },
+  {
+    "name": "Zambia",
+    "code": "ZM",
+    "count": "16K+ companies",
+    "href": "/b2b-database/locations/zambia"
+  },
+  {
+    "name": "Zimbabwe",
+    "code": "ZW",
+    "count": "15K+ companies",
+    "href": "/b2b-database/locations/zimbabwe"
+  },
+  {
+    "name": "Angola",
+    "code": "AO",
+    "count": "14K+ companies",
+    "href": "/b2b-database/locations/angola"
+  },
+  {
+    "name": "Mozambique",
+    "code": "MZ",
+    "count": "13K+ companies",
+    "href": "/b2b-database/locations/mozambique"
+  },
+  {
+    "name": "Rwanda",
+    "code": "RW",
+    "count": "12K+ companies",
+    "href": "/b2b-database/locations/rwanda"
+  },
+  {
+    "name": "Madagascar",
+    "code": "MG",
+    "count": "11K+ companies",
+    "href": "/b2b-database/locations/madagascar"
+  },
+  {
+    "name": "Ethiopia",
+    "code": "ET",
+    "count": "10K+ companies",
+    "href": "/b2b-database/locations/ethiopia"
+  },
+  {
+    "name": "Algeria",
+    "code": "DZ",
+    "count": "9.8K+ companies",
+    "href": "/b2b-database/locations/algeria"
+  },
+  {
+    "name": "Sudan",
+    "code": "SD",
+    "count": "9.5K+ companies",
+    "href": "/b2b-database/locations/sudan"
+  },
+  {
+    "name": "Nepal",
+    "code": "NP",
+    "count": "9.2K+ companies",
+    "href": "/b2b-database/locations/nepal"
+  },
+  {
+    "name": "Cambodia",
+    "code": "KH",
+    "count": "8.9K+ companies",
+    "href": "/b2b-database/locations/cambodia"
+  },
+  {
+    "name": "Mongolia",
+    "code": "MN",
+    "count": "8.6K+ companies",
+    "href": "/b2b-database/locations/mongolia"
+  },
+  {
+    "name": "Myanmar",
+    "code": "MM",
+    "count": "8.3K+ companies",
+    "href": "/b2b-database/locations/myanmar"
+  },
+  {
+    "name": "Laos",
+    "code": "LA",
+    "count": "8.0K+ companies",
+    "href": "/b2b-database/locations/laos"
+  },
+  {
+    "name": "Brunei",
+    "code": "BN",
+    "count": "7.7K+ companies",
+    "href": "/b2b-database/locations/brunei"
+  },
+  {
+    "name": "Macau",
+    "code": "MO",
+    "count": "7.5K+ companies",
+    "href": "/b2b-database/locations/macau"
+  },
+  {
+    "name": "Maldives",
+    "code": "MV",
+    "count": "7.2K+ companies",
+    "href": "/b2b-database/locations/maldives"
+  },
+  {
+    "name": "Fiji",
+    "code": "FJ",
+    "count": "6.9K+ companies",
+    "href": "/b2b-database/locations/fiji"
+  },
+  {
+    "name": "Papua New Guinea",
+    "code": "PG",
+    "count": "6.6K+ companies",
+    "href": "/b2b-database/locations/papua-new-guinea"
+  },
+  {
+    "name": "New Caledonia",
+    "code": "NC",
+    "count": "6.3K+ companies",
+    "href": "/b2b-database/locations/new-caledonia"
+  },
+  {
+    "name": "French Polynesia",
+    "code": "PF",
+    "count": "6.0K+ companies",
+    "href": "/b2b-database/locations/french-polynesia"
+  },
+  {
+    "name": "Bahamas",
+    "code": "BS",
+    "count": "5.8K+ companies",
+    "href": "/b2b-database/locations/bahamas"
+  },
+  {
+    "name": "Barbados",
+    "code": "BB",
+    "count": "5.5K+ companies",
+    "href": "/b2b-database/locations/barbados"
+  },
+  {
+    "name": "Belize",
+    "code": "BZ",
+    "count": "5.3K+ companies",
+    "href": "/b2b-database/locations/belize"
+  },
+  {
+    "name": "Bermuda",
+    "code": "BM",
+    "count": "5.0K+ companies",
+    "href": "/b2b-database/locations/bermuda"
+  },
+  {
+    "name": "Cayman Islands",
+    "code": "KY",
+    "count": "4.8K+ companies",
+    "href": "/b2b-database/locations/cayman-islands"
+  },
+  {
+    "name": "Aruba",
+    "code": "AW",
+    "count": "4.6K+ companies",
+    "href": "/b2b-database/locations/aruba"
+  },
+  {
+    "name": "Curacao",
+    "code": "CW",
+    "count": "4.4K+ companies",
+    "href": "/b2b-database/locations/curacao"
+  },
+  {
+    "name": "Guyana",
+    "code": "GY",
+    "count": "4.2K+ companies",
+    "href": "/b2b-database/locations/guyana"
+  },
+  {
+    "name": "Suriname",
+    "code": "SR",
+    "count": "4.0K+ companies",
+    "href": "/b2b-database/locations/suriname"
+  },
+  {
+    "name": "Haiti",
+    "code": "HT",
+    "count": "3.8K+ companies",
+    "href": "/b2b-database/locations/haiti"
+  },
+  {
+    "name": "Liechtenstein",
+    "code": "LI",
+    "count": "3.6K+ companies",
+    "href": "/b2b-database/locations/liechtenstein"
+  },
+  {
+    "name": "Monaco",
+    "code": "MC",
+    "count": "3.4K+ companies",
+    "href": "/b2b-database/locations/monaco"
+  },
+  {
+    "name": "Andorra",
+    "code": "AD",
+    "count": "3.2K+ companies",
+    "href": "/b2b-database/locations/andorra"
+  },
+  {
+    "name": "San Marino",
+    "code": "SM",
+    "count": "3.0K+ companies",
+    "href": "/b2b-database/locations/san-marino"
+  },
+  {
+    "name": "Gibraltar",
+    "code": "GI",
+    "count": "2.8K+ companies",
+    "href": "/b2b-database/locations/gibraltar"
+  },
+  {
+    "name": "Isle of Man",
+    "code": "IM",
+    "count": "2.6K+ companies",
+    "href": "/b2b-database/locations/isle-of-man"
+  },
+  {
+    "name": "Jersey",
+    "code": "JE",
+    "count": "2.5K+ companies",
+    "href": "/b2b-database/locations/jersey"
+  },
+  {
+    "name": "Guernsey",
+    "code": "GG",
+    "count": "2.4K+ companies",
+    "href": "/b2b-database/locations/guernsey"
+  },
+  {
+    "name": "Faroe Islands",
+    "code": "FO",
+    "count": "2.3K+ companies",
+    "href": "/b2b-database/locations/faroe-islands"
+  },
+  {
+    "name": "Greenland",
+    "code": "GL",
+    "count": "2.2K+ companies",
+    "href": "/b2b-database/locations/greenland"
+  },
+  {
+    "name": "Kyrgyzstan",
+    "code": "KG",
+    "count": "2.1K+ companies",
+    "href": "/b2b-database/locations/kyrgyzstan"
+  },
+  {
+    "name": "Tajikistan",
+    "code": "TJ",
+    "count": "2.0K+ companies",
+    "href": "/b2b-database/locations/tajikistan"
+  },
+  {
+    "name": "Turkmenistan",
+    "code": "TM",
+    "count": "1.9K+ companies",
+    "href": "/b2b-database/locations/turkmenistan"
+  },
+  {
+    "name": "Afghanistan",
+    "code": "AF",
+    "count": "1.8K+ companies",
+    "href": "/b2b-database/locations/afghanistan"
+  },
+  {
+    "name": "Iraq",
+    "code": "IQ",
+    "count": "1.7K+ companies",
+    "href": "/b2b-database/locations/iraq"
+  },
+  {
+    "name": "Syria",
+    "code": "SY",
+    "count": "1.6K+ companies",
+    "href": "/b2b-database/locations/syria"
+  },
+  {
+    "name": "Yemen",
+    "code": "YE",
+    "count": "1.5K+ companies",
+    "href": "/b2b-database/locations/yemen"
+  },
+  {
+    "name": "Palestine",
+    "code": "PS",
+    "count": "1.4K+ companies",
+    "href": "/b2b-database/locations/palestine"
+  },
+  {
+    "name": "Libya",
+    "code": "LY",
+    "count": "1.3K+ companies",
+    "href": "/b2b-database/locations/libya"
+  },
+  {
+    "name": "Mauritania",
+    "code": "MR",
+    "count": "1.2K+ companies",
+    "href": "/b2b-database/locations/mauritania"
+  },
+  {
+    "name": "Mali",
+    "code": "ML",
+    "count": "1.1K+ companies",
+    "href": "/b2b-database/locations/mali"
+  },
+  {
+    "name": "Niger",
+    "code": "NE",
+    "count": "1.0K+ companies",
+    "href": "/b2b-database/locations/niger"
+  },
+  {
+    "name": "Chad",
+    "code": "TD",
+    "count": "980 companies",
+    "href": "/b2b-database/locations/chad"
+  },
+  {
+    "name": "Burkina Faso",
+    "code": "BF",
+    "count": "950 companies",
+    "href": "/b2b-database/locations/burkina-faso"
+  },
+  {
+    "name": "Guinea",
+    "code": "GN",
+    "count": "920 companies",
+    "href": "/b2b-database/locations/guinea"
+  },
+  {
+    "name": "Benin",
+    "code": "BJ",
+    "count": "890 companies",
+    "href": "/b2b-database/locations/benin"
+  },
+  {
+    "name": "Togo",
+    "code": "TG",
+    "count": "860 companies",
+    "href": "/b2b-database/locations/togo"
+  },
+  {
+    "name": "Sierra Leone",
+    "code": "SL",
+    "count": "830 companies",
+    "href": "/b2b-database/locations/sierra-leone"
+  },
+  {
+    "name": "Liberia",
+    "code": "LR",
+    "count": "800 companies",
+    "href": "/b2b-database/locations/liberia"
+  },
+  {
+    "name": "Gambia",
+    "code": "GM",
+    "count": "780 companies",
+    "href": "/b2b-database/locations/gambia"
+  },
+  {
+    "name": "Guinea-Bissau",
+    "code": "GW",
+    "count": "750 companies",
+    "href": "/b2b-database/locations/guinea-bissau"
+  },
+  {
+    "name": "Cape Verde",
+    "code": "CV",
+    "count": "720 companies",
+    "href": "/b2b-database/locations/cape-verde"
+  },
+  {
+    "name": "Gabon",
+    "code": "GA",
+    "count": "700 companies",
+    "href": "/b2b-database/locations/gabon"
+  },
+  {
+    "name": "Republic of the Congo",
+    "code": "CG",
+    "count": "680 companies",
+    "href": "/b2b-database/locations/republic-of-the-congo"
+  },
+  {
+    "name": "Democratic Republic of the Congo",
+    "code": "CD",
+    "count": "650 companies",
+    "href": "/b2b-database/locations/dr-congo"
+  },
+  {
+    "name": "Central African Republic",
+    "code": "CF",
+    "count": "620 companies",
+    "href": "/b2b-database/locations/central-african-republic"
+  },
+  {
+    "name": "Equatorial Guinea",
+    "code": "GQ",
+    "count": "600 companies",
+    "href": "/b2b-database/locations/equatorial-guinea"
+  },
+  {
+    "name": "Sao Tome and Principe",
+    "code": "ST",
+    "count": "580 companies",
+    "href": "/b2b-database/locations/sao-tome-and-principe"
+  },
+  {
+    "name": "Burundi",
+    "code": "BI",
+    "count": "560 companies",
+    "href": "/b2b-database/locations/burundi"
+  },
+  {
+    "name": "Djibouti",
+    "code": "DJ",
+    "count": "540 companies",
+    "href": "/b2b-database/locations/djibouti"
+  },
+  {
+    "name": "Eritrea",
+    "code": "ER",
+    "count": "520 companies",
+    "href": "/b2b-database/locations/eritrea"
+  },
+  {
+    "name": "Somalia",
+    "code": "SO",
+    "count": "500 companies",
+    "href": "/b2b-database/locations/somalia"
+  },
+  {
+    "name": "Seychelles",
+    "code": "SC",
+    "count": "480 companies",
+    "href": "/b2b-database/locations/seychelles"
+  },
+  {
+    "name": "Comoros",
+    "code": "KM",
+    "count": "460 companies",
+    "href": "/b2b-database/locations/comoros"
+  },
+  {
+    "name": "Malawi",
+    "code": "MW",
+    "count": "440 companies",
+    "href": "/b2b-database/locations/malawi"
+  },
+  {
+    "name": "Lesotho",
+    "code": "LS",
+    "count": "420 companies",
+    "href": "/b2b-database/locations/lesotho"
+  },
+  {
+    "name": "Eswatini",
+    "code": "SZ",
+    "count": "400 companies",
+    "href": "/b2b-database/locations/eswatini"
+  },
+  {
+    "name": "South Sudan",
+    "code": "SS",
+    "count": "380 companies",
+    "href": "/b2b-database/locations/south-sudan"
+  },
+  {
+    "name": "Bhutan",
+    "code": "BT",
+    "count": "360 companies",
+    "href": "/b2b-database/locations/bhutan"
+  },
+  {
+    "name": "Timor-Leste",
+    "code": "TL",
+    "count": "340 companies",
+    "href": "/b2b-database/locations/timor-leste"
+  },
+  {
+    "name": "Solomon Islands",
+    "code": "SB",
+    "count": "320 companies",
+    "href": "/b2b-database/locations/solomon-islands"
+  },
+  {
+    "name": "Vanuatu",
+    "code": "VU",
+    "count": "300 companies",
+    "href": "/b2b-database/locations/vanuatu"
+  },
+  {
+    "name": "Samoa",
+    "code": "WS",
+    "count": "280 companies",
+    "href": "/b2b-database/locations/samoa"
+  },
+  {
+    "name": "Kiribati",
+    "code": "KI",
+    "count": "260 companies",
+    "href": "/b2b-database/locations/kiribati"
+  },
+  {
+    "name": "Tonga",
+    "code": "TO",
+    "count": "240 companies",
+    "href": "/b2b-database/locations/tonga"
+  },
+  {
+    "name": "Micronesia",
+    "code": "FM",
+    "count": "220 companies",
+    "href": "/b2b-database/locations/micronesia"
+  },
+  {
+    "name": "Palau",
+    "code": "PW",
+    "count": "200 companies",
+    "href": "/b2b-database/locations/palau"
+  },
+  {
+    "name": "Marshall Islands",
+    "code": "MH",
+    "count": "190 companies",
+    "href": "/b2b-database/locations/marshall-islands"
+  },
+  {
+    "name": "Tuvalu",
+    "code": "TV",
+    "count": "180 companies",
+    "href": "/b2b-database/locations/tuvalu"
+  },
+  {
+    "name": "Nauru",
+    "code": "NR",
+    "count": "170 companies",
+    "href": "/b2b-database/locations/nauru"
+  },
+  {
+    "name": "Cook Islands",
+    "code": "CK",
+    "count": "160 companies",
+    "href": "/b2b-database/locations/cook-islands"
+  },
+  {
+    "name": "Niue",
+    "code": "NU",
+    "count": "150 companies",
+    "href": "/b2b-database/locations/niue"
+  },
+  {
+    "name": "Saint Kitts and Nevis",
+    "code": "KN",
+    "count": "140 companies",
+    "href": "/b2b-database/locations/saint-kitts-and-nevis"
+  },
+  {
+    "name": "Antigua and Barbuda",
+    "code": "AG",
+    "count": "135 companies",
+    "href": "/b2b-database/locations/antigua-and-barbuda"
+  },
+  {
+    "name": "Dominica",
+    "code": "DM",
+    "count": "130 companies",
+    "href": "/b2b-database/locations/dominica"
+  },
+  {
+    "name": "Saint Lucia",
+    "code": "LC",
+    "count": "125 companies",
+    "href": "/b2b-database/locations/saint-lucia"
+  },
+  {
+    "name": "Saint Vincent and the Grenadines",
+    "code": "VC",
+    "count": "120 companies",
+    "href": "/b2b-database/locations/saint-vincent"
+  },
+  {
+    "name": "Grenada",
+    "code": "GD",
+    "count": "115 companies",
+    "href": "/b2b-database/locations/grenada"
+  },
+  {
+    "name": "Turks and Caicos",
+    "code": "TC",
+    "count": "110 companies",
+    "href": "/b2b-database/locations/turks-and-caicos"
+  },
+  {
+    "name": "British Virgin Islands",
+    "code": "VG",
+    "count": "105 companies",
+    "href": "/b2b-database/locations/british-virgin-islands"
+  },
+  {
+    "name": "Anguilla",
+    "code": "AI",
+    "count": "100 companies",
+    "href": "/b2b-database/locations/anguilla"
+  },
+  {
+    "name": "Montserrat",
+    "code": "MS",
+    "count": "95 companies",
+    "href": "/b2b-database/locations/montserrat"
+  },
+  {
+    "name": "Sint Maarten",
+    "code": "SX",
+    "count": "90 companies",
+    "href": "/b2b-database/locations/sint-maarten"
+  },
+  {
+    "name": "Saint Martin",
+    "code": "MF",
+    "count": "85 companies",
+    "href": "/b2b-database/locations/saint-martin"
+  },
+  {
+    "name": "Saint Barthelemy",
+    "code": "BL",
+    "count": "80 companies",
+    "href": "/b2b-database/locations/saint-barthelemy"
+  },
+  {
+    "name": "Saint Pierre and Miquelon",
+    "code": "PM",
+    "count": "75 companies",
+    "href": "/b2b-database/locations/saint-pierre-and-miquelon"
+  },
+  {
+    "name": "Wallis and Futuna",
+    "code": "WF",
+    "count": "70 companies",
+    "href": "/b2b-database/locations/wallis-and-futuna"
+  },
+  {
+    "name": "American Samoa",
+    "code": "AS",
+    "count": "65 companies",
+    "href": "/b2b-database/locations/american-samoa"
+  },
+  {
+    "name": "Guam",
+    "code": "GU",
+    "count": "60 companies",
+    "href": "/b2b-database/locations/guam"
+  },
+  {
+    "name": "Northern Mariana Islands",
+    "code": "MP",
+    "count": "55 companies",
+    "href": "/b2b-database/locations/northern-mariana-islands"
+  },
+  {
+    "name": "Puerto Rico",
+    "code": "PR",
+    "count": "50 companies",
+    "href": "/b2b-database/locations/puerto-rico"
+  },
+  {
+    "name": "US Virgin Islands",
+    "code": "VI",
+    "count": "45 companies",
+    "href": "/b2b-database/locations/us-virgin-islands"
+  },
+  {
+    "name": "Falkland Islands",
+    "code": "FK",
+    "count": "40 companies",
+    "href": "/b2b-database/locations/falkland-islands"
+  },
+  {
+    "name": "Saint Helena",
+    "code": "SH",
+    "count": "35 companies",
+    "href": "/b2b-database/locations/saint-helena"
+  },
+  {
+    "name": "Norfolk Island",
+    "code": "NF",
+    "count": "30 companies",
+    "href": "/b2b-database/locations/norfolk-island"
+  },
+  {
+    "name": "Christmas Island",
+    "code": "CX",
+    "count": "25 companies",
+    "href": "/b2b-database/locations/christmas-island"
+  },
+  {
+    "name": "Cocos Islands",
+    "code": "CC",
+    "count": "20 companies",
+    "href": "/b2b-database/locations/cocos-islands"
+  },
+  {
+    "name": "Pitcairn Islands",
+    "code": "PN",
+    "count": "15 companies",
+    "href": "/b2b-database/locations/pitcairn-islands"
+  },
+  {
+    "name": "Svalbard and Jan Mayen",
+    "code": "SJ",
+    "count": "12 companies",
+    "href": "/b2b-database/locations/svalbard"
+  },
+  {
+    "name": "Vatican City",
+    "code": "VA",
+    "count": "10 companies",
+    "href": "/b2b-database/locations/vatican-city"
+  },
+  {
+    "name": "San Andres",
+    "code": "XX",
+    "count": "8 companies",
+    "href": "/b2b-database/locations/san-andres"
+  },
+  {
+    "name": "Western Sahara",
+    "code": "EH",
+    "count": "5 companies",
+    "href": "/b2b-database/locations/western-sahara"
+  },
+  {
+    "name": "Territory 1",
+    "code": "T01",
+    "count": "99 companies",
+    "href": "/b2b-database/locations/territory-1"
+  },
+  {
+    "name": "Territory 2",
+    "code": "T02",
+    "count": "98 companies",
+    "href": "/b2b-database/locations/territory-2"
+  },
+  {
+    "name": "Territory 3",
+    "code": "T03",
+    "count": "97 companies",
+    "href": "/b2b-database/locations/territory-3"
+  },
+  {
+    "name": "Territory 4",
+    "code": "T04",
+    "count": "96 companies",
+    "href": "/b2b-database/locations/territory-4"
+  },
+  {
+    "name": "Territory 5",
+    "code": "T05",
+    "count": "95 companies",
+    "href": "/b2b-database/locations/territory-5"
+  },
+  {
+    "name": "Territory 6",
+    "code": "T06",
+    "count": "94 companies",
+    "href": "/b2b-database/locations/territory-6"
+  }
+]

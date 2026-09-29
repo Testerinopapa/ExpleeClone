@@ -1,0 +1,336 @@
+[
+  {
+    "id": "general",
+    "title": "General Information",
+    "fieldsCount": 12,
+    "fields": [
+      {
+        "pct": "100%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Name"
+      },
+      {
+        "pct": "29.7%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Description"
+      },
+      {
+        "pct": "100%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Business Status"
+      },
+      {
+        "pct": "97.1%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Categories"
+      },
+      {
+        "pct": "50%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "CID"
+      },
+      {
+        "pct": "100%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Feature ID"
+      },
+      {
+        "pct": "100%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Place ID"
+      },
+      {
+        "pct": "100%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Google Maps URL"
+      },
+      {
+        "pct": "100%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Google Maps URL (Alt)"
+      },
+      {
+        "pct": "62.9%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Website URL"
+      },
+      {
+        "pct": "62.9%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "URL Type"
+      },
+      {
+        "pct": "61%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Domain"
+      }
+    ],
+    "codeLinesSample": []
+  },
+  {
+    "id": "geography",
+    "title": "Location Data",
+    "fieldsCount": 5,
+    "fields": [
+      {
+        "pct": "100%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Country"
+      },
+      {
+        "pct": "99.6%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "City"
+      },
+      {
+        "pct": "48.8%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "District"
+      },
+      {
+        "pct": "100%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Latitude"
+      },
+      {
+        "pct": "100%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Longitude"
+      }
+    ],
+    "codeLinesSample": []
+  },
+  {
+    "id": "contact",
+    "title": "Contact Information",
+    "fieldsCount": 3,
+    "fields": [
+      {
+        "pct": "100%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Address"
+      },
+      {
+        "pct": "100%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Full Address"
+      },
+      {
+        "pct": "76.6%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Phone"
+      }
+    ],
+    "codeLinesSample": []
+  },
+  {
+    "id": "reviews",
+    "title": "Reviews & Ratings",
+    "fieldsCount": 7,
+    "fields": [
+      {
+        "pct": "66.7%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Rating"
+      },
+      {
+        "pct": "100%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Review Count"
+      },
+      {
+        "pct": "28.5%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Review Snippets"
+      },
+      {
+        "pct": "63.6%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Newest Reviews"
+      },
+      {
+        "pct": "98.6%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Newest Reviews Size"
+      },
+      {
+        "pct": "63.7%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Relevant Reviews"
+      },
+      {
+        "pct": "98.6%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Relevant Reviews Size"
+      }
+    ],
+    "codeLinesSample": []
+  },
+  {
+    "id": "visitor",
+    "title": "Visitor Information",
+    "fieldsCount": 5,
+    "fields": [
+      {
+        "pct": "51.3%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Hours"
+      },
+      {
+        "pct": "100%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Popular Times"
+      },
+      {
+        "pct": "3.7%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Price Range"
+      },
+      {
+        "pct": "16.6%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Questions & Answers"
+      },
+      {
+        "pct": "97.2%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Related Places"
+      }
+    ],
+    "codeLinesSample": []
+  },
+  {
+    "id": "media",
+    "title": "Media Content",
+    "fieldsCount": 2,
+    "fields": [
+      {
+        "pct": "86.1%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Photos"
+      },
+      {
+        "pct": "86.1%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Photos Count"
+      }
+    ],
+    "codeLinesSample": []
+  },
+  {
+    "id": "hospitality",
+    "title": "Hospitality Features",
+    "fieldsCount": 2,
+    "fields": [
+      {
+        "pct": "0.1%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Hotel Class"
+      },
+      {
+        "pct": "0.6%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Hotel Amenities"
+      }
+    ],
+    "codeLinesSample": []
+  },
+  {
+    "id": "labels",
+    "title": "Place Labels & Attributes",
+    "fieldsCount": 18,
+    "fields": [
+      {
+        "pct": "55.9%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Accessibility"
+      },
+      {
+        "pct": "0.6%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Activities"
+      },
+      {
+        "pct": "24.3%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Amenities"
+      },
+      {
+        "pct": "3.5%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Atmosphere"
+      },
+      {
+        "pct": "7.1%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Children"
+      },
+      {
+        "pct": "6.6%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Crowd"
+      },
+      {
+        "pct": "3.8%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Dining Options"
+      },
+      {
+        "pct": "2.6%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "From The Business"
+      },
+      {
+        "pct": "1.3%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Getting Here"
+      },
+      {
+        "pct": "3.1%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Highlights"
+      },
+      {
+        "pct": "7.3%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Offerings"
+      },
+      {
+        "pct": "6.1%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Parking"
+      },
+      {
+        "pct": "13%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Payments"
+      },
+      {
+        "pct": "1.7%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Pets"
+      },
+      {
+        "pct": "22.7%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Planning"
+      },
+      {
+        "pct": "2.9%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Popular For"
+      },
+      {
+        "pct": "1.3%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Recycling"
+      },
+      {
+        "pct": "17.3%",
+        "name": "Fill rate — percentage of records in the dataset with this field filled",
+        "desc": "Service Options"
+      }
+    ],
+    "codeLinesSample": []
+  }
+]

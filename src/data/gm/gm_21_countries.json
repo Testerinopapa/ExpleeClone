@@ -1,0 +1,149 @@
+[
+  {
+    "name": "China",
+    "count": "37M+ locations",
+    "raw_flag": "🇨🇳",
+    "href": "/gm-dataset/locations/china",
+    "slug": "china"
+  },
+  {
+    "name": "India",
+    "count": "28M+ locations",
+    "raw_flag": "🇮🇳",
+    "href": "/gm-dataset/locations/india",
+    "slug": "india"
+  },
+  {
+    "name": "United States",
+    "count": "17M+ locations",
+    "raw_flag": "🇺🇸",
+    "href": "/gm-dataset/locations/united-states",
+    "slug": "united-states"
+  },
+  {
+    "name": "Indonesia",
+    "count": "14M+ locations",
+    "raw_flag": "🇮🇩",
+    "href": "/gm-dataset/locations/indonesia",
+    "slug": "indonesia"
+  },
+  {
+    "name": "Brazil",
+    "count": "11M+ locations",
+    "raw_flag": "🇧🇷",
+    "href": "/gm-dataset/locations/brazil",
+    "slug": "brazil"
+  },
+  {
+    "name": "Japan",
+    "count": "9M+ locations",
+    "raw_flag": "🇯🇵",
+    "href": "/gm-dataset/locations/japan",
+    "slug": "japan"
+  },
+  {
+    "name": "Korea, Republic of",
+    "count": "6M+ locations",
+    "raw_flag": "🇰🇷",
+    "href": "/gm-dataset/locations/korea-republic-of",
+    "slug": "korea-republic-of"
+  },
+  {
+    "name": "Germany",
+    "count": "6M+ locations",
+    "raw_flag": "🇩🇪",
+    "href": "/gm-dataset/locations/germany",
+    "slug": "germany"
+  },
+  {
+    "name": "Mexico",
+    "count": "6M+ locations",
+    "raw_flag": "🇲🇽",
+    "href": "/gm-dataset/locations/mexico",
+    "slug": "mexico"
+  },
+  {
+    "name": "France",
+    "count": "5M+ locations",
+    "raw_flag": "🇫🇷",
+    "href": "/gm-dataset/locations/france",
+    "slug": "france"
+  },
+  {
+    "name": "Türkiye",
+    "count": "4M+ locations",
+    "raw_flag": "🇹🇷",
+    "href": "/gm-dataset/locations/turkiye",
+    "slug": "turkiye"
+  },
+  {
+    "name": "Italy",
+    "count": "4M+ locations",
+    "raw_flag": "🇮🇹",
+    "href": "/gm-dataset/locations/italy",
+    "slug": "italy"
+  },
+  {
+    "name": "Viet Nam",
+    "count": "4M+ locations",
+    "raw_flag": "🇻🇳",
+    "href": "/gm-dataset/locations/viet-nam",
+    "slug": "viet-nam"
+  },
+  {
+    "name": "United Kingdom",
+    "count": "3M+ locations",
+    "raw_flag": "🇬🇧",
+    "href": "/gm-dataset/locations/united-kingdom",
+    "slug": "united-kingdom"
+  },
+  {
+    "name": "Spain",
+    "count": "3M+ locations",
+    "raw_flag": "🇪🇸",
+    "href": "/gm-dataset/locations/spain",
+    "slug": "spain"
+  },
+  {
+    "name": "Thailand",
+    "count": "3M+ locations",
+    "raw_flag": "🇹🇭",
+    "href": "/gm-dataset/locations/thailand",
+    "slug": "thailand"
+  },
+  {
+    "name": "Philippines",
+    "count": "3M+ locations",
+    "raw_flag": "🇵🇭",
+    "href": "/gm-dataset/locations/philippines",
+    "slug": "philippines"
+  },
+  {
+    "name": "Bangladesh",
+    "count": "3M+ locations",
+    "raw_flag": "🇧🇩",
+    "href": "/gm-dataset/locations/bangladesh",
+    "slug": "bangladesh"
+  },
+  {
+    "name": "Argentina",
+    "count": "2M+ locations",
+    "raw_flag": "🇦🇷",
+    "href": "/gm-dataset/locations/argentina",
+    "slug": "argentina"
+  },
+  {
+    "name": "Poland",
+    "count": "2M+ locations",
+    "raw_flag": "🇵🇱",
+    "href": "/gm-dataset/locations/poland",
+    "slug": "poland"
+  },
+  {
+    "name": "Pakistan",
+    "count": "2M+ locations",
+    "raw_flag": "🇵🇰",
+    "href": "/gm-dataset/locations/pakistan",
+    "slug": "pakistan"
+  }
+]

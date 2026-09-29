@@ -1,0 +1,149 @@
+[
+  {
+    "code": "NACE J",
+    "title": "Information and communication",
+    "count": "17M+ companies",
+    "icon": "💻",
+    "href": "/b2b-database/industries/information-and-communication"
+  },
+  {
+    "code": "NACE M",
+    "title": "Professional, scientific and technical activities",
+    "count": "14M+ companies",
+    "icon": "🔬",
+    "href": "/b2b-database/industries/professional-scientific-and-technical-activities"
+  },
+  {
+    "code": "NACE G",
+    "title": "Wholesale and retail trade",
+    "count": "12M+ companies",
+    "icon": "🛒",
+    "href": "/b2b-database/industries/wholesale-and-retail-trade"
+  },
+  {
+    "code": "NACE C",
+    "title": "Manufacturing",
+    "count": "11M+ companies",
+    "icon": "🏭",
+    "href": "/b2b-database/industries/manufacturing"
+  },
+  {
+    "code": "NACE R",
+    "title": "Arts, entertainment and recreation",
+    "count": "8M+ companies",
+    "icon": "🎭",
+    "href": "/b2b-database/industries/arts-entertainment-and-recreation"
+  },
+  {
+    "code": "NACE P",
+    "title": "Education",
+    "count": "6M+ companies",
+    "icon": "🎓",
+    "href": "/b2b-database/industries/education"
+  },
+  {
+    "code": "NACE S",
+    "title": "Other service activities",
+    "count": "6M+ companies",
+    "icon": "🛠️",
+    "href": "/b2b-database/industries/other-service-activities"
+  },
+  {
+    "code": "NACE N",
+    "title": "Administrative and support service activities",
+    "count": "6M+ companies",
+    "icon": "🗂️",
+    "href": "/b2b-database/industries/administrative-and-support-service-activities"
+  },
+  {
+    "code": "NACE F",
+    "title": "Construction",
+    "count": "5M+ companies",
+    "icon": "🏗️",
+    "href": "/b2b-database/industries/construction"
+  },
+  {
+    "code": "NACE Q",
+    "title": "Human health and social work activities",
+    "count": "5M+ companies",
+    "icon": "🏥",
+    "href": "/b2b-database/industries/human-health-and-social-work-activities"
+  },
+  {
+    "code": "NACE I",
+    "title": "Accommodation and food service activities",
+    "count": "4M+ companies",
+    "icon": "🏨",
+    "href": "/b2b-database/industries/accommodation-and-food-service-activities"
+  },
+  {
+    "code": "NACE K",
+    "title": "Financial and insurance activities",
+    "count": "3M+ companies",
+    "icon": "💰",
+    "href": "/b2b-database/industries/financial-and-insurance-activities"
+  },
+  {
+    "code": "NACE L",
+    "title": "Real estate activities",
+    "count": "3M+ companies",
+    "icon": "🏠",
+    "href": "/b2b-database/industries/real-estate-activities"
+  },
+  {
+    "code": "NACE H",
+    "title": "Transportation and storage",
+    "count": "2M+ companies",
+    "icon": "🚚",
+    "href": "/b2b-database/industries/transportation-and-storage"
+  },
+  {
+    "code": "NACE A",
+    "title": "Agriculture, forestry and fishing",
+    "count": "745K+ companies",
+    "icon": "🌾",
+    "href": "/b2b-database/industries/agriculture-forestry-and-fishing"
+  },
+  {
+    "code": "NACE O",
+    "title": "Public administration and defence",
+    "count": "475K+ companies",
+    "icon": "🏛️",
+    "href": "/b2b-database/industries/public-administration-and-defence"
+  },
+  {
+    "code": "NACE E",
+    "title": "Water supply, sewerage, waste management",
+    "count": "355K+ companies",
+    "icon": "🚰",
+    "href": "/b2b-database/industries/water-supply-sewerage-waste-management"
+  },
+  {
+    "code": "NACE D",
+    "title": "Electricity, gas, steam and air conditioning supply",
+    "count": "169K+ companies",
+    "icon": "⚡",
+    "href": "/b2b-database/industries/electricity-gas-steam-and-air-conditioning-supply"
+  },
+  {
+    "code": "NACE B",
+    "title": "Mining and quarrying",
+    "count": "103K+ companies",
+    "icon": "⛏️",
+    "href": "/b2b-database/industries/mining-and-quarrying"
+  },
+  {
+    "code": "NACE T",
+    "title": "Activities of households as employers",
+    "count": "16K+ companies",
+    "icon": "🏡",
+    "href": "/b2b-database/industries/activities-of-households-as-employers"
+  },
+  {
+    "code": "NACE U",
+    "title": "Activities of extraterritorial organisations and bodies",
+    "count": "5K+ companies",
+    "icon": "🌐",
+    "href": "/b2b-database/industries/activities-of-extraterritorial-organisations-and-bodies"
+  }
+]

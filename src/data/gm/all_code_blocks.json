@@ -1,0 +1,1194 @@
+{
+  "general": [
+    {
+      "idx": 713,
+      "tag": "div",
+      "class": "text-slate-500 mb-1",
+      "text": "// ..."
+    },
+    {
+      "idx": 715,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "12"
+    },
+    {
+      "idx": 717,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" name \""
+    },
+    {
+      "idx": 718,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 719,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "\"The Foundry Kitchen & Coffee\""
+    },
+    {
+      "idx": 720,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 722,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "13"
+    },
+    {
+      "idx": 724,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" description \""
+    },
+    {
+      "idx": 725,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 726,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "\"A modern workspace cafe designed for the tech community, featuring specialty coffee...\""
+    },
+    {
+      "idx": 727,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 729,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "14"
+    },
+    {
+      "idx": 731,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" business_status \""
+    },
+    {
+      "idx": 732,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 733,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "\"OPERATIONAL\""
+    },
+    {
+      "idx": 734,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 736,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "15"
+    },
+    {
+      "idx": 738,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" categories \""
+    },
+    {
+      "idx": 739,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 740,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "[\"Cafe\", \"Coffee shop\", \"Breakfast restaurant\"]"
+    },
+    {
+      "idx": 741,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 743,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "16"
+    },
+    {
+      "idx": 745,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" cid \""
+    },
+    {
+      "idx": 746,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 747,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "8847291056734182459"
+    },
+    {
+      "idx": 748,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 750,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "17"
+    },
+    {
+      "idx": 752,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" place_id \""
+    },
+    {
+      "idx": 753,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 754,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "\"ChIJMZ1efCq7j4ARu9OQ8eLE-Ho\""
+    },
+    {
+      "idx": 755,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 757,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "18"
+    },
+    {
+      "idx": 759,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" url \""
+    },
+    {
+      "idx": 760,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 761,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "\"https://www.thefoundrykitchen.com/\""
+    },
+    {
+      "idx": 762,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 764,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "19"
+    },
+    {
+      "idx": 766,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" domain \""
+    },
+    {
+      "idx": 767,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 768,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "\"thefoundrykitchen.com\""
+    },
+    {
+      "idx": 769,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 770,
+      "tag": "div",
+      "class": "text-slate-500 mt-1",
+      "text": "// ..."
+    }
+  ],
+  "geography": [
+    {
+      "idx": 820,
+      "tag": "div",
+      "class": "text-slate-500 mb-1",
+      "text": "// ..."
+    },
+    {
+      "idx": 822,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "12"
+    },
+    {
+      "idx": 824,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" geo_country \""
+    },
+    {
+      "idx": 825,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 826,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "\"US\""
+    },
+    {
+      "idx": 827,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 829,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "13"
+    },
+    {
+      "idx": 831,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" city \""
+    },
+    {
+      "idx": 832,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 833,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "\"Palo Alto\""
+    },
+    {
+      "idx": 834,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 836,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "14"
+    },
+    {
+      "idx": 838,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" district \""
+    },
+    {
+      "idx": 839,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 840,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "\"Downtown Palo Alto\""
+    },
+    {
+      "idx": 841,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 843,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "15"
+    },
+    {
+      "idx": 845,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" lat \""
+    },
+    {
+      "idx": 846,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 847,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "37.4457032"
+    },
+    {
+      "idx": 848,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 850,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "16"
+    },
+    {
+      "idx": 852,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" lon \""
+    },
+    {
+      "idx": 853,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 854,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "-122.1614285"
+    },
+    {
+      "idx": 855,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 856,
+      "tag": "div",
+      "class": "text-slate-500 mt-1",
+      "text": "// ..."
+    }
+  ],
+  "contact": [
+    {
+      "idx": 890,
+      "tag": "div",
+      "class": "text-slate-500 mb-1",
+      "text": "// ..."
+    },
+    {
+      "idx": 892,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "12"
+    },
+    {
+      "idx": 894,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" address \""
+    },
+    {
+      "idx": 895,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 896,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "\"428 University Ave, Palo Alto, CA 94301\""
+    },
+    {
+      "idx": 897,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 899,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "13"
+    },
+    {
+      "idx": 901,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" full_address \""
+    },
+    {
+      "idx": 902,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 903,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "\"The Foundry Kitchen & Coffee, 428 University Ave, Palo Alto, CA 94301\""
+    },
+    {
+      "idx": 904,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 906,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "14"
+    },
+    {
+      "idx": 908,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" phone \""
+    },
+    {
+      "idx": 909,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 910,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "\"(650) 328-7400\""
+    },
+    {
+      "idx": 911,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 912,
+      "tag": "div",
+      "class": "text-slate-500 mt-1",
+      "text": "// ..."
+    }
+  ],
+  "reviews": [
+    {
+      "idx": 978,
+      "tag": "div",
+      "class": "text-slate-500 mb-1",
+      "text": "// ..."
+    },
+    {
+      "idx": 980,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "12"
+    },
+    {
+      "idx": 982,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" rating \""
+    },
+    {
+      "idx": 983,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 984,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "4.7"
+    },
+    {
+      "idx": 985,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 987,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "13"
+    },
+    {
+      "idx": 989,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" review_count \""
+    },
+    {
+      "idx": 990,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 991,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "892"
+    },
+    {
+      "idx": 992,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 994,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "14"
+    },
+    {
+      "idx": 996,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" review_snippets \""
+    },
+    {
+      "idx": 997,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 998,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "[{\"count\": 67, \"text\": \"wifi\"}, {\"count\": 45, \"text\": \"laptop\"}, {\"count\": 38, \"text\": \"meetings\"}]"
+    },
+    {
+      "idx": 999,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 1001,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "15"
+    },
+    {
+      "idx": 1003,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" reviews_newest \""
+    },
+    {
+      "idx": 1004,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 1005,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "[{\"review_id\": \"ChZDSUhNMG9...\", \"rating\": 5, \"text\": \"Perfect spot for investor meetings...\"}]"
+    },
+    {
+      "idx": 1006,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 1008,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "16"
+    },
+    {
+      "idx": 1010,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" reviews_newest_size \""
+    },
+    {
+      "idx": 1011,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 1012,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "156240"
+    },
+    {
+      "idx": 1013,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 1015,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "17"
+    },
+    {
+      "idx": 1017,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" reviews_relevant_size \""
+    },
+    {
+      "idx": 1018,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 1019,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "284530"
+    },
+    {
+      "idx": 1020,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 1021,
+      "tag": "div",
+      "class": "text-slate-500 mt-1",
+      "text": "// ..."
+    }
+  ],
+  "visitor": [
+    {
+      "idx": 1071,
+      "tag": "div",
+      "class": "text-slate-500 mb-1",
+      "text": "// ..."
+    },
+    {
+      "idx": 1073,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "12"
+    },
+    {
+      "idx": 1075,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" hours \""
+    },
+    {
+      "idx": 1076,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 1077,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "[{\"day\": \"Monday\", \"hours\": \"7 AM–7 PM\"}, {\"day\": \"Tuesday\", \"hours\": \"7 AM–7 PM\"}, ...]"
+    },
+    {
+      "idx": 1078,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 1080,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "13"
+    },
+    {
+      "idx": 1082,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" popular_times \""
+    },
+    {
+      "idx": 1083,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 1084,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "{\"Monday\": [{\"busy\": 25, \"hour\": 8}, {\"busy\": 58, \"hour\": 9}, {\"busy\": 72, \"hour\": 10}...]}"
+    },
+    {
+      "idx": 1085,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 1087,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "14"
+    },
+    {
+      "idx": 1089,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" price_range \""
+    },
+    {
+      "idx": 1090,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 1091,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "\"$10–25\""
+    },
+    {
+      "idx": 1092,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 1094,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "15"
+    },
+    {
+      "idx": 1096,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" questions_answers \""
+    },
+    {
+      "idx": 1097,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 1098,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "[{\"answers\": 3, \"question\": \"Do you have private meeting rooms?\", \"time\": \"6 months ago\"}]"
+    },
+    {
+      "idx": 1099,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 1101,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "16"
+    },
+    {
+      "idx": 1103,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" related_places \""
+    },
+    {
+      "idx": 1104,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 1105,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "[{\"name\": \"Coupa Café\", \"rating\": 4.5, \"reviews\": 1247}, ...]"
+    },
+    {
+      "idx": 1106,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 1107,
+      "tag": "div",
+      "class": "text-slate-500 mt-1",
+      "text": "// ..."
+    }
+  ],
+  "media": [
+    {
+      "idx": 1133,
+      "tag": "div",
+      "class": "text-slate-500 mb-1",
+      "text": "// ..."
+    },
+    {
+      "idx": 1135,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "12"
+    },
+    {
+      "idx": 1137,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" photos \""
+    },
+    {
+      "idx": 1138,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 1139,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "[\"https://lh3.googleusercontent.com/places/interior-01...\", \"https://lh3.googleusercontent.com/places/coffee-bar-02...\"]"
+    },
+    {
+      "idx": 1140,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 1142,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "13"
+    },
+    {
+      "idx": 1144,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" photos_count \""
+    },
+    {
+      "idx": 1145,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 1146,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "245"
+    },
+    {
+      "idx": 1147,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 1148,
+      "tag": "div",
+      "class": "text-slate-500 mt-1",
+      "text": "// ..."
+    }
+  ],
+  "hospitality": [
+    {
+      "idx": 1174,
+      "tag": "div",
+      "class": "text-slate-500 mb-1",
+      "text": "// ..."
+    },
+    {
+      "idx": 1176,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "12"
+    },
+    {
+      "idx": 1178,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" hotel_class \""
+    },
+    {
+      "idx": 1179,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 1180,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "\"4-star\""
+    },
+    {
+      "idx": 1181,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 1183,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "13"
+    },
+    {
+      "idx": 1185,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" hotel_amenities \""
+    },
+    {
+      "idx": 1186,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 1187,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "[{\"available\": true, \"name\": \"Free Wi-Fi\"}, {\"available\": true, \"name\": \"Business center\"}, ...]"
+    },
+    {
+      "idx": 1188,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 1189,
+      "tag": "div",
+      "class": "text-slate-500 mt-1",
+      "text": "// ..."
+    }
+  ],
+  "labels": [
+    {
+      "idx": 1343,
+      "tag": "div",
+      "class": "text-slate-500 mb-1",
+      "text": "// ..."
+    },
+    {
+      "idx": 1345,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "12"
+    },
+    {
+      "idx": 1347,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" labels_atmosphere \""
+    },
+    {
+      "idx": 1348,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 1349,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "[\"Casual\", \"Cozy\", \"Quiet\", \"Trendy\"]"
+    },
+    {
+      "idx": 1350,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 1352,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "13"
+    },
+    {
+      "idx": 1354,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" labels_amenities \""
+    },
+    {
+      "idx": 1355,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 1356,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "[\"Restroom\", \"Wi-Fi\", \"Power outlets at tables\"]"
+    },
+    {
+      "idx": 1357,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 1359,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "14"
+    },
+    {
+      "idx": 1361,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" labels_highlights \""
+    },
+    {
+      "idx": 1362,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 1363,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "[\"Fast service\", \"Great coffee\", \"Great for working on laptop\"]"
+    },
+    {
+      "idx": 1364,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 1366,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "15"
+    },
+    {
+      "idx": 1368,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" labels_popular_for \""
+    },
+    {
+      "idx": 1369,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 1370,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "[\"Breakfast\", \"Lunch\", \"Good for working on laptop\", \"Solo dining\", \"Business meetings\"]"
+    },
+    {
+      "idx": 1371,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 1373,
+      "tag": "span",
+      "class": "text-slate-500 select-none w-6 text-right mr-3 shrink-0",
+      "text": "16"
+    },
+    {
+      "idx": 1375,
+      "tag": "span",
+      "class": "text-emerald-400",
+      "text": "\" labels_service_options \""
+    },
+    {
+      "idx": 1376,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ":"
+    },
+    {
+      "idx": 1377,
+      "tag": "span",
+      "class": "text-amber-300",
+      "text": "[\"Dine-in\", \"Takeout\", \"Delivery\", \"Curbside pickup\"]"
+    },
+    {
+      "idx": 1378,
+      "tag": "span",
+      "class": "text-slate-400",
+      "text": ","
+    },
+    {
+      "idx": 1379,
+      "tag": "div",
+      "class": "text-slate-500 mt-1",
+      "text": "// ..."
+    }
+  ]
+}

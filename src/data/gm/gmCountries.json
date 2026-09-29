@@ -1,0 +1,1922 @@
+[
+  {
+    "code": "CN",
+    "name": "China",
+    "count": "37M+ locations",
+    "raw_flag": "🇨🇳",
+    "href": "/gm-dataset/locations/china",
+    "slug": "china"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "count": "28M+ locations",
+    "raw_flag": "🇮🇳",
+    "href": "/gm-dataset/locations/india",
+    "slug": "india"
+  },
+  {
+    "code": "US",
+    "name": "United States",
+    "count": "17M+ locations",
+    "raw_flag": "🇺🇸",
+    "href": "/gm-dataset/locations/united-states",
+    "slug": "united-states"
+  },
+  {
+    "code": "ID",
+    "name": "Indonesia",
+    "count": "14M+ locations",
+    "raw_flag": "🇮🇩",
+    "href": "/gm-dataset/locations/indonesia",
+    "slug": "indonesia"
+  },
+  {
+    "code": "BR",
+    "name": "Brazil",
+    "count": "11M+ locations",
+    "raw_flag": "🇧🇷",
+    "href": "/gm-dataset/locations/brazil",
+    "slug": "brazil"
+  },
+  {
+    "code": "JP",
+    "name": "Japan",
+    "count": "9M+ locations",
+    "raw_flag": "🇯🇵",
+    "href": "/gm-dataset/locations/japan",
+    "slug": "japan"
+  },
+  {
+    "code": "KR",
+    "name": "Korea, Republic of",
+    "count": "6M+ locations",
+    "raw_flag": "🇰🇷",
+    "href": "/gm-dataset/locations/korea-republic-of",
+    "slug": "korea-republic-of"
+  },
+  {
+    "code": "DE",
+    "name": "Germany",
+    "count": "6M+ locations",
+    "raw_flag": "🇩🇪",
+    "href": "/gm-dataset/locations/germany",
+    "slug": "germany"
+  },
+  {
+    "code": "MX",
+    "name": "Mexico",
+    "count": "6M+ locations",
+    "raw_flag": "🇲🇽",
+    "href": "/gm-dataset/locations/mexico",
+    "slug": "mexico"
+  },
+  {
+    "code": "FR",
+    "name": "France",
+    "count": "5M+ locations",
+    "raw_flag": "🇫🇷",
+    "href": "/gm-dataset/locations/france",
+    "slug": "france"
+  },
+  {
+    "code": "TR",
+    "name": "Türkiye",
+    "count": "4M+ locations",
+    "raw_flag": "🇹🇷",
+    "href": "/gm-dataset/locations/turkiye",
+    "slug": "turkiye"
+  },
+  {
+    "code": "IT",
+    "name": "Italy",
+    "count": "4M+ locations",
+    "raw_flag": "🇮🇹",
+    "href": "/gm-dataset/locations/italy",
+    "slug": "italy"
+  },
+  {
+    "code": "VN",
+    "name": "Viet Nam",
+    "count": "4M+ locations",
+    "raw_flag": "🇻🇳",
+    "href": "/gm-dataset/locations/viet-nam",
+    "slug": "viet-nam"
+  },
+  {
+    "code": "GB",
+    "name": "United Kingdom",
+    "count": "3M+ locations",
+    "raw_flag": "🇬🇧",
+    "href": "/gm-dataset/locations/united-kingdom",
+    "slug": "united-kingdom"
+  },
+  {
+    "code": "ES",
+    "name": "Spain",
+    "count": "3M+ locations",
+    "raw_flag": "🇪🇸",
+    "href": "/gm-dataset/locations/spain",
+    "slug": "spain"
+  },
+  {
+    "code": "TH",
+    "name": "Thailand",
+    "count": "3M+ locations",
+    "raw_flag": "🇹🇭",
+    "href": "/gm-dataset/locations/thailand",
+    "slug": "thailand"
+  },
+  {
+    "code": "PH",
+    "name": "Philippines",
+    "count": "3M+ locations",
+    "raw_flag": "🇵🇭",
+    "href": "/gm-dataset/locations/philippines",
+    "slug": "philippines"
+  },
+  {
+    "code": "BD",
+    "name": "Bangladesh",
+    "count": "3M+ locations",
+    "raw_flag": "🇧🇩",
+    "href": "/gm-dataset/locations/bangladesh",
+    "slug": "bangladesh"
+  },
+  {
+    "code": "AR",
+    "name": "Argentina",
+    "count": "2M+ locations",
+    "raw_flag": "🇦🇷",
+    "href": "/gm-dataset/locations/argentina",
+    "slug": "argentina"
+  },
+  {
+    "code": "PL",
+    "name": "Poland",
+    "count": "2M+ locations",
+    "raw_flag": "🇵🇱",
+    "href": "/gm-dataset/locations/poland",
+    "slug": "poland"
+  },
+  {
+    "code": "PK",
+    "name": "Pakistan",
+    "count": "2M+ locations",
+    "raw_flag": "🇵🇰",
+    "href": "/gm-dataset/locations/pakistan",
+    "slug": "pakistan"
+  },
+  {
+    "code": "RU",
+    "name": "Russian Federation",
+    "count": "2M+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/russian-federation",
+    "slug": "russian-federation"
+  },
+  {
+    "code": "CA",
+    "name": "Canada",
+    "count": "2M+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/canada",
+    "slug": "canada"
+  },
+  {
+    "code": "AU",
+    "name": "Australia",
+    "count": "2M+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/australia",
+    "slug": "australia"
+  },
+  {
+    "code": "NL",
+    "name": "Netherlands",
+    "count": "2M+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/netherlands",
+    "slug": "netherlands"
+  },
+  {
+    "code": "CH",
+    "name": "Switzerland",
+    "count": "1M+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/switzerland",
+    "slug": "switzerland"
+  },
+  {
+    "code": "BE",
+    "name": "Belgium",
+    "count": "851K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/belgium",
+    "slug": "belgium"
+  },
+  {
+    "code": "ZA",
+    "name": "South Africa",
+    "count": "701K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/south-africa",
+    "slug": "south-africa"
+  },
+  {
+    "code": "SE",
+    "name": "Sweden",
+    "count": "680K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/sweden",
+    "slug": "sweden"
+  },
+  {
+    "code": "NO",
+    "name": "Norway",
+    "count": "620K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/norway",
+    "slug": "norway"
+  },
+  {
+    "code": "AT",
+    "name": "Austria",
+    "count": "590K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/austria",
+    "slug": "austria"
+  },
+  {
+    "code": "AE",
+    "name": "United Arab Emirates",
+    "count": "580K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/united-arab-emirates",
+    "slug": "united-arab-emirates"
+  },
+  {
+    "code": "SG",
+    "name": "Singapore",
+    "count": "550K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/singapore",
+    "slug": "singapore"
+  },
+  {
+    "code": "DK",
+    "name": "Denmark",
+    "count": "520K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/denmark",
+    "slug": "denmark"
+  },
+  {
+    "code": "CO",
+    "name": "Colombia",
+    "count": "510K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/colombia",
+    "slug": "colombia"
+  },
+  {
+    "code": "MY",
+    "name": "Malaysia",
+    "count": "490K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/malaysia",
+    "slug": "malaysia"
+  },
+  {
+    "code": "IE",
+    "name": "Ireland",
+    "count": "480K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/ireland",
+    "slug": "ireland"
+  },
+  {
+    "code": "IL",
+    "name": "Israel",
+    "count": "470K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/israel",
+    "slug": "israel"
+  },
+  {
+    "code": "CZ",
+    "name": "Czech Republic",
+    "count": "450K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/czech-republic",
+    "slug": "czech-republic"
+  },
+  {
+    "code": "SA",
+    "name": "Saudi Arabia",
+    "count": "440K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/saudi-arabia",
+    "slug": "saudi-arabia"
+  },
+  {
+    "code": "CL",
+    "name": "Chile",
+    "count": "430K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/chile",
+    "slug": "chile"
+  },
+  {
+    "code": "FI",
+    "name": "Finland",
+    "count": "410K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/finland",
+    "slug": "finland"
+  },
+  {
+    "code": "PT",
+    "name": "Portugal",
+    "count": "390K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/portugal",
+    "slug": "portugal"
+  },
+  {
+    "code": "NZ",
+    "name": "New Zealand",
+    "count": "380K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/new-zealand",
+    "slug": "new-zealand"
+  },
+  {
+    "code": "RO",
+    "name": "Romania",
+    "count": "370K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/romania",
+    "slug": "romania"
+  },
+  {
+    "code": "GR",
+    "name": "Greece",
+    "count": "360K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/greece",
+    "slug": "greece"
+  },
+  {
+    "code": "VN",
+    "name": "Vietnam",
+    "count": "350K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/vietnam",
+    "slug": "vietnam"
+  },
+  {
+    "code": "EG",
+    "name": "Egypt",
+    "count": "330K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/egypt",
+    "slug": "egypt"
+  },
+  {
+    "code": "NG",
+    "name": "Nigeria",
+    "count": "290K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/nigeria",
+    "slug": "nigeria"
+  },
+  {
+    "code": "HU",
+    "name": "Hungary",
+    "count": "280K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/hungary",
+    "slug": "hungary"
+  },
+  {
+    "code": "UA",
+    "name": "Ukraine",
+    "count": "270K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/ukraine",
+    "slug": "ukraine"
+  },
+  {
+    "code": "PE",
+    "name": "Peru",
+    "count": "260K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/peru",
+    "slug": "peru"
+  },
+  {
+    "code": "HK",
+    "name": "Hong Kong",
+    "count": "250K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/hong-kong",
+    "slug": "hong-kong"
+  },
+  {
+    "code": "KR",
+    "name": "South Korea",
+    "count": "240K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/south-korea",
+    "slug": "south-korea"
+  },
+  {
+    "code": "MA",
+    "name": "Morocco",
+    "count": "230K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/morocco",
+    "slug": "morocco"
+  },
+  {
+    "code": "KZ",
+    "name": "Kazakhstan",
+    "count": "220K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/kazakhstan",
+    "slug": "kazakhstan"
+  },
+  {
+    "code": "SK",
+    "name": "Slovakia",
+    "count": "210K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/slovakia",
+    "slug": "slovakia"
+  },
+  {
+    "code": "BG",
+    "name": "Bulgaria",
+    "count": "200K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/bulgaria",
+    "slug": "bulgaria"
+  },
+  {
+    "code": "KE",
+    "name": "Kenya",
+    "count": "190K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/kenya",
+    "slug": "kenya"
+  },
+  {
+    "code": "HR",
+    "name": "Croatia",
+    "count": "180K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/croatia",
+    "slug": "croatia"
+  },
+  {
+    "code": "LT",
+    "name": "Lithuania",
+    "count": "170K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/lithuania",
+    "slug": "lithuania"
+  },
+  {
+    "code": "RS",
+    "name": "Serbia",
+    "count": "165K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/serbia",
+    "slug": "serbia"
+  },
+  {
+    "code": "SI",
+    "name": "Slovenia",
+    "count": "160K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/slovenia",
+    "slug": "slovenia"
+  },
+  {
+    "code": "EC",
+    "name": "Ecuador",
+    "count": "150K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/ecuador",
+    "slug": "ecuador"
+  },
+  {
+    "code": "LV",
+    "name": "Latvia",
+    "count": "145K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/latvia",
+    "slug": "latvia"
+  },
+  {
+    "code": "EE",
+    "name": "Estonia",
+    "count": "140K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/estonia",
+    "slug": "estonia"
+  },
+  {
+    "code": "JO",
+    "name": "Jordan",
+    "count": "135K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/jordan",
+    "slug": "jordan"
+  },
+  {
+    "code": "KW",
+    "name": "Kuwait",
+    "count": "130K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/kuwait",
+    "slug": "kuwait"
+  },
+  {
+    "code": "CR",
+    "name": "Costa Rica",
+    "count": "125K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/costa-rica",
+    "slug": "costa-rica"
+  },
+  {
+    "code": "PA",
+    "name": "Panama",
+    "count": "120K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/panama",
+    "slug": "panama"
+  },
+  {
+    "code": "CY",
+    "name": "Cyprus",
+    "count": "115K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/cyprus",
+    "slug": "cyprus"
+  },
+  {
+    "code": "UY",
+    "name": "Uruguay",
+    "count": "110K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/uruguay",
+    "slug": "uruguay"
+  },
+  {
+    "code": "LU",
+    "name": "Luxembourg",
+    "count": "105K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/luxembourg",
+    "slug": "luxembourg"
+  },
+  {
+    "code": "QA",
+    "name": "Qatar",
+    "count": "100K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/qatar",
+    "slug": "qatar"
+  },
+  {
+    "code": "OM",
+    "name": "Oman",
+    "count": "95K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/oman",
+    "slug": "oman"
+  },
+  {
+    "code": "DO",
+    "name": "Dominican Republic",
+    "count": "90K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/dominican-republic",
+    "slug": "dominican-republic"
+  },
+  {
+    "code": "GT",
+    "name": "Guatemala",
+    "count": "85K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/guatemala",
+    "slug": "guatemala"
+  },
+  {
+    "code": "TN",
+    "name": "Tunisia",
+    "count": "82K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/tunisia",
+    "slug": "tunisia"
+  },
+  {
+    "code": "GH",
+    "name": "Ghana",
+    "count": "80K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/ghana",
+    "slug": "ghana"
+  },
+  {
+    "code": "LK",
+    "name": "Sri Lanka",
+    "count": "78K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/sri-lanka",
+    "slug": "sri-lanka"
+  },
+  {
+    "code": "AZ",
+    "name": "Azerbaijan",
+    "count": "75K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/azerbaijan",
+    "slug": "azerbaijan"
+  },
+  {
+    "code": "BY",
+    "name": "Belarus",
+    "count": "72K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/belarus",
+    "slug": "belarus"
+  },
+  {
+    "code": "BH",
+    "name": "Bahrain",
+    "count": "70K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/bahrain",
+    "slug": "bahrain"
+  },
+  {
+    "code": "LB",
+    "name": "Lebanon",
+    "count": "68K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/lebanon",
+    "slug": "lebanon"
+  },
+  {
+    "code": "GE",
+    "name": "Georgia",
+    "count": "65K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/georgia",
+    "slug": "georgia"
+  },
+  {
+    "code": "AM",
+    "name": "Armenia",
+    "count": "62K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/armenia",
+    "slug": "armenia"
+  },
+  {
+    "code": "UZ",
+    "name": "Uzbekistan",
+    "count": "60K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/uzbekistan",
+    "slug": "uzbekistan"
+  },
+  {
+    "code": "BO",
+    "name": "Bolivia",
+    "count": "55K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/bolivia",
+    "slug": "bolivia"
+  },
+  {
+    "code": "PY",
+    "name": "Paraguay",
+    "count": "53K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/paraguay",
+    "slug": "paraguay"
+  },
+  {
+    "code": "IS",
+    "name": "Iceland",
+    "count": "50K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/iceland",
+    "slug": "iceland"
+  },
+  {
+    "code": "MT",
+    "name": "Malta",
+    "count": "48K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/malta",
+    "slug": "malta"
+  },
+  {
+    "code": "MD",
+    "name": "Moldova",
+    "count": "46K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/moldova",
+    "slug": "moldova"
+  },
+  {
+    "code": "BA",
+    "name": "Bosnia and Herzegovina",
+    "count": "44K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/bosnia-and-herzegovina",
+    "slug": "bosnia-and-herzegovina"
+  },
+  {
+    "code": "AL",
+    "name": "Albania",
+    "count": "42K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/albania",
+    "slug": "albania"
+  },
+  {
+    "code": "MK",
+    "name": "North Macedonia",
+    "count": "40K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/north-macedonia",
+    "slug": "north-macedonia"
+  },
+  {
+    "code": "SV",
+    "name": "El Salvador",
+    "count": "38K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/el-salvador",
+    "slug": "el-salvador"
+  },
+  {
+    "code": "HN",
+    "name": "Honduras",
+    "count": "36K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/honduras",
+    "slug": "honduras"
+  },
+  {
+    "code": "NI",
+    "name": "Nicaragua",
+    "count": "34K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/nicaragua",
+    "slug": "nicaragua"
+  },
+  {
+    "code": "JM",
+    "name": "Jamaica",
+    "count": "32K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/jamaica",
+    "slug": "jamaica"
+  },
+  {
+    "code": "TT",
+    "name": "Trinidad and Tobago",
+    "count": "30K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/trinidad-and-tobago",
+    "slug": "trinidad-and-tobago"
+  },
+  {
+    "code": "MU",
+    "name": "Mauritius",
+    "count": "28K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/mauritius",
+    "slug": "mauritius"
+  },
+  {
+    "code": "NA",
+    "name": "Namibia",
+    "count": "26K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/namibia",
+    "slug": "namibia"
+  },
+  {
+    "code": "BW",
+    "name": "Botswana",
+    "count": "25K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/botswana",
+    "slug": "botswana"
+  },
+  {
+    "code": "XN",
+    "name": "Cyprus Northern",
+    "count": "24K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/cyprus-northern",
+    "slug": "cyprus-northern"
+  },
+  {
+    "code": "ME",
+    "name": "Montenegro",
+    "count": "23K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/montenegro",
+    "slug": "montenegro"
+  },
+  {
+    "code": "XK",
+    "name": "Kosovo",
+    "count": "22K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/kosovo",
+    "slug": "kosovo"
+  },
+  {
+    "code": "CI",
+    "name": "Ivory Coast",
+    "count": "21K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/ivory-coast",
+    "slug": "ivory-coast"
+  },
+  {
+    "code": "CM",
+    "name": "Cameroon",
+    "count": "20K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/cameroon",
+    "slug": "cameroon"
+  },
+  {
+    "code": "SN",
+    "name": "Senegal",
+    "count": "19K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/senegal",
+    "slug": "senegal"
+  },
+  {
+    "code": "UG",
+    "name": "Uganda",
+    "count": "18K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/uganda",
+    "slug": "uganda"
+  },
+  {
+    "code": "TZ",
+    "name": "Tanzania",
+    "count": "17K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/tanzania",
+    "slug": "tanzania"
+  },
+  {
+    "code": "ZM",
+    "name": "Zambia",
+    "count": "16K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/zambia",
+    "slug": "zambia"
+  },
+  {
+    "code": "ZW",
+    "name": "Zimbabwe",
+    "count": "15K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/zimbabwe",
+    "slug": "zimbabwe"
+  },
+  {
+    "code": "AO",
+    "name": "Angola",
+    "count": "14K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/angola",
+    "slug": "angola"
+  },
+  {
+    "code": "MZ",
+    "name": "Mozambique",
+    "count": "13K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/mozambique",
+    "slug": "mozambique"
+  },
+  {
+    "code": "RW",
+    "name": "Rwanda",
+    "count": "12K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/rwanda",
+    "slug": "rwanda"
+  },
+  {
+    "code": "MG",
+    "name": "Madagascar",
+    "count": "11K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/madagascar",
+    "slug": "madagascar"
+  },
+  {
+    "code": "ET",
+    "name": "Ethiopia",
+    "count": "10K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/ethiopia",
+    "slug": "ethiopia"
+  },
+  {
+    "code": "DZ",
+    "name": "Algeria",
+    "count": "9.8K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/algeria",
+    "slug": "algeria"
+  },
+  {
+    "code": "SD",
+    "name": "Sudan",
+    "count": "9.5K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/sudan",
+    "slug": "sudan"
+  },
+  {
+    "code": "NP",
+    "name": "Nepal",
+    "count": "9.2K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/nepal",
+    "slug": "nepal"
+  },
+  {
+    "code": "KH",
+    "name": "Cambodia",
+    "count": "8.9K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/cambodia",
+    "slug": "cambodia"
+  },
+  {
+    "code": "MN",
+    "name": "Mongolia",
+    "count": "8.6K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/mongolia",
+    "slug": "mongolia"
+  },
+  {
+    "code": "MM",
+    "name": "Myanmar",
+    "count": "8.3K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/myanmar",
+    "slug": "myanmar"
+  },
+  {
+    "code": "LA",
+    "name": "Laos",
+    "count": "8.0K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/laos",
+    "slug": "laos"
+  },
+  {
+    "code": "BN",
+    "name": "Brunei",
+    "count": "7.7K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/brunei",
+    "slug": "brunei"
+  },
+  {
+    "code": "MO",
+    "name": "Macau",
+    "count": "7.5K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/macau",
+    "slug": "macau"
+  },
+  {
+    "code": "MV",
+    "name": "Maldives",
+    "count": "7.2K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/maldives",
+    "slug": "maldives"
+  },
+  {
+    "code": "FJ",
+    "name": "Fiji",
+    "count": "6.9K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/fiji",
+    "slug": "fiji"
+  },
+  {
+    "code": "PG",
+    "name": "Papua New Guinea",
+    "count": "6.6K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/papua-new-guinea",
+    "slug": "papua-new-guinea"
+  },
+  {
+    "code": "NC",
+    "name": "New Caledonia",
+    "count": "6.3K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/new-caledonia",
+    "slug": "new-caledonia"
+  },
+  {
+    "code": "PF",
+    "name": "French Polynesia",
+    "count": "6.0K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/french-polynesia",
+    "slug": "french-polynesia"
+  },
+  {
+    "code": "BS",
+    "name": "Bahamas",
+    "count": "5.8K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/bahamas",
+    "slug": "bahamas"
+  },
+  {
+    "code": "BB",
+    "name": "Barbados",
+    "count": "5.5K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/barbados",
+    "slug": "barbados"
+  },
+  {
+    "code": "BZ",
+    "name": "Belize",
+    "count": "5.3K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/belize",
+    "slug": "belize"
+  },
+  {
+    "code": "BM",
+    "name": "Bermuda",
+    "count": "5.0K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/bermuda",
+    "slug": "bermuda"
+  },
+  {
+    "code": "KY",
+    "name": "Cayman Islands",
+    "count": "4.8K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/cayman-islands",
+    "slug": "cayman-islands"
+  },
+  {
+    "code": "AW",
+    "name": "Aruba",
+    "count": "4.6K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/aruba",
+    "slug": "aruba"
+  },
+  {
+    "code": "CW",
+    "name": "Curacao",
+    "count": "4.4K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/curacao",
+    "slug": "curacao"
+  },
+  {
+    "code": "GY",
+    "name": "Guyana",
+    "count": "4.2K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/guyana",
+    "slug": "guyana"
+  },
+  {
+    "code": "SR",
+    "name": "Suriname",
+    "count": "4.0K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/suriname",
+    "slug": "suriname"
+  },
+  {
+    "code": "HT",
+    "name": "Haiti",
+    "count": "3.8K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/haiti",
+    "slug": "haiti"
+  },
+  {
+    "code": "LI",
+    "name": "Liechtenstein",
+    "count": "3.6K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/liechtenstein",
+    "slug": "liechtenstein"
+  },
+  {
+    "code": "MC",
+    "name": "Monaco",
+    "count": "3.4K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/monaco",
+    "slug": "monaco"
+  },
+  {
+    "code": "AD",
+    "name": "Andorra",
+    "count": "3.2K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/andorra",
+    "slug": "andorra"
+  },
+  {
+    "code": "SM",
+    "name": "San Marino",
+    "count": "3.0K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/san-marino",
+    "slug": "san-marino"
+  },
+  {
+    "code": "GI",
+    "name": "Gibraltar",
+    "count": "2.8K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/gibraltar",
+    "slug": "gibraltar"
+  },
+  {
+    "code": "IM",
+    "name": "Isle of Man",
+    "count": "2.6K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/isle-of-man",
+    "slug": "isle-of-man"
+  },
+  {
+    "code": "JE",
+    "name": "Jersey",
+    "count": "2.5K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/jersey",
+    "slug": "jersey"
+  },
+  {
+    "code": "GG",
+    "name": "Guernsey",
+    "count": "2.4K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/guernsey",
+    "slug": "guernsey"
+  },
+  {
+    "code": "FO",
+    "name": "Faroe Islands",
+    "count": "2.3K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/faroe-islands",
+    "slug": "faroe-islands"
+  },
+  {
+    "code": "GL",
+    "name": "Greenland",
+    "count": "2.2K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/greenland",
+    "slug": "greenland"
+  },
+  {
+    "code": "KG",
+    "name": "Kyrgyzstan",
+    "count": "2.1K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/kyrgyzstan",
+    "slug": "kyrgyzstan"
+  },
+  {
+    "code": "TJ",
+    "name": "Tajikistan",
+    "count": "2.0K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/tajikistan",
+    "slug": "tajikistan"
+  },
+  {
+    "code": "TM",
+    "name": "Turkmenistan",
+    "count": "1.9K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/turkmenistan",
+    "slug": "turkmenistan"
+  },
+  {
+    "code": "AF",
+    "name": "Afghanistan",
+    "count": "1.8K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/afghanistan",
+    "slug": "afghanistan"
+  },
+  {
+    "code": "IQ",
+    "name": "Iraq",
+    "count": "1.7K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/iraq",
+    "slug": "iraq"
+  },
+  {
+    "code": "SY",
+    "name": "Syria",
+    "count": "1.6K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/syria",
+    "slug": "syria"
+  },
+  {
+    "code": "YE",
+    "name": "Yemen",
+    "count": "1.5K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/yemen",
+    "slug": "yemen"
+  },
+  {
+    "code": "PS",
+    "name": "Palestine",
+    "count": "1.4K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/palestine",
+    "slug": "palestine"
+  },
+  {
+    "code": "LY",
+    "name": "Libya",
+    "count": "1.3K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/libya",
+    "slug": "libya"
+  },
+  {
+    "code": "MR",
+    "name": "Mauritania",
+    "count": "1.2K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/mauritania",
+    "slug": "mauritania"
+  },
+  {
+    "code": "ML",
+    "name": "Mali",
+    "count": "1.1K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/mali",
+    "slug": "mali"
+  },
+  {
+    "code": "NE",
+    "name": "Niger",
+    "count": "1.0K+ locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/niger",
+    "slug": "niger"
+  },
+  {
+    "code": "TD",
+    "name": "Chad",
+    "count": "980 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/chad",
+    "slug": "chad"
+  },
+  {
+    "code": "BF",
+    "name": "Burkina Faso",
+    "count": "950 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/burkina-faso",
+    "slug": "burkina-faso"
+  },
+  {
+    "code": "GN",
+    "name": "Guinea",
+    "count": "920 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/guinea",
+    "slug": "guinea"
+  },
+  {
+    "code": "BJ",
+    "name": "Benin",
+    "count": "890 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/benin",
+    "slug": "benin"
+  },
+  {
+    "code": "TG",
+    "name": "Togo",
+    "count": "860 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/togo",
+    "slug": "togo"
+  },
+  {
+    "code": "SL",
+    "name": "Sierra Leone",
+    "count": "830 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/sierra-leone",
+    "slug": "sierra-leone"
+  },
+  {
+    "code": "LR",
+    "name": "Liberia",
+    "count": "800 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/liberia",
+    "slug": "liberia"
+  },
+  {
+    "code": "GM",
+    "name": "Gambia",
+    "count": "780 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/gambia",
+    "slug": "gambia"
+  },
+  {
+    "code": "GW",
+    "name": "Guinea-Bissau",
+    "count": "750 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/guinea-bissau",
+    "slug": "guinea-bissau"
+  },
+  {
+    "code": "CV",
+    "name": "Cape Verde",
+    "count": "720 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/cape-verde",
+    "slug": "cape-verde"
+  },
+  {
+    "code": "GA",
+    "name": "Gabon",
+    "count": "700 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/gabon",
+    "slug": "gabon"
+  },
+  {
+    "code": "CG",
+    "name": "Republic of the Congo",
+    "count": "680 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/republic-of-the-congo",
+    "slug": "republic-of-the-congo"
+  },
+  {
+    "code": "CD",
+    "name": "Democratic Republic of the Congo",
+    "count": "650 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/dr-congo",
+    "slug": "dr-congo"
+  },
+  {
+    "code": "CF",
+    "name": "Central African Republic",
+    "count": "620 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/central-african-republic",
+    "slug": "central-african-republic"
+  },
+  {
+    "code": "GQ",
+    "name": "Equatorial Guinea",
+    "count": "600 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/equatorial-guinea",
+    "slug": "equatorial-guinea"
+  },
+  {
+    "code": "ST",
+    "name": "Sao Tome and Principe",
+    "count": "580 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/sao-tome-and-principe",
+    "slug": "sao-tome-and-principe"
+  },
+  {
+    "code": "BI",
+    "name": "Burundi",
+    "count": "560 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/burundi",
+    "slug": "burundi"
+  },
+  {
+    "code": "DJ",
+    "name": "Djibouti",
+    "count": "540 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/djibouti",
+    "slug": "djibouti"
+  },
+  {
+    "code": "ER",
+    "name": "Eritrea",
+    "count": "520 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/eritrea",
+    "slug": "eritrea"
+  },
+  {
+    "code": "SO",
+    "name": "Somalia",
+    "count": "500 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/somalia",
+    "slug": "somalia"
+  },
+  {
+    "code": "SC",
+    "name": "Seychelles",
+    "count": "480 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/seychelles",
+    "slug": "seychelles"
+  },
+  {
+    "code": "KM",
+    "name": "Comoros",
+    "count": "460 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/comoros",
+    "slug": "comoros"
+  },
+  {
+    "code": "MW",
+    "name": "Malawi",
+    "count": "440 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/malawi",
+    "slug": "malawi"
+  },
+  {
+    "code": "LS",
+    "name": "Lesotho",
+    "count": "420 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/lesotho",
+    "slug": "lesotho"
+  },
+  {
+    "code": "SZ",
+    "name": "Eswatini",
+    "count": "400 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/eswatini",
+    "slug": "eswatini"
+  },
+  {
+    "code": "SS",
+    "name": "South Sudan",
+    "count": "380 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/south-sudan",
+    "slug": "south-sudan"
+  },
+  {
+    "code": "BT",
+    "name": "Bhutan",
+    "count": "360 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/bhutan",
+    "slug": "bhutan"
+  },
+  {
+    "code": "TL",
+    "name": "Timor-Leste",
+    "count": "340 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/timor-leste",
+    "slug": "timor-leste"
+  },
+  {
+    "code": "SB",
+    "name": "Solomon Islands",
+    "count": "320 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/solomon-islands",
+    "slug": "solomon-islands"
+  },
+  {
+    "code": "VU",
+    "name": "Vanuatu",
+    "count": "300 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/vanuatu",
+    "slug": "vanuatu"
+  },
+  {
+    "code": "WS",
+    "name": "Samoa",
+    "count": "280 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/samoa",
+    "slug": "samoa"
+  },
+  {
+    "code": "KI",
+    "name": "Kiribati",
+    "count": "260 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/kiribati",
+    "slug": "kiribati"
+  },
+  {
+    "code": "TO",
+    "name": "Tonga",
+    "count": "240 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/tonga",
+    "slug": "tonga"
+  },
+  {
+    "code": "FM",
+    "name": "Micronesia",
+    "count": "220 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/micronesia",
+    "slug": "micronesia"
+  },
+  {
+    "code": "PW",
+    "name": "Palau",
+    "count": "200 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/palau",
+    "slug": "palau"
+  },
+  {
+    "code": "MH",
+    "name": "Marshall Islands",
+    "count": "190 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/marshall-islands",
+    "slug": "marshall-islands"
+  },
+  {
+    "code": "TV",
+    "name": "Tuvalu",
+    "count": "180 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/tuvalu",
+    "slug": "tuvalu"
+  },
+  {
+    "code": "NR",
+    "name": "Nauru",
+    "count": "170 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/nauru",
+    "slug": "nauru"
+  },
+  {
+    "code": "CK",
+    "name": "Cook Islands",
+    "count": "160 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/cook-islands",
+    "slug": "cook-islands"
+  },
+  {
+    "code": "NU",
+    "name": "Niue",
+    "count": "150 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/niue",
+    "slug": "niue"
+  },
+  {
+    "code": "KN",
+    "name": "Saint Kitts and Nevis",
+    "count": "140 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/saint-kitts-and-nevis",
+    "slug": "saint-kitts-and-nevis"
+  },
+  {
+    "code": "AG",
+    "name": "Antigua and Barbuda",
+    "count": "135 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/antigua-and-barbuda",
+    "slug": "antigua-and-barbuda"
+  },
+  {
+    "code": "DM",
+    "name": "Dominica",
+    "count": "130 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/dominica",
+    "slug": "dominica"
+  },
+  {
+    "code": "LC",
+    "name": "Saint Lucia",
+    "count": "125 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/saint-lucia",
+    "slug": "saint-lucia"
+  },
+  {
+    "code": "VC",
+    "name": "Saint Vincent and the Grenadines",
+    "count": "120 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/saint-vincent",
+    "slug": "saint-vincent"
+  },
+  {
+    "code": "GD",
+    "name": "Grenada",
+    "count": "115 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/grenada",
+    "slug": "grenada"
+  },
+  {
+    "code": "TC",
+    "name": "Turks and Caicos",
+    "count": "110 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/turks-and-caicos",
+    "slug": "turks-and-caicos"
+  },
+  {
+    "code": "VG",
+    "name": "British Virgin Islands",
+    "count": "105 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/british-virgin-islands",
+    "slug": "british-virgin-islands"
+  },
+  {
+    "code": "AI",
+    "name": "Anguilla",
+    "count": "100 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/anguilla",
+    "slug": "anguilla"
+  },
+  {
+    "code": "MS",
+    "name": "Montserrat",
+    "count": "95 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/montserrat",
+    "slug": "montserrat"
+  },
+  {
+    "code": "SX",
+    "name": "Sint Maarten",
+    "count": "90 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/sint-maarten",
+    "slug": "sint-maarten"
+  },
+  {
+    "code": "MF",
+    "name": "Saint Martin",
+    "count": "85 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/saint-martin",
+    "slug": "saint-martin"
+  },
+  {
+    "code": "BL",
+    "name": "Saint Barthelemy",
+    "count": "80 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/saint-barthelemy",
+    "slug": "saint-barthelemy"
+  },
+  {
+    "code": "PM",
+    "name": "Saint Pierre and Miquelon",
+    "count": "75 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/saint-pierre-and-miquelon",
+    "slug": "saint-pierre-and-miquelon"
+  },
+  {
+    "code": "WF",
+    "name": "Wallis and Futuna",
+    "count": "70 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/wallis-and-futuna",
+    "slug": "wallis-and-futuna"
+  },
+  {
+    "code": "AS",
+    "name": "American Samoa",
+    "count": "65 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/american-samoa",
+    "slug": "american-samoa"
+  },
+  {
+    "code": "GU",
+    "name": "Guam",
+    "count": "60 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/guam",
+    "slug": "guam"
+  },
+  {
+    "code": "MP",
+    "name": "Northern Mariana Islands",
+    "count": "55 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/northern-mariana-islands",
+    "slug": "northern-mariana-islands"
+  },
+  {
+    "code": "PR",
+    "name": "Puerto Rico",
+    "count": "50 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/puerto-rico",
+    "slug": "puerto-rico"
+  },
+  {
+    "code": "VI",
+    "name": "US Virgin Islands",
+    "count": "45 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/us-virgin-islands",
+    "slug": "us-virgin-islands"
+  },
+  {
+    "code": "FK",
+    "name": "Falkland Islands",
+    "count": "40 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/falkland-islands",
+    "slug": "falkland-islands"
+  },
+  {
+    "code": "SH",
+    "name": "Saint Helena",
+    "count": "35 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/saint-helena",
+    "slug": "saint-helena"
+  },
+  {
+    "code": "NF",
+    "name": "Norfolk Island",
+    "count": "30 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/norfolk-island",
+    "slug": "norfolk-island"
+  },
+  {
+    "code": "CX",
+    "name": "Christmas Island",
+    "count": "25 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/christmas-island",
+    "slug": "christmas-island"
+  },
+  {
+    "code": "CC",
+    "name": "Cocos Islands",
+    "count": "20 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/cocos-islands",
+    "slug": "cocos-islands"
+  },
+  {
+    "code": "PN",
+    "name": "Pitcairn Islands",
+    "count": "15 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/pitcairn-islands",
+    "slug": "pitcairn-islands"
+  },
+  {
+    "code": "SJ",
+    "name": "Svalbard and Jan Mayen",
+    "count": "12 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/svalbard",
+    "slug": "svalbard"
+  },
+  {
+    "code": "VA",
+    "name": "Vatican City",
+    "count": "10 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/vatican-city",
+    "slug": "vatican-city"
+  },
+  {
+    "code": "XX",
+    "name": "San Andres",
+    "count": "8 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/san-andres",
+    "slug": "san-andres"
+  },
+  {
+    "code": "EH",
+    "name": "Western Sahara",
+    "count": "5 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/western-sahara",
+    "slug": "western-sahara"
+  },
+  {
+    "code": "T01",
+    "name": "Territory 1",
+    "count": "99 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/territory-1",
+    "slug": "territory-1"
+  },
+  {
+    "code": "T02",
+    "name": "Territory 2",
+    "count": "98 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/territory-2",
+    "slug": "territory-2"
+  },
+  {
+    "code": "T03",
+    "name": "Territory 3",
+    "count": "97 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/territory-3",
+    "slug": "territory-3"
+  },
+  {
+    "code": "T04",
+    "name": "Territory 4",
+    "count": "96 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/territory-4",
+    "slug": "territory-4"
+  },
+  {
+    "code": "T05",
+    "name": "Territory 5",
+    "count": "95 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/territory-5",
+    "slug": "territory-5"
+  },
+  {
+    "code": "T06",
+    "name": "Territory 6",
+    "count": "94 locations",
+    "raw_flag": "",
+    "href": "/gm-dataset/locations/territory-6",
+    "slug": "territory-6"
+  }
+]

@@ -1,0 +1,334 @@
+{
+  "general": [
+    {
+      "type": "comment",
+      "text": "// ..."
+    },
+    {
+      "type": "code",
+      "lineNum": "12",
+      "key": "name",
+      "val": "\"The Foundry Kitchen & Coffee\"",
+      "highlight": false
+    },
+    {
+      "type": "code",
+      "lineNum": "13",
+      "key": "description",
+      "val": "\"A modern workspace cafe designed for the tech community, featuring specialty coffee...\"",
+      "highlight": true
+    },
+    {
+      "type": "code",
+      "lineNum": "14",
+      "key": "business_status",
+      "val": "\"OPERATIONAL\"",
+      "highlight": false
+    },
+    {
+      "type": "code",
+      "lineNum": "15",
+      "key": "categories",
+      "val": "[\"Cafe\", \"Coffee shop\", \"Breakfast restaurant\"]",
+      "highlight": false
+    },
+    {
+      "type": "code",
+      "lineNum": "16",
+      "key": "cid",
+      "val": "8847291056734182459",
+      "highlight": false
+    },
+    {
+      "type": "code",
+      "lineNum": "17",
+      "key": "place_id",
+      "val": "\"ChIJMZ1efCq7j4ARu9OQ8eLE-Ho\"",
+      "highlight": true
+    },
+    {
+      "type": "code",
+      "lineNum": "18",
+      "key": "url",
+      "val": "\"https://www.thefoundrykitchen.com/\"",
+      "highlight": false
+    },
+    {
+      "type": "code",
+      "lineNum": "19",
+      "key": "domain",
+      "val": "\"thefoundrykitchen.com\"",
+      "highlight": false
+    },
+    {
+      "type": "comment",
+      "text": "// ..."
+    }
+  ],
+  "geography": [
+    {
+      "type": "comment",
+      "text": "// ..."
+    },
+    {
+      "type": "code",
+      "lineNum": "12",
+      "key": "geo_country",
+      "val": "\"US\"",
+      "highlight": false
+    },
+    {
+      "type": "code",
+      "lineNum": "13",
+      "key": "city",
+      "val": "\"Palo Alto\"",
+      "highlight": true
+    },
+    {
+      "type": "code",
+      "lineNum": "14",
+      "key": "district",
+      "val": "\"Downtown Palo Alto\"",
+      "highlight": false
+    },
+    {
+      "type": "code",
+      "lineNum": "15",
+      "key": "lat",
+      "val": "37.4457032",
+      "highlight": false
+    },
+    {
+      "type": "code",
+      "lineNum": "16",
+      "key": "lon",
+      "val": "-122.1614285",
+      "highlight": false
+    },
+    {
+      "type": "comment",
+      "text": "// ..."
+    }
+  ],
+  "contact": [
+    {
+      "type": "comment",
+      "text": "// ..."
+    },
+    {
+      "type": "code",
+      "lineNum": "12",
+      "key": "address",
+      "val": "\"428 University Ave, Palo Alto, CA 94301\"",
+      "highlight": true
+    },
+    {
+      "type": "code",
+      "lineNum": "13",
+      "key": "full_address",
+      "val": "\"The Foundry Kitchen & Coffee, 428 University Ave, Palo Alto, CA 94301\"",
+      "highlight": false
+    },
+    {
+      "type": "code",
+      "lineNum": "14",
+      "key": "phone",
+      "val": "\"(650) 328-7400\"",
+      "highlight": false
+    },
+    {
+      "type": "comment",
+      "text": "// ..."
+    }
+  ],
+  "reviews": [
+    {
+      "type": "comment",
+      "text": "// ..."
+    },
+    {
+      "type": "code",
+      "lineNum": "12",
+      "key": "rating",
+      "val": "4.7",
+      "highlight": true
+    },
+    {
+      "type": "code",
+      "lineNum": "13",
+      "key": "review_count",
+      "val": "892",
+      "highlight": true
+    },
+    {
+      "type": "code",
+      "lineNum": "14",
+      "key": "review_snippets",
+      "val": "[{\"count\": 67, \"text\": \"wifi\"}, {\"count\": 45, \"text\": \"laptop\"}, {\"count\": 38, \"text\": \"meetings\"}]",
+      "highlight": false
+    },
+    {
+      "type": "code",
+      "lineNum": "15",
+      "key": "reviews_newest",
+      "val": "[{\"review_id\": \"ChZDSUhNMG9...\", \"rating\": 5, \"text\": \"Perfect spot for investor meetings...\"}]",
+      "highlight": false
+    },
+    {
+      "type": "code",
+      "lineNum": "16",
+      "key": "reviews_newest_size",
+      "val": "156240",
+      "highlight": false
+    },
+    {
+      "type": "code",
+      "lineNum": "17",
+      "key": "reviews_relevant_size",
+      "val": "284530",
+      "highlight": false
+    },
+    {
+      "type": "comment",
+      "text": "// ..."
+    }
+  ],
+  "visitor": [
+    {
+      "type": "comment",
+      "text": "// ..."
+    },
+    {
+      "type": "code",
+      "lineNum": "12",
+      "key": "hours",
+      "val": "[{\"day\": \"Monday\", \"hours\": \"7 AM–7 PM\"}, {\"day\": \"Tuesday\", \"hours\": \"7 AM–7 PM\"}, ...]",
+      "highlight": true
+    },
+    {
+      "type": "code",
+      "lineNum": "13",
+      "key": "popular_times",
+      "val": "{\"Monday\": [{\"busy\": 25, \"hour\": 8}, {\"busy\": 58, \"hour\": 9}, {\"busy\": 72, \"hour\": 10}...]}",
+      "highlight": false
+    },
+    {
+      "type": "code",
+      "lineNum": "14",
+      "key": "price_range",
+      "val": "\"$10–25\"",
+      "highlight": false
+    },
+    {
+      "type": "code",
+      "lineNum": "15",
+      "key": "questions_answers",
+      "val": "[{\"answers\": 3, \"question\": \"Do you have private meeting rooms?\", \"time\": \"6 months ago\"}]",
+      "highlight": false
+    },
+    {
+      "type": "code",
+      "lineNum": "16",
+      "key": "related_places",
+      "val": "[{\"name\": \"Coupa Café\", \"rating\": 4.5, \"reviews\": 1247}, ...]",
+      "highlight": false
+    },
+    {
+      "type": "comment",
+      "text": "// ..."
+    }
+  ],
+  "media": [
+    {
+      "type": "comment",
+      "text": "// ..."
+    },
+    {
+      "type": "code",
+      "lineNum": "12",
+      "key": "photos",
+      "val": "[\"https://lh3.googleusercontent.com/places/interior-01...\", \"https://lh3.googleusercontent.com/places/coffee-bar-02...\"]",
+      "highlight": true
+    },
+    {
+      "type": "code",
+      "lineNum": "13",
+      "key": "photos_count",
+      "val": "245",
+      "highlight": false
+    },
+    {
+      "type": "comment",
+      "text": "// ..."
+    }
+  ],
+  "hospitality": [
+    {
+      "type": "comment",
+      "text": "// ..."
+    },
+    {
+      "type": "code",
+      "lineNum": "12",
+      "key": "hotel_class",
+      "val": "\"4-star\"",
+      "highlight": false
+    },
+    {
+      "type": "code",
+      "lineNum": "13",
+      "key": "hotel_amenities",
+      "val": "[{\"available\": true, \"name\": \"Free Wi-Fi\"}, {\"available\": true, \"name\": \"Business center\"}, ...]",
+      "highlight": true
+    },
+    {
+      "type": "comment",
+      "text": "// ..."
+    }
+  ],
+  "labels": [
+    {
+      "type": "comment",
+      "text": "// ..."
+    },
+    {
+      "type": "code",
+      "lineNum": "12",
+      "key": "labels_atmosphere",
+      "val": "[\"Casual\", \"Cozy\", \"Quiet\", \"Trendy\"]",
+      "highlight": true
+    },
+    {
+      "type": "code",
+      "lineNum": "13",
+      "key": "labels_amenities",
+      "val": "[\"Restroom\", \"Wi-Fi\", \"Power outlets at tables\"]",
+      "highlight": false
+    },
+    {
+      "type": "code",
+      "lineNum": "14",
+      "key": "labels_highlights",
+      "val": "[\"Fast service\", \"Great coffee\", \"Great for working on laptop\"]",
+      "highlight": true
+    },
+    {
+      "type": "code",
+      "lineNum": "15",
+      "key": "labels_popular_for",
+      "val": "[\"Breakfast\", \"Lunch\", \"Good for working on laptop\", \"Solo dining\", \"Business meetings\"]",
+      "highlight": false
+    },
+    {
+      "type": "code",
+      "lineNum": "16",
+      "key": "labels_service_options",
+      "val": "[\"Dine-in\", \"Takeout\", \"Delivery\", \"Curbside pickup\"]",
+      "highlight": false
+    },
+    {
+      "type": "comment",
+      "text": "// ..."
+    }
+  ]
+}

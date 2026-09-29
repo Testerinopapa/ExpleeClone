@@ -1,0 +1,3893 @@
+[
+  {
+    "href": "/gm-dataset/locations/north-america",
+    "classes": "group relative bg-card rounded-2xl p-6 border border-border hover:shadow-[0_10px_40px_rgba(34,197,94,0.15)] hover:border-brand-300 transition-all duration-300 overflow-hidden",
+    "rect": {
+      "x": 16,
+      "y": -1479.2,
+      "width": 367.73,
+      "height": 113.6,
+      "top": -1479.2,
+      "right": 383.73,
+      "bottom": -1365.6,
+      "left": 16
+    },
+    "children": [
+      {
+        "tag": "div",
+        "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(1) > div.absolute.-right-6.top-1\\/2:nth-of-type(1)",
+        "text": "",
+        "attrs": {
+          "class": "absolute -right-6 top-1/2 -translate-y-1/2 w-56 h-56 text-muted-foreground/20 group-hover:text-brand-200 transition-colors opacity-70 pointer-events-none"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "svg",
+        "selector": "div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(1) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full",
+        "text": "",
+        "attrs": {
+          "class": "w-full h-full "
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(1) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(1)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(1) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(2)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(1) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(3)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "div",
+        "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(1) > div.relative.z-10:nth-of-type(2)",
+        "text": "",
+        "attrs": {
+          "class": "relative z-10"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(94.2 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "div",
+        "selector": "div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(1) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1)",
+        "text": "",
+        "attrs": {
+          "class": "flex items-start justify-between mb-4"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(94.2 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "flex"
+        }
+      },
+      {
+        "tag": "h3",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(1) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > h3.text-xl.font-semibold.text-foreground",
+        "text": "North America",
+        "attrs": {
+          "class": "text-xl font-semibold text-foreground group-hover:text-brand-600 transition-colors"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(94.2 0 0)",
+          "fontSize": "20px",
+          "fontWeight": "600",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "svg",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(1) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > svg.lucide.lucide-arrow-right.h-5",
+        "text": "",
+        "attrs": {
+          "class": "lucide lucide-arrow-right h-5 w-5 text-muted-foreground group-hover:text-brand-500 group-hover:translate-x-1 transition-all",
+          "aria-hidden": "true"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(1) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > svg.lucide.lucide-arrow-right.h-5 > path:nth-of-type(1)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(1) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > svg.lucide.lucide-arrow-right.h-5 > path:nth-of-type(2)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "div",
+        "selector": "div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(1) > div.relative.z-10:nth-of-type(2) > div.flex.gap-6.text-sm:nth-of-type(2)",
+        "text": "",
+        "attrs": {
+          "class": "flex gap-6 text-sm text-muted-foreground"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "display": "flex"
+        }
+      },
+      {
+        "tag": "span",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(1) > div.relative.z-10:nth-of-type(2) > div.flex.gap-6.text-sm:nth-of-type(2) > span:nth-of-type(1)",
+        "text": "6 countries",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "span",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(1) > div.relative.z-10:nth-of-type(2) > div.flex.gap-6.text-sm:nth-of-type(2) > span:nth-of-type(2)",
+        "text": "25M+ NA locations",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      }
+    ]
+  },
+  {
+    "href": "/gm-dataset/locations/europe",
+    "classes": "group relative bg-card rounded-2xl p-6 border border-border hover:shadow-[0_10px_40px_rgba(34,197,94,0.15)] hover:border-brand-300 transition-all duration-300 overflow-hidden",
+    "rect": {
+      "x": 407.73,
+      "y": -1479.2,
+      "width": 367.74,
+      "height": 113.6,
+      "top": -1479.2,
+      "right": 775.46,
+      "bottom": -1365.6,
+      "left": 407.73
+    },
+    "children": [
+      {
+        "tag": "div",
+        "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1)",
+        "text": "",
+        "attrs": {
+          "class": "absolute -right-6 top-1/2 -translate-y-1/2 w-56 h-56 text-muted-foreground/20 group-hover:text-brand-200 transition-colors opacity-70 pointer-events-none"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "svg",
+        "selector": "div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full",
+        "text": "",
+        "attrs": {
+          "class": "w-full h-full "
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(1)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(2)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(3)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(4)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(5)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(6)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(7)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(8)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(9)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(10)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(11)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(12)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(13)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(14)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(15)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(16)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(17)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(18)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(19)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(20)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(21)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(22)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(23)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(24)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(25)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(26)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(27)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(28)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(29)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(30)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(31)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(32)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "div",
+        "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.relative.z-10:nth-of-type(2)",
+        "text": "",
+        "attrs": {
+          "class": "relative z-10"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(94.2 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "div",
+        "selector": "div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1)",
+        "text": "",
+        "attrs": {
+          "class": "flex items-start justify-between mb-4"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(94.2 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "flex"
+        }
+      },
+      {
+        "tag": "h3",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > h3.text-xl.font-semibold.text-foreground",
+        "text": "Europe",
+        "attrs": {
+          "class": "text-xl font-semibold text-foreground group-hover:text-brand-600 transition-colors"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(94.2 0 0)",
+          "fontSize": "20px",
+          "fontWeight": "600",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "svg",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > svg.lucide.lucide-arrow-right.h-5",
+        "text": "",
+        "attrs": {
+          "class": "lucide lucide-arrow-right h-5 w-5 text-muted-foreground group-hover:text-brand-500 group-hover:translate-x-1 transition-all",
+          "aria-hidden": "true"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > svg.lucide.lucide-arrow-right.h-5 > path:nth-of-type(1)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > svg.lucide.lucide-arrow-right.h-5 > path:nth-of-type(2)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "div",
+        "selector": "div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.relative.z-10:nth-of-type(2) > div.flex.gap-6.text-sm:nth-of-type(2)",
+        "text": "",
+        "attrs": {
+          "class": "flex gap-6 text-sm text-muted-foreground"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "display": "flex"
+        }
+      },
+      {
+        "tag": "span",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.relative.z-10:nth-of-type(2) > div.flex.gap-6.text-sm:nth-of-type(2) > span:nth-of-type(1)",
+        "text": "49 countries",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "span",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(2) > div.relative.z-10:nth-of-type(2) > div.flex.gap-6.text-sm:nth-of-type(2) > span:nth-of-type(2)",
+        "text": "34M+ EU locations",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      }
+    ]
+  },
+  {
+    "href": "/gm-dataset/locations/asia-pacific",
+    "classes": "group relative bg-card rounded-2xl p-6 border border-border hover:shadow-[0_10px_40px_rgba(34,197,94,0.15)] hover:border-brand-300 transition-all duration-300 overflow-hidden",
+    "rect": {
+      "x": 799.46,
+      "y": -1479.2,
+      "width": 367.73,
+      "height": 113.6,
+      "top": -1479.2,
+      "right": 1167.19,
+      "bottom": -1365.6,
+      "left": 799.46
+    },
+    "children": [
+      {
+        "tag": "div",
+        "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(3) > div.absolute.-right-6.top-1\\/2:nth-of-type(1)",
+        "text": "",
+        "attrs": {
+          "class": "absolute -right-6 top-1/2 -translate-y-1/2 w-56 h-56 text-muted-foreground/20 group-hover:text-brand-200 transition-colors opacity-70 pointer-events-none"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "svg",
+        "selector": "div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(3) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full",
+        "text": "",
+        "attrs": {
+          "class": "w-full h-full "
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(3) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(1)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(3) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(2)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(3) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(3)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(3) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(4)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(3) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(5)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(3) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(6)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(3) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(7)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(3) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(8)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(3) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(9)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(3) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(10)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "div",
+        "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(3) > div.relative.z-10:nth-of-type(2)",
+        "text": "",
+        "attrs": {
+          "class": "relative z-10"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(94.2 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "div",
+        "selector": "div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(3) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1)",
+        "text": "",
+        "attrs": {
+          "class": "flex items-start justify-between mb-4"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(94.2 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "flex"
+        }
+      },
+      {
+        "tag": "h3",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(3) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > h3.text-xl.font-semibold.text-foreground",
+        "text": "Asia Pacific",
+        "attrs": {
+          "class": "text-xl font-semibold text-foreground group-hover:text-brand-600 transition-colors"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(94.2 0 0)",
+          "fontSize": "20px",
+          "fontWeight": "600",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "svg",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(3) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > svg.lucide.lucide-arrow-right.h-5",
+        "text": "",
+        "attrs": {
+          "class": "lucide lucide-arrow-right h-5 w-5 text-muted-foreground group-hover:text-brand-500 group-hover:translate-x-1 transition-all",
+          "aria-hidden": "true"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(3) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > svg.lucide.lucide-arrow-right.h-5 > path:nth-of-type(1)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(3) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > svg.lucide.lucide-arrow-right.h-5 > path:nth-of-type(2)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "div",
+        "selector": "div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(3) > div.relative.z-10:nth-of-type(2) > div.flex.gap-6.text-sm:nth-of-type(2)",
+        "text": "",
+        "attrs": {
+          "class": "flex gap-6 text-sm text-muted-foreground"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "display": "flex"
+        }
+      },
+      {
+        "tag": "span",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(3) > div.relative.z-10:nth-of-type(2) > div.flex.gap-6.text-sm:nth-of-type(2) > span:nth-of-type(1)",
+        "text": "17 countries",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "span",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(3) > div.relative.z-10:nth-of-type(2) > div.flex.gap-6.text-sm:nth-of-type(2) > span:nth-of-type(2)",
+        "text": "88M+ APAC locations",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      }
+    ]
+  },
+  {
+    "href": "/gm-dataset/locations/southeast-asia",
+    "classes": "group relative bg-card rounded-2xl p-6 border border-border hover:shadow-[0_10px_40px_rgba(34,197,94,0.15)] hover:border-brand-300 transition-all duration-300 overflow-hidden",
+    "rect": {
+      "x": 16,
+      "y": -1341.6,
+      "width": 367.73,
+      "height": 113.6,
+      "top": -1341.6,
+      "right": 383.73,
+      "bottom": -1228,
+      "left": 16
+    },
+    "children": [
+      {
+        "tag": "div",
+        "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(4) > div.absolute.-right-6.top-1\\/2:nth-of-type(1)",
+        "text": "",
+        "attrs": {
+          "class": "absolute -right-6 top-1/2 -translate-y-1/2 w-56 h-56 text-muted-foreground/20 group-hover:text-brand-200 transition-colors opacity-70 pointer-events-none"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "svg",
+        "selector": "div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(4) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full",
+        "text": "",
+        "attrs": {
+          "class": "w-full h-full "
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(4) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(1)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(4) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(2)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(4) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(3)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(4) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(4)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(4) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(5)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(4) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(6)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(4) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(7)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(4) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(8)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(4) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(9)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "div",
+        "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(4) > div.relative.z-10:nth-of-type(2)",
+        "text": "",
+        "attrs": {
+          "class": "relative z-10"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(94.2 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "div",
+        "selector": "div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(4) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1)",
+        "text": "",
+        "attrs": {
+          "class": "flex items-start justify-between mb-4"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(94.2 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "flex"
+        }
+      },
+      {
+        "tag": "h3",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(4) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > h3.text-xl.font-semibold.text-foreground",
+        "text": "Southeast Asia",
+        "attrs": {
+          "class": "text-xl font-semibold text-foreground group-hover:text-brand-600 transition-colors"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(94.2 0 0)",
+          "fontSize": "20px",
+          "fontWeight": "600",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "svg",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(4) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > svg.lucide.lucide-arrow-right.h-5",
+        "text": "",
+        "attrs": {
+          "class": "lucide lucide-arrow-right h-5 w-5 text-muted-foreground group-hover:text-brand-500 group-hover:translate-x-1 transition-all",
+          "aria-hidden": "true"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(4) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > svg.lucide.lucide-arrow-right.h-5 > path:nth-of-type(1)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(4) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > svg.lucide.lucide-arrow-right.h-5 > path:nth-of-type(2)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "div",
+        "selector": "div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(4) > div.relative.z-10:nth-of-type(2) > div.flex.gap-6.text-sm:nth-of-type(2)",
+        "text": "",
+        "attrs": {
+          "class": "flex gap-6 text-sm text-muted-foreground"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "display": "flex"
+        }
+      },
+      {
+        "tag": "span",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(4) > div.relative.z-10:nth-of-type(2) > div.flex.gap-6.text-sm:nth-of-type(2) > span:nth-of-type(1)",
+        "text": "11 countries",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "span",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(4) > div.relative.z-10:nth-of-type(2) > div.flex.gap-6.text-sm:nth-of-type(2) > span:nth-of-type(2)",
+        "text": "26M+ SEA locations",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      }
+    ]
+  },
+  {
+    "href": "/gm-dataset/locations/latin-america",
+    "classes": "group relative bg-card rounded-2xl p-6 border border-border hover:shadow-[0_10px_40px_rgba(34,197,94,0.15)] hover:border-brand-300 transition-all duration-300 overflow-hidden",
+    "rect": {
+      "x": 407.73,
+      "y": -1341.6,
+      "width": 367.74,
+      "height": 113.6,
+      "top": -1341.6,
+      "right": 775.46,
+      "bottom": -1228,
+      "left": 407.73
+    },
+    "children": [
+      {
+        "tag": "div",
+        "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.absolute.-right-6.top-1\\/2:nth-of-type(1)",
+        "text": "",
+        "attrs": {
+          "class": "absolute -right-6 top-1/2 -translate-y-1/2 w-56 h-56 text-muted-foreground/20 group-hover:text-brand-200 transition-colors opacity-70 pointer-events-none"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "svg",
+        "selector": "div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full",
+        "text": "",
+        "attrs": {
+          "class": "w-full h-full "
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(1)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(2)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(3)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(4)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(5)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(6)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(7)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(8)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(9)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(10)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(11)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(12)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(13)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(14)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(15)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(16)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(17)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(18)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(19)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(20)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(21)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(22)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(23)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(24)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "div",
+        "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.relative.z-10:nth-of-type(2)",
+        "text": "",
+        "attrs": {
+          "class": "relative z-10"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(94.2 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "div",
+        "selector": "div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1)",
+        "text": "",
+        "attrs": {
+          "class": "flex items-start justify-between mb-4"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(94.2 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "flex"
+        }
+      },
+      {
+        "tag": "h3",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > h3.text-xl.font-semibold.text-foreground",
+        "text": "Latin America",
+        "attrs": {
+          "class": "text-xl font-semibold text-foreground group-hover:text-brand-600 transition-colors"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(94.2 0 0)",
+          "fontSize": "20px",
+          "fontWeight": "600",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "svg",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > svg.lucide.lucide-arrow-right.h-5",
+        "text": "",
+        "attrs": {
+          "class": "lucide lucide-arrow-right h-5 w-5 text-muted-foreground group-hover:text-brand-500 group-hover:translate-x-1 transition-all",
+          "aria-hidden": "true"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > svg.lucide.lucide-arrow-right.h-5 > path:nth-of-type(1)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > svg.lucide.lucide-arrow-right.h-5 > path:nth-of-type(2)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "div",
+        "selector": "div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.relative.z-10:nth-of-type(2) > div.flex.gap-6.text-sm:nth-of-type(2)",
+        "text": "",
+        "attrs": {
+          "class": "flex gap-6 text-sm text-muted-foreground"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "display": "flex"
+        }
+      },
+      {
+        "tag": "span",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.relative.z-10:nth-of-type(2) > div.flex.gap-6.text-sm:nth-of-type(2) > span:nth-of-type(1)",
+        "text": "50 countries",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "span",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(5) > div.relative.z-10:nth-of-type(2) > div.flex.gap-6.text-sm:nth-of-type(2) > span:nth-of-type(2)",
+        "text": "22M+ LATAM locations",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      }
+    ]
+  },
+  {
+    "href": "/gm-dataset/locations/middle-east",
+    "classes": "group relative bg-card rounded-2xl p-6 border border-border hover:shadow-[0_10px_40px_rgba(34,197,94,0.15)] hover:border-brand-300 transition-all duration-300 overflow-hidden",
+    "rect": {
+      "x": 799.46,
+      "y": -1341.6,
+      "width": 367.73,
+      "height": 113.6,
+      "top": -1341.6,
+      "right": 1167.19,
+      "bottom": -1228,
+      "left": 799.46
+    },
+    "children": [
+      {
+        "tag": "div",
+        "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(6) > div.absolute.-right-6.top-1\\/2:nth-of-type(1)",
+        "text": "",
+        "attrs": {
+          "class": "absolute -right-6 top-1/2 -translate-y-1/2 w-56 h-56 text-muted-foreground/20 group-hover:text-brand-200 transition-colors opacity-70 pointer-events-none"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "svg",
+        "selector": "div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(6) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full",
+        "text": "",
+        "attrs": {
+          "class": "w-full h-full "
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(6) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(1)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(6) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(2)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(6) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(3)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(6) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(4)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(6) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(5)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(6) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(6)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(6) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(7)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(6) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(8)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(6) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(9)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(6) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(10)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(6) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(11)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(6) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(12)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(6) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(13)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(6) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(14)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(6) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(15)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "div",
+        "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(6) > div.relative.z-10:nth-of-type(2)",
+        "text": "",
+        "attrs": {
+          "class": "relative z-10"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(94.2 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "div",
+        "selector": "div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(6) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1)",
+        "text": "",
+        "attrs": {
+          "class": "flex items-start justify-between mb-4"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(94.2 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "flex"
+        }
+      },
+      {
+        "tag": "h3",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(6) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > h3.text-xl.font-semibold.text-foreground",
+        "text": "Middle East",
+        "attrs": {
+          "class": "text-xl font-semibold text-foreground group-hover:text-brand-600 transition-colors"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(94.2 0 0)",
+          "fontSize": "20px",
+          "fontWeight": "600",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "svg",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(6) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > svg.lucide.lucide-arrow-right.h-5",
+        "text": "",
+        "attrs": {
+          "class": "lucide lucide-arrow-right h-5 w-5 text-muted-foreground group-hover:text-brand-500 group-hover:translate-x-1 transition-all",
+          "aria-hidden": "true"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(6) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > svg.lucide.lucide-arrow-right.h-5 > path:nth-of-type(1)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(6) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > svg.lucide.lucide-arrow-right.h-5 > path:nth-of-type(2)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "div",
+        "selector": "div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(6) > div.relative.z-10:nth-of-type(2) > div.flex.gap-6.text-sm:nth-of-type(2)",
+        "text": "",
+        "attrs": {
+          "class": "flex gap-6 text-sm text-muted-foreground"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "display": "flex"
+        }
+      },
+      {
+        "tag": "span",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(6) > div.relative.z-10:nth-of-type(2) > div.flex.gap-6.text-sm:nth-of-type(2) > span:nth-of-type(1)",
+        "text": "15 countries",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "span",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(6) > div.relative.z-10:nth-of-type(2) > div.flex.gap-6.text-sm:nth-of-type(2) > span:nth-of-type(2)",
+        "text": "9M+ MENA locations",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      }
+    ]
+  },
+  {
+    "href": "/gm-dataset/locations/cis",
+    "classes": "group relative bg-card rounded-2xl p-6 border border-border hover:shadow-[0_10px_40px_rgba(34,197,94,0.15)] hover:border-brand-300 transition-all duration-300 overflow-hidden",
+    "rect": {
+      "x": 16,
+      "y": -1204,
+      "width": 367.73,
+      "height": 113.6,
+      "top": -1204,
+      "right": 383.73,
+      "bottom": -1090.4,
+      "left": 16
+    },
+    "children": [
+      {
+        "tag": "div",
+        "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(7) > div.absolute.-right-6.top-1\\/2:nth-of-type(1)",
+        "text": "",
+        "attrs": {
+          "class": "absolute -right-6 top-1/2 -translate-y-1/2 w-56 h-56 text-muted-foreground/20 group-hover:text-brand-200 transition-colors opacity-70 pointer-events-none"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "svg",
+        "selector": "div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(7) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full",
+        "text": "",
+        "attrs": {
+          "class": "w-full h-full "
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(7) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(1)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(7) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(2)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(7) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(3)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(7) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(4)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(7) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(5)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(7) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(6)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(7) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(7)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(7) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(8)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(7) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(9)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(7) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(10)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(7) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(11)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "div",
+        "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(7) > div.relative.z-10:nth-of-type(2)",
+        "text": "",
+        "attrs": {
+          "class": "relative z-10"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(94.2 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "div",
+        "selector": "div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(7) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1)",
+        "text": "",
+        "attrs": {
+          "class": "flex items-start justify-between mb-4"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(94.2 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "flex"
+        }
+      },
+      {
+        "tag": "h3",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(7) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > h3.text-xl.font-semibold.text-foreground",
+        "text": "CIS Countries",
+        "attrs": {
+          "class": "text-xl font-semibold text-foreground group-hover:text-brand-600 transition-colors"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(94.2 0 0)",
+          "fontSize": "20px",
+          "fontWeight": "600",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "svg",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(7) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > svg.lucide.lucide-arrow-right.h-5",
+        "text": "",
+        "attrs": {
+          "class": "lucide lucide-arrow-right h-5 w-5 text-muted-foreground group-hover:text-brand-500 group-hover:translate-x-1 transition-all",
+          "aria-hidden": "true"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(7) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > svg.lucide.lucide-arrow-right.h-5 > path:nth-of-type(1)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(7) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > svg.lucide.lucide-arrow-right.h-5 > path:nth-of-type(2)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "div",
+        "selector": "div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(7) > div.relative.z-10:nth-of-type(2) > div.flex.gap-6.text-sm:nth-of-type(2)",
+        "text": "",
+        "attrs": {
+          "class": "flex gap-6 text-sm text-muted-foreground"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "display": "flex"
+        }
+      },
+      {
+        "tag": "span",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(7) > div.relative.z-10:nth-of-type(2) > div.flex.gap-6.text-sm:nth-of-type(2) > span:nth-of-type(1)",
+        "text": "11 countries",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "span",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(7) > div.relative.z-10:nth-of-type(2) > div.flex.gap-6.text-sm:nth-of-type(2) > span:nth-of-type(2)",
+        "text": "2M+ CIS locations",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      }
+    ]
+  },
+  {
+    "href": "/gm-dataset/locations/oceania",
+    "classes": "group relative bg-card rounded-2xl p-6 border border-border hover:shadow-[0_10px_40px_rgba(34,197,94,0.15)] hover:border-brand-300 transition-all duration-300 overflow-hidden",
+    "rect": {
+      "x": 407.73,
+      "y": -1204,
+      "width": 367.74,
+      "height": 113.6,
+      "top": -1204,
+      "right": 775.46,
+      "bottom": -1090.4,
+      "left": 407.73
+    },
+    "children": [
+      {
+        "tag": "div",
+        "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(8) > div.absolute.-right-6.top-1\\/2:nth-of-type(1)",
+        "text": "",
+        "attrs": {
+          "class": "absolute -right-6 top-1/2 -translate-y-1/2 w-56 h-56 text-muted-foreground/20 group-hover:text-brand-200 transition-colors opacity-70 pointer-events-none"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "svg",
+        "selector": "div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(8) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full",
+        "text": "",
+        "attrs": {
+          "class": "w-full h-full "
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(8) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(1)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(8) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(2)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(8) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(3)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(8) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(4)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(8) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(5)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(8) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(6)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "div",
+        "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(8) > div.relative.z-10:nth-of-type(2)",
+        "text": "",
+        "attrs": {
+          "class": "relative z-10"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(94.2 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "div",
+        "selector": "div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(8) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1)",
+        "text": "",
+        "attrs": {
+          "class": "flex items-start justify-between mb-4"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(94.2 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "flex"
+        }
+      },
+      {
+        "tag": "h3",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(8) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > h3.text-xl.font-semibold.text-foreground",
+        "text": "Oceania",
+        "attrs": {
+          "class": "text-xl font-semibold text-foreground group-hover:text-brand-600 transition-colors"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(94.2 0 0)",
+          "fontSize": "20px",
+          "fontWeight": "600",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "svg",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(8) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > svg.lucide.lucide-arrow-right.h-5",
+        "text": "",
+        "attrs": {
+          "class": "lucide lucide-arrow-right h-5 w-5 text-muted-foreground group-hover:text-brand-500 group-hover:translate-x-1 transition-all",
+          "aria-hidden": "true"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(8) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > svg.lucide.lucide-arrow-right.h-5 > path:nth-of-type(1)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(8) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > svg.lucide.lucide-arrow-right.h-5 > path:nth-of-type(2)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "div",
+        "selector": "div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(8) > div.relative.z-10:nth-of-type(2) > div.flex.gap-6.text-sm:nth-of-type(2)",
+        "text": "",
+        "attrs": {
+          "class": "flex gap-6 text-sm text-muted-foreground"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "display": "flex"
+        }
+      },
+      {
+        "tag": "span",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(8) > div.relative.z-10:nth-of-type(2) > div.flex.gap-6.text-sm:nth-of-type(2) > span:nth-of-type(1)",
+        "text": "29 countries",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "span",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(8) > div.relative.z-10:nth-of-type(2) > div.flex.gap-6.text-sm:nth-of-type(2) > span:nth-of-type(2)",
+        "text": "2M+ OCE locations",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      }
+    ]
+  },
+  {
+    "href": "/gm-dataset/locations/africa",
+    "classes": "group relative bg-card rounded-2xl p-6 border border-border hover:shadow-[0_10px_40px_rgba(34,197,94,0.15)] hover:border-brand-300 transition-all duration-300 overflow-hidden",
+    "rect": {
+      "x": 799.46,
+      "y": -1204,
+      "width": 367.73,
+      "height": 113.6,
+      "top": -1204,
+      "right": 1167.19,
+      "bottom": -1090.4,
+      "left": 799.46
+    },
+    "children": [
+      {
+        "tag": "div",
+        "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1)",
+        "text": "",
+        "attrs": {
+          "class": "absolute -right-6 top-1/2 -translate-y-1/2 w-56 h-56 text-muted-foreground/20 group-hover:text-brand-200 transition-colors opacity-70 pointer-events-none"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "svg",
+        "selector": "div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full",
+        "text": "",
+        "attrs": {
+          "class": "w-full h-full "
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(1)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(2)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(3)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(4)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(5)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(6)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(7)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(8)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(9)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(10)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(11)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(12)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(13)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(14)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(15)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(16)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(17)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(18)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(19)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(20)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(21)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(22)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(23)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(24)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(25)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(26)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(27)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(28)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(29)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(30)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(31)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(32)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(33)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(34)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(35)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(36)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(37)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(38)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(39)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(40)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(41)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(42)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(43)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(44)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(45)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(46)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(47)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(48)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.absolute.-right-6.top-1\\/2:nth-of-type(1) > svg.w-full.h-full > path:nth-of-type(49)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "oklab(0.599999 -0.00000590086 0.0000140369 / 0.2)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "div",
+        "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.relative.z-10:nth-of-type(2)",
+        "text": "",
+        "attrs": {
+          "class": "relative z-10"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(94.2 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "div",
+        "selector": "div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1)",
+        "text": "",
+        "attrs": {
+          "class": "flex items-start justify-between mb-4"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(94.2 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "flex"
+        }
+      },
+      {
+        "tag": "h3",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > h3.text-xl.font-semibold.text-foreground",
+        "text": "Africa",
+        "attrs": {
+          "class": "text-xl font-semibold text-foreground group-hover:text-brand-600 transition-colors"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(94.2 0 0)",
+          "fontSize": "20px",
+          "fontWeight": "600",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "svg",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > svg.lucide.lucide-arrow-right.h-5",
+        "text": "",
+        "attrs": {
+          "class": "lucide lucide-arrow-right h-5 w-5 text-muted-foreground group-hover:text-brand-500 group-hover:translate-x-1 transition-all",
+          "aria-hidden": "true"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > svg.lucide.lucide-arrow-right.h-5 > path:nth-of-type(1)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "path",
+        "selector": "section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.relative.z-10:nth-of-type(2) > div.flex.items-start.justify-between:nth-of-type(1) > svg.lucide.lucide-arrow-right.h-5 > path:nth-of-type(2)",
+        "text": "",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "display": "inline"
+        }
+      },
+      {
+        "tag": "div",
+        "selector": "div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.relative.z-10:nth-of-type(2) > div.flex.gap-6.text-sm:nth-of-type(2)",
+        "text": "",
+        "attrs": {
+          "class": "flex gap-6 text-sm text-muted-foreground"
+        },
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "display": "flex"
+        }
+      },
+      {
+        "tag": "span",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.relative.z-10:nth-of-type(2) > div.flex.gap-6.text-sm:nth-of-type(2) > span:nth-of-type(1)",
+        "text": "56 countries",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      },
+      {
+        "tag": "span",
+        "selector": "div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(1) > div.grid.grid-cols-1.md\\:grid-cols-2 > a.group.relative.bg-card:nth-of-type(9) > div.relative.z-10:nth-of-type(2) > div.flex.gap-6.text-sm:nth-of-type(2) > span:nth-of-type(2)",
+        "text": "11M+ AFR locations",
+        "attrs": {},
+        "style": {
+          "backgroundImage": "none",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "lab(53.6 0 0)",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "display": "block"
+        }
+      }
+    ]
+  }
+]

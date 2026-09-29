@@ -1,0 +1,450 @@
+{
+  "general": [
+    [
+      717,
+      "span",
+      "text-emerald-400",
+      "\" name \""
+    ],
+    [
+      719,
+      "span",
+      "text-amber-300",
+      "\"The Foundry Kitchen & Coffee\""
+    ],
+    [
+      724,
+      "span",
+      "text-emerald-400",
+      "\" description \""
+    ],
+    [
+      726,
+      "span",
+      "text-amber-300",
+      "\"A modern workspace cafe designed for the tech community, featuring specialty coffee...\""
+    ],
+    [
+      731,
+      "span",
+      "text-emerald-400",
+      "\" business_status \""
+    ],
+    [
+      733,
+      "span",
+      "text-amber-300",
+      "\"OPERATIONAL\""
+    ],
+    [
+      738,
+      "span",
+      "text-emerald-400",
+      "\" categories \""
+    ],
+    [
+      740,
+      "span",
+      "text-amber-300",
+      "[\"Cafe\", \"Coffee shop\", \"Breakfast restaurant\"]"
+    ],
+    [
+      745,
+      "span",
+      "text-emerald-400",
+      "\" cid \""
+    ],
+    [
+      747,
+      "span",
+      "text-amber-300",
+      "8847291056734182459"
+    ],
+    [
+      752,
+      "span",
+      "text-emerald-400",
+      "\" place_id \""
+    ],
+    [
+      754,
+      "span",
+      "text-amber-300",
+      "\"ChIJMZ1efCq7j4ARu9OQ8eLE-Ho\""
+    ],
+    [
+      759,
+      "span",
+      "text-emerald-400",
+      "\" url \""
+    ],
+    [
+      761,
+      "span",
+      "text-amber-300",
+      "\"https://www.thefoundrykitchen.com/\""
+    ],
+    [
+      766,
+      "span",
+      "text-emerald-400",
+      "\" domain \""
+    ],
+    [
+      768,
+      "span",
+      "text-amber-300",
+      "\"thefoundrykitchen.com\""
+    ]
+  ],
+  "geography": [
+    [
+      824,
+      "span",
+      "text-emerald-400",
+      "\" geo_country \""
+    ],
+    [
+      826,
+      "span",
+      "text-amber-300",
+      "\"US\""
+    ],
+    [
+      831,
+      "span",
+      "text-emerald-400",
+      "\" city \""
+    ],
+    [
+      833,
+      "span",
+      "text-amber-300",
+      "\"Palo Alto\""
+    ],
+    [
+      838,
+      "span",
+      "text-emerald-400",
+      "\" district \""
+    ],
+    [
+      840,
+      "span",
+      "text-amber-300",
+      "\"Downtown Palo Alto\""
+    ],
+    [
+      845,
+      "span",
+      "text-emerald-400",
+      "\" lat \""
+    ],
+    [
+      847,
+      "span",
+      "text-amber-300",
+      "37.4457032"
+    ],
+    [
+      852,
+      "span",
+      "text-emerald-400",
+      "\" lon \""
+    ],
+    [
+      854,
+      "span",
+      "text-amber-300",
+      "-122.1614285"
+    ]
+  ],
+  "contact": [
+    [
+      894,
+      "span",
+      "text-emerald-400",
+      "\" address \""
+    ],
+    [
+      896,
+      "span",
+      "text-amber-300",
+      "\"428 University Ave, Palo Alto, CA 94301\""
+    ],
+    [
+      901,
+      "span",
+      "text-emerald-400",
+      "\" full_address \""
+    ],
+    [
+      903,
+      "span",
+      "text-amber-300",
+      "\"The Foundry Kitchen & Coffee, 428 University Ave, Palo Alto, CA 94301\""
+    ],
+    [
+      908,
+      "span",
+      "text-emerald-400",
+      "\" phone \""
+    ],
+    [
+      910,
+      "span",
+      "text-amber-300",
+      "\"(650) 328-7400\""
+    ]
+  ],
+  "reviews": [
+    [
+      982,
+      "span",
+      "text-emerald-400",
+      "\" rating \""
+    ],
+    [
+      984,
+      "span",
+      "text-amber-300",
+      "4.7"
+    ],
+    [
+      989,
+      "span",
+      "text-emerald-400",
+      "\" review_count \""
+    ],
+    [
+      991,
+      "span",
+      "text-amber-300",
+      "892"
+    ],
+    [
+      996,
+      "span",
+      "text-emerald-400",
+      "\" review_snippets \""
+    ],
+    [
+      998,
+      "span",
+      "text-amber-300",
+      "[{\"count\": 67, \"text\": \"wifi\"}, {\"count\": 45, \"text\": \"laptop\"}, {\"count\": 38, \"text\": \"meetings\"}]"
+    ],
+    [
+      1003,
+      "span",
+      "text-emerald-400",
+      "\" reviews_newest \""
+    ],
+    [
+      1005,
+      "span",
+      "text-amber-300",
+      "[{\"review_id\": \"ChZDSUhNMG9...\", \"rating\": 5, \"text\": \"Perfect spot for investor meetings...\"}]"
+    ],
+    [
+      1010,
+      "span",
+      "text-emerald-400",
+      "\" reviews_newest_size \""
+    ],
+    [
+      1012,
+      "span",
+      "text-amber-300",
+      "156240"
+    ],
+    [
+      1017,
+      "span",
+      "text-emerald-400",
+      "\" reviews_relevant_size \""
+    ],
+    [
+      1019,
+      "span",
+      "text-amber-300",
+      "284530"
+    ]
+  ],
+  "visitor": [
+    [
+      1075,
+      "span",
+      "text-emerald-400",
+      "\" hours \""
+    ],
+    [
+      1077,
+      "span",
+      "text-amber-300",
+      "[{\"day\": \"Monday\", \"hours\": \"7 AM–7 PM\"}, {\"day\": \"Tuesday\", \"hours\": \"7 AM–7 PM\"}, ...]"
+    ],
+    [
+      1082,
+      "span",
+      "text-emerald-400",
+      "\" popular_times \""
+    ],
+    [
+      1084,
+      "span",
+      "text-amber-300",
+      "{\"Monday\": [{\"busy\": 25, \"hour\": 8}, {\"busy\": 58, \"hour\": 9}, {\"busy\": 72, \"hour\": 10}...]}"
+    ],
+    [
+      1089,
+      "span",
+      "text-emerald-400",
+      "\" price_range \""
+    ],
+    [
+      1091,
+      "span",
+      "text-amber-300",
+      "\"$10–25\""
+    ],
+    [
+      1096,
+      "span",
+      "text-emerald-400",
+      "\" questions_answers \""
+    ],
+    [
+      1098,
+      "span",
+      "text-amber-300",
+      "[{\"answers\": 3, \"question\": \"Do you have private meeting rooms?\", \"time\": \"6 months ago\"}]"
+    ],
+    [
+      1103,
+      "span",
+      "text-emerald-400",
+      "\" related_places \""
+    ],
+    [
+      1105,
+      "span",
+      "text-amber-300",
+      "[{\"name\": \"Coupa Café\", \"rating\": 4.5, \"reviews\": 1247}, ...]"
+    ]
+  ],
+  "media": [
+    [
+      1137,
+      "span",
+      "text-emerald-400",
+      "\" photos \""
+    ],
+    [
+      1139,
+      "span",
+      "text-amber-300",
+      "[\"https://lh3.googleusercontent.com/places/interior-01...\", \"https://lh3.googleusercontent.com/places/coffee-bar-02...\"]"
+    ],
+    [
+      1144,
+      "span",
+      "text-emerald-400",
+      "\" photos_count \""
+    ],
+    [
+      1146,
+      "span",
+      "text-amber-300",
+      "245"
+    ]
+  ],
+  "hospitality": [
+    [
+      1178,
+      "span",
+      "text-emerald-400",
+      "\" hotel_class \""
+    ],
+    [
+      1180,
+      "span",
+      "text-amber-300",
+      "\"4-star\""
+    ],
+    [
+      1185,
+      "span",
+      "text-emerald-400",
+      "\" hotel_amenities \""
+    ],
+    [
+      1187,
+      "span",
+      "text-amber-300",
+      "[{\"available\": true, \"name\": \"Free Wi-Fi\"}, {\"available\": true, \"name\": \"Business center\"}, ...]"
+    ]
+  ],
+  "labels": [
+    [
+      1347,
+      "span",
+      "text-emerald-400",
+      "\" labels_atmosphere \""
+    ],
+    [
+      1349,
+      "span",
+      "text-amber-300",
+      "[\"Casual\", \"Cozy\", \"Quiet\", \"Trendy\"]"
+    ],
+    [
+      1354,
+      "span",
+      "text-emerald-400",
+      "\" labels_amenities \""
+    ],
+    [
+      1356,
+      "span",
+      "text-amber-300",
+      "[\"Restroom\", \"Wi-Fi\", \"Power outlets at tables\"]"
+    ],
+    [
+      1361,
+      "span",
+      "text-emerald-400",
+      "\" labels_highlights \""
+    ],
+    [
+      1363,
+      "span",
+      "text-amber-300",
+      "[\"Fast service\", \"Great coffee\", \"Great for working on laptop\"]"
+    ],
+    [
+      1368,
+      "span",
+      "text-emerald-400",
+      "\" labels_popular_for \""
+    ],
+    [
+      1370,
+      "span",
+      "text-amber-300",
+      "[\"Breakfast\", \"Lunch\", \"Good for working on laptop\", \"Solo dining\", \"Business meetings\"]"
+    ],
+    [
+      1375,
+      "span",
+      "text-emerald-400",
+      "\" labels_service_options \""
+    ],
+    [
+      1377,
+      "span",
+      "text-amber-300",
+      "[\"Dine-in\", \"Takeout\", \"Delivery\", \"Curbside pickup\"]"
+    ]
+  ]
+}

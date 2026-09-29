@@ -1,0 +1,170 @@
+[
+  {
+    "href": "/b2b-database/industries/information-and-communication",
+    "icon": "💻",
+    "title": "Information and communication",
+    "nace": "NACEJ",
+    "count": "17M+ companies",
+    "fullSub": "NACE J · 17M+ companies"
+  },
+  {
+    "href": "/b2b-database/industries/professional-scientific-and-technical-activities",
+    "icon": "🔬",
+    "title": "Professional, scientific and technical activities",
+    "nace": "NACEM",
+    "count": "14M+ companies",
+    "fullSub": "NACE M · 14M+ companies"
+  },
+  {
+    "href": "/b2b-database/industries/wholesale-and-retail-trade",
+    "icon": "🛒",
+    "title": "Wholesale and retail trade",
+    "nace": "NACEG",
+    "count": "12M+ companies",
+    "fullSub": "NACE G · 12M+ companies"
+  },
+  {
+    "href": "/b2b-database/industries/manufacturing",
+    "icon": "🏭",
+    "title": "Manufacturing",
+    "nace": "NACEC",
+    "count": "11M+ companies",
+    "fullSub": "NACE C · 11M+ companies"
+  },
+  {
+    "href": "/b2b-database/industries/arts-entertainment-and-recreation",
+    "icon": "🎭",
+    "title": "Arts, entertainment and recreation",
+    "nace": "NACER",
+    "count": "8M+ companies",
+    "fullSub": "NACE R · 8M+ companies"
+  },
+  {
+    "href": "/b2b-database/industries/education",
+    "icon": "🎓",
+    "title": "Education",
+    "nace": "NACEP",
+    "count": "6M+ companies",
+    "fullSub": "NACE P · 6M+ companies"
+  },
+  {
+    "href": "/b2b-database/industries/other-service-activities",
+    "icon": "🛠️",
+    "title": "Other service activities",
+    "nace": "NACES",
+    "count": "6M+ companies",
+    "fullSub": "NACE S · 6M+ companies"
+  },
+  {
+    "href": "/b2b-database/industries/administrative-and-support-service-activities",
+    "icon": "🗂️",
+    "title": "Administrative and support service activities",
+    "nace": "NACEN",
+    "count": "6M+ companies",
+    "fullSub": "NACE N · 6M+ companies"
+  },
+  {
+    "href": "/b2b-database/industries/construction",
+    "icon": "🏗️",
+    "title": "Construction",
+    "nace": "NACEF",
+    "count": "5M+ companies",
+    "fullSub": "NACE F · 5M+ companies"
+  },
+  {
+    "href": "/b2b-database/industries/human-health-and-social-work-activities",
+    "icon": "🏥",
+    "title": "Human health and social work activities",
+    "nace": "NACEQ",
+    "count": "5M+ companies",
+    "fullSub": "NACE Q · 5M+ companies"
+  },
+  {
+    "href": "/b2b-database/industries/accommodation-and-food-service-activities",
+    "icon": "🏨",
+    "title": "Accommodation and food service activities",
+    "nace": "NACEI",
+    "count": "4M+ companies",
+    "fullSub": "NACE I · 4M+ companies"
+  },
+  {
+    "href": "/b2b-database/industries/financial-and-insurance-activities",
+    "icon": "💰",
+    "title": "Financial and insurance activities",
+    "nace": "NACEK",
+    "count": "3M+ companies",
+    "fullSub": "NACE K · 3M+ companies"
+  },
+  {
+    "href": "/b2b-database/industries/real-estate-activities",
+    "icon": "🏠",
+    "title": "Real estate activities",
+    "nace": "NACEL",
+    "count": "3M+ companies",
+    "fullSub": "NACE L · 3M+ companies"
+  },
+  {
+    "href": "/b2b-database/industries/transportation-and-storage",
+    "icon": "🚚",
+    "title": "Transportation and storage",
+    "nace": "NACEH",
+    "count": "2M+ companies",
+    "fullSub": "NACE H · 2M+ companies"
+  },
+  {
+    "href": "/b2b-database/industries/agriculture-forestry-and-fishing",
+    "icon": "🌾",
+    "title": "Agriculture, forestry and fishing",
+    "nace": "NACEA",
+    "count": "745K+ companies",
+    "fullSub": "NACE A · 745K+ companies"
+  },
+  {
+    "href": "/b2b-database/industries/public-administration-and-defence",
+    "icon": "🏛️",
+    "title": "Public administration and defence",
+    "nace": "NACEO",
+    "count": "475K+ companies",
+    "fullSub": "NACE O · 475K+ companies"
+  },
+  {
+    "href": "/b2b-database/industries/water-supply-sewerage-waste-management",
+    "icon": "🚰",
+    "title": "Water supply, sewerage, waste management",
+    "nace": "NACEE",
+    "count": "355K+ companies",
+    "fullSub": "NACE E · 355K+ companies"
+  },
+  {
+    "href": "/b2b-database/industries/electricity-gas-steam-and-air-conditioning-supply",
+    "icon": "⚡",
+    "title": "Electricity, gas, steam and air conditioning supply",
+    "nace": "NACED",
+    "count": "169K+ companies",
+    "fullSub": "NACE D · 169K+ companies"
+  },
+  {
+    "href": "/b2b-database/industries/mining-and-quarrying",
+    "icon": "⛏️",
+    "title": "Mining and quarrying",
+    "nace": "NACEB",
+    "count": "103K+ companies",
+    "fullSub": "NACE B · 103K+ companies"
+  },
+  {
+    "href": "/b2b-database/industries/activities-of-households-as-employers",
+    "icon": "🏡",
+    "title": "Activities of households as employers",
+    "nace": "NACET",
+    "count": "16K+ companies",
+    "fullSub": "NACE T · 16K+ companies"
+  },
+  {
+    "href": "/b2b-database/industries/activities-of-extraterritorial-organisations-and-bodies",
+    "icon": "🌐",
+    "title": "Activities of extraterritorial organisations and bodies",
+    "nace": "NACEU",
+    "count": "5K+ companies",
+    "fullSub": "NACE U · 5K+ companies"
+  }
+]

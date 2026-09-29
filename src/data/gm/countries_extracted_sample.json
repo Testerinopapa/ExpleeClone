@@ -1,0 +1,107 @@
+[
+  {
+    "href": "/gm-dataset/locations/china",
+    "texts": [],
+    "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(2) > div.relative > div.grid.grid-cols-1.sm\\:grid-cols-2:nth-of-type(1) > a.group.flex.items-center:nth-of-type(1)"
+  },
+  {
+    "href": "/gm-dataset/locations/india",
+    "texts": [],
+    "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(2) > div.relative > div.grid.grid-cols-1.sm\\:grid-cols-2:nth-of-type(1) > a.group.flex.items-center:nth-of-type(2)"
+  },
+  {
+    "href": "/gm-dataset/locations/united-states",
+    "texts": [],
+    "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(2) > div.relative > div.grid.grid-cols-1.sm\\:grid-cols-2:nth-of-type(1) > a.group.flex.items-center:nth-of-type(3)"
+  },
+  {
+    "href": "/gm-dataset/locations/indonesia",
+    "texts": [],
+    "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(2) > div.relative > div.grid.grid-cols-1.sm\\:grid-cols-2:nth-of-type(1) > a.group.flex.items-center:nth-of-type(4)"
+  },
+  {
+    "href": "/gm-dataset/locations/brazil",
+    "texts": [],
+    "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(2) > div.relative > div.grid.grid-cols-1.sm\\:grid-cols-2:nth-of-type(1) > a.group.flex.items-center:nth-of-type(5)"
+  },
+  {
+    "href": "/gm-dataset/locations/japan",
+    "texts": [],
+    "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(2) > div.relative > div.grid.grid-cols-1.sm\\:grid-cols-2:nth-of-type(1) > a.group.flex.items-center:nth-of-type(6)"
+  },
+  {
+    "href": "/gm-dataset/locations/korea-republic-of",
+    "texts": [],
+    "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(2) > div.relative > div.grid.grid-cols-1.sm\\:grid-cols-2:nth-of-type(1) > a.group.flex.items-center:nth-of-type(7)"
+  },
+  {
+    "href": "/gm-dataset/locations/germany",
+    "texts": [],
+    "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(2) > div.relative > div.grid.grid-cols-1.sm\\:grid-cols-2:nth-of-type(1) > a.group.flex.items-center:nth-of-type(8)"
+  },
+  {
+    "href": "/gm-dataset/locations/mexico",
+    "texts": [],
+    "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(2) > div.relative > div.grid.grid-cols-1.sm\\:grid-cols-2:nth-of-type(1) > a.group.flex.items-center:nth-of-type(9)"
+  },
+  {
+    "href": "/gm-dataset/locations/france",
+    "texts": [],
+    "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(2) > div.relative > div.grid.grid-cols-1.sm\\:grid-cols-2:nth-of-type(1) > a.group.flex.items-center:nth-of-type(10)"
+  },
+  {
+    "href": "/gm-dataset/locations/turkiye",
+    "texts": [],
+    "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(2) > div.relative > div.grid.grid-cols-1.sm\\:grid-cols-2:nth-of-type(1) > a.group.flex.items-center:nth-of-type(11)"
+  },
+  {
+    "href": "/gm-dataset/locations/italy",
+    "texts": [],
+    "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(2) > div.relative > div.grid.grid-cols-1.sm\\:grid-cols-2:nth-of-type(1) > a.group.flex.items-center:nth-of-type(12)"
+  },
+  {
+    "href": "/gm-dataset/locations/viet-nam",
+    "texts": [],
+    "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(2) > div.relative > div.grid.grid-cols-1.sm\\:grid-cols-2:nth-of-type(1) > a.group.flex.items-center:nth-of-type(13)"
+  },
+  {
+    "href": "/gm-dataset/locations/united-kingdom",
+    "texts": [],
+    "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(2) > div.relative > div.grid.grid-cols-1.sm\\:grid-cols-2:nth-of-type(1) > a.group.flex.items-center:nth-of-type(14)"
+  },
+  {
+    "href": "/gm-dataset/locations/spain",
+    "texts": [],
+    "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(2) > div.relative > div.grid.grid-cols-1.sm\\:grid-cols-2:nth-of-type(1) > a.group.flex.items-center:nth-of-type(15)"
+  },
+  {
+    "href": "/gm-dataset/locations/thailand",
+    "texts": [],
+    "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(2) > div.relative > div.grid.grid-cols-1.sm\\:grid-cols-2:nth-of-type(1) > a.group.flex.items-center:nth-of-type(16)"
+  },
+  {
+    "href": "/gm-dataset/locations/philippines",
+    "texts": [],
+    "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(2) > div.relative > div.grid.grid-cols-1.sm\\:grid-cols-2:nth-of-type(1) > a.group.flex.items-center:nth-of-type(17)"
+  },
+  {
+    "href": "/gm-dataset/locations/bangladesh",
+    "texts": [],
+    "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(2) > div.relative > div.grid.grid-cols-1.sm\\:grid-cols-2:nth-of-type(1) > a.group.flex.items-center:nth-of-type(18)"
+  },
+  {
+    "href": "/gm-dataset/locations/argentina",
+    "texts": [],
+    "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(2) > div.relative > div.grid.grid-cols-1.sm\\:grid-cols-2:nth-of-type(1) > a.group.flex.items-center:nth-of-type(19)"
+  },
+  {
+    "href": "/gm-dataset/locations/poland",
+    "texts": [],
+    "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(2) > div.relative > div.grid.grid-cols-1.sm\\:grid-cols-2:nth-of-type(1) > a.group.flex.items-center:nth-of-type(20)"
+  },
+  {
+    "href": "/gm-dataset/locations/pakistan",
+    "texts": [],
+    "selector": "main.flex-1 > div > div.container.mx-auto.max-w-\\[1200px\\]:nth-of-type(2) > section.mb-24:nth-of-type(2) > div.relative > div.grid.grid-cols-1.sm\\:grid-cols-2:nth-of-type(1) > a.group.flex.items-center:nth-of-type(21)"
+  }
+]

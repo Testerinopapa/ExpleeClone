@@ -1,15 +1,24 @@
 import React, { useState } from 'react';
-import { LayoutGrid, ChevronDown, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import ProductsDropdown from './navigation/ProductsDropdown';
+import { useNavigation, PRODUCT_ROUTES } from '../context/NavigationContext';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [productsOpen, setProductsOpen] = useState(false);
+  const { navigate } = useNavigation();
 
   return (
     <header className="sticky top-0 z-50">
       <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
       <div className="relative max-w-[1200px] mx-auto flex justify-between items-center py-4 px-4 xl:px-0">
-        <a className="cursor-pointer" href="/">
+        <a
+          className="cursor-pointer"
+          href="/"
+          onClick={(e) => {
+            e.preventDefault();
+            navigate(PRODUCT_ROUTES.OUTREACH);
+          }}
+        >
           <img
             alt="Explee"
             className="h-7 w-auto block"
@@ -21,46 +30,30 @@ export default function Navbar() {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-2">
-          <div className="relative">
-            <button
-              type="button"
-              onClick={() => setProductsOpen(!productsOpen)}
-              className="inline-flex items-center gap-1 hover:text-foreground/80 transition-colors duration-300 cursor-pointer text-base px-4 py-3 font-normal text-foreground"
-            >
-              <LayoutGrid className="w-4 h-4" />
-              <span>Products</span>
-              <ChevronDown className="w-3.5 h-3.5" />
-            </button>
-
-            {productsOpen && (
-              <div className="absolute top-full left-0 mt-1 w-64 bg-card rounded-xl shadow-plaque border border-border p-2 z-50">
-                <a
-                  href="#pipeline"
-                  onClick={() => setProductsOpen(false)}
-                  className="block px-3 py-2 text-sm text-foreground hover:bg-chip rounded-lg transition-colors"
-                >
-                  Outreach Agent
-                </a>
-                <a
-                  href="#pricing"
-                  onClick={() => setProductsOpen(false)}
-                  className="block px-3 py-2 text-sm text-foreground hover:bg-chip rounded-lg transition-colors"
-                >
-                  B2B Company Database
-                </a>
-              </div>
-            )}
-          </div>
+          {/* Products Dropdown */}
+          <ProductsDropdown theme="light" />
 
           <a
             className="hover:text-foreground/80 transition-colors duration-300 cursor-pointer text-base px-4 py-3 text-foreground"
             href="#pricing"
+            onClick={(e) => {
+              e.preventDefault();
+              const el = document.getElementById('pricing');
+              if (el) {
+                el.scrollIntoView({ behavior: 'smooth' });
+              } else {
+                navigate('/#pricing');
+              }
+            }}
           >
             Pricing
           </a>
+
           <a
             className="hover:text-foreground/80 transition-colors duration-300 cursor-pointer text-base px-4 py-3 whitespace-nowrap text-foreground"
-            href="#"
+            href="https://app.explee.com"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Sign in
           </a>
@@ -71,7 +64,7 @@ export default function Navbar() {
           type="button"
           aria-label="Menu"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden p-2 -mr-2 text-foreground"
+          className="md:hidden p-2 -mr-2 text-foreground cursor-pointer"
         >
           {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
@@ -79,28 +72,90 @@ export default function Navbar() {
 
       {/* Mobile menu dropdown */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-card border-b border-border px-4 py-4 space-y-3 shadow-lg">
-          <a
-            href="#pipeline"
-            onClick={() => setMobileMenuOpen(false)}
-            className="block text-base py-2 text-foreground"
-          >
+        <div className="md:hidden bg-card border-b border-border px-4 py-4 space-y-2 shadow-lg">
+          <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider py-1">
             Products
+          </div>
+          <a
+            href="/"
+            onClick={(e) => {
+              e.preventDefault();
+              setMobileMenuOpen(false);
+              navigate(PRODUCT_ROUTES.OUTREACH);
+            }}
+            className="block text-sm py-2 text-foreground font-medium hover:text-brand-600"
+          >
+            Outreach Agent
           </a>
           <a
-            href="#pricing"
-            onClick={() => setMobileMenuOpen(false)}
-            className="block text-base py-2 text-foreground"
+            href="/public/api/docs"
+            onClick={(e) => {
+              e.preventDefault();
+              setMobileMenuOpen(false);
+              navigate(PRODUCT_ROUTES.API);
+            }}
+            className="block text-sm py-2 text-foreground font-medium hover:text-brand-600"
           >
-            Pricing
+            API
           </a>
           <a
-            href="#"
-            onClick={() => setMobileMenuOpen(false)}
-            className="block text-base py-2 text-foreground"
+            href="/b2b-database"
+            onClick={(e) => {
+              e.preventDefault();
+              setMobileMenuOpen(false);
+              navigate(PRODUCT_ROUTES.DATABASE);
+            }}
+            className="block text-sm py-2 text-foreground font-medium hover:text-brand-600"
           >
-            Sign in
+            Database
           </a>
+          <a
+            href="/gm-dataset"
+            onClick={(e) => {
+              e.preventDefault();
+              setMobileMenuOpen(false);
+              navigate(PRODUCT_ROUTES.GM);
+            }}
+            className="block text-sm py-2 text-foreground font-medium hover:text-brand-600"
+          >
+            Google Maps Dataset
+          </a>
+          <a
+            href="/tools/explorer"
+            onClick={(e) => {
+              e.preventDefault();
+              setMobileMenuOpen(false);
+              navigate(PRODUCT_ROUTES.EXPLORER);
+            }}
+            className="block text-sm py-2 text-foreground font-medium hover:text-brand-600"
+          >
+            Explorer
+          </a>
+
+          <div className="border-t border-border my-2 pt-2">
+            <a
+              href="#pricing"
+              onClick={(e) => {
+                e.preventDefault();
+                setMobileMenuOpen(false);
+                const el = document.getElementById('pricing');
+                if (el) el.scrollIntoView({ behavior: 'smooth' });
+                else navigate('/#pricing');
+              }}
+              className="block text-base py-2 text-foreground"
+            >
+              Pricing
+            </a>
+            <a
+              href="https://app.explee.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block text-base py-2 text-foreground"
+            >
+              Sign in
+            </a>
+          </div>
         </div>
       )}
     </header>
