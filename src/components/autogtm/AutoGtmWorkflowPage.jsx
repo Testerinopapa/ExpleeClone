@@ -170,9 +170,10 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
       'enriching contact profiles…',
     ],
     6: [
-      'benchmarking deliverability…',
-      'warming up sending domains…',
-      'drafting personalized outreach…',
+      'picking the hottest lead…',
+      'reading their company signals…',
+      'drafting the first email…',
+      'personalizing the opener…',
     ],
   };
 
@@ -206,6 +207,14 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
         status: idx < subtaskIndex ? 'done' : 'active',
       }))
     : [];
+
+  // Step 6 items derived from single source of truth (WORKFLOW_STEP_TASKS[6])
+  const step6Items = currentStep === 6 && currentAgentItems.length > 0
+    ? currentAgentItems
+    : (WORKFLOW_STEP_TASKS[6] || []).map((task, idx) => ({
+        label: task,
+        status: idx < 3 ? 'done' : 'active',
+      }));
 
   const showPromoBanner = [
     'outreach_companies_loading',
