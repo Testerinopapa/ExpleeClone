@@ -1,12 +1,48 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigation, PRODUCT_ROUTES } from '../../context/NavigationContext';
 
-export default function SignInPage() {
-  const { navigate } = useNavigation();
+export default function SignInPage({ initialMode }) {
+  const { navigate, authMode, currentPath } = useNavigation();
   const [email, setEmail] = useState('');
   const [isFocused, setIsFocused] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+
+  const isRegisterInitial =
+    initialMode === 'register' ||
+    authMode === 'register' ||
+    (typeof window !== 'undefined' &&
+      (window.location.pathname.toLowerCase().includes('/register') ||
+       window.location.pathname.toLowerCase().includes('/create-account') ||
+       window.location.hash.toLowerCase().includes('register')));
+
+  const [mode, setMode] = useState(isRegisterInitial ? 'register' : 'sign-in');
+
+  // Synchronize mode if navigation/history updates
+  useEffect(() => {
+    const isReg =
+      authMode === 'register' ||
+      (typeof window !== 'undefined' &&
+        (window.location.pathname.toLowerCase().includes('/register') ||
+         window.location.pathname.toLowerCase().includes('/create-account') ||
+         window.location.hash.toLowerCase().includes('register')));
+    setMode(isReg ? 'register' : 'sign-in');
+  }, [authMode, currentPath]);
+
+  // Dynamic document title
+  useEffect(() => {
+    document.title = mode === 'register' ? 'Create your account' : 'Sign in to your account';
+  }, [mode]);
+
+  const toggleMode = (targetMode) => {
+    setMode(targetMode);
+    const search = window.location.search || '';
+    if (targetMode === 'register') {
+      navigate(PRODUCT_ROUTES.REGISTER + search);
+    } else {
+      navigate(PRODUCT_ROUTES.SIGN_IN + search);
+    }
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -46,7 +82,7 @@ export default function SignInPage() {
 
             {/* Headline */}
             <h1 className="text-[20px] font-semibold text-[#fafafa] text-center leading-[26px] mb-3">
-              Sign in to your account
+              {mode === 'register' ? 'Create your account' : 'Sign in to your account'}
             </h1>
 
             {/* "Work emails only" Badge */}
@@ -91,7 +127,7 @@ export default function SignInPage() {
               </label>
             </div>
 
-            {/* Sign in Button */}
+            {/* Submit Button */}
             <button
               type="submit"
               disabled={isLoading}
@@ -100,24 +136,41 @@ export default function SignInPage() {
               {isLoading ? (
                 <div className="w-5 h-5 border-2 border-black border-t-transparent rounded-full animate-spin" />
               ) : (
-                <span>Sign in</span>
+                <span>{mode === 'register' ? 'Create account' : 'Sign in'}</span>
               )}
             </button>
           </form>
 
-          {/* "No account yet? Create account" */}
-          <div className="w-full flex items-center justify-center gap-1.5 text-sm mt-4 mb-4">
-            <span className="text-[#a1a1a1]">No account yet?</span>
-            <a
-              href="/register?app_id=yb37qgq72o4s2o8kao78v"
-              onClick={(e) => {
-                e.preventDefault();
-              }}
-              className="text-[#10b981] hover:text-[#34d399] font-medium transition-colors cursor-pointer"
-            >
-              Create account
-            </a>
-          </div>
+          {/* Mode Switcher */}
+          {mode === 'register' ? (
+            <div className="w-full flex items-center justify-center gap-1.5 text-sm mt-4 mb-4">
+              <span className="text-[#a1a1a1]">Already have an account?</span>
+              <a
+                href="/sign-in?app_id=yb37qgq72o4s2o8kao78v"
+                onClick={(e) => {
+                  e.preventDefault();
+                  toggleMode('sign-in');
+                }}
+                className="text-[#10b981] hover:text-[#34d399] font-medium transition-colors cursor-pointer"
+              >
+                Sign in
+              </a>
+            </div>
+          ) : (
+            <div className="w-full flex items-center justify-center gap-1.5 text-sm mt-4 mb-4">
+              <span className="text-[#a1a1a1]">No account yet?</span>
+              <a
+                href="/register?app_id=yb37qgq72o4s2o8kao78v"
+                onClick={(e) => {
+                  e.preventDefault();
+                  toggleMode('register');
+                }}
+                className="text-[#10b981] hover:text-[#34d399] font-medium transition-colors cursor-pointer"
+              >
+                Create account
+              </a>
+            </div>
+          )}
 
           {/* Divider */}
           <div className="w-full flex items-center mb-4">

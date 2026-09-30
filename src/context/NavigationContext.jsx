@@ -5,12 +5,13 @@ import { getCountryBySlug } from '../data/gm/countryData';
 const NavigationContext = createContext(null);
 
 export const PRODUCT_ROUTES = {
-  OUTREACH: '/',
+  OUTREACH: '/outreach-agent',
   DATABASE: '/b2b-database',
   API: '/public/api/docs',
   GM: '/gm-dataset',
   EXPLORER: '/tools/explorer',
   SIGN_IN: '/sign-in',
+  REGISTER: '/register',
 };
 
 // Map URL paths or hashes to product IDs
@@ -18,14 +19,34 @@ export function resolveProductFromLocation() {
   const pathname = window.location.pathname.toLowerCase();
   const hash = window.location.hash.toLowerCase();
 
-  // 0. Sign In (/sign-in, /login, #sign-in, #login)
+  // 0a. Register / Create Account (/register, /create-account, /signup, /sign-up, #register, #signup)
+  if (
+    pathname.includes('/register') ||
+    pathname.includes('/create-account') ||
+    pathname.includes('/signup') ||
+    pathname.includes('/sign-up') ||
+    hash.includes('register') ||
+    hash.includes('signup')
+  ) {
+    return {
+      product: 'sign-in',
+      authMode: 'register',
+      canonicalPath: PRODUCT_ROUTES.REGISTER,
+    };
+  }
+
+  // 0b. Sign In (/sign-in, /login, #sign-in, #login)
   if (
     pathname.includes('/sign-in') ||
     pathname.includes('/login') ||
     hash.includes('sign-in') ||
     hash.includes('login')
   ) {
-    return { product: 'sign-in', canonicalPath: PRODUCT_ROUTES.SIGN_IN };
+    return {
+      product: 'sign-in',
+      authMode: 'sign-in',
+      canonicalPath: PRODUCT_ROUTES.SIGN_IN,
+    };
   }
 
   // 1. Database (/b2b-database, /database, #b2b)
@@ -90,12 +111,22 @@ export function resolveProductFromLocation() {
     return { product: 'explorer', canonicalPath: PRODUCT_ROUTES.EXPLORER };
   }
 
-  // 5. Outreach Agent / Main Landing Page (/ or /outreach-agent or /index.html)
+  // 5. Root route (/) -> redirect to /sign-in
   if (
     pathname === '/' ||
     pathname === '' ||
-    pathname.endsWith('/index.html') ||
-    pathname.includes('/outreach-agent') ||
+    pathname.endsWith('/index.html')
+  ) {
+    if (typeof window !== 'undefined' && window.location.pathname !== PRODUCT_ROUTES.SIGN_IN) {
+      const search = window.location.search || '';
+      window.history.replaceState({}, '', PRODUCT_ROUTES.SIGN_IN + search);
+    }
+    return { product: 'sign-in', authMode: 'sign-in', canonicalPath: PRODUCT_ROUTES.SIGN_IN };
+  }
+
+  // 6. Outreach Agent (/outreach-agent, /outreach, /landing, #outreach)
+  if (
+    pathname.includes('/outreach') ||
     pathname.includes('/landing') ||
     hash.includes('outreach')
   ) {
@@ -123,6 +154,15 @@ export function NavigationProvider({ children }) {
     };
   }, []);
 
+  // Ensure root URL redirects to /sign-in in address bar
+  useEffect(() => {
+    const pathname = window.location.pathname.toLowerCase();
+    if (pathname === '/' || pathname === '' || pathname.endsWith('/index.html')) {
+      const search = window.location.search || '';
+      window.history.replaceState({}, '', PRODUCT_ROUTES.SIGN_IN + search);
+    }
+  }, []);
+
   const navigate = useCallback((targetPath) => {
     if (!targetPath) return;
 
@@ -142,7 +182,8 @@ export function NavigationProvider({ children }) {
     }
 
     // Update browser history
-    if (window.location.pathname !== targetPath) {
+    const currentFull = window.location.pathname + window.location.search + window.location.hash;
+    if (currentFull !== targetPath && window.location.pathname !== targetPath) {
       window.history.pushState({}, '', targetPath);
     }
 
@@ -155,6 +196,7 @@ export function NavigationProvider({ children }) {
       value={{
         currentProduct: routeState.product,
         currentPath: routeState.canonicalPath,
+        authMode: routeState.authMode || 'sign-in',
         countrySlug: routeState.countrySlug,
         regionSlug: routeState.regionSlug,
         navigate,
