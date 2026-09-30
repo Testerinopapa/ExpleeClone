@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { ArrowRight, ChevronDown, ChevronUp } from 'lucide-react';
-import countriesData from '../../data/gm/gmCountries.json';
+import { getAllCountries } from '../../data/gm/countryData';
+import { useNavigation } from '../../context/NavigationContext';
 
 export default function GMCountriesSection() {
   const [isExpanded, setIsExpanded] = useState(false);
+  const { navigate } = useNavigation();
+  const countriesData = getAllCountries();
 
   // Initial visible countries: 21 items
   const visibleCountries = isExpanded ? countriesData : countriesData.slice(0, 21);
@@ -23,8 +26,12 @@ export default function GMCountriesSection() {
             {visibleCountries.map((c) => (
               <a
                 key={c.slug}
-                href={c.href}
-                className="group flex items-center gap-4 bg-[#111414] rounded-2xl p-5 border border-white/[0.08] hover:shadow-[0_10px_40px_rgba(34,197,94,0.15)] hover:border-[#7cd9ba] transition-all duration-300 min-h-[90px]"
+                href={`/gm-dataset/locations/${c.slug}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  navigate(`/gm-dataset/locations/${c.slug}`);
+                }}
+                className="group flex items-center gap-4 bg-[#111414] rounded-2xl p-5 border border-white/[0.08] hover:shadow-[0_10px_40px_rgba(16,185,129,0.18)] hover:border-[#10b981] transition-all duration-300 min-h-[90px] cursor-pointer"
               >
                 {/* 2-letter Country Code */}
                 <span className="font-bold text-xl md:text-2xl text-white w-10 shrink-0 font-sans tracking-wide">
@@ -36,7 +43,7 @@ export default function GMCountriesSection() {
                   <h3 className="font-semibold text-white group-hover:text-[#10b981] transition-colors truncate">
                     {c.name}
                   </h3>
-                  <p className="text-sm text-[#9ca3af]">{c.count}</p>
+                  <p className="text-sm text-[#9ca3af]">{c.locationCount || c.count}</p>
                 </div>
 
                 {/* Arrow */}

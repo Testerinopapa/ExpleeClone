@@ -43,10 +43,12 @@ export default function B2BHeader() {
           </a>
 
           <a
-            href="https://app.explee.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden sm:inline-block text-white/80 hover:text-white transition-colors text-sm font-medium px-3 py-2"
+            href="/sign-in"
+            onClick={(e) => {
+              e.preventDefault();
+              navigate(PRODUCT_ROUTES.SIGN_IN);
+            }}
+            className="hidden sm:inline-block text-white/80 hover:text-white transition-colors text-sm font-medium px-3 py-2 cursor-pointer"
           >
             Sign in
           </a>

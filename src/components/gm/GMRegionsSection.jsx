@@ -1,8 +1,11 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import regionsData from '../../data/gm/gmRegions.json';
+import { useNavigation } from '../../context/NavigationContext';
 
 export default function GMRegionsSection() {
+  const { navigate } = useNavigation();
+
   return (
     <section className="mb-24">
       <div className="container mx-auto max-w-[1200px] px-4">
@@ -18,7 +21,11 @@ export default function GMRegionsSection() {
             <a
               key={region.id}
               href={region.href}
-              className="group relative bg-[#111414] rounded-2xl p-6 border border-white/[0.08] hover:shadow-[0_10px_40px_rgba(34,197,94,0.15)] hover:border-[#7cd9ba] transition-all duration-300 overflow-hidden"
+              onClick={(e) => {
+                e.preventDefault();
+                navigate(region.href);
+              }}
+              className="group relative bg-[#111414] rounded-2xl p-6 border border-white/[0.08] hover:shadow-[0_10px_40px_rgba(34,197,94,0.15)] hover:border-[#7cd9ba] transition-all duration-300 overflow-hidden cursor-pointer"
             >
               {/* Silhouette SVG map in background */}
               {region.svgHtml && (

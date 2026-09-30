@@ -3,8 +3,11 @@ import { NavigationProvider, useNavigation, PRODUCT_ROUTES } from './context/Nav
 import OutreachAgentPage from './components/outreach/OutreachAgentPage';
 import B2BPage from './components/b2b/B2BPage';
 import GMPage from './components/gm/GMPage';
+import CountryLocationPage from './components/gm/CountryLocationPage';
+import RegionLocationPage from './components/gm/RegionLocationPage';
 import ApiDocs from './components/docs/ApiDocs';
 import ExplorerPage from './components/explorer/ExplorerPage';
+import SignInPage from './components/auth/SignInPage';
 
 function NotFoundPage() {
   const { navigate } = useNavigation();
@@ -53,6 +56,13 @@ function NotFoundPage() {
             <div className="font-semibold text-sm text-white">Explorer</div>
             <div className="text-xs text-gray-400">Explore and filter the company graph</div>
           </button>
+          <button
+            onClick={() => navigate(PRODUCT_ROUTES.SIGN_IN)}
+            className="w-full p-3 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] transition text-left cursor-pointer"
+          >
+            <div className="font-semibold text-sm text-white">Sign In</div>
+            <div className="text-xs text-gray-400">Sign in to your account</div>
+          </button>
         </div>
       </div>
     </div>
@@ -60,7 +70,7 @@ function NotFoundPage() {
 }
 
 function MainRouter() {
-  const { currentProduct, navigate } = useNavigation();
+  const { currentProduct, countrySlug, regionSlug, navigate } = useNavigation();
 
   switch (currentProduct) {
     case 'outreach':
@@ -69,10 +79,16 @@ function MainRouter() {
       return <B2BPage />;
     case 'gm':
       return <GMPage />;
+    case 'gm-region':
+      return <RegionLocationPage regionSlug={regionSlug} />;
+    case 'gm-country':
+      return <CountryLocationPage countrySlug={countrySlug} />;
     case 'api':
       return <ApiDocs onBackToLanding={() => navigate(PRODUCT_ROUTES.OUTREACH)} />;
     case 'explorer':
       return <ExplorerPage />;
+    case 'sign-in':
+      return <SignInPage />;
     default:
       return <NotFoundPage />;
   }

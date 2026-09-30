@@ -51,9 +51,11 @@ export default function Navbar() {
 
           <a
             className="hover:text-foreground/80 transition-colors duration-300 cursor-pointer text-base px-4 py-3 whitespace-nowrap text-foreground"
-            href="https://app.explee.com"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/sign-in"
+            onClick={(e) => {
+              e.preventDefault();
+              navigate(PRODUCT_ROUTES.SIGN_IN);
+            }}
           >
             Sign in
           </a>
@@ -147,10 +149,12 @@ export default function Navbar() {
               Pricing
             </a>
             <a
-              href="https://app.explee.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setMobileMenuOpen(false)}
+              href="/sign-in"
+              onClick={(e) => {
+                e.preventDefault();
+                setMobileMenuOpen(false);
+                navigate(PRODUCT_ROUTES.SIGN_IN);
+              }}
               className="block text-base py-2 text-foreground"
             >
               Sign in

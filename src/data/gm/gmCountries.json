@@ -96,12 +96,12 @@
     "slug": "italy"
   },
   {
-    "code": "VN",
-    "name": "Viet Nam",
-    "count": "4M+ locations",
-    "raw_flag": "🇻🇳",
-    "href": "/gm-dataset/locations/viet-nam",
-    "slug": "viet-nam"
+    "code": "IR",
+    "name": "Iran",
+    "count": "1.2M+ locations",
+    "raw_flag": "🇮🇷",
+    "href": "/gm-dataset/locations/iran",
+    "slug": "iran"
   },
   {
     "code": "GB",
@@ -424,12 +424,12 @@
     "slug": "hong-kong"
   },
   {
-    "code": "KR",
-    "name": "South Korea",
+    "code": "KP",
+    "name": "North Korea",
     "count": "240K+ locations",
     "raw_flag": "",
-    "href": "/gm-dataset/locations/south-korea",
-    "slug": "south-korea"
+    "href": "/gm-dataset/locations/north-korea",
+    "slug": "north-korea"
   },
   {
     "code": "MA",
@@ -1872,51 +1872,83 @@
     "slug": "western-sahara"
   },
   {
-    "code": "T01",
-    "name": "Territory 1",
-    "count": "99 locations",
-    "raw_flag": "",
-    "href": "/gm-dataset/locations/territory-1",
-    "slug": "territory-1"
+    "code": "TW",
+    "name": "Taiwan",
+    "count": "8.2M+ locations",
+    "raw_flag": "🇹🇼",
+    "href": "/gm-dataset/locations/taiwan",
+    "slug": "taiwan"
   },
   {
-    "code": "T02",
-    "name": "Territory 2",
-    "count": "98 locations",
-    "raw_flag": "",
-    "href": "/gm-dataset/locations/territory-2",
-    "slug": "territory-2"
+    "code": "VE",
+    "name": "Venezuela",
+    "count": "850K+ locations",
+    "raw_flag": "🇻🇪",
+    "href": "/gm-dataset/locations/venezuela",
+    "slug": "venezuela"
   },
   {
-    "code": "T03",
-    "name": "Territory 3",
-    "count": "97 locations",
-    "raw_flag": "",
-    "href": "/gm-dataset/locations/territory-3",
-    "slug": "territory-3"
+    "code": "CU",
+    "name": "Cuba",
+    "count": "420K+ locations",
+    "raw_flag": "🇨🇺",
+    "href": "/gm-dataset/locations/cuba",
+    "slug": "cuba"
   },
   {
-    "code": "T04",
-    "name": "Territory 4",
-    "count": "96 locations",
-    "raw_flag": "",
-    "href": "/gm-dataset/locations/territory-4",
-    "slug": "territory-4"
+    "code": "GP",
+    "name": "Guadeloupe",
+    "count": "12K+ locations",
+    "raw_flag": "🇬🇵",
+    "href": "/gm-dataset/locations/guadeloupe",
+    "slug": "guadeloupe"
   },
   {
-    "code": "T05",
-    "name": "Territory 5",
+    "code": "MQ",
+    "name": "Martinique",
+    "count": "11K+ locations",
+    "raw_flag": "🇲🇶",
+    "href": "/gm-dataset/locations/martinique",
+    "slug": "martinique"
+  },
+  {
+    "code": "GF",
+    "name": "French Guiana",
+    "count": "4.2K+ locations",
+    "raw_flag": "🇬🇫",
+    "href": "/gm-dataset/locations/french-guiana",
+    "slug": "french-guiana"
+  },
+  {
+    "code": "BQ",
+    "name": "Caribbean Netherlands",
+    "count": "1.5K+ locations",
+    "raw_flag": "🇧🇶",
+    "href": "/gm-dataset/locations/caribbean-netherlands",
+    "slug": "caribbean-netherlands"
+  },
+  {
+    "code": "TK",
+    "name": "Tokelau",
     "count": "95 locations",
-    "raw_flag": "",
-    "href": "/gm-dataset/locations/territory-5",
-    "slug": "territory-5"
+    "raw_flag": "🇹🇰",
+    "href": "/gm-dataset/locations/tokelau",
+    "slug": "tokelau"
   },
   {
-    "code": "T06",
-    "name": "Territory 6",
-    "count": "94 locations",
-    "raw_flag": "",
-    "href": "/gm-dataset/locations/territory-6",
-    "slug": "territory-6"
+    "code": "HM",
+    "name": "Heard Island",
+    "count": "20 locations",
+    "raw_flag": "🇭🇲",
+    "href": "/gm-dataset/locations/heard-island",
+    "slug": "heard-island"
+  },
+  {
+    "code": "UM",
+    "name": "US Minor Outlying Islands",
+    "count": "15 locations",
+    "raw_flag": "🇺🇲",
+    "href": "/gm-dataset/locations/us-minor-outlying-islands",
+    "slug": "us-minor-outlying-islands"
   }
 ]
