@@ -1,0 +1,157 @@
+{
+  "title": "Segments Explorer",
+  "description": "Visualize your market by exploring business clusters. See neighboring niches, understand segment sizes, and discover your exact TAM with company counts.",
+  "previewImage": "/static/images/explorer-preview.jpg",
+  "placeholder": "Type business keywords like 'dental clinic', no filters/geo/size",
+  "suggestions": [
+    {
+      "icon": "🏠",
+      "title": "real estate agency",
+      "query": "real estate agency"
+    },
+    {
+      "icon": "🤖",
+      "title": "AI meeting note writer",
+      "query": "AI meeting note writer"
+    },
+    {
+      "icon": "🦷",
+      "title": "dental clinic",
+      "query": "dental clinic"
+    },
+    {
+      "icon": "📱",
+      "title": "digital marketing agency",
+      "query": "digital marketing agency"
+    },
+    {
+      "icon": "💆",
+      "title": "day spa",
+      "query": "day spa"
+    },
+    {
+      "icon": "🎉",
+      "title": "event management",
+      "query": "event management"
+    },
+    {
+      "icon": "📊",
+      "title": "bookkeeping services",
+      "query": "bookkeeping services"
+    },
+    {
+      "icon": "💰",
+      "title": "vc fund",
+      "query": "vc fund"
+    },
+    {
+      "icon": "📧",
+      "title": "b2b outreach agency",
+      "query": "b2b outreach agency"
+    },
+    {
+      "icon": "🔋",
+      "title": "energy storage producers",
+      "query": "energy storage producers"
+    },
+    {
+      "icon": "₿",
+      "title": "crypto exchange platform",
+      "query": "crypto exchange platform"
+    },
+    {
+      "icon": "🖥️",
+      "title": "gpu providers",
+      "query": "gpu providers"
+    }
+  ],
+  "footer": {
+    "products": [
+      {
+        "title": "Outreach Agent",
+        "href": "/"
+      },
+      {
+        "title": "Global B2B Company Database",
+        "badge": "105M+",
+        "href": "/b2b-database"
+      },
+      {
+        "title": "Google Maps Dataset",
+        "badge": "218M+",
+        "href": "/gm-dataset"
+      },
+      {
+        "title": "Segments Explorer",
+        "href": "/tools/explorer"
+      }
+    ],
+    "databases1": [
+      {
+        "title": "Companies in North America",
+        "href": "/b2b-database/locations/north-america"
+      },
+      {
+        "title": "Companies in Europe",
+        "href": "/b2b-database/locations/europe"
+      },
+      {
+        "title": "Companies in Asia Pacific",
+        "href": "/b2b-database/locations/asia-pacific"
+      },
+      {
+        "title": "Companies in Southeast Asia",
+        "href": "/b2b-database/locations/southeast-asia"
+      },
+      {
+        "title": "Companies in Latin America",
+        "href": "/b2b-database/locations/latin-america"
+      }
+    ],
+    "databases2": [
+      {
+        "title": "Companies in Middle East",
+        "href": "/b2b-database/locations/middle-east"
+      },
+      {
+        "title": "Companies in CIS Countries",
+        "href": "/b2b-database/locations/cis"
+      },
+      {
+        "title": "Companies in Oceania",
+        "href": "/b2b-database/locations/oceania"
+      },
+      {
+        "title": "Companies in Africa",
+        "href": "/b2b-database/locations/africa"
+      }
+    ],
+    "resources": [
+      {
+        "title": "Pricing",
+        "href": "/pricing"
+      },
+      {
+        "title": "API documentation",
+        "href": "https://api.explee.com/public/api/docs",
+        "external": true
+      },
+      {
+        "title": "Compliance FAQ",
+        "href": "/compliance-faq"
+      }
+    ],
+    "copyright": "© 2026 Explee LTD — made with 🦎 in London",
+    "legal": [
+      {
+        "title": "Terms of use",
+        "href": "/terms-of-use"
+      },
+      {
+        "title": "Privacy Policy",
+        "href": "/privacy-policy"
+      }
+    ],
+    "companyInfo": "Company No. 15759064 | VAT GB478208465 | International House, 50 Essex Street, London, WC2R 3JF"
+  }
+}

@@ -1,0 +1,2461 @@
+{
+  "query": "AI meeting note writer",
+  "viewBox": "0 0 1920 950",
+  "paths": [
+    {
+      "id": "cluster-7",
+      "clusterId": "cluster-7",
+      "name": "Cluster 7",
+      "d": "M 335.60,390.00 C 333.95,413.58 323.11,442.78 307.56,457.87 C 292.01,472.97 261.88,468.23 242.29,480.57 C 222.70,492.91 210.87,525.95 190.00,531.91 C 169.13,537.87 133.15,530.70 117.06,516.34 C 100.97,501.98 102.72,466.81 93.43,445.75 C 84.15,424.70 65.19,410.82 61.33,390.00 C 57.46,369.18 59.91,340.12 70.24,320.86 C 80.56,301.59 103.31,283.84 123.27,274.42 C 143.23,265.00 169.14,261.93 190.00,264.32 C 210.86,266.71 227.21,280.07 248.45,288.76 C 269.69,297.44 302.92,299.55 317.44,316.42 C 331.97,333.30 337.25,366.42 335.60,390.00 Z",
+      "fill": "#a3e635",
+      "stroke": "#a3e635",
+      "opacity": 0.17
+    },
+    {
+      "id": "cluster-4",
+      "clusterId": "cluster-4",
+      "name": "Cluster 4",
+      "d": "M 561.60,640.00 C 559.32,671.74 544.31,711.05 522.77,731.37 C 501.24,751.69 459.53,745.31 432.40,761.92 C 405.28,778.54 388.90,823.01 360.00,831.04 C 331.10,839.06 281.29,829.40 259.01,810.07 C 236.72,790.74 239.16,743.40 226.29,715.05 C 213.43,686.71 187.19,668.02 181.84,640.00 C 176.49,611.98 179.88,572.85 194.18,546.92 C 208.47,520.99 239.97,497.09 267.60,484.41 C 295.24,471.72 331.11,467.60 360.00,470.82 C 388.89,474.04 411.53,492.02 440.94,503.71 C 470.35,515.40 516.35,518.24 536.46,540.95 C 556.57,563.67 563.88,608.26 561.60,640.00 Z",
+      "fill": "#2dd4bf",
+      "stroke": "#2dd4bf",
+      "opacity": 0.17
+    },
+    {
+      "id": "cluster-10",
+      "clusterId": "cluster-10",
+      "name": "Cluster 10",
+      "d": "M 863.60,430.00 C 860.05,468.08 836.70,515.26 803.20,539.64 C 769.71,564.03 704.83,556.37 662.63,576.31 C 620.43,596.24 594.96,649.61 550.00,659.24 C 505.04,668.87 427.56,657.28 392.90,634.08 C 358.23,610.88 362.02,554.07 342.01,520.06 C 322.01,486.05 281.19,463.63 272.86,430.00 C 264.53,396.37 269.82,349.42 292.05,318.30 C 314.29,287.19 363.28,258.51 406.27,243.29 C 449.26,228.07 505.06,223.12 550.00,226.98 C 594.94,230.84 630.15,252.43 675.90,266.45 C 721.65,280.48 793.21,283.88 824.49,311.14 C 855.77,338.40 867.15,391.92 863.60,430.00 Z",
+      "fill": "#a855f7",
+      "stroke": "#a855f7",
+      "opacity": 0.17
+    },
+    {
+      "id": "cluster-6",
+      "clusterId": "cluster-6",
+      "name": "Cluster 6",
+      "d": "M 798.00,800.00 C 796.10,821.76 783.59,848.72 765.64,862.65 C 747.70,876.59 712.94,872.21 690.34,883.60 C 667.73,895.00 654.08,925.49 630.00,931.00 C 605.92,936.50 564.41,929.87 545.84,916.62 C 527.27,903.36 529.30,870.90 518.58,851.46 C 507.86,832.03 485.99,819.21 481.53,800.00 C 477.07,780.79 479.90,753.96 491.81,736.17 C 503.72,718.39 529.97,702.01 553.00,693.31 C 576.03,684.61 605.93,681.79 630.00,683.99 C 654.07,686.20 672.94,698.53 697.45,706.54 C 721.95,714.56 760.29,716.51 777.05,732.08 C 793.81,747.66 799.90,778.24 798.00,800.00 Z",
+      "fill": "#38bdf8",
+      "stroke": "#38bdf8",
+      "opacity": 0.17
+    },
+    {
+      "id": "cluster-11",
+      "clusterId": "cluster-11",
+      "name": "Cluster 11",
+      "d": "M 974.00,330.00 C 973.05,342.69 966.79,358.42 957.82,366.55 C 948.85,374.68 931.47,372.12 920.17,378.77 C 908.86,385.41 902.04,403.20 890.00,406.41 C 877.96,409.62 857.20,405.76 847.92,398.03 C 838.63,390.29 839.65,371.36 834.29,360.02 C 828.93,348.68 818.00,341.21 815.77,330.00 C 813.54,318.79 814.95,303.14 820.91,292.77 C 826.86,282.40 839.99,272.84 851.50,267.76 C 863.02,262.69 877.96,261.04 890.00,262.33 C 902.04,263.61 911.47,270.81 923.72,275.48 C 935.98,280.16 955.14,281.29 963.52,290.38 C 971.90,299.47 974.95,317.31 974.00,330.00 Z",
+      "fill": "#10b981",
+      "stroke": "#10b981",
+      "opacity": 0.17
+    },
+    {
+      "id": "cluster-1",
+      "clusterId": "cluster-1",
+      "name": "Cluster 1",
+      "d": "M 1044.00,455.00 C 1043.05,466.79 1036.79,481.39 1027.82,488.94 C 1018.85,496.48 1001.47,494.12 990.17,500.29 C 978.86,506.46 972.04,522.98 960.00,525.96 C 947.96,528.94 927.20,525.35 917.92,518.17 C 908.63,510.99 909.65,493.40 904.29,482.88 C 898.93,472.35 888.00,465.41 885.77,455.00 C 883.54,444.59 884.95,430.06 890.91,420.43 C 896.86,410.80 909.99,401.92 921.50,397.21 C 933.02,392.50 947.96,390.97 960.00,392.16 C 972.04,393.36 981.47,400.04 993.72,404.38 C 1005.98,408.72 1025.14,409.77 1033.52,418.21 C 1041.90,426.65 1044.95,443.21 1044.00,455.00 Z",
+      "fill": "#60a5fa",
+      "stroke": "#60a5fa",
+      "opacity": 0.17
+    },
+    {
+      "id": "cluster-5",
+      "clusterId": "cluster-5",
+      "name": "Cluster 5",
+      "d": "M 1176.80,800.00 C 1175.03,823.58 1163.35,852.78 1146.60,867.87 C 1129.85,882.97 1097.41,878.23 1076.31,890.57 C 1055.21,902.91 1042.48,935.95 1020.00,941.91 C 997.52,947.87 958.78,940.70 941.45,926.34 C 924.12,911.98 926.01,876.81 916.01,855.75 C 906.00,834.70 885.59,820.82 881.43,800.00 C 877.27,779.18 879.91,750.12 891.03,730.86 C 902.14,711.59 926.64,693.84 948.14,684.42 C 969.63,675.00 997.53,671.93 1020.00,674.32 C 1042.47,676.71 1060.08,690.07 1082.95,698.76 C 1105.82,707.44 1141.60,709.55 1157.25,726.42 C 1172.89,743.30 1178.57,776.42 1176.80,800.00 Z",
+      "fill": "#34d399",
+      "stroke": "#34d399",
+      "opacity": 0.17
+    },
+    {
+      "id": "cluster-2",
+      "clusterId": "cluster-2",
+      "name": "Cluster 2",
+      "d": "M 1288.80,240.00 C 1287.34,257.23 1277.75,278.57 1263.99,289.60 C 1250.24,300.63 1223.59,297.17 1206.26,306.19 C 1188.93,315.20 1178.46,339.35 1160.00,343.71 C 1141.54,348.06 1109.71,342.82 1095.48,332.32 C 1081.24,321.83 1082.79,296.13 1074.58,280.74 C 1066.36,265.35 1049.59,255.21 1046.17,240.00 C 1042.75,224.79 1044.92,203.55 1054.06,189.47 C 1063.19,175.39 1083.31,162.42 1100.97,155.54 C 1118.63,148.65 1141.54,146.41 1160.00,148.16 C 1178.46,149.91 1192.92,159.67 1211.71,166.01 C 1230.50,172.36 1259.89,173.90 1272.74,186.23 C 1285.59,198.56 1290.26,222.77 1288.80,240.00 Z",
+      "fill": "#4ade80",
+      "stroke": "#4ade80",
+      "opacity": 0.17
+    },
+    {
+      "id": "cluster-8",
+      "clusterId": "cluster-8",
+      "name": "Cluster 8",
+      "d": "M 1365.60,350.00 C 1363.95,369.95 1353.11,394.66 1337.56,407.43 C 1322.01,420.20 1291.88,416.20 1272.29,426.64 C 1252.70,437.08 1240.87,465.04 1220.00,470.08 C 1199.13,475.12 1163.15,469.05 1147.06,456.90 C 1130.97,444.75 1132.72,414.99 1123.43,397.17 C 1114.15,379.36 1095.19,367.61 1091.33,350.00 C 1087.46,332.39 1089.91,307.79 1100.24,291.49 C 1110.56,275.19 1133.31,260.17 1153.27,252.20 C 1173.23,244.23 1199.14,241.64 1220.00,243.66 C 1240.86,245.68 1257.21,256.98 1278.45,264.33 C 1299.69,271.68 1332.92,273.46 1347.44,287.74 C 1361.97,302.02 1367.25,330.05 1365.60,350.00 Z",
+      "fill": "#f472b6",
+      "stroke": "#f472b6",
+      "opacity": 0.17
+    },
+    {
+      "id": "cluster-9",
+      "clusterId": "cluster-9",
+      "name": "Cluster 9",
+      "d": "M 1290.80,445.00 C 1289.66,455.88 1282.15,469.36 1271.39,476.33 C 1260.62,483.29 1239.77,481.11 1226.20,486.80 C 1212.64,492.50 1204.45,507.75 1190.00,510.50 C 1175.55,513.25 1150.64,509.94 1139.50,503.31 C 1128.36,496.68 1129.58,480.45 1123.15,470.73 C 1116.72,461.01 1103.60,454.61 1100.92,445.00 C 1098.24,435.39 1099.94,421.98 1107.09,413.09 C 1114.23,404.20 1129.98,396.00 1143.80,391.65 C 1157.62,387.31 1175.56,385.89 1190.00,387.00 C 1204.44,388.10 1215.76,394.26 1230.47,398.27 C 1245.17,402.28 1268.17,403.25 1278.23,411.04 C 1288.28,418.83 1291.94,434.12 1290.80,445.00 Z",
+      "fill": "#c084fc",
+      "stroke": "#c084fc",
+      "opacity": 0.17
+    },
+    {
+      "id": "cluster-3",
+      "clusterId": "cluster-3",
+      "name": "Cluster 3",
+      "d": "M 1591.60,760.00 C 1589.32,790.83 1574.31,829.02 1552.77,848.76 C 1531.24,868.50 1489.53,862.30 1462.40,878.44 C 1435.28,894.58 1418.90,937.78 1390.00,945.58 C 1361.10,953.37 1311.29,943.99 1289.01,925.21 C 1266.72,906.43 1269.16,860.44 1256.29,832.91 C 1243.43,805.37 1217.19,787.22 1211.84,760.00 C 1206.49,732.78 1209.88,694.77 1224.18,669.58 C 1238.47,644.39 1269.97,621.17 1297.60,608.85 C 1325.24,596.53 1361.11,592.53 1390.00,595.65 C 1418.89,598.78 1441.53,616.25 1470.94,627.60 C 1500.35,638.96 1546.35,641.72 1566.46,663.78 C 1586.57,685.85 1593.88,729.17 1591.60,760.00 Z",
+      "fill": "#fbbf24",
+      "stroke": "#fbbf24",
+      "opacity": 0.17
+    },
+    {
+      "id": "cluster-0",
+      "clusterId": "cluster-0",
+      "name": "Cluster 0",
+      "d": "M 1865.20,430.00 C 1862.54,468.08 1845.02,515.26 1819.90,539.64 C 1794.78,564.03 1746.12,556.37 1714.47,576.31 C 1682.82,596.24 1663.72,649.61 1630.00,659.24 C 1596.28,668.87 1538.17,657.28 1512.17,634.08 C 1486.17,610.88 1489.01,554.07 1474.01,520.06 C 1459.01,486.05 1428.39,463.63 1422.15,430.00 C 1415.90,396.37 1419.86,349.42 1436.54,318.30 C 1453.21,287.19 1489.96,258.51 1522.20,243.29 C 1554.45,228.07 1596.30,223.12 1630.00,226.98 C 1663.70,230.84 1690.11,252.43 1724.42,266.45 C 1758.74,280.48 1812.41,283.88 1835.87,311.14 C 1859.33,338.40 1867.86,391.92 1865.20,430.00 Z",
+      "fill": "#a3e635",
+      "stroke": "#a3e635",
+      "opacity": 0.17
+    }
+  ],
+  "clusters": [
+    {
+      "id": "cluster-7",
+      "name": "Cluster 7",
+      "count": "232",
+      "color": "#a3e635",
+      "badgeBg": "#bef264",
+      "badgeTextColor": "#000000",
+      "x": 158,
+      "y": 445,
+      "count_x": 239.8,
+      "count_y": 445
+    },
+    {
+      "id": "cluster-4",
+      "name": "Cluster 4",
+      "count": "1.5k",
+      "color": "#2dd4bf",
+      "badgeBg": "#5eead4",
+      "badgeTextColor": "#000000",
+      "x": 290,
+      "y": 730,
+      "count_x": 371.8,
+      "count_y": 730
+    },
+    {
+      "id": "cluster-10",
+      "name": "Cluster 10",
+      "count": "3.3k",
+      "color": "#a855f7",
+      "badgeBg": "#9333ea",
+      "badgeTextColor": "#ffffff",
+      "x": 530,
+      "y": 600,
+      "count_x": 620.0,
+      "count_y": 600
+    },
+    {
+      "id": "cluster-6",
+      "name": "Cluster 6",
+      "count": "1.2k",
+      "color": "#38bdf8",
+      "badgeBg": "#0284c7",
+      "badgeTextColor": "#ffffff",
+      "x": 580,
+      "y": 870,
+      "count_x": 661.8,
+      "count_y": 870
+    },
+    {
+      "id": "cluster-11",
+      "name": "Cluster 11",
+      "count": "8",
+      "color": "#10b981",
+      "badgeBg": "#059669",
+      "badgeTextColor": "#ffffff",
+      "x": 835,
+      "y": 355,
+      "count_x": 925.0,
+      "count_y": 355
+    },
+    {
+      "id": "cluster-1",
+      "name": "Cluster 1",
+      "count": "160",
+      "color": "#60a5fa",
+      "badgeBg": "#2563eb",
+      "badgeTextColor": "#ffffff",
+      "x": 875,
+      "y": 480,
+      "count_x": 956.8,
+      "count_y": 480
+    },
+    {
+      "id": "cluster-5",
+      "name": "Cluster 5",
+      "count": "923",
+      "color": "#34d399",
+      "badgeBg": "#10b981",
+      "badgeTextColor": "#000000",
+      "x": 915,
+      "y": 885,
+      "count_x": 996.8,
+      "count_y": 885
+    },
+    {
+      "id": "cluster-2",
+      "name": "Cluster 2",
+      "count": "1.1k",
+      "color": "#4ade80",
+      "badgeBg": "#22c55e",
+      "badgeTextColor": "#000000",
+      "x": 1090,
+      "y": 275,
+      "count_x": 1171.8,
+      "count_y": 275
+    },
+    {
+      "id": "cluster-8",
+      "name": "Cluster 8",
+      "count": "1.4k",
+      "color": "#f472b6",
+      "badgeBg": "#db2777",
+      "badgeTextColor": "#ffffff",
+      "x": 1185,
+      "y": 415,
+      "count_x": 1266.8,
+      "count_y": 415
+    },
+    {
+      "id": "cluster-9",
+      "name": "Cluster 9",
+      "count": "719",
+      "color": "#c084fc",
+      "badgeBg": "#9333ea",
+      "badgeTextColor": "#ffffff",
+      "x": 1130,
+      "y": 448,
+      "count_x": 1211.8,
+      "count_y": 448
+    },
+    {
+      "id": "cluster-3",
+      "name": "Cluster 3",
+      "count": "1.9k",
+      "color": "#fbbf24",
+      "badgeBg": "#f59e0b",
+      "badgeTextColor": "#000000",
+      "x": 1320,
+      "y": 920,
+      "count_x": 1401.8,
+      "count_y": 920
+    },
+    {
+      "id": "cluster-0",
+      "name": "Cluster 0",
+      "count": "2.6k",
+      "color": "#a3e635",
+      "badgeBg": "#84cc16",
+      "badgeTextColor": "#000000",
+      "x": 1595,
+      "y": 622,
+      "count_x": 1676.8,
+      "count_y": 622
+    }
+  ],
+  "labels": [
+    {
+      "text": "automatic meeting minutes generator",
+      "x": 910,
+      "y": 185
+    },
+    {
+      "text": "ai meeting scribe",
+      "x": 960,
+      "y": 200
+    },
+    {
+      "text": "real-time meeting summary",
+      "x": 1125,
+      "y": 570
+    },
+    {
+      "text": "meeting note tool",
+      "x": 1165,
+      "y": 660
+    },
+    {
+      "clusterId": "cluster-7",
+      "text": "meeting note taker",
+      "x": 105,
+      "y": 372
+    },
+    {
+      "clusterId": "cluster-7",
+      "text": "automated note-taking system",
+      "x": 200,
+      "y": 328
+    },
+    {
+      "clusterId": "cluster-4",
+      "text": "ai transcription",
+      "x": 80,
+      "y": 585
+    },
+    {
+      "clusterId": "cluster-4",
+      "text": "ai meeting assistant",
+      "x": 260,
+      "y": 620
+    },
+    {
+      "clusterId": "cluster-4",
+      "text": "meeting summary tool",
+      "x": 345,
+      "y": 565
+    },
+    {
+      "clusterId": "cluster-4",
+      "text": "automated meeting summary",
+      "x": 490,
+      "y": 670
+    },
+    {
+      "clusterId": "cluster-10",
+      "text": "ai transcription software",
+      "x": 330,
+      "y": 440
+    },
+    {
+      "clusterId": "cluster-10",
+      "text": "meeting notes tool",
+      "x": 560,
+      "y": 540
+    },
+    {
+      "clusterId": "cluster-10",
+      "text": "voice-to-text software",
+      "x": 710,
+      "y": 435
+    },
+    {
+      "clusterId": "cluster-10",
+      "text": "ai meeting summarizer",
+      "x": 715,
+      "y": 345
+    },
+    {
+      "clusterId": "cluster-10",
+      "text": "meeting summary software",
+      "x": 605,
+      "y": 630
+    },
+    {
+      "clusterId": "cluster-6",
+      "text": "ai scribe tool",
+      "x": 480,
+      "y": 835
+    },
+    {
+      "clusterId": "cluster-6",
+      "text": "meeting notes ai",
+      "x": 560,
+      "y": 822
+    },
+    {
+      "clusterId": "cluster-6",
+      "text": "automated transcription service",
+      "x": 665,
+      "y": 835
+    },
+    {
+      "clusterId": "cluster-6",
+      "text": "dictation software",
+      "x": 800,
+      "y": 840
+    },
+    {
+      "clusterId": "cluster-11",
+      "text": "ai-powered meeting recording platform",
+      "x": 800,
+      "y": 310
+    },
+    {
+      "clusterId": "cluster-11",
+      "text": "smart meeting documentation",
+      "x": 925,
+      "y": 335
+    },
+    {
+      "clusterId": "cluster-1",
+      "text": "ai meeting notetaker",
+      "x": 795,
+      "y": 475
+    },
+    {
+      "clusterId": "cluster-1",
+      "text": "smart note-taking app",
+      "x": 935,
+      "y": 455
+    },
+    {
+      "clusterId": "cluster-5",
+      "text": "speech-to-text software",
+      "x": 930,
+      "y": 740
+    },
+    {
+      "clusterId": "cluster-5",
+      "text": "audio transcription platform",
+      "x": 1050,
+      "y": 788
+    },
+    {
+      "clusterId": "cluster-5",
+      "text": "meeting note-taking tool",
+      "x": 1070,
+      "y": 868
+    },
+    {
+      "clusterId": "cluster-5",
+      "text": "ai meeting companion",
+      "x": 970,
+      "y": 700
+    },
+    {
+      "clusterId": "cluster-2",
+      "text": "meeting transcription tool",
+      "x": 1180,
+      "y": 235
+    },
+    {
+      "clusterId": "cluster-2",
+      "text": "automated note-taking platform",
+      "x": 1220,
+      "y": 210
+    },
+    {
+      "clusterId": "cluster-8",
+      "text": "automatic note-taking app",
+      "x": 1115,
+      "y": 350
+    },
+    {
+      "clusterId": "cluster-8",
+      "text": "meeting ai tool",
+      "x": 1120,
+      "y": 365
+    },
+    {
+      "clusterId": "cluster-8",
+      "text": "transcription software",
+      "x": 1260,
+      "y": 330
+    },
+    {
+      "clusterId": "cluster-8",
+      "text": "smart meeting assistant",
+      "x": 1370,
+      "y": 310
+    },
+    {
+      "clusterId": "cluster-8",
+      "text": "automated note generator",
+      "x": 1310,
+      "y": 390
+    },
+    {
+      "clusterId": "cluster-9",
+      "text": "ai session notetaker",
+      "x": 1175,
+      "y": 425
+    },
+    {
+      "clusterId": "cluster-9",
+      "text": "ai meeting recorder",
+      "x": 1255,
+      "y": 425
+    },
+    {
+      "clusterId": "cluster-3",
+      "text": "ai transcription platform",
+      "x": 1365,
+      "y": 642
+    },
+    {
+      "clusterId": "cluster-3",
+      "text": "ai note taker",
+      "x": 1285,
+      "y": 792
+    },
+    {
+      "clusterId": "cluster-3",
+      "text": "note-taking ai",
+      "x": 1390,
+      "y": 838
+    },
+    {
+      "clusterId": "cluster-3",
+      "text": "meeting intelligence tool",
+      "x": 1410,
+      "y": 885
+    },
+    {
+      "clusterId": "cluster-3",
+      "text": "ai-powered note-taking platform",
+      "x": 1450,
+      "y": 780
+    },
+    {
+      "clusterId": "cluster-0",
+      "text": "ai notetaker",
+      "x": 1430,
+      "y": 360
+    },
+    {
+      "clusterId": "cluster-0",
+      "text": "ai transcription service",
+      "x": 1585,
+      "y": 355
+    },
+    {
+      "clusterId": "cluster-0",
+      "text": "real-time transcription",
+      "x": 1520,
+      "y": 525
+    },
+    {
+      "clusterId": "cluster-0",
+      "text": "meeting note generator",
+      "x": 1720,
+      "y": 478
+    },
+    {
+      "clusterId": "cluster-0",
+      "text": "real-time transcription",
+      "x": 1885,
+      "y": 365
+    }
+  ],
+  "circles": [
+    {
+      "clusterId": "cluster-7",
+      "cx": 142.48,
+      "cy": 346.62,
+      "r": 6.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-7",
+      "cx": 122.92,
+      "cy": 357.93,
+      "r": 6.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-7",
+      "cx": 132.64,
+      "cy": 441.4,
+      "r": 5.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-7",
+      "cx": 133.53,
+      "cy": 435.79,
+      "r": 6.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-7",
+      "cx": 250.64,
+      "cy": 439.71,
+      "r": 7.5,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-7",
+      "cx": 240.84,
+      "cy": 353.12,
+      "r": 6.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-7",
+      "cx": 233.42,
+      "cy": 353.31,
+      "r": 5.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-7",
+      "cx": 149.28,
+      "cy": 322.37,
+      "r": 3.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-7",
+      "cx": 108.23,
+      "cy": 410.48,
+      "r": 6.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-7",
+      "cx": 154.4,
+      "cy": 315.24,
+      "r": 9.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-7",
+      "cx": 128.16,
+      "cy": 343.01,
+      "r": 3.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-7",
+      "cx": 135.28,
+      "cy": 325.23,
+      "r": 2.5,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-7",
+      "cx": 265.95,
+      "cy": 427.05,
+      "r": 2.5,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-7",
+      "cx": 158.61,
+      "cy": 327.82,
+      "r": 4.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-7",
+      "cx": 223.46,
+      "cy": 415.81,
+      "r": 6.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-7",
+      "cx": 273.18,
+      "cy": 396.53,
+      "r": 6.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-4",
+      "cx": 262.85,
+      "cy": 682.88,
+      "r": 2.5,
+      "fill": "#2dd4bf"
+    },
+    {
+      "clusterId": "cluster-4",
+      "cx": 374.76,
+      "cy": 552.96,
+      "r": 5.0,
+      "fill": "#2dd4bf"
+    },
+    {
+      "clusterId": "cluster-4",
+      "cx": 395.04,
+      "cy": 592.13,
+      "r": 3.5,
+      "fill": "#2dd4bf"
+    },
+    {
+      "clusterId": "cluster-4",
+      "cx": 272.75,
+      "cy": 624.33,
+      "r": 2.5,
+      "fill": "#2dd4bf"
+    },
+    {
+      "clusterId": "cluster-4",
+      "cx": 357.69,
+      "cy": 541.74,
+      "r": 9.0,
+      "fill": "#2dd4bf"
+    },
+    {
+      "clusterId": "cluster-4",
+      "cx": 392.97,
+      "cy": 634.59,
+      "r": 9.0,
+      "fill": "#2dd4bf"
+    },
+    {
+      "clusterId": "cluster-4",
+      "cx": 265.67,
+      "cy": 615.02,
+      "r": 6.0,
+      "fill": "#2dd4bf"
+    },
+    {
+      "clusterId": "cluster-4",
+      "cx": 349.71,
+      "cy": 536.27,
+      "r": 5.0,
+      "fill": "#2dd4bf"
+    },
+    {
+      "clusterId": "cluster-4",
+      "cx": 352.5,
+      "cy": 738.35,
+      "r": 2.5,
+      "fill": "#2dd4bf"
+    },
+    {
+      "clusterId": "cluster-4",
+      "cx": 418.28,
+      "cy": 600.77,
+      "r": 3.0,
+      "fill": "#2dd4bf"
+    },
+    {
+      "clusterId": "cluster-4",
+      "cx": 401.59,
+      "cy": 745.74,
+      "r": 5.0,
+      "fill": "#2dd4bf"
+    },
+    {
+      "clusterId": "cluster-4",
+      "cx": 425.15,
+      "cy": 578.69,
+      "r": 7.5,
+      "fill": "#2dd4bf"
+    },
+    {
+      "clusterId": "cluster-4",
+      "cx": 300.47,
+      "cy": 720.49,
+      "r": 2.5,
+      "fill": "#2dd4bf"
+    },
+    {
+      "clusterId": "cluster-4",
+      "cx": 266.32,
+      "cy": 682.9,
+      "r": 3.5,
+      "fill": "#2dd4bf"
+    },
+    {
+      "clusterId": "cluster-4",
+      "cx": 438.39,
+      "cy": 667.96,
+      "r": 7.5,
+      "fill": "#2dd4bf"
+    },
+    {
+      "clusterId": "cluster-4",
+      "cx": 427.49,
+      "cy": 670.08,
+      "r": 5.0,
+      "fill": "#2dd4bf"
+    },
+    {
+      "clusterId": "cluster-4",
+      "cx": 348.21,
+      "cy": 584.86,
+      "r": 9.0,
+      "fill": "#2dd4bf"
+    },
+    {
+      "clusterId": "cluster-4",
+      "cx": 297.05,
+      "cy": 689.43,
+      "r": 5.0,
+      "fill": "#2dd4bf"
+    },
+    {
+      "clusterId": "cluster-4",
+      "cx": 414.59,
+      "cy": 723.32,
+      "r": 6.0,
+      "fill": "#2dd4bf"
+    },
+    {
+      "clusterId": "cluster-4",
+      "cx": 314.42,
+      "cy": 675.3,
+      "r": 7.5,
+      "fill": "#2dd4bf"
+    },
+    {
+      "clusterId": "cluster-4",
+      "cx": 453.48,
+      "cy": 600.23,
+      "r": 6.0,
+      "fill": "#2dd4bf"
+    },
+    {
+      "clusterId": "cluster-4",
+      "cx": 446.86,
+      "cy": 661.33,
+      "r": 4.0,
+      "fill": "#2dd4bf"
+    },
+    {
+      "clusterId": "cluster-4",
+      "cx": 315.81,
+      "cy": 587.19,
+      "r": 6.0,
+      "fill": "#2dd4bf"
+    },
+    {
+      "clusterId": "cluster-4",
+      "cx": 381.51,
+      "cy": 533.32,
+      "r": 4.0,
+      "fill": "#2dd4bf"
+    },
+    {
+      "clusterId": "cluster-4",
+      "cx": 457.97,
+      "cy": 585.48,
+      "r": 7.5,
+      "fill": "#2dd4bf"
+    },
+    {
+      "clusterId": "cluster-4",
+      "cx": 434.94,
+      "cy": 624.05,
+      "r": 5.0,
+      "fill": "#2dd4bf"
+    },
+    {
+      "clusterId": "cluster-4",
+      "cx": 364.98,
+      "cy": 579.0,
+      "r": 3.0,
+      "fill": "#2dd4bf"
+    },
+    {
+      "clusterId": "cluster-4",
+      "cx": 332.11,
+      "cy": 646.82,
+      "r": 3.0,
+      "fill": "#2dd4bf"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 606.47,
+      "cy": 364.42,
+      "r": 7.5,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 605.78,
+      "cy": 429.07,
+      "r": 7.5,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 592.85,
+      "cy": 520.26,
+      "r": 4.0,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 507.68,
+      "cy": 525.06,
+      "r": 4.0,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 480.95,
+      "cy": 496.2,
+      "r": 5.0,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 486.51,
+      "cy": 403.84,
+      "r": 3.5,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 404.92,
+      "cy": 426.02,
+      "r": 2.5,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 465.19,
+      "cy": 352.02,
+      "r": 2.5,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 627.55,
+      "cy": 508.68,
+      "r": 3.0,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 680.55,
+      "cy": 372.27,
+      "r": 9.0,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 695.41,
+      "cy": 379.09,
+      "r": 2.5,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 590.88,
+      "cy": 490.42,
+      "r": 4.0,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 551.73,
+      "cy": 316.47,
+      "r": 9.0,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 387.61,
+      "cy": 460.49,
+      "r": 5.0,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 550.77,
+      "cy": 390.88,
+      "r": 7.5,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 459.81,
+      "cy": 519.42,
+      "r": 3.5,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 592.8,
+      "cy": 447.96,
+      "r": 5.0,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 432.06,
+      "cy": 335.56,
+      "r": 3.5,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 520.6,
+      "cy": 379.69,
+      "r": 3.5,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 381.25,
+      "cy": 388.84,
+      "r": 4.0,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 705.68,
+      "cy": 368.65,
+      "r": 7.5,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 573.43,
+      "cy": 553.06,
+      "r": 6.0,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 627.36,
+      "cy": 351.71,
+      "r": 4.0,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 607.27,
+      "cy": 451.5,
+      "r": 3.5,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 457.6,
+      "cy": 512.81,
+      "r": 2.5,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 717.73,
+      "cy": 430.12,
+      "r": 4.0,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 680.94,
+      "cy": 468.31,
+      "r": 3.0,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 652.98,
+      "cy": 316.56,
+      "r": 5.0,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 373.84,
+      "cy": 411.57,
+      "r": 3.5,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 532.86,
+      "cy": 397.81,
+      "r": 7.5,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 513.92,
+      "cy": 514.38,
+      "r": 6.0,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 696.02,
+      "cy": 438.89,
+      "r": 3.0,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 553.59,
+      "cy": 384.79,
+      "r": 6.0,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 596.76,
+      "cy": 324.11,
+      "r": 7.5,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 502.75,
+      "cy": 436.04,
+      "r": 3.5,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 596.47,
+      "cy": 517.26,
+      "r": 3.0,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 697.17,
+      "cy": 406.32,
+      "r": 3.5,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 397.81,
+      "cy": 494.73,
+      "r": 3.0,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 679.84,
+      "cy": 402.82,
+      "r": 7.5,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 730.28,
+      "cy": 447.4,
+      "r": 5.0,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 691.59,
+      "cy": 511.62,
+      "r": 6.0,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 513.6,
+      "cy": 566.06,
+      "r": 9.0,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 426.14,
+      "cy": 533.01,
+      "r": 2.5,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 574.56,
+      "cy": 323.24,
+      "r": 6.0,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 630.84,
+      "cy": 393.4,
+      "r": 2.5,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 529.47,
+      "cy": 385.66,
+      "r": 7.5,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 715.54,
+      "cy": 413.58,
+      "r": 2.5,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-10",
+      "cx": 606.43,
+      "cy": 424.73,
+      "r": 7.5,
+      "fill": "#a855f7"
+    },
+    {
+      "clusterId": "cluster-6",
+      "cx": 623.43,
+      "cy": 771.48,
+      "r": 6.0,
+      "fill": "#38bdf8"
+    },
+    {
+      "clusterId": "cluster-6",
+      "cx": 565.11,
+      "cy": 763.7,
+      "r": 4.0,
+      "fill": "#38bdf8"
+    },
+    {
+      "clusterId": "cluster-6",
+      "cx": 713.29,
+      "cy": 842.0,
+      "r": 6.0,
+      "fill": "#38bdf8"
+    },
+    {
+      "clusterId": "cluster-6",
+      "cx": 629.17,
+      "cy": 776.71,
+      "r": 3.5,
+      "fill": "#38bdf8"
+    },
+    {
+      "clusterId": "cluster-6",
+      "cx": 699.8,
+      "cy": 844.85,
+      "r": 7.5,
+      "fill": "#38bdf8"
+    },
+    {
+      "clusterId": "cluster-6",
+      "cx": 655.37,
+      "cy": 833.74,
+      "r": 5.0,
+      "fill": "#38bdf8"
+    },
+    {
+      "clusterId": "cluster-6",
+      "cx": 584.01,
+      "cy": 831.86,
+      "r": 6.0,
+      "fill": "#38bdf8"
+    },
+    {
+      "clusterId": "cluster-6",
+      "cx": 596.52,
+      "cy": 775.36,
+      "r": 9.0,
+      "fill": "#38bdf8"
+    },
+    {
+      "clusterId": "cluster-6",
+      "cx": 621.23,
+      "cy": 859.36,
+      "r": 3.0,
+      "fill": "#38bdf8"
+    },
+    {
+      "clusterId": "cluster-6",
+      "cx": 604.22,
+      "cy": 760.01,
+      "r": 5.0,
+      "fill": "#38bdf8"
+    },
+    {
+      "clusterId": "cluster-6",
+      "cx": 652.94,
+      "cy": 825.69,
+      "r": 4.0,
+      "fill": "#38bdf8"
+    },
+    {
+      "clusterId": "cluster-6",
+      "cx": 660.82,
+      "cy": 775.35,
+      "r": 3.5,
+      "fill": "#38bdf8"
+    },
+    {
+      "clusterId": "cluster-6",
+      "cx": 677.31,
+      "cy": 853.42,
+      "r": 2.5,
+      "fill": "#38bdf8"
+    },
+    {
+      "clusterId": "cluster-6",
+      "cx": 634.94,
+      "cy": 849.3,
+      "r": 5.0,
+      "fill": "#38bdf8"
+    },
+    {
+      "clusterId": "cluster-6",
+      "cx": 640.56,
+      "cy": 825.58,
+      "r": 7.5,
+      "fill": "#38bdf8"
+    },
+    {
+      "clusterId": "cluster-6",
+      "cx": 574.62,
+      "cy": 757.61,
+      "r": 7.5,
+      "fill": "#38bdf8"
+    },
+    {
+      "clusterId": "cluster-6",
+      "cx": 621.98,
+      "cy": 747.9,
+      "r": 4.0,
+      "fill": "#38bdf8"
+    },
+    {
+      "clusterId": "cluster-6",
+      "cx": 662.28,
+      "cy": 737.12,
+      "r": 6.0,
+      "fill": "#38bdf8"
+    },
+    {
+      "clusterId": "cluster-11",
+      "cx": 878.98,
+      "cy": 286.12,
+      "r": 2.5,
+      "fill": "#10b981"
+    },
+    {
+      "clusterId": "cluster-11",
+      "cx": 885.7,
+      "cy": 305.62,
+      "r": 5.0,
+      "fill": "#10b981"
+    },
+    {
+      "clusterId": "cluster-11",
+      "cx": 863.39,
+      "cy": 320.89,
+      "r": 5.0,
+      "fill": "#10b981"
+    },
+    {
+      "clusterId": "cluster-11",
+      "cx": 913.25,
+      "cy": 317.18,
+      "r": 6.0,
+      "fill": "#10b981"
+    },
+    {
+      "clusterId": "cluster-11",
+      "cx": 880.03,
+      "cy": 344.59,
+      "r": 5.0,
+      "fill": "#10b981"
+    },
+    {
+      "clusterId": "cluster-11",
+      "cx": 875.64,
+      "cy": 326.92,
+      "r": 6.0,
+      "fill": "#10b981"
+    },
+    {
+      "clusterId": "cluster-11",
+      "cx": 901.97,
+      "cy": 320.22,
+      "r": 3.5,
+      "fill": "#10b981"
+    },
+    {
+      "clusterId": "cluster-11",
+      "cx": 847.79,
+      "cy": 349.08,
+      "r": 6.0,
+      "fill": "#10b981"
+    },
+    {
+      "clusterId": "cluster-11",
+      "cx": 905.45,
+      "cy": 355.94,
+      "r": 2.5,
+      "fill": "#10b981"
+    },
+    {
+      "clusterId": "cluster-1",
+      "cx": 924.03,
+      "cy": 467.35,
+      "r": 7.5,
+      "fill": "#60a5fa"
+    },
+    {
+      "clusterId": "cluster-1",
+      "cx": 957.94,
+      "cy": 433.49,
+      "r": 9.0,
+      "fill": "#60a5fa"
+    },
+    {
+      "clusterId": "cluster-1",
+      "cx": 942.25,
+      "cy": 424.21,
+      "r": 9.0,
+      "fill": "#60a5fa"
+    },
+    {
+      "clusterId": "cluster-1",
+      "cx": 998.87,
+      "cy": 453.3,
+      "r": 7.5,
+      "fill": "#60a5fa"
+    },
+    {
+      "clusterId": "cluster-1",
+      "cx": 936.69,
+      "cy": 474.32,
+      "r": 3.0,
+      "fill": "#60a5fa"
+    },
+    {
+      "clusterId": "cluster-1",
+      "cx": 958.48,
+      "cy": 473.08,
+      "r": 5.0,
+      "fill": "#60a5fa"
+    },
+    {
+      "clusterId": "cluster-1",
+      "cx": 953.69,
+      "cy": 432.4,
+      "r": 3.0,
+      "fill": "#60a5fa"
+    },
+    {
+      "clusterId": "cluster-1",
+      "cx": 944.91,
+      "cy": 442.34,
+      "r": 7.5,
+      "fill": "#60a5fa"
+    },
+    {
+      "clusterId": "cluster-1",
+      "cx": 974.11,
+      "cy": 467.87,
+      "r": 3.5,
+      "fill": "#60a5fa"
+    },
+    {
+      "clusterId": "cluster-1",
+      "cx": 918.02,
+      "cy": 454.02,
+      "r": 6.0,
+      "fill": "#60a5fa"
+    },
+    {
+      "clusterId": "cluster-1",
+      "cx": 941.62,
+      "cy": 426.5,
+      "r": 5.0,
+      "fill": "#60a5fa"
+    },
+    {
+      "clusterId": "cluster-1",
+      "cx": 995.61,
+      "cy": 475.48,
+      "r": 9.0,
+      "fill": "#60a5fa"
+    },
+    {
+      "clusterId": "cluster-5",
+      "cx": 1023.9,
+      "cy": 766.63,
+      "r": 4.0,
+      "fill": "#34d399"
+    },
+    {
+      "clusterId": "cluster-5",
+      "cx": 1027.27,
+      "cy": 755.45,
+      "r": 3.0,
+      "fill": "#34d399"
+    },
+    {
+      "clusterId": "cluster-5",
+      "cx": 999.26,
+      "cy": 728.02,
+      "r": 2.5,
+      "fill": "#34d399"
+    },
+    {
+      "clusterId": "cluster-5",
+      "cx": 1097.41,
+      "cy": 752.8,
+      "r": 2.5,
+      "fill": "#34d399"
+    },
+    {
+      "clusterId": "cluster-5",
+      "cx": 941.9,
+      "cy": 764.54,
+      "r": 3.5,
+      "fill": "#34d399"
+    },
+    {
+      "clusterId": "cluster-5",
+      "cx": 977.58,
+      "cy": 764.49,
+      "r": 5.0,
+      "fill": "#34d399"
+    },
+    {
+      "clusterId": "cluster-5",
+      "cx": 975.01,
+      "cy": 771.93,
+      "r": 6.0,
+      "fill": "#34d399"
+    },
+    {
+      "clusterId": "cluster-5",
+      "cx": 1099.12,
+      "cy": 758.03,
+      "r": 7.5,
+      "fill": "#34d399"
+    },
+    {
+      "clusterId": "cluster-5",
+      "cx": 1040.62,
+      "cy": 750.89,
+      "r": 3.5,
+      "fill": "#34d399"
+    },
+    {
+      "clusterId": "cluster-5",
+      "cx": 1092.41,
+      "cy": 813.57,
+      "r": 7.5,
+      "fill": "#34d399"
+    },
+    {
+      "clusterId": "cluster-5",
+      "cx": 1073.62,
+      "cy": 768.55,
+      "r": 7.5,
+      "fill": "#34d399"
+    },
+    {
+      "clusterId": "cluster-5",
+      "cx": 1030.59,
+      "cy": 875.2,
+      "r": 3.0,
+      "fill": "#34d399"
+    },
+    {
+      "clusterId": "cluster-5",
+      "cx": 1028.11,
+      "cy": 872.76,
+      "r": 3.5,
+      "fill": "#34d399"
+    },
+    {
+      "clusterId": "cluster-5",
+      "cx": 953.62,
+      "cy": 843.15,
+      "r": 6.0,
+      "fill": "#34d399"
+    },
+    {
+      "clusterId": "cluster-5",
+      "cx": 1018.36,
+      "cy": 840.56,
+      "r": 2.5,
+      "fill": "#34d399"
+    },
+    {
+      "clusterId": "cluster-5",
+      "cx": 970.23,
+      "cy": 789.54,
+      "r": 9.0,
+      "fill": "#34d399"
+    },
+    {
+      "clusterId": "cluster-5",
+      "cx": 1072.07,
+      "cy": 808.46,
+      "r": 4.0,
+      "fill": "#34d399"
+    },
+    {
+      "clusterId": "cluster-5",
+      "cx": 960.2,
+      "cy": 791.2,
+      "r": 6.0,
+      "fill": "#34d399"
+    },
+    {
+      "clusterId": "cluster-5",
+      "cx": 1043.05,
+      "cy": 806.86,
+      "r": 4.0,
+      "fill": "#34d399"
+    },
+    {
+      "clusterId": "cluster-5",
+      "cx": 968.78,
+      "cy": 798.3,
+      "r": 9.0,
+      "fill": "#34d399"
+    },
+    {
+      "clusterId": "cluster-5",
+      "cx": 1007.19,
+      "cy": 857.75,
+      "r": 2.5,
+      "fill": "#34d399"
+    },
+    {
+      "clusterId": "cluster-5",
+      "cx": 1094.91,
+      "cy": 774.1,
+      "r": 9.0,
+      "fill": "#34d399"
+    },
+    {
+      "clusterId": "cluster-2",
+      "cx": 1112.34,
+      "cy": 267.13,
+      "r": 2.5,
+      "fill": "#4ade80"
+    },
+    {
+      "clusterId": "cluster-2",
+      "cx": 1191.55,
+      "cy": 196.64,
+      "r": 9.0,
+      "fill": "#4ade80"
+    },
+    {
+      "clusterId": "cluster-2",
+      "cx": 1122.49,
+      "cy": 204.14,
+      "r": 9.0,
+      "fill": "#4ade80"
+    },
+    {
+      "clusterId": "cluster-2",
+      "cx": 1205.11,
+      "cy": 191.19,
+      "r": 5.0,
+      "fill": "#4ade80"
+    },
+    {
+      "clusterId": "cluster-2",
+      "cx": 1096.13,
+      "cy": 212.76,
+      "r": 5.0,
+      "fill": "#4ade80"
+    },
+    {
+      "clusterId": "cluster-2",
+      "cx": 1192.5,
+      "cy": 201.07,
+      "r": 7.5,
+      "fill": "#4ade80"
+    },
+    {
+      "clusterId": "cluster-2",
+      "cx": 1129.35,
+      "cy": 251.0,
+      "r": 3.0,
+      "fill": "#4ade80"
+    },
+    {
+      "clusterId": "cluster-2",
+      "cx": 1220.69,
+      "cy": 237.18,
+      "r": 6.0,
+      "fill": "#4ade80"
+    },
+    {
+      "clusterId": "cluster-2",
+      "cx": 1216.19,
+      "cy": 276.47,
+      "r": 4.0,
+      "fill": "#4ade80"
+    },
+    {
+      "clusterId": "cluster-2",
+      "cx": 1165.96,
+      "cy": 274.43,
+      "r": 9.0,
+      "fill": "#4ade80"
+    },
+    {
+      "clusterId": "cluster-2",
+      "cx": 1219.53,
+      "cy": 209.0,
+      "r": 3.0,
+      "fill": "#4ade80"
+    },
+    {
+      "clusterId": "cluster-2",
+      "cx": 1133.62,
+      "cy": 240.52,
+      "r": 2.5,
+      "fill": "#4ade80"
+    },
+    {
+      "clusterId": "cluster-2",
+      "cx": 1131.6,
+      "cy": 230.77,
+      "r": 4.0,
+      "fill": "#4ade80"
+    },
+    {
+      "clusterId": "cluster-2",
+      "cx": 1184.07,
+      "cy": 292.57,
+      "r": 7.5,
+      "fill": "#4ade80"
+    },
+    {
+      "clusterId": "cluster-2",
+      "cx": 1130.9,
+      "cy": 187.64,
+      "r": 3.0,
+      "fill": "#4ade80"
+    },
+    {
+      "clusterId": "cluster-2",
+      "cx": 1211.4,
+      "cy": 195.7,
+      "r": 2.5,
+      "fill": "#4ade80"
+    },
+    {
+      "clusterId": "cluster-2",
+      "cx": 1171.78,
+      "cy": 214.64,
+      "r": 4.0,
+      "fill": "#4ade80"
+    },
+    {
+      "clusterId": "cluster-2",
+      "cx": 1142.26,
+      "cy": 233.22,
+      "r": 9.0,
+      "fill": "#4ade80"
+    },
+    {
+      "clusterId": "cluster-8",
+      "cx": 1192.62,
+      "cy": 346.78,
+      "r": 3.0,
+      "fill": "#f472b6"
+    },
+    {
+      "clusterId": "cluster-8",
+      "cx": 1271.25,
+      "cy": 343.56,
+      "r": 3.5,
+      "fill": "#f472b6"
+    },
+    {
+      "clusterId": "cluster-8",
+      "cx": 1185.86,
+      "cy": 396.41,
+      "r": 5.0,
+      "fill": "#f472b6"
+    },
+    {
+      "clusterId": "cluster-8",
+      "cx": 1189.74,
+      "cy": 411.61,
+      "r": 9.0,
+      "fill": "#f472b6"
+    },
+    {
+      "clusterId": "cluster-8",
+      "cx": 1218.61,
+      "cy": 378.6,
+      "r": 5.0,
+      "fill": "#f472b6"
+    },
+    {
+      "clusterId": "cluster-8",
+      "cx": 1239.82,
+      "cy": 364.68,
+      "r": 4.0,
+      "fill": "#f472b6"
+    },
+    {
+      "clusterId": "cluster-8",
+      "cx": 1293.07,
+      "cy": 348.09,
+      "r": 5.0,
+      "fill": "#f472b6"
+    },
+    {
+      "clusterId": "cluster-8",
+      "cx": 1281.45,
+      "cy": 380.67,
+      "r": 4.0,
+      "fill": "#f472b6"
+    },
+    {
+      "clusterId": "cluster-8",
+      "cx": 1267.97,
+      "cy": 405.4,
+      "r": 3.0,
+      "fill": "#f472b6"
+    },
+    {
+      "clusterId": "cluster-8",
+      "cx": 1166.65,
+      "cy": 341.51,
+      "r": 5.0,
+      "fill": "#f472b6"
+    },
+    {
+      "clusterId": "cluster-8",
+      "cx": 1221.12,
+      "cy": 316.32,
+      "r": 5.0,
+      "fill": "#f472b6"
+    },
+    {
+      "clusterId": "cluster-8",
+      "cx": 1275.76,
+      "cy": 339.29,
+      "r": 7.5,
+      "fill": "#f472b6"
+    },
+    {
+      "clusterId": "cluster-8",
+      "cx": 1291.67,
+      "cy": 359.18,
+      "r": 4.0,
+      "fill": "#f472b6"
+    },
+    {
+      "clusterId": "cluster-8",
+      "cx": 1253.33,
+      "cy": 320.35,
+      "r": 5.0,
+      "fill": "#f472b6"
+    },
+    {
+      "clusterId": "cluster-8",
+      "cx": 1190.08,
+      "cy": 288.84,
+      "r": 7.5,
+      "fill": "#f472b6"
+    },
+    {
+      "clusterId": "cluster-8",
+      "cx": 1268.61,
+      "cy": 387.35,
+      "r": 5.0,
+      "fill": "#f472b6"
+    },
+    {
+      "clusterId": "cluster-8",
+      "cx": 1246.2,
+      "cy": 323.25,
+      "r": 6.0,
+      "fill": "#f472b6"
+    },
+    {
+      "clusterId": "cluster-8",
+      "cx": 1274.24,
+      "cy": 324.11,
+      "r": 9.0,
+      "fill": "#f472b6"
+    },
+    {
+      "clusterId": "cluster-8",
+      "cx": 1271.65,
+      "cy": 396.03,
+      "r": 9.0,
+      "fill": "#f472b6"
+    },
+    {
+      "clusterId": "cluster-8",
+      "cx": 1182.25,
+      "cy": 286.87,
+      "r": 3.5,
+      "fill": "#f472b6"
+    },
+    {
+      "clusterId": "cluster-8",
+      "cx": 1165.62,
+      "cy": 345.91,
+      "r": 2.5,
+      "fill": "#f472b6"
+    },
+    {
+      "clusterId": "cluster-8",
+      "cx": 1176.3,
+      "cy": 305.43,
+      "r": 9.0,
+      "fill": "#f472b6"
+    },
+    {
+      "clusterId": "cluster-8",
+      "cx": 1220.95,
+      "cy": 309.61,
+      "r": 3.5,
+      "fill": "#f472b6"
+    },
+    {
+      "clusterId": "cluster-8",
+      "cx": 1223.69,
+      "cy": 283.11,
+      "r": 3.5,
+      "fill": "#f472b6"
+    },
+    {
+      "clusterId": "cluster-9",
+      "cx": 1210.59,
+      "cy": 427.67,
+      "r": 3.5,
+      "fill": "#c084fc"
+    },
+    {
+      "clusterId": "cluster-9",
+      "cx": 1207.52,
+      "cy": 423.81,
+      "r": 6.0,
+      "fill": "#c084fc"
+    },
+    {
+      "clusterId": "cluster-9",
+      "cx": 1218.02,
+      "cy": 421.85,
+      "r": 2.5,
+      "fill": "#c084fc"
+    },
+    {
+      "clusterId": "cluster-9",
+      "cx": 1190.63,
+      "cy": 417.49,
+      "r": 4.0,
+      "fill": "#c084fc"
+    },
+    {
+      "clusterId": "cluster-9",
+      "cx": 1221.05,
+      "cy": 420.24,
+      "r": 6.0,
+      "fill": "#c084fc"
+    },
+    {
+      "clusterId": "cluster-9",
+      "cx": 1228.37,
+      "cy": 432.86,
+      "r": 7.5,
+      "fill": "#c084fc"
+    },
+    {
+      "clusterId": "cluster-9",
+      "cx": 1196.03,
+      "cy": 479.33,
+      "r": 6.0,
+      "fill": "#c084fc"
+    },
+    {
+      "clusterId": "cluster-9",
+      "cx": 1188.69,
+      "cy": 464.78,
+      "r": 5.0,
+      "fill": "#c084fc"
+    },
+    {
+      "clusterId": "cluster-9",
+      "cx": 1166.02,
+      "cy": 411.54,
+      "r": 7.5,
+      "fill": "#c084fc"
+    },
+    {
+      "clusterId": "cluster-9",
+      "cx": 1179.67,
+      "cy": 434.35,
+      "r": 5.0,
+      "fill": "#c084fc"
+    },
+    {
+      "clusterId": "cluster-9",
+      "cx": 1182.49,
+      "cy": 434.98,
+      "r": 6.0,
+      "fill": "#c084fc"
+    },
+    {
+      "clusterId": "cluster-9",
+      "cx": 1197.19,
+      "cy": 407.77,
+      "r": 2.5,
+      "fill": "#c084fc"
+    },
+    {
+      "clusterId": "cluster-9",
+      "cx": 1174.53,
+      "cy": 434.21,
+      "r": 4.0,
+      "fill": "#c084fc"
+    },
+    {
+      "clusterId": "cluster-9",
+      "cx": 1232.67,
+      "cy": 440.24,
+      "r": 6.0,
+      "fill": "#c084fc"
+    },
+    {
+      "clusterId": "cluster-3",
+      "cx": 1337.08,
+      "cy": 791.4,
+      "r": 4.0,
+      "fill": "#fbbf24"
+    },
+    {
+      "clusterId": "cluster-3",
+      "cx": 1481.38,
+      "cy": 771.31,
+      "r": 6.0,
+      "fill": "#fbbf24"
+    },
+    {
+      "clusterId": "cluster-3",
+      "cx": 1447.21,
+      "cy": 755.76,
+      "r": 9.0,
+      "fill": "#fbbf24"
+    },
+    {
+      "clusterId": "cluster-3",
+      "cx": 1408.38,
+      "cy": 693.7,
+      "r": 3.0,
+      "fill": "#fbbf24"
+    },
+    {
+      "clusterId": "cluster-3",
+      "cx": 1378.29,
+      "cy": 716.39,
+      "r": 5.0,
+      "fill": "#fbbf24"
+    },
+    {
+      "clusterId": "cluster-3",
+      "cx": 1361.58,
+      "cy": 780.41,
+      "r": 5.0,
+      "fill": "#fbbf24"
+    },
+    {
+      "clusterId": "cluster-3",
+      "cx": 1319.38,
+      "cy": 767.05,
+      "r": 5.0,
+      "fill": "#fbbf24"
+    },
+    {
+      "clusterId": "cluster-3",
+      "cx": 1342.49,
+      "cy": 672.96,
+      "r": 9.0,
+      "fill": "#fbbf24"
+    },
+    {
+      "clusterId": "cluster-3",
+      "cx": 1364.47,
+      "cy": 832.28,
+      "r": 2.5,
+      "fill": "#fbbf24"
+    },
+    {
+      "clusterId": "cluster-3",
+      "cx": 1320.55,
+      "cy": 781.32,
+      "r": 7.5,
+      "fill": "#fbbf24"
+    },
+    {
+      "clusterId": "cluster-3",
+      "cx": 1414.74,
+      "cy": 665.8,
+      "r": 6.0,
+      "fill": "#fbbf24"
+    },
+    {
+      "clusterId": "cluster-3",
+      "cx": 1349.37,
+      "cy": 767.39,
+      "r": 5.0,
+      "fill": "#fbbf24"
+    },
+    {
+      "clusterId": "cluster-3",
+      "cx": 1449.33,
+      "cy": 800.74,
+      "r": 6.0,
+      "fill": "#fbbf24"
+    },
+    {
+      "clusterId": "cluster-3",
+      "cx": 1469.08,
+      "cy": 783.2,
+      "r": 3.0,
+      "fill": "#fbbf24"
+    },
+    {
+      "clusterId": "cluster-3",
+      "cx": 1458.26,
+      "cy": 693.72,
+      "r": 3.0,
+      "fill": "#fbbf24"
+    },
+    {
+      "clusterId": "cluster-3",
+      "cx": 1470.21,
+      "cy": 710.81,
+      "r": 9.0,
+      "fill": "#fbbf24"
+    },
+    {
+      "clusterId": "cluster-3",
+      "cx": 1422.13,
+      "cy": 692.62,
+      "r": 9.0,
+      "fill": "#fbbf24"
+    },
+    {
+      "clusterId": "cluster-3",
+      "cx": 1431.63,
+      "cy": 714.21,
+      "r": 5.0,
+      "fill": "#fbbf24"
+    },
+    {
+      "clusterId": "cluster-3",
+      "cx": 1403.78,
+      "cy": 720.44,
+      "r": 9.0,
+      "fill": "#fbbf24"
+    },
+    {
+      "clusterId": "cluster-3",
+      "cx": 1405.8,
+      "cy": 859.88,
+      "r": 2.5,
+      "fill": "#fbbf24"
+    },
+    {
+      "clusterId": "cluster-3",
+      "cx": 1435.74,
+      "cy": 760.41,
+      "r": 4.0,
+      "fill": "#fbbf24"
+    },
+    {
+      "clusterId": "cluster-3",
+      "cx": 1332.79,
+      "cy": 728.05,
+      "r": 6.0,
+      "fill": "#fbbf24"
+    },
+    {
+      "clusterId": "cluster-3",
+      "cx": 1328.95,
+      "cy": 700.91,
+      "r": 7.5,
+      "fill": "#fbbf24"
+    },
+    {
+      "clusterId": "cluster-3",
+      "cx": 1413.16,
+      "cy": 716.03,
+      "r": 3.5,
+      "fill": "#fbbf24"
+    },
+    {
+      "clusterId": "cluster-3",
+      "cx": 1420.5,
+      "cy": 754.67,
+      "r": 7.5,
+      "fill": "#fbbf24"
+    },
+    {
+      "clusterId": "cluster-3",
+      "cx": 1320.95,
+      "cy": 746.65,
+      "r": 3.0,
+      "fill": "#fbbf24"
+    },
+    {
+      "clusterId": "cluster-3",
+      "cx": 1461.96,
+      "cy": 724.14,
+      "r": 6.0,
+      "fill": "#fbbf24"
+    },
+    {
+      "clusterId": "cluster-3",
+      "cx": 1303.56,
+      "cy": 732.98,
+      "r": 6.0,
+      "fill": "#fbbf24"
+    },
+    {
+      "clusterId": "cluster-3",
+      "cx": 1397.85,
+      "cy": 827.02,
+      "r": 3.0,
+      "fill": "#fbbf24"
+    },
+    {
+      "clusterId": "cluster-3",
+      "cx": 1381.55,
+      "cy": 706.94,
+      "r": 6.0,
+      "fill": "#fbbf24"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1529.43,
+      "cy": 403.86,
+      "r": 7.5,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1762.94,
+      "cy": 405.64,
+      "r": 3.5,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1712.82,
+      "cy": 425.06,
+      "r": 2.5,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1660.85,
+      "cy": 517.19,
+      "r": 4.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1663.23,
+      "cy": 312.77,
+      "r": 7.5,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1710.82,
+      "cy": 498.86,
+      "r": 4.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1542.21,
+      "cy": 346.86,
+      "r": 5.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1638.66,
+      "cy": 542.49,
+      "r": 9.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1606.82,
+      "cy": 475.94,
+      "r": 2.5,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1699.64,
+      "cy": 313.08,
+      "r": 9.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1749.78,
+      "cy": 498.05,
+      "r": 2.5,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1574.3,
+      "cy": 425.91,
+      "r": 6.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1614.63,
+      "cy": 319.33,
+      "r": 9.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1564.41,
+      "cy": 472.54,
+      "r": 2.5,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1646.89,
+      "cy": 510.85,
+      "r": 6.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1672.65,
+      "cy": 328.37,
+      "r": 2.5,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1559.4,
+      "cy": 439.76,
+      "r": 5.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1683.2,
+      "cy": 460.78,
+      "r": 3.5,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1544.69,
+      "cy": 465.45,
+      "r": 6.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1757.41,
+      "cy": 453.23,
+      "r": 3.5,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1640.18,
+      "cy": 394.73,
+      "r": 7.5,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1744.11,
+      "cy": 456.89,
+      "r": 5.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1684.38,
+      "cy": 309.44,
+      "r": 4.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1614.41,
+      "cy": 529.08,
+      "r": 2.5,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1686.05,
+      "cy": 376.54,
+      "r": 9.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1594.5,
+      "cy": 299.96,
+      "r": 9.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1737.88,
+      "cy": 449.84,
+      "r": 9.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1634.83,
+      "cy": 311.78,
+      "r": 5.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1655.72,
+      "cy": 354.75,
+      "r": 3.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1737.34,
+      "cy": 482.87,
+      "r": 9.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1614.62,
+      "cy": 541.01,
+      "r": 5.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1568.61,
+      "cy": 363.88,
+      "r": 4.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1718.85,
+      "cy": 324.03,
+      "r": 4.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1609.39,
+      "cy": 393.9,
+      "r": 3.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1632.63,
+      "cy": 534.13,
+      "r": 5.0,
+      "fill": "#a3e635"
+    },
+    {
+      "clusterId": "cluster-0",
+      "cx": 1625.57,
+      "cy": 505.87,
+      "r": 3.5,
+      "fill": "#a3e635"
+    }
+  ]
+}
