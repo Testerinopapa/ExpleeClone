@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigation, PRODUCT_ROUTES } from '../../context/NavigationContext';
+import { supabase } from '../../lib/supabase';
 
 export default function SignInPage({ initialMode }) {
   const { navigate, authMode, currentPath } = useNavigation();
@@ -55,11 +56,23 @@ export default function SignInPage({ initialMode }) {
     }, 600);
   };
 
-  const handleLinkedInSignIn = () => {
-    setIsLoading(true);
-    setTimeout(() => {
+  const handleLinkedInSignIn = async () => {
+    try {
+      setIsLoading(true);
+      const { error } = await supabase.auth.signInWithOAuth({
+        provider: 'linkedin_oidc',
+        options: {
+          redirectTo: `${window.location.origin}/sign-in`,
+        },
+      });
+      if (error) {
+        console.error('LinkedIn auth error:', error.message);
+      }
+    } catch (err) {
+      console.error('LinkedIn auth exception:', err);
+    } finally {
       setIsLoading(false);
-    }, 600);
+    }
   };
 
   return (
@@ -145,30 +158,24 @@ export default function SignInPage({ initialMode }) {
           {mode === 'register' ? (
             <div className="w-full flex items-center justify-center gap-1.5 text-sm mt-4 mb-4">
               <span className="text-[#a1a1a1]">Already have an account?</span>
-              <a
-                href="/sign-in?app_id=yb37qgq72o4s2o8kao78v"
-                onClick={(e) => {
-                  e.preventDefault();
-                  toggleMode('sign-in');
-                }}
-                className="text-[#10b981] hover:text-[#34d399] font-medium transition-colors cursor-pointer"
+              <button
+                type="button"
+                onClick={() => toggleMode('sign-in')}
+                className="text-[#10b981] hover:text-[#34d399] font-medium transition-colors cursor-pointer bg-transparent border-0 p-0"
               >
                 Sign in
-              </a>
+              </button>
             </div>
           ) : (
             <div className="w-full flex items-center justify-center gap-1.5 text-sm mt-4 mb-4">
               <span className="text-[#a1a1a1]">No account yet?</span>
-              <a
-                href="/register?app_id=yb37qgq72o4s2o8kao78v"
-                onClick={(e) => {
-                  e.preventDefault();
-                  toggleMode('register');
-                }}
-                className="text-[#10b981] hover:text-[#34d399] font-medium transition-colors cursor-pointer"
+              <button
+                type="button"
+                onClick={() => toggleMode('register')}
+                className="text-[#10b981] hover:text-[#34d399] font-medium transition-colors cursor-pointer bg-transparent border-0 p-0"
               >
                 Create account
-              </a>
+              </button>
             </div>
           )}
 
