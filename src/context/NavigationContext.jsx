@@ -5,7 +5,7 @@ import { getCountryBySlug } from '../data/gm/countryData';
 const NavigationContext = createContext(null);
 
 export const PRODUCT_ROUTES = {
-  OUTREACH: '/outreach-agent',
+  OUTREACH: '/',
   DATABASE: '/b2b-database',
   API: '/public/api/docs',
   GM: '/gm-dataset',
@@ -152,21 +152,11 @@ export function resolveProductFromLocation() {
     return { product: 'explorer', canonicalPath: PRODUCT_ROUTES.EXPLORER };
   }
 
-  // 5. Root route (/) -> redirect to /sign-in
+  // 5. Outreach Agent / Main Landing Page (/ or /outreach-agent or /index.html or /landing)
   if (
     pathname === '/' ||
     pathname === '' ||
-    pathname.endsWith('/index.html')
-  ) {
-    if (typeof window !== 'undefined' && window.location.pathname !== PRODUCT_ROUTES.SIGN_IN) {
-      const search = window.location.search || '';
-      window.history.replaceState({}, '', PRODUCT_ROUTES.SIGN_IN + search);
-    }
-    return { product: 'sign-in', authMode: 'sign-in', canonicalPath: PRODUCT_ROUTES.SIGN_IN };
-  }
-
-  // 6. Outreach Agent (/outreach-agent, /outreach, /landing, #outreach)
-  if (
+    pathname.endsWith('/index.html') ||
     pathname.includes('/outreach') ||
     pathname.includes('/landing') ||
     hash.includes('outreach')
@@ -195,14 +185,6 @@ export function NavigationProvider({ children }) {
     };
   }, []);
 
-  // Ensure root URL redirects to /sign-in in address bar
-  useEffect(() => {
-    const pathname = window.location.pathname.toLowerCase();
-    if (pathname === '/' || pathname === '' || pathname.endsWith('/index.html')) {
-      const search = window.location.search || '';
-      window.history.replaceState({}, '', PRODUCT_ROUTES.SIGN_IN + search);
-    }
-  }, []);
 
   const navigate = useCallback((targetPath) => {
     if (!targetPath) return;
