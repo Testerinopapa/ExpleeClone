@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigation, PRODUCT_ROUTES } from '../../context/NavigationContext';
-import { supabase } from '../../lib/supabase';
+import { supabase } from '../../integrations/supabase/client';
 import EmailVerificationPage from './EmailVerificationPage';
 
 export default function SignInPage({ initialMode }) {
@@ -74,27 +74,38 @@ export default function SignInPage({ initialMode }) {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!email) return;
     setIsLoading(true);
-
     if (typeof window !== 'undefined') {
       localStorage.setItem('auth_email', email);
     }
 
-    setTimeout(() => {
-      setIsLoading(false);
-      if (mode === 'register') {
-        const search = window.location.search || '';
-        const params = new URLSearchParams(search);
-        params.set('email', email);
-        navigate(PRODUCT_ROUTES.VERIFICATION_CODE + '?' + params.toString());
-      } else {
-        setSubmitted(true);
-        navigate(PRODUCT_ROUTES.AUTO_GTM);
+    try {
+      if (supabase?.auth?.signInWithOtp) {
+        await supabase.auth.signInWithOtp({
+          email,
+          options: {
+            emailRedirectTo: window.location.origin + PRODUCT_ROUTES.AUTO_GTM,
+            shouldCreateUser: true,
+          },
+        });
       }
-    }, 600);
+    } catch (err) {
+      console.warn('Supabase OTP notification:', err);
+    }
+
+    setIsLoading(false);
+    if (mode === 'register') {
+      const search = window.location.search || '';
+      const params = new URLSearchParams(search);
+      params.set('email', email);
+      navigate(PRODUCT_ROUTES.VERIFICATION_CODE + '?' + params.toString());
+    } else {
+      setSubmitted(true);
+      navigate(PRODUCT_ROUTES.AUTO_GTM);
+    }
   };
 
   if (mode === 'verification-code') {
