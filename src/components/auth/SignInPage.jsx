@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigation, PRODUCT_ROUTES } from '../../context/NavigationContext';
 import { supabase } from '../../lib/supabase';
+import EmailVerificationPage from './EmailVerificationPage';
 
 export default function SignInPage({ initialMode }) {
   const { navigate, authMode, currentPath } = useNavigation();
@@ -8,6 +9,14 @@ export default function SignInPage({ initialMode }) {
   const [isFocused, setIsFocused] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+
+  const isVerificationInitial =
+    initialMode === 'verification-code' ||
+    authMode === 'verification-code' ||
+    (typeof window !== 'undefined' &&
+      (window.location.pathname.toLowerCase().includes('/verification-code') ||
+       window.location.pathname.toLowerCase().includes('/verify-email') ||
+       window.location.hash.toLowerCase().includes('verification-code')));
 
   const isRegisterInitial =
     initialMode === 'register' ||
@@ -17,10 +26,22 @@ export default function SignInPage({ initialMode }) {
        window.location.pathname.toLowerCase().includes('/create-account') ||
        window.location.hash.toLowerCase().includes('register')));
 
-  const [mode, setMode] = useState(isRegisterInitial ? 'register' : 'sign-in');
+  const [mode, setMode] = useState(
+    isVerificationInitial ? 'verification-code' : isRegisterInitial ? 'register' : 'sign-in'
+  );
 
   // Synchronize mode if navigation/history updates
   useEffect(() => {
+    const isVer =
+      authMode === 'verification-code' ||
+      (typeof window !== 'undefined' &&
+        (window.location.pathname.toLowerCase().includes('/verification-code') ||
+         window.location.pathname.toLowerCase().includes('/verify-email') ||
+         window.location.hash.toLowerCase().includes('verification-code')));
+    if (isVer) {
+      setMode('verification-code');
+      return;
+    }
     const isReg =
       authMode === 'register' ||
       (typeof window !== 'undefined' &&
@@ -32,13 +53,21 @@ export default function SignInPage({ initialMode }) {
 
   // Dynamic document title
   useEffect(() => {
-    document.title = mode === 'register' ? 'Create your account' : 'Sign in to your account';
+    if (mode === 'verification-code') {
+      document.title = 'Verify your email';
+    } else if (mode === 'register') {
+      document.title = 'Create your account';
+    } else {
+      document.title = 'Sign in to your account';
+    }
   }, [mode]);
 
   const toggleMode = (targetMode) => {
     setMode(targetMode);
     const search = window.location.search || '';
-    if (targetMode === 'register') {
+    if (targetMode === 'verification-code') {
+      navigate(PRODUCT_ROUTES.VERIFICATION_CODE + search);
+    } else if (targetMode === 'register') {
       navigate(PRODUCT_ROUTES.REGISTER + search);
     } else {
       navigate(PRODUCT_ROUTES.SIGN_IN + search);
@@ -49,12 +78,28 @@ export default function SignInPage({ initialMode }) {
     e.preventDefault();
     if (!email) return;
     setIsLoading(true);
-    // Simulate auth action
+
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('auth_email', email);
+    }
+
     setTimeout(() => {
       setIsLoading(false);
-      setSubmitted(true);
+      if (mode === 'register') {
+        const search = window.location.search || '';
+        const params = new URLSearchParams(search);
+        params.set('email', email);
+        navigate(PRODUCT_ROUTES.VERIFICATION_CODE + '?' + params.toString());
+      } else {
+        setSubmitted(true);
+        navigate(PRODUCT_ROUTES.AUTO_GTM);
+      }
     }, 600);
   };
+
+  if (mode === 'verification-code') {
+    return <EmailVerificationPage email={email} onBack={() => toggleMode('register')} />;
+  }
 
   const handleLinkedInSignIn = async () => {
     try {

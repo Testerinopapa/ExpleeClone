@@ -8,6 +8,8 @@ import RegionLocationPage from './components/gm/RegionLocationPage';
 import ApiDocs from './components/docs/ApiDocs';
 import ExplorerPage from './components/explorer/ExplorerPage';
 import SignInPage from './components/auth/SignInPage';
+import AppAutoGtmPage from './components/autogtm/AppAutoGtmPage';
+import AutoGtmWorkflowPage from './components/autogtm/AutoGtmWorkflowPage';
 
 function NotFoundPage() {
   const { navigate } = useNavigation();
@@ -70,9 +72,13 @@ function NotFoundPage() {
 }
 
 function MainRouter() {
-  const { currentProduct, countrySlug, regionSlug, navigate } = useNavigation();
+  const { currentProduct, countrySlug, regionSlug, domain, navigate } = useNavigation();
 
   switch (currentProduct) {
+    case 'app-auto-gtm':
+      return <AppAutoGtmPage />;
+    case 'auto-gtm-explore':
+      return <AutoGtmWorkflowPage domain={domain} />;
     case 'outreach':
       return <OutreachAgentPage />;
     case 'database':
