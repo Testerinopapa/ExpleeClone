@@ -12,6 +12,9 @@ export const PRODUCT_ROUTES = {
   EXPLORER: '/tools/explorer',
   SIGN_IN: '/sign-in',
   REGISTER: '/register',
+  VERIFICATION_CODE: '/register/verification-code',
+  AUTO_GTM: '/app-auto-gtm',
+  AUTO_GTM_EXPLORE: '/auto-gtm/company',
 };
 
 // Map URL paths or hashes to product IDs
@@ -19,7 +22,21 @@ export function resolveProductFromLocation() {
   const pathname = window.location.pathname.toLowerCase();
   const hash = window.location.hash.toLowerCase();
 
-  // 0a. Register / Create Account (/register, /create-account, /signup, /sign-up, #register, #signup)
+  // 0a. Verification code (/register/verification-code, /verification-code, /verify-email)
+  if (
+    pathname.includes('/verification-code') ||
+    pathname.includes('/verify-email') ||
+    hash.includes('verification-code') ||
+    hash.includes('verify-email')
+  ) {
+    return {
+      product: 'sign-in',
+      authMode: 'verification-code',
+      canonicalPath: PRODUCT_ROUTES.VERIFICATION_CODE,
+    };
+  }
+
+  // 0b. Register / Create Account (/register, /create-account, /signup, /sign-up, #register, #signup)
   if (
     pathname.includes('/register') ||
     pathname.includes('/create-account') ||
@@ -46,6 +63,30 @@ export function resolveProductFromLocation() {
       product: 'sign-in',
       authMode: 'sign-in',
       canonicalPath: PRODUCT_ROUTES.SIGN_IN,
+    };
+  }
+
+  // 0c. AutoGTM Explore (/auto-gtm/company/<domain>/explore)
+  const autoGtmExploreMatch =
+    pathname.match(/\/auto-gtm\/company\/([^/]+)\/explore/) ||
+    hash.match(/\/auto-gtm\/company\/([^/]+)\/explore/);
+  if (autoGtmExploreMatch) {
+    const domain = autoGtmExploreMatch[1];
+    return {
+      product: 'auto-gtm-explore',
+      domain,
+      canonicalPath: `/auto-gtm/company/${domain}/explore`,
+    };
+  }
+
+  // 0d. AutoGTM Landing (/app-auto-gtm)
+  if (
+    pathname.includes('/app-auto-gtm') ||
+    hash.includes('app-auto-gtm')
+  ) {
+    return {
+      product: 'app-auto-gtm',
+      canonicalPath: PRODUCT_ROUTES.AUTO_GTM,
     };
   }
 
@@ -199,6 +240,7 @@ export function NavigationProvider({ children }) {
         authMode: routeState.authMode || 'sign-in',
         countrySlug: routeState.countrySlug,
         regionSlug: routeState.regionSlug,
+        domain: routeState.domain || 'keethub.lovable.app',
         navigate,
       }}
     >
