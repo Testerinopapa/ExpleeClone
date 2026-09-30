@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigation, PRODUCT_ROUTES } from '../../context/NavigationContext';
-import { supabase } from '../../lib/supabase';
+import { supabase } from '../../integrations/supabase/client';
 
 export default function SignInPage({ initialMode }) {
   const { navigate, authMode, currentPath } = useNavigation();
@@ -45,15 +45,23 @@ export default function SignInPage({ initialMode }) {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!email) return;
     setIsLoading(true);
-    // Simulate auth action
-    setTimeout(() => {
-      setIsLoading(false);
-      setSubmitted(true);
-    }, 600);
+    const { error } = await supabase.auth.signInWithOtp({
+      email,
+      options: {
+        emailRedirectTo: window.location.origin + PRODUCT_ROUTES.OUTREACH,
+        shouldCreateUser: true,
+      },
+    });
+    setIsLoading(false);
+    if (error) {
+      alert(error.message);
+      return;
+    }
+    setSubmitted(true);
   };
 
   const handleLinkedInSignIn = async () => {
