@@ -1,34 +1,23 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { ArrowRight, Gift } from 'lucide-react';
 import FlowCanvas from './FlowCanvas';
 import LogosCarousel from './LogosCarousel';
-import { useNavigation, PRODUCT_ROUTES } from '../context/NavigationContext';
-import useAuthSession from '../hooks/useAuthSession';
-import { normalizeWebsite, researchPath, startResearch } from '../lib/companyResearch';
+import { useNavigation } from '../context/NavigationContext';
+import { normalizeWebsite } from '../lib/companyResearch';
 
 export default function HeroSection() {
   const [inputValue, setInputValue] = useState('');
   const [dialogOpen, setDialogOpen] = useState(false);
   const [error, setError] = useState('');
-  const [starting, setStarting] = useState(false);
-  const submitting = useRef(false);
   const { navigate } = useNavigation();
-  const { session, loading: authLoading } = useAuthSession();
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
-    if (submitting.current || authLoading) return;
     setError('');
     try {
-      const { website } = normalizeWebsite(inputValue);
-      sessionStorage.setItem('autogtm-pending-domain', website);
-      if (!session) { navigate(PRODUCT_ROUTES.SIGN_IN); return; }
-      submitting.current = true; setStarting(true);
-      const result = await startResearch(website);
-      sessionStorage.removeItem('autogtm-pending-domain');
-      navigate(researchPath(result.domain, result.job.id));
+      const { domain } = normalizeWebsite(inputValue);
+      navigate(`/auto-gtm/company/${encodeURIComponent(domain)}/explore?src=landing&phase=research_company_loading`);
     } catch (err) { setError(err.message); }
-    finally { submitting.current = false; setStarting(false); }
   };
 
   return (
@@ -110,8 +99,7 @@ export default function HeroSection() {
                 />
                 <button
                   type="submit"
-                  aria-label={starting ? 'Starting research' : 'Launch'}
-                  disabled={starting || authLoading}
+                  aria-label="Launch"
                   className={`inline-flex items-center justify-center bg-primary text-primary-foreground font-medium p-2.5 rounded-xl transition-all duration-300 hover:scale-105 flex-shrink-0 cursor-pointer ${
                     inputValue.trim().length > 0
                       ? 'opacity-100 pointer-events-auto shadow-sm'
@@ -139,7 +127,6 @@ export default function HeroSection() {
               </div>
             </div>
 
-            {starting && <p role="status" className="mt-3 text-sm text-muted-foreground">Starting research for your website…</p>}
             {error && <p role="alert" className="mt-3 text-sm text-red-600">{error}</p>}
 
             {/* "I don't have a website" dialog link */}

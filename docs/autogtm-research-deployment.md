@@ -2,6 +2,8 @@
 
 Status: **deployed to the research project on 2026-10-12 with explicit owner approval.** Both migrations and all four Edge Functions are live. The original login project's configuration was not changed.
 
+Frontend status: at the owner's request, the active AutoGTM workflow and launcher now use the original PrimKeet placeholder flow from commit `6c061a1`, including all six animated stages. Landing-page Launch also opens that flow without starting a research job. The live research screen and backend implementation are retained for future integration; the live-research browser checks apply when that screen is reconnected.
+
 Research project: `cvpeezzkzsbosyuhmhmf` (`https://cvpeezzkzsbosyuhmhmf.supabase.co`).
 
 Login project: `hpkmrpezybhtyjcsxfiq` (`https://hpkmrpezybhtyjcsxfiq.supabase.co`). Keep its existing LinkedIn configuration.
