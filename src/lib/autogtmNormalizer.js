@@ -124,10 +124,13 @@ export function normalizeSegments(raw) {
       exampleClients: toSafeArray(
         seg.exampleClients ?? seg.example_clients
       ),
-      percentage: Number(seg.percentage) || 15,
+      dataSource: seg.dataSource,
+      sourceUrls: toSafeArray(seg.sourceUrls),
+      selected: seg.selected,
+      percentage: seg.dataSource === 'research' ? null : Number(seg.percentage) || 15,
       estimatedCompanies:
-        Number(seg.estimatedCompanies || seg.estimated_companies) || 5000,
-      count: countDisplay,
+        seg.dataSource === 'research' ? null : Number(seg.estimatedCompanies || seg.estimated_companies) || 5000,
+      count: seg.dataSource === 'research' ? '—' : countDisplay,
       buyerType: seg.buyerType || seg.buyer_type || 'company',
       decisionMaker: seg.decisionMaker || seg.decision_maker || '',
     };

@@ -20,6 +20,9 @@ PROFILE = {'job_id': JOB, 'project_id': JOB, 'company_name': 'Test Company', 'bu
     'descriptions': [{'text': 'Makes useful widgets.', 'source_urls': ['https://company.com/']}],
     'products': [{'name': 'Widget', 'description': 'A useful product.', 'source_urls': ['https://company.com/products']}],
     'customers': [], 'locations': [], 'source_urls': ['https://company.com/', 'https://company.com/products'], 'warnings': []}
+CAMPAIGN = {'id': 'cccccccc-cccc-4ccc-cccc-cccccccccccc', 'name': 'Widget manufacturers', 'target_audience': 'Manufacturing businesses',
+            'target_industry': 'Manufacturing', 'ideal_customer': 'Factories looking for useful widgets.', 'keywords': ['widget manufacturer'],
+            'target_locations': [], 'reasoning': 'Suggested from the saved widget research.', 'source_urls': ['https://company.com/'], 'origin': 'suggested'}
 
 def session():
     enc = lambda obj: base64.urlsafe_b64encode(json.dumps(obj).encode()).decode().rstrip('=')
@@ -37,6 +40,9 @@ with sync_playwright() as p:
              'competitors': 'searching', 'competitor_requests': 0, 'competitor_results': [
                  {'domain': 'real-rival.com', 'name': 'Real Rival', 'description': 'Makes useful widgets.', 'products': [], 'customers': [],
                   'features': [], 'pricing': [], 'source_urls': ['https://real-rival.com/'], 'relationship': 'direct', 'relevance_score': 80, 'ranking_reason': 'Shared widget products.'}]}
+    state['campaign_failure'] = True
+    state['campaign_conflict'] = False
+    state['campaign_plan'] = {'status': 'completed', 'version': 1, 'campaigns': [dict(CAMPAIGN)], 'selected_ids': [CAMPAIGN['id']], 'warnings': []}
     def route(request_route):
         req = request_route.request
         url = urlparse(req.url)
@@ -71,6 +77,35 @@ with sync_playwright() as p:
                 'candidates_count': 1, 'pages_completed': 1 if state['competitors'] == 'completed' else 0,
                 'results': state['competitor_results'] if state['competitors'] == 'completed' else [], 'warnings': [],
                 'error': 'Firecrawl is busy. Please retry.' if state['competitors'] == 'failed' else None, 'can_retry': True}}
+        elif path.endswith('/campaigns'):
+            body = req.post_data_json
+            assert body['job_id'] == JOB
+            action = body.get('action', 'load')
+            plan = state['campaign_plan']
+            if state['campaign_failure']:
+                code = 503
+                payload = {'error': {'code': 'NOT_DEPLOYED', 'message': 'Phase 3 backend is not deployed yet.'}}
+            elif action != 'load' and (state['campaign_conflict'] or body.get('version') != plan['version']):
+                state['campaign_conflict'] = False
+                code = 409
+                plan['version'] += 1
+                payload = {'error': {'code': 'CONFLICT', 'message': 'Campaigns changed in another tab. Reload the latest plan before saving.'}}
+            else:
+                if action == 'create':
+                    plan['campaigns'].append({**body['campaign'], 'id': body['campaign_id'], 'source_urls': [], 'origin': 'custom'})
+                elif action == 'update':
+                    plan['campaigns'] = [{**c, **body['campaign']} if c['id'] == body['campaign_id'] else c for c in plan['campaigns']]
+                elif action == 'delete':
+                    plan['campaigns'] = [c for c in plan['campaigns'] if c['id'] != body['campaign_id']]
+                    plan['selected_ids'] = [value for value in plan['selected_ids'] if value != body['campaign_id']]
+                elif action == 'select':
+                    plan['selected_ids'] = body['selected_ids']
+                if action != 'load':
+                    plan['version'] += 1
+                payload = {'job_id': JOB, 'project_id': JOB, 'plan': plan, 'targets': [
+                    {'campaign_id': c['id'], 'name': c['name'], 'audience': c['target_audience'], 'industry': c['target_industry'],
+                     'keywords': c['keywords'], 'locations': c['target_locations'], 'plan_version': plan['version']}
+                    for c in plan['campaigns'] if c['id'] in plan['selected_ids']]}
         elif path.endswith('/research-projects'):
             domain = req.post_data_json.get('domain')
             payload = {'projects': [{'id': JOB, 'domain': domain, 'updated_at': '2026-10-12T12:00:00Z',
@@ -169,10 +204,68 @@ with sync_playwright() as p:
     page.get_by_role('button', name='Pause Auto-play').click()
     expect(page.locator('main')).to_contain_text('No competitors with enough supporting evidence')
     expect(page.locator('main').get_by_text('langly.es', exact=True)).to_have_count(0)
-    # Stages 3–6 keep their existing navigation and presentation.
+    # Phase 3 uses saved campaigns and waits for review instead of auto-advancing.
     page.get_by_role('button', name='Continue to campaigns').click()
+    expect(page.get_by_role('alert')).to_contain_text('Phase 3 backend')
+    state['campaign_failure'] = False
+    page.get_by_role('button', name='Retry research').click()
+    expect(page.get_by_role('button', name='Next Phase')).to_be_enabled()
     page.get_by_role('button', name='Next Phase').click()
-    expect(page.locator('main').get_by_text('real-rival.com', exact=True)).to_have_count(0)
+    expect(page.get_by_role('heading', name='Widget manufacturers', exact=True)).to_be_visible()
+    expect(page.locator('main')).not_to_contain_text('5.0K')
+    expect(page.get_by_role('checkbox', name='Select Widget manufacturers')).to_be_checked()
+    page.get_by_role('button', name='Resume Auto-play').click()
+    page.wait_for_timeout(3800)
+    expect(page.get_by_role('heading', name='Widget manufacturers', exact=True)).to_be_visible()
+    page.get_by_role('button', name='Pause Auto-play').click()
+    page.get_by_role('checkbox', name='Select Widget manufacturers').uncheck()
+    expect(page.get_by_role('button', name='Continue to find companies')).to_be_disabled()
+    page.reload()
+    expect(page.get_by_role('heading', name='Widget manufacturers', exact=True)).to_be_visible(timeout=10000)
+    expect(page.get_by_role('checkbox', name='Select Widget manufacturers')).not_to_be_checked()
+    page.get_by_role('button', name='New campaign').click()
+    editor = page.get_by_role('dialog', name='Create campaign')
+    expect(editor).to_be_visible()
+    editor.get_by_label('Campaign name', exact=True).fill('Brazil distributors')
+    editor.get_by_label('Target audience', exact=True).fill('Widget distributors')
+    editor.get_by_label('Target industry', exact=True).fill('Manufacturing')
+    editor.get_by_label('Ideal customer', exact=True).fill('Distributors seeking widgets in Brazil.')
+    editor.get_by_label('Keywords (one per line, up to 10)', exact=True).fill('widget distributor\nindustrial components')
+    editor.get_by_label('Target locations (optional, one per line)', exact=True).fill('Brazil')
+    editor.get_by_label('Reasoning', exact=True).fill('Test the researched product in this user-chosen market.')
+    check_width(page)
+    editor.get_by_role('button', name='Save campaign').click()
+    expect(editor).not_to_be_visible()
+    expect(page.get_by_role('heading', name='Brazil distributors', exact=True)).to_be_visible()
+    page.get_by_role('button', name='Edit Brazil distributors', exact=True).click()
+    editor = page.get_by_role('dialog', name='Edit campaign')
+    editor.get_by_label('Campaign name', exact=True).fill('Brazil widget distributors')
+    unsafe = '<img src=x onerror="window.campaignInjected=true">'
+    editor.get_by_label('Ideal customer', exact=True).fill(unsafe)
+    state['campaign_conflict'] = True
+    editor.get_by_role('button', name='Save campaign').click()
+    expect(editor.get_by_role('alert')).to_contain_text('another tab')
+    expect(editor.get_by_label('Campaign name', exact=True)).to_have_value('Brazil widget distributors')
+    editor.get_by_role('button', name='Save campaign').click()
+    expect(editor).not_to_be_visible()
+    expect(page.get_by_role('heading', name='Brazil widget distributors', exact=True)).to_be_visible()
+    assert page.evaluate('window.campaignInjected') is None
+    expect(page.locator('main').get_by_text(unsafe, exact=True)).to_be_visible()
+    page.get_by_role('checkbox', name='Select Brazil widget distributors').check()
+    expect(page.get_by_role('button', name='Continue to find companies')).to_be_enabled()
+    page.reload()
+    expect(page.get_by_role('checkbox', name='Select Brazil widget distributors')).to_be_checked(timeout=10000)
+    for width in [320, 390, 768, 1440]:
+        page.set_viewport_size({'width': width, 'height': 900})
+        check_width(page)
+    page.set_viewport_size({'width': 390, 'height': 844})
+    campaign_screenshot = os.path.join(tempfile.gettempdir(), 'autogtm-campaigns-mobile.png')
+    page.screenshot(path=campaign_screenshot, full_page=True)
+    page.get_by_role('button', name='Delete Widget manufacturers', exact=True).click()
+    expect(page.get_by_role('heading', name='Widget manufacturers', exact=True)).to_have_count(0)
+    page.get_by_role('button', name='Continue to find companies').click()
+    expect(page).to_have_url(re.compile('phase=outreach_companies_loading'))
+    assert state['campaign_plan']['selected_ids'] == [state['campaign_plan']['campaigns'][0]['id']]
     assert state['starts'] == 1, 'Later visual stages started another crawl'
     page.get_by_role('link', name='Explee home').first.click()
     page.get_by_role('textbox', name='Company website').fill('company.com')
@@ -245,3 +338,4 @@ with sync_playwright() as p:
     print('PASS: initial null session/job, original phase 1 and 2 animation/cards, loading, failure/retry, real competitors, empty results, refresh, mobile widths, later stages, OTP, input website and stale-profile rejection')
     print('Mobile screenshot: ' + screenshot)
     print('Competitor screenshot: ' + competitor_screenshot)
+    print('Campaign screenshot: ' + campaign_screenshot)

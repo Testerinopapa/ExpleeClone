@@ -314,7 +314,7 @@ export default function AutoGtmSidebar({
 
                   <div className="space-y-1">
                     {campaigns.map((seg, idx) => {
-                      const isSelected = activeSegment ? activeSegment.id === seg.id : idx === 0;
+                      const isSelected = seg.dataSource === 'research' ? seg.selected : activeSegment ? activeSegment.id === seg.id : idx === 0;
                       return (
                         <button
                           key={seg.id || idx}

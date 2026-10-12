@@ -1,20 +1,33 @@
 import React from 'react';
 import { normalizeSegments } from '../../lib/autogtmNormalizer';
 
+// Keep the original bold markers without treating researched/user text as HTML.
+const formattedText = value => String(value).split(/(\*\*.*?\*\*)/g).map((part, index) =>
+  part.startsWith('**') && part.endsWith('**') ? <strong key={index}>{part.slice(2, -2)}</strong> : part);
+
 export default function Step3CampaignsGrid({
   segments = [],
   onSelectSegment = null,
   activeSegmentId = null,
   onNext = null,
+  selectedIds = null, onCreate = null, onEdit = null, onDelete = null,
+  busy = false, error = null, canContinue = true,
 }) {
   const displaySegments = normalizeSegments(segments);
 
   return (
     <div className="w-full max-w-4xl mx-auto mt-6 space-y-4 animate-card-enter">
+      {onCreate && <div className="flex flex-wrap items-center justify-between gap-2">
+        <span className="text-xs text-gray-500">{busy ? 'Saving…' : `${selectedIds?.length || 0} selected · Review suggested targets`}</span>
+        <button type="button" disabled={busy || displaySegments.length >= 12} onClick={onCreate}
+          className="text-xs px-3 py-1.5 rounded-lg border border-black/10 bg-white text-gray-600 shadow-2xs">New campaign</button>
+      </div>}
+      {error && <p role="alert" className="text-xs text-gray-600 leading-relaxed">{error}</p>}
+      {!displaySegments.length && !error && <p role="status" className="text-xs text-gray-600 leading-relaxed">No campaigns yet. Create one to define your target customer.</p>}
       {/* 2x2 Grid of Segments */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {displaySegments.map((seg, idx) => {
-          const isSelected = activeSegmentId ? activeSegmentId === seg.id : idx === 0;
+          const isSelected = selectedIds ? selectedIds.includes(seg.id) : activeSegmentId ? activeSegmentId === seg.id : idx === 0;
           const criteriaList = Array.isArray(seg.criteria) ? seg.criteria : [];
           const exampleClientsList = Array.isArray(seg.exampleClients)
             ? seg.exampleClients
@@ -22,11 +35,12 @@ export default function Step3CampaignsGrid({
             ? seg.example_clients
             : [];
           const useCaseText = seg.useCase || seg.use_case || seg.label;
+          const tags = seg.dataSource === 'research' ? seg.keywords : exampleClientsList;
 
           return (
             <div
               key={seg.id || idx}
-              onClick={() => onSelectSegment && onSelectSegment(seg)}
+              onClick={() => !busy && onSelectSegment && onSelectSegment(seg)}
               className={`bg-white rounded-2xl border p-5 transition-all shadow-xs cursor-pointer relative ${
                 isSelected
                   ? 'border-black/30 shadow-md ring-1 ring-black/10'
@@ -35,8 +49,8 @@ export default function Step3CampaignsGrid({
             >
               {/* Header: Icon + Title + Count Arc */}
               <div className="flex items-start justify-between mb-3">
-                <div className="flex items-center gap-2.5">
-                  <div className="size-8 rounded-lg bg-[#f8fafc] border border-black/[0.06] flex items-center justify-center text-gray-700">
+                <div className="flex min-w-0 items-center gap-2.5">
+                  <div className="size-8 shrink-0 rounded-lg bg-[#f8fafc] border border-black/[0.06] flex items-center justify-center text-gray-700">
                     {seg.icon === 'users' && (
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
@@ -88,11 +102,11 @@ export default function Step3CampaignsGrid({
                       <span className="text-sm">🎯</span>
                     )}
                   </div>
-                  <h3 className="font-semibold text-gray-900 text-sm tracking-tight">{seg.label}</h3>
+                  <h3 className="min-w-0 break-words font-semibold text-gray-900 text-sm tracking-tight">{seg.label}</h3>
                 </div>
 
                 {/* Circular Count indicator */}
-                <div className="relative size-9 flex items-center justify-center">
+                <div title={seg.dataSource === 'research' ? 'Company count is not available yet' : undefined} className="relative size-9 shrink-0 flex items-center justify-center">
                   <svg className="size-full -rotate-90" viewBox="0 0 36 36">
                     <path
                       className="text-gray-100"
@@ -103,7 +117,7 @@ export default function Step3CampaignsGrid({
                     />
                     <path
                       className="text-gray-500"
-                      strokeDasharray={`${seg.percentage || seg.percent || 20}, 100`}
+                      strokeDasharray={`${seg.dataSource === 'research' ? 0 : seg.percentage || seg.percent || 20}, 100`}
                       strokeWidth="3.5"
                       strokeLinecap="round"
                       stroke="currentColor"
@@ -118,9 +132,9 @@ export default function Step3CampaignsGrid({
               </div>
 
               {/* Use case snippet */}
-              <p className="text-xs text-gray-700 leading-relaxed mb-3">
+              <p className="break-words text-xs text-gray-700 leading-relaxed mb-3">
                 {useCaseText ? (
-                  <span dangerouslySetInnerHTML={{ __html: useCaseText.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />
+                  <span>{formattedText(useCaseText)}</span>
                 ) : (
                   seg.label
                 )}
@@ -130,9 +144,9 @@ export default function Step3CampaignsGrid({
               {seg.pain && (
                 <div className="space-y-1 mb-3">
                   <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">
-                    PAIN
+                    {seg.dataSource === 'research' ? 'WHY THIS SEGMENT' : 'PAIN'}
                   </span>
-                  <p className="text-xs text-gray-600 leading-snug">{seg.pain}</p>
+                  <p className="break-words text-xs text-gray-600 leading-snug">{seg.pain}</p>
                 </div>
               )}
 
@@ -146,7 +160,7 @@ export default function Step3CampaignsGrid({
                     {criteriaList.map((crit, cIdx) => (
                       <li key={cIdx} className="flex items-center gap-1.5">
                         <span className="text-gray-400">•</span>
-                        <span>{crit}</span>
+                        <span className="min-w-0 break-words">{crit}</span>
                       </li>
                     ))}
                   </ul>
@@ -154,18 +168,29 @@ export default function Step3CampaignsGrid({
               )}
 
               {/* Example clients */}
-              {exampleClientsList.length > 0 && (
+              {tags.length > 0 && (
                 <div className="flex flex-wrap gap-1.5 pt-2 border-t border-black/[0.04]">
-                  {exampleClientsList.map((ex, eIdx) => (
+                  {tags.map((ex, eIdx) => (
                     <span
                       key={eIdx}
-                      className="rounded bg-[#f8fafc] border border-black/[0.05] px-2 py-0.5 text-[10px] text-gray-600"
+                      className="max-w-full break-words rounded bg-[#f8fafc] border border-black/[0.05] px-2 py-0.5 text-[10px] text-gray-600"
                     >
                       {ex}
                     </span>
                   ))}
                 </div>
               )}
+              {selectedIds && <div onClick={event => event.stopPropagation()} className="mt-3 pt-3 border-t border-black/[0.04] flex flex-wrap items-center justify-between gap-2 text-xs text-gray-600">
+                <label className="inline-flex items-center gap-1.5">
+                  <input type="checkbox" checked={isSelected} disabled={busy} onChange={() => onSelectSegment?.(seg)} aria-label={`Select ${seg.label}`} />
+                  Select
+                </label>
+                <div className="flex items-center gap-3">
+                  {seg.sourceUrls?.[0] && <a href={seg.sourceUrls[0]} target="_blank" rel="noopener noreferrer" title={seg.sourceUrls.join('\n')}>Source</a>}
+                  <button type="button" disabled={busy} onClick={() => onEdit?.(seg.id)} aria-label={`Edit ${seg.label}`}>Edit</button>
+                  <button type="button" disabled={busy} onClick={() => onDelete?.(seg.id)} aria-label={`Delete ${seg.label}`}>Delete</button>
+                </div>
+              </div>}
             </div>
           );
         })}
@@ -176,6 +201,7 @@ export default function Step3CampaignsGrid({
           <button
             type="button"
             onClick={onNext}
+            disabled={busy || !canContinue}
             className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0d9467] hover:text-[#096647] transition-colors"
           >
             <span>Continue to find companies</span>

@@ -1,6 +1,7 @@
 import { strict as assert } from 'node:assert';
 import { buildProfile, companyUrl, domainOf, safeNextPage, selectPages } from './research-core.ts';
 import { businessDomain, collectCandidates, competitorQueries, rankCompetitors, type CompanyProfile } from './competitor-core.ts';
+import { campaignFields, campaignTargets, generateCampaigns, type CampaignProfile } from './campaigns-core.ts';
 
 const profile = { company_name: 'PrimKeet', business_description: 'English vocabulary learning games',
   products: [{ name: 'English learning games' }], customers: [{ name: 'ESL students' }], source_urls: ['https://keethub.lovable.app/'] } as CompanyProfile;
@@ -88,4 +89,44 @@ Deno.test('empty/malformed extraction cannot become a successful profile', () =>
 Deno.test('pagination cannot leak the provider key to another origin or job', () => {
   assert.equal(safeNextPage('https://api.firecrawl.dev/v2/batch/scrape/job?skip=2', 'job'), '/v2/batch/scrape/job?skip=2');
   for (const url of ['https://evil.com/v2/batch/scrape/job', 'https://api.firecrawl.dev/v2/batch/scrape/other', 'http://api.firecrawl.dev/v2/batch/scrape/job']) assert.throws(() => safeNextPage(url, 'job'));
+});
+
+Deno.test('campaign suggestions use company and competitor evidence, and never invent counts or target locations', () => {
+  const researched = { ...profile, job_id: 'job', project_id: 'project', campaign_plan: null,
+    competitor_research: { status: 'completed', results: [{ domain: 'rival.com', relationship: 'direct',
+      description: 'English vocabulary learning games', products: [], source_urls: ['https://rival.com/'],
+      customers: [{ name: 'Training businesses', source_urls: ['https://rival.com/'] }] }] } } as unknown as CampaignProfile;
+  const plan = generateCampaigns(researched);
+  assert.ok(plan.campaigns.some(c => c.name === 'Language schools'));
+  assert.ok(plan.campaigns.some(c => c.name === 'ESL teachers'));
+  assert.ok(plan.campaigns.some(c => c.name === 'Private tutors'));
+  assert.ok(!plan.campaigns.some(c => c.name === 'Corporate training providers'));
+  assert.ok(plan.campaigns.some(c => c.reasoning.includes('rival.com')));
+  for (const campaign of plan.campaigns) {
+    assert.deepEqual(campaign.target_locations, []);
+    assert.ok(campaign.source_urls.length && campaign.keywords.some(k => /English/i.test(k)));
+    assert.equal('estimatedCompanies' in campaign, false);
+    assert.equal('count' in campaign, false);
+    assert.doesNotThrow(() => campaignFields(campaign));
+  }
+  const targets = campaignTargets(researched, { ...plan, selected_ids: [plan.campaigns[1].id], version: 3 });
+  assert.equal(targets.length, 1);
+  assert.equal(targets[0].campaign_id, plan.campaigns[1].id);
+  assert.equal(targets[0].plan_version, 3);
+  assert.ok(targets[0].excluded_domains.includes('rival.com'));
+});
+Deno.test('campaigns for unrelated businesses use their actual audiences, and sparse research stays empty', () => {
+  const factory = { ...profile, company_name: 'Factory', business_description: 'Industrial water filtration systems',
+    products: [{ name: 'Water filtration', description: 'Industrial water recycling filters' }],
+    customers: [{ name: 'Food manufacturers', description: 'Food processing factories', source_urls: ['https://factory.com/'] }],
+    source_urls: ['https://factory.com/'], competitor_research: { status: 'completed', results: [] }, campaign_plan: null } as unknown as CampaignProfile;
+  const plan = generateCampaigns(factory);
+  assert.equal(plan.campaigns.length, 1);
+  assert.equal(plan.campaigns[0].target_audience, 'Food manufacturers');
+  assert.ok(plan.campaigns[0].ideal_customer.includes('Water filtration'));
+  assert.ok(!JSON.stringify(plan).includes('English'));
+  assert.equal(generateCampaigns({ ...factory, customers: [] }).campaigns.length, 0);
+  assert.throws(() => campaignFields({ ...plan.campaigns[0], name: ' ' }));
+  assert.throws(() => campaignFields({ ...plan.campaigns[0], keywords: [] }));
+  assert.throws(() => campaignFields({ ...plan.campaigns[0], keywords: Array(11).fill('word') }));
 });

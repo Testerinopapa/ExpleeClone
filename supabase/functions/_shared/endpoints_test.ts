@@ -4,6 +4,8 @@ import { handler as status } from '../research-status/index.ts';
 import { handler as projects } from '../research-projects/index.ts';
 import { handler as webhook } from '../firecrawl-webhook/index.ts';
 import { handler as competitors } from '../competitor-research/index.ts';
+import { handler as campaigns } from '../campaigns/index.ts';
+import type { CampaignPlan } from './campaigns-core.ts';
 import type { CompetitorState } from './competitor-core.ts';
 import { callbackToken } from './backend.ts';
 import { batchStatus } from './firecrawl.ts';
@@ -138,6 +140,54 @@ const competitorProfile = (state: CompetitorState) => ({ job_id: jobId, project_
   company_name: 'Company', business_description: 'English vocabulary learning games',
   products: [{ name: 'English vocabulary games' }], customers: [{ name: 'ESL students' }],
   source_urls: ['https://company.com/'], competitor_research: state });
+
+Deno.test('campaign CRUD persists selection, isolates owners, rejects stale writes and performs no provider requests', async () => {
+  let plan: CampaignPlan | null = null;
+  const foreignJob = crypto.randomUUID();
+  const ownProfile = { ...competitorProfile({ ...initialCompetitors(), status: 'completed' }), campaign_plan: plan };
+  await withMock(async calls => {
+    assert.equal((await campaigns(new Request('https://local.test', { method: 'POST', body: '{}' }))).status, 401);
+    assert.equal((await campaigns(request({ job_id: foreignJob }))).status, 404);
+    const loaded = await campaigns(request({ job_id: jobId }));
+    assert.equal(loaded.status, 200);
+    const initial = await loaded.json();
+    assert.ok(initial.plan.campaigns.length >= 4);
+    const originalVersion = initial.plan.version;
+    const id = crypto.randomUUID();
+    const campaign = { name: 'Tutors in Brazil', target_audience: 'Private English tutors', target_industry: 'Education',
+      ideal_customer: 'Independent tutors seeking English vocabulary practice between lessons.', keywords: ['English tutor'],
+      target_locations: ['Brazil'], reasoning: 'A user-selected test market.' };
+    const added = await (await campaigns(request({ job_id: jobId, action: 'create', version: originalVersion, campaign_id: id, campaign }))).json();
+    assert.ok(added.plan.campaigns.some((c: { id: string }) => c.id === id));
+    assert.equal((await campaigns(request({ job_id: jobId, action: 'update', version: originalVersion, campaign_id: id, campaign }))).status, 409);
+    const updated = await (await campaigns(request({ job_id: jobId, action: 'update', version: added.plan.version, campaign_id: id,
+      campaign: { ...campaign, name: 'Brazil tutors' } }))).json();
+    const selected = await (await campaigns(request({ job_id: jobId, action: 'select', version: updated.plan.version, selected_ids: [id] }))).json();
+    assert.equal(selected.targets.length, 1);
+    assert.equal(selected.targets[0].name, 'Brazil tutors');
+    assert.deepEqual(selected.targets[0].locations, ['Brazil']);
+    assert.equal((await campaigns(request({ job_id: jobId, action: 'select', version: selected.plan.version, selected_ids: [foreignJob] }))).status, 400);
+    const removed = await (await campaigns(request({ job_id: jobId, action: 'delete', version: selected.plan.version, campaign_id: id }))).json();
+    assert.ok(!removed.plan.campaigns.some((c: { id: string }) => c.id === id));
+    assert.deepEqual(removed.targets, []);
+    const refreshed = await (await campaigns(request({ job_id: jobId }))).json();
+    assert.equal(refreshed.plan.version, removed.plan.version);
+    assert.deepEqual(refreshed.plan, removed.plan);
+    assert.ok(!calls.some(call => call.url.hostname === 'api.firecrawl.dev'));
+  }, (url, body) => {
+    if (url.pathname.endsWith('/company_profiles')) {
+      assert.equal(url.searchParams.get('owner_id'), `eq.${owner}`);
+      return response(url.searchParams.get('job_id') === `eq.${foreignJob}` ? null : { ...ownProfile, campaign_plan: plan });
+    }
+    if (url.pathname.endsWith('/autogtm_save_campaigns')) {
+      assert.equal(body?.p_owner, owner);
+      if (body?.p_version !== (plan?.version || 0)) return response({ applied: false, plan });
+      plan = { ...(body?.p_plan as CampaignPlan), version: (plan?.version || 0) + 1 };
+      return response({ applied: true, plan });
+    }
+    throw new Error(`Unexpected ${url.pathname}`);
+  });
+});
 
 Deno.test('competitor endpoint enforces auth and owner before any Firecrawl calls', async () => {
   await withMock(async calls => {

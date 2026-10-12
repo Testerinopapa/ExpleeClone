@@ -28,6 +28,7 @@ export function validateResearchResult(result, domain, jobId) {
 }
 
 async function invoke(name, body, signal) {
+  const unavailable = name === 'campaigns' ? 'Could not reach campaign planning. Check your connection and that the Phase 3 backend has been deployed.' : 'Could not reach company research. Check your connection and that the backend has been deployed.';
   const { data } = await supabase.auth.getSession();
   if (!data.session) throw Object.assign(new Error('Sign in to research a company.'), { code: 'UNAUTHORIZED' });
   let response;
@@ -40,10 +41,10 @@ async function invoke(name, body, signal) {
     });
   } catch (error) {
     if (error.name === 'AbortError') throw error;
-    throw new Error('Could not reach company research. Check your connection and that the backend has been deployed.');
+    throw new Error(unavailable);
   }
   const result = await response.json().catch(() => ({}));
-  if (!response.ok) throw Object.assign(new Error(result.error?.message || 'Company research is unavailable. Confirm the backend is deployed.'), { code: result.error?.code });
+  if (!response.ok) throw Object.assign(new Error(result.error?.message || unavailable), { code: result.error?.code });
   return result;
 }
 
@@ -61,6 +62,7 @@ export async function startResearch(value) {
 
 export const researchStatus = (id, signal) => invoke('research-status', { job_id: id }, signal);
 export const competitorResearch = (id, retry, signal) => invoke('competitor-research', { job_id: id, retry }, signal);
+export const campaignRequest = (id, action = 'load', values = {}, signal) => invoke('campaigns', { ...values, job_id: id, action }, signal);
 export const researchPath = (domain, jobId) => `/auto-gtm/company/${encodeURIComponent(domain)}/explore?job=${encodeURIComponent(jobId)}`;
 
 export async function listResearchProjects() {

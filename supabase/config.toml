@@ -17,3 +17,6 @@ verify_jwt = false
 
 [functions.competitor-research]
 verify_jwt = false
+
+[functions.campaigns]
+verify_jwt = false

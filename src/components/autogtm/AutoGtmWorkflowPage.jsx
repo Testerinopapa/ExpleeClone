@@ -18,9 +18,11 @@ import FinalProjectDashboard from './FinalProjectDashboard';
 import CrispChatWidget from './CrispChatWidget';
 import AutoGtmErrorBoundary from './AutoGtmErrorBoundary';
 import { normalizeSegments, normalizeCompetitors } from '../../lib/autogtmNormalizer';
-import projectData from '../../data/autogtm_project_data.json';
 import useCompanyResearch from '../../hooks/useCompanyResearch';
 import useCompetitorResearch from '../../hooks/useCompetitorResearch';
+import useCampaigns from '../../hooks/useCampaigns';
+import { campaignSegments } from '../../lib/campaigns';
+import CampaignEditor from './CampaignEditor';
 
 const PHASES = [
   'research_company_loading',
@@ -62,9 +64,23 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
     research?.job.id, research?.project.id, session?.user.id, competitorEnabled,
   );
   const competitorsReady = competitorData?.status === 'completed' && !competitorError;
-  // Saved phase links and manual controls wait for the real results of steps 1–2.
+  const campaignsEnabled = competitorsReady && PHASES.indexOf(selectedPhase) >= 4;
+  const { plan: campaignPlan, targets: campaignTargets, error: campaignError, busy: savingCampaigns, mutate: changeCampaigns, retry: retryCampaigns } = useCampaigns(
+    research?.job.id, research?.project.id, session?.user.id, campaignsEnabled,
+  );
+  const campaignsReady = Boolean(campaignPlan);
+  const campaignsCanContinue = campaignsReady && campaignTargets.length > 0 && !savingCampaigns && !campaignError;
+  // Saved phase links and manual controls wait for real results and a saved selection.
   const phase = !researchReady ? 'research_company_loading'
-    : competitorEnabled && !competitorsReady ? 'research_competitors_loading' : selectedPhase;
+    : competitorEnabled && !competitorsReady ? 'research_competitors_loading'
+    : campaignsEnabled && !campaignsReady ? 'research_segments_loading'
+    : campaignsEnabled && PHASES.indexOf(selectedPhase) > 5 && !campaignsCanContinue ? 'research_segments' : selectedPhase;
+  const [campaignAnimationReady, setCampaignAnimationReady] = useState(false);
+  useEffect(() => {
+    if (!campaignsEnabled) { setCampaignAnimationReady(false); return; }
+    const timer = setTimeout(() => setCampaignAnimationReady(true), 4600);
+    return () => clearTimeout(timer);
+  }, [campaignsEnabled]);
   const [competitorAnimationReady, setCompetitorAnimationReady] = useState(false);
   useEffect(() => {
     if (!competitorEnabled) { setCompetitorAnimationReady(false); return; }
@@ -78,11 +94,20 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
   }, []);
 
   const [activeSegment, setActiveSegment] = useState(null);
+  const [editingCampaign, setEditingCampaign] = useState(null);
   const [isTrialModalOpen, setIsTrialModalOpen] = useState(false);
   const [isAutoPlay, setIsAutoPlay] = useState(true);
 
   // Guarantee normalized data at boundary for all UI consumers
-  const normalizedCampaigns = normalizeSegments(projectData?.segments);
+  const normalizedCampaigns = normalizeSegments(campaignSegments(campaignPlan));
+  const selectCampaign = (segment) => {
+    if (!campaignPlan || savingCampaigns) return;
+    setActiveSegment(segment);
+    setIsAutoPlay(false);
+    const selected_ids = campaignPlan.selected_ids.includes(segment.id)
+      ? campaignPlan.selected_ids.filter(id => id !== segment.id) : [...campaignPlan.selected_ids, segment.id];
+    changeCampaigns('select', { selected_ids });
+  };
   const normalizedCompetitors = normalizeCompetitors(competitorData?.results || []);
   const determinants = [
     ...(research?.profile?.products || []).map(item => item.description ? `${item.name}: ${item.description}` : item.name),
@@ -94,6 +119,8 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
   const changePhase = (nextPhase, userTriggered = false) => {
     if (!researchReady && nextPhase !== 'research_company_loading') return;
     if (!competitorsReady && PHASES.indexOf(nextPhase) > 2) nextPhase = 'research_competitors_loading';
+    else if (!campaignsReady && PHASES.indexOf(nextPhase) > 4) nextPhase = 'research_segments_loading';
+    else if (!campaignsCanContinue && PHASES.indexOf(nextPhase) > 5) nextPhase = 'research_segments';
     if (userTriggered) setIsAutoPlay(false);
     setPhase(nextPhase);
 
@@ -149,9 +176,8 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
     } else if (phase === 'research_competitors') {
       timer = setTimeout(() => changePhase('research_segments_loading'), 3500);
     } else if (phase === 'research_segments_loading') {
-      timer = setTimeout(() => changePhase('research_segments'), 4600);
-    } else if (phase === 'research_segments') {
-      timer = setTimeout(() => changePhase('outreach_companies_loading'), 3500);
+      if (campaignsReady && campaignAnimationReady) timer = setTimeout(() => changePhase('research_segments'), 0);
+      // Phase 3 waits for the user to review/select campaigns before Phase 4.
     } else if (phase === 'outreach_companies_loading') {
       timer = setTimeout(() => changePhase('outreach_companies'), 4400);
     } else if (phase === 'outreach_companies') {
@@ -167,7 +193,7 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
     }
 
     return () => clearTimeout(timer);
-  }, [phase, isAutoPlay, researchReady, companyAnimationReady, competitorsReady, competitorAnimationReady]);
+  }, [phase, isAutoPlay, researchReady, companyAnimationReady, competitorsReady, competitorAnimationReady, campaignsReady, campaignAnimationReady]);
 
   // Jump to a step when clicked on the rail
   const handleStepClick = (step) => {
@@ -240,7 +266,7 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
   }, [phase, currentStep, isRunningPhase]);
 
   const currentStepTasks = WORKFLOW_STEP_TASKS[currentStep] || [];
-  const activeError = researchError || (currentStep === 2 ? competitorError : null);
+  const activeError = researchError || (currentStep === 2 ? competitorError : currentStep === 3 ? campaignError : null);
   const currentAgentItems = activeError ? [{ label: activeError.message, status: 'active' }] : isRunningPhase
     ? currentStepTasks.slice(0, subtaskIndex + 1).map((task, idx) => ({
         label: task,
@@ -277,7 +303,7 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
           competitors={normalizedCompetitors}
           campaigns={normalizedCampaigns}
           activeSegment={activeSegment}
-          onSelectSegment={(seg) => setActiveSegment(seg)}
+          onSelectSegment={selectCampaign}
           onRestart={() => navigate('/app-auto-gtm')}
           userEmail={session?.user.email || 'Not signed in'}
           activeAgentStep={isRunningPhase ? currentStep : null}
@@ -319,10 +345,12 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
                   retryCompetitors();
                   return;
                 }
+                if (currentStep === 3 && campaignError) { retryCampaigns(); return; }
                 const nextIdx = (PHASES.indexOf(phase) + 1) % PHASES.length;
                 changePhase(PHASES[nextIdx], true);
               }}
-              disabled={(!researchReady && !researchError) || (currentStep === 2 && !competitorsReady && (!competitorError || competitorError.canRetry === false))}
+              disabled={(!researchReady && !researchError) || (currentStep === 2 && !competitorsReady && (!competitorError || competitorError.canRetry === false)) ||
+                (currentStep === 3 && (savingCampaigns || (!campaignError && (!campaignsReady || (phase === 'research_segments' && !campaignsCanContinue)))))}
               className="text-[11px] px-2.5 py-1 rounded-md bg-[#0d9467] text-white hover:bg-[#0a7854] transition shadow-2xs cursor-pointer"
             >
               {activeError ? (activeError.canRetry === false ? 'Research failed' : 'Retry research') : 'Next Phase →'}
@@ -381,7 +409,7 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
 
           {/* Phase 5: research_segments_loading */}
           {phase === 'research_segments_loading' && (
-            <CompetitorSkeletonCard />
+            campaignError ? <Step3CampaignsGrid error={campaignError.message} /> : <CompetitorSkeletonCard />
           )}
 
           {/* Phase 6: research_segments */}
@@ -389,10 +417,22 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
             <Step3CampaignsGrid
               segments={normalizedCampaigns}
               activeSegmentId={activeSegment?.id}
-              onSelectSegment={(seg) => setActiveSegment(seg)}
+              selectedIds={campaignPlan?.selected_ids || []}
+              onSelectSegment={selectCampaign}
+              busy={savingCampaigns}
+              error={editingCampaign ? null : campaignError?.message}
+              canContinue={campaignsCanContinue}
+              onCreate={() => { setIsAutoPlay(false); setEditingCampaign({ id: crypto.randomUUID(), isNew: true }); }}
+              onEdit={id => { setIsAutoPlay(false); setEditingCampaign(campaignPlan.campaigns.find(c => c.id === id)); }}
+              onDelete={id => { setIsAutoPlay(false); changeCampaigns('delete', { campaign_id: id }); }}
               onNext={() => changePhase('outreach_companies_loading', true)}
             />
           )}
+          {editingCampaign && phase === 'research_segments' && <CampaignEditor key={editingCampaign.id} campaign={editingCampaign}
+            saving={savingCampaigns} error={campaignError?.message} onClose={() => setEditingCampaign(null)}
+            onSave={async campaign => {
+              if (await changeCampaigns(editingCampaign.isNew ? 'create' : 'update', { campaign_id: editingCampaign.id, campaign })) setEditingCampaign(null);
+            }} />}
 
           {/* Phase 7: outreach_companies_loading */}
           {phase === 'outreach_companies_loading' && (
@@ -402,6 +442,7 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
           {/* Phase 8: outreach_companies */}
           {phase === 'outreach_companies' && (
             <Step4CompaniesTable
+              campaignTargets={campaignTargets}
               onNext={() => changePhase('outreach_people_loading', true)}
             />
           )}

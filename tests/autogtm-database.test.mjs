@@ -85,9 +85,25 @@ test('migration, ownership isolation, write permissions, idempotency and atomic 
     competitorState = (await saveCompetitors(owner, 2, { ...competitorState, status: 'completed', results: [] })).state;
     assert.equal((await saveCompetitors(owner, 3, { ...competitorState, status: 'failed' })).applied, false);
     assert.equal((await db.query('select company_name from public.company_profiles where job_id=$1', [first.job.id])).rows[0].company_name, 'Company');
+    await db.exec('reset role');
+    await db.exec(await readFile(new URL('../supabase/migrations/20261012000400_autogtm_campaigns.sql', import.meta.url), 'utf8'));
+    await db.exec('set role service_role');
+    const saveCampaigns = async (who, version, plan) => (await db.query('select public.autogtm_save_campaigns($1,$2,$3,$4) as result', [first.job.id, who, version, plan])).rows[0].result;
+    let plan = { status: 'completed', campaigns: [{ id: request, name: 'Schools' }], selected_ids: [request], warnings: [] };
+    await assert.rejects(saveCampaigns(other, 0, plan), /PROFILE_NOT_FOUND/);
+    plan = (await saveCampaigns(owner, 0, plan)).plan;
+    assert.equal(plan.version, 1);
+    assert.equal((await saveCampaigns(owner, 0, { ...plan, campaigns: [] })).applied, false);
+    await assert.rejects(saveCampaigns(owner, 1, { ...plan, selected_ids: [other] }), /INVALID_CAMPAIGN_SELECTION/);
+    await assert.rejects(saveCampaigns(owner, 1, { ...plan, campaigns: Array(13).fill({ id: request }) }), /INVALID_CAMPAIGN_SELECTION/);
+    await assert.rejects(saveCampaigns(owner, 1, { ...plan, selected_ids: [request, request] }), /INVALID_CAMPAIGN_SELECTION/);
+    plan = (await saveCampaigns(owner, 1, { ...plan, campaigns: [], selected_ids: [] })).plan;
+    assert.equal(plan.version, 2);
+    assert.equal((await db.query('select competitor_research from public.company_profiles where job_id=$1', [first.job.id])).rows[0].competitor_research.status, 'completed');
     for (const role of ['anon', 'authenticated']) {
       await db.exec(`set role ${role}`);
       await assert.rejects(saveCompetitors(owner, 3, competitorState), /permission denied/);
+      await assert.rejects(saveCampaigns(owner, 2, plan), /permission denied/);
       for (const table of ['research_owners', 'projects', 'research_jobs', 'company_profiles', 'job_events']) {
         await assert.rejects(db.query(`select * from public.${table}`), /permission denied/);
         await assert.rejects(db.query(`delete from public.${table}`), /permission denied/);
