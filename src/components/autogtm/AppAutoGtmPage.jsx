@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigation } from '../../context/NavigationContext';
-import AutoGtmSidebar from './AutoGtmSidebar';
+import AutoGtmNavigation from './AutoGtmNavigation';
 import CrispChatWidget from './CrispChatWidget';
 
 export default function AppAutoGtmPage() {
@@ -21,16 +21,16 @@ export default function AppAutoGtmPage() {
   };
 
   return (
-    <div className="flex h-screen w-full bg-white text-[#0a0a0a] overflow-hidden font-sans">
+    <div className="flex h-dvh w-full flex-col bg-white text-[#0a0a0a] overflow-hidden font-sans md:flex-row">
       {/* Sidebar */}
-      <AutoGtmSidebar
+      <AutoGtmNavigation
         completedSteps={[]}
         userEmail={localStorage.getItem('auth_email') || 'gmalavaes@gmail.com'}
       />
 
       {/* Main Area */}
-      <main className="flex-1 overflow-auto min-w-0 bg-white [scrollbar-gutter:stable] relative flex flex-col items-center justify-center p-6">
-        <div className="w-full max-w-[560px] flex flex-col justify-center px-4 py-12 animate-card-enter">
+      <main className="relative flex min-h-0 min-w-0 flex-1 flex-col items-center overflow-y-auto bg-white p-4 pb-24 md:p-6 md:[scrollbar-gutter:stable]">
+        <div className="my-auto flex w-full max-w-[560px] shrink-0 flex-col py-6 sm:px-4 sm:py-12 animate-card-enter">
           {/* Tag */}
           <p className="text-[11px] font-bold uppercase tracking-wider text-gray-400">
             Explee
@@ -52,18 +52,22 @@ export default function AppAutoGtmPage() {
               <input
                 id="company-domain-input"
                 type="text"
+                aria-label="Company website"
+                inputMode="url"
+                autoCapitalize="none"
+                autoCorrect="off"
                 placeholder="Your company website"
                 value={domain}
                 onChange={(e) => {
                   setDomain(e.target.value);
                   if (error) setError('');
                 }}
-                className="flex-1 h-10 px-3.5 rounded-lg border border-black/15 bg-white text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-[#0d9467] focus:ring-1 focus:ring-[#0d9467] transition-all shadow-2xs"
+                className="h-11 w-full min-w-0 shrink-0 px-3.5 rounded-lg border border-black/15 bg-white text-base text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-[#0d9467] focus:ring-1 focus:ring-[#0d9467] transition-all shadow-2xs sm:flex-1 sm:text-sm"
               />
 
               <button
                 type="submit"
-                className="h-10 px-4 rounded-lg bg-[#0d9467] hover:bg-[#0a7854] active:scale-[0.98] text-white text-xs font-semibold inline-flex items-center justify-center gap-1.5 transition-all shadow-xs cursor-pointer shrink-0"
+                className="min-h-11 px-4 rounded-lg bg-[#0d9467] hover:bg-[#0a7854] active:scale-[0.98] text-white text-sm font-semibold inline-flex items-center justify-center gap-1.5 transition-all shadow-xs cursor-pointer shrink-0"
               >
                 <span>Create my project</span>
                 <svg

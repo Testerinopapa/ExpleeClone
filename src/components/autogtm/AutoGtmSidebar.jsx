@@ -39,6 +39,7 @@ export default function AutoGtmSidebar({
   activeSegment = null,
   onSelectSegment = null,
   onRestart = null,
+  onClose = null,
   userEmail = 'gmalavaes@gmail.com',
   activeAgentStep = null,
   activeAgentItems = []
@@ -78,8 +79,8 @@ export default function AutoGtmSidebar({
 
   return (
     <aside
-      className={`h-screen bg-white border-r border-black/[0.08] flex flex-col justify-between transition-all duration-200 select-none z-20 shrink-0 ${
-        collapsed ? 'w-[68px]' : 'w-[280px] lg:w-[300px]'
+      className={`h-full min-h-0 bg-white border-r border-black/[0.08] flex flex-col justify-between transition-all duration-200 select-none z-20 shrink-0 ${
+        onClose ? 'w-full' : collapsed ? 'w-[68px]' : 'w-[280px] lg:w-[300px]'
       }`}
     >
       {/* Top Header */}
@@ -117,9 +118,11 @@ export default function AutoGtmSidebar({
           {/* Toggle sidebar button */}
           <button
             type="button"
-            onClick={() => setCollapsed(!collapsed)}
-            className="inline-flex items-center justify-center rounded-md p-1.5 text-gray-400 hover:text-gray-700 hover:bg-black/[0.04] transition-colors"
-            title="Toggle Sidebar"
+            onClick={onClose || (() => setCollapsed(!collapsed))}
+            autoFocus={Boolean(onClose)}
+            className="inline-flex size-11 shrink-0 items-center justify-center rounded-md text-gray-400 hover:text-gray-700 hover:bg-black/[0.04] transition-colors md:size-8"
+            aria-label={onClose ? 'Close project menu' : 'Toggle Sidebar'}
+            title={onClose ? 'Close project menu' : 'Toggle Sidebar'}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -133,8 +136,12 @@ export default function AutoGtmSidebar({
               strokeLinejoin="round"
               className="lucide lucide-panel-left"
             >
-              <rect width="18" height="18" x="3" y="3" rx="2"></rect>
-              <path d="M9 3v18"></path>
+              {onClose ? <path d="m6 6 12 12M6 18 18 6" /> : (
+                <>
+                  <rect width="18" height="18" x="3" y="3" rx="2" />
+                  <path d="M9 3v18" />
+                </>
+              )}
             </svg>
           </button>
         </div>
@@ -186,7 +193,7 @@ export default function AutoGtmSidebar({
       </div>
 
       {/* Middle Scrollable Section: Completed Steps Summary */}
-      <div className="flex-1 overflow-y-auto px-3 py-3 space-y-4 text-xs scrollbar-slim">
+      <div className="min-h-0 flex-1 overflow-y-auto px-3 py-3 space-y-4 text-xs scrollbar-slim">
         {!collapsed && (
           <>
             {/* Step 1 Summary */}

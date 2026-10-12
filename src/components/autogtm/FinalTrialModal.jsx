@@ -26,8 +26,8 @@ export default function FinalTrialModal({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 backdrop-blur-xs overflow-y-auto">
-      <div className="relative w-full max-w-4xl bg-white rounded-3xl border border-black/[0.08] shadow-2xl p-6 sm:p-8 animate-card-enter my-8">
+    <div className="fixed inset-0 z-50 flex items-start justify-center p-4 bg-black/40 backdrop-blur-xs overflow-y-auto">
+      <div className="relative my-auto w-full max-w-4xl shrink-0 bg-white rounded-3xl border border-black/[0.08] shadow-2xl p-5 sm:p-8 animate-card-enter">
         {/* Close Button */}
         <button
           type="button"

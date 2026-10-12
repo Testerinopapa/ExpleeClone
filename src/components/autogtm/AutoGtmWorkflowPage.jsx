@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigation } from '../../context/NavigationContext';
-import AutoGtmSidebar from './AutoGtmSidebar';
+import AutoGtmNavigation from './AutoGtmNavigation';
 import AutoGtmRail from './AutoGtmRail';
 import AgentActivityFeed from './AgentActivityFeed';
 import PromoCreditBanner from './PromoCreditBanner';
@@ -228,9 +228,9 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
 
   return (
     <AutoGtmErrorBoundary>
-      <div className="flex h-screen w-full bg-[#fbfbfb] text-[#0a0a0a] overflow-hidden font-sans">
+      <div className="flex h-dvh w-full flex-col bg-[#fbfbfb] text-[#0a0a0a] overflow-hidden font-sans md:flex-row">
         {/* Sidebar with completed context */}
-        <AutoGtmSidebar
+        <AutoGtmNavigation
           currentPhase={phase}
           completedSteps={completedSteps}
           companyData={projectData.company}
@@ -245,12 +245,12 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
         />
 
       {/* Main Content Area */}
-      <div className="flex-1 flex flex-col min-w-0 overflow-y-auto [scrollbar-gutter:stable] bg-[#fbfbfb] relative">
+      <div className="flex-1 flex flex-col min-h-0 min-w-0 overflow-y-auto md:[scrollbar-gutter:stable] bg-[#fbfbfb] relative">
         {/* Top Header Controls / Auto-play status */}
-        <div className="w-full max-w-5xl mx-auto px-4 pt-3 flex items-center justify-between">
-          <div className="flex items-center gap-2">
+        <div className="w-full max-w-5xl mx-auto px-4 pt-3 flex shrink-0 flex-wrap items-center justify-between gap-3">
+          <div className="flex min-w-0 items-center gap-2">
             <span className="size-2 rounded-full bg-[#10b981] animate-pulse-dot" />
-            <span className="text-[11px] font-mono text-gray-500">
+            <span className="break-all text-[11px] font-mono text-gray-500">
               Phase: <strong className="text-gray-800">{phase}</strong>
             </span>
           </div>
@@ -291,12 +291,12 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
         />
 
         {/* Dynamic Phase Stage Container */}
-        <main className="flex-1 px-4 pb-16 flex flex-col justify-start">
+        <main className="flex-1 min-w-0 px-4 pb-24 flex flex-col justify-start">
           {/* Phase 1: research_company_loading */}
           {phase === 'research_company_loading' && (
             <div className="flex-1 flex flex-col items-center justify-center min-h-[55vh] space-y-2 select-none animate-card-enter">
               <div className="text-xs font-normal text-gray-400">Researching</div>
-              <div className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight font-mono">
+              <div className="max-w-full break-all text-center text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight font-mono">
                 {domain}
               </div>
             </div>
