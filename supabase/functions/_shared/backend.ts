@@ -1,5 +1,6 @@
 import { createClient } from 'npm:@supabase/supabase-js@2.117.2';
 import { ResearchError } from './research-core.ts';
+import { AUTH_ISSUER, AUTH_PROJECT_URL, AUTH_PROJECT_PUBLISHABLE_KEY } from './auth-project.ts';
 
 export const cors = {
   'Access-Control-Allow-Origin': '*',
@@ -19,9 +20,19 @@ export type Admin = ReturnType<typeof adminClient>;
 export async function authenticate(req: Request, db: Admin) {
   const match = req.headers.get('Authorization')?.match(/^Bearer (.+)$/i);
   if (!match) throw new ResearchError('UNAUTHORIZED', 'Sign in to research a company.', 401);
-  const { data, error } = await db.auth.getUser(match[1]);
+  // Validate with the issuer of the session, never with the scraping project.
+  const auth = createClient(AUTH_PROJECT_URL, AUTH_PROJECT_PUBLISHABLE_KEY, {
+    auth: { persistSession: false, autoRefreshToken: false },
+  });
+  const { data, error } = await auth.auth.getUser(match[1]);
   if (error || !data.user || data.user.is_anonymous) throw new ResearchError('UNAUTHORIZED', 'Your session expired. Please sign in again.', 401);
-  return data.user;
+  // External identities have local research-owner IDs. A matching email or UUID
+  // from a different project must never inherit another account's saved results.
+  const { data: owner, error: ownerError } = await db.from('research_owners')
+    .upsert({ auth_issuer: AUTH_ISSUER, auth_subject: data.user.id }, { onConflict: 'auth_issuer,auth_subject' })
+    .select('id').single();
+  if (ownerError || !owner) throw new ResearchError('DATABASE_UNAVAILABLE', 'Research account setup is unavailable. Confirm the two-project migration is deployed.', 503);
+  return { user: data.user, ownerId: owner.id as string };
 }
 export function endpoint(handler: (req: Request) => Promise<Response>) {
   return async (req: Request) => {

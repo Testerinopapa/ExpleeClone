@@ -2,30 +2,39 @@
 
 Status: implementation prepared locally. **No remote migrations or functions have been deployed.**
 
-Target project: `cvpeezzkzsbosyuhmhmf` (`https://cvpeezzkzsbosyuhmhmf.supabase.co`).
+Research project: `cvpeezzkzsbosyuhmhmf` (`https://cvpeezzkzsbosyuhmhmf.supabase.co`).
+
+Login project: `hpkmrpezybhtyjcsxfiq` (`https://hpkmrpezybhtyjcsxfiq.supabase.co`). Keep its existing LinkedIn configuration.
 
 ## Configuration inspected
 
 - The old `supabase/config.toml` referenced `emlggkmtbosahpzrxaul`.
 - The four local/frontend environment files referenced `hpkmrpezybhtyjcsxfiq`.
-- Those local project references now match the supplied target. Only the URL and public publishable key were changed. `.env.example` contains the same public settings.
+- `VITE_SUPABASE_URL` and `VITE_SUPABASE_PUBLISHABLE_KEY` now identify the research project. The separate `VITE_AUTH_SUPABASE_URL` and `VITE_AUTH_SUPABASE_PUBLISHABLE_KEY` identify the original login project. All local environment files and `.env.example` include both pairs. The auth client only reads `VITE_AUTH_*`; research requests use the research pair.
 - There were no existing SQL migrations or Edge Functions in this checkout.
-- Supabase CLI 2.120.0 is available through `npx`; its read-only project-list request reported that no access token is configured. Remote schema, migration history, function names and Auth settings have **not** been inspected yet.
+- Supabase CLI 2.120.0 is available through `npx`; its read-only project-list request reported that no access token is configured. Remote schema, migration history and function names have **not** been inspected yet. Public Auth settings confirmed that LinkedIn OIDC is enabled on the original login project and disabled on the research project.
 - `FIRECRAWL_API_KEY` is expected to exist on Supabase as supplied by the project owner. Its value was neither requested nor read. Do not put it in any `VITE_` variable.
 
 ## Implementation
 
-`20261012000100_autogtm_research.sql` adds `projects`, `research_jobs`, `company_profiles`, and `job_events`. Composite foreign keys keep job/profile/event ownership consistent. All four tables have owner-only SELECT policies. Authenticated clients cannot write them or execute the two backend RPCs. The service role uses transactional reservation and completion RPCs.
+`20261012000100_autogtm_research.sql` adds `projects`, `research_jobs`, `company_profiles`, and `job_events`. `20261012000200_autogtm_external_auth.sql` adds `research_owners`, maps each verified `(auth issuer, subject)` to a local owner ID, and changes the project foreign key to that owner table. Composite foreign keys keep job/profile/event ownership consistent.
+
+The follow-up migration preserves existing data under its original issuer. Accounts from different projects are not merged by matching email or UUID. Research created through the research project's own login before this change stays stored under that identity; it is not silently reassigned to an original-project LinkedIn account. Account deletion across projects requires explicit cleanup of the corresponding research owner; there is no cross-database cascade.
+
+All five tables retain RLS, with **no direct browser read or write access**. Every research operation uses an Edge Function that validates the original project's session through `auth.getUser` and then filters by the mapped owner ID. Only the backend service role accesses the database or transactional reservation/completion RPCs. No research-project Auth user needs to be created or copied.
 
 Each owner can start five jobs per rolling 24 hours, with one active job per company. A request UUID is retained by the browser during an interrupted submission. Reusing it returns the existing job, including after completion. There is no automatic crawl retry.
 
 | Function | Authentication | Purpose |
 | --- | --- | --- |
-| `start-research` | Supabase `auth.getUser` validates the bearer token | Reserves a job, maps the company site, selects up to 10 pages, submits a Firecrawl v2 batch |
+| `start-research` | Original login project's `auth.getUser` validates the bearer token | Reserves a job, maps the company site, selects up to 10 pages, submits a Firecrawl v2 batch |
 | `research-status` | Same user validation, followed by owner-filtered job lookup | Reconciles progress and returns the saved project, job, profile and events |
+| `research-projects` | Same user validation and owner filtering | Lists saved projects or finds the latest job for a domain |
 | `firecrawl-webhook` | Per-job HMAC token in a custom request header | Reconciles the provider result even with the browser closed |
 
 Gateway `verify_jwt` is disabled only for these functions; authentication happens inside each handler. The webhook token is derived from the server service-role key and job ID. Only Firecrawl receives that token; it is never sent to the frontend or stored in public tables. Rotating the service-role key invalidates callbacks for in-flight jobs; authenticated status polling can still recover their results.
+
+`_shared/auth-project.ts` pins the trusted login project and its **public publishable key**. It does not use a client-selected issuer or accept a user ID supplied in the request body. The frontend sends the login project's bearer token with the research project's publishable key to research functions. No additional backend secrets are required.
 
 Firecrawl Map discovers at most 100 candidate URLs; discovery is not 100 page scrapes. The batch contains **at most 10 URLs**, with one homepage, About, Products/Services, Pricing and Contact page prioritized before additional pages. Only the same hostname (allowing `www`) is accepted. Credentials, custom ports, literal IP/local hosts, auth/cart/legal pages and document/media files are excluded. PDFs are not parsed.
 
@@ -43,7 +52,7 @@ npm run check:edge
 npm run build
 ```
 
-The database test runs the actual migration in in-memory PostgreSQL (PGlite), with Supabase-compatible auth roles stubbed locally. It checks RLS across owners, forbidden writes/RPC access, the 10-page constraint, request deduplication, the daily limit and atomic/idempotent completion. It does not replace a staging check against the hosted Supabase runtime.
+The existing database check runs both actual migrations in in-memory PostgreSQL (PGlite). It checks ownership, forbidden client access, the 10-page constraint, request deduplication, the daily limit, atomic/idempotent completion and upgrading existing data to isolated external identities. It does not replace a staging check against the hosted Supabase runtime.
 
 Edge tests mock all HTTP calls; no credentials or paid credits are needed. Browser tests mock all Supabase/provider traffic and cover research progress, saved profiles/sources, refresh, retry, mobile widths and OTP failure/success.
 
@@ -66,7 +75,9 @@ npx --yes supabase@2.120.0 functions list --project-ref cvpeezzkzsbosyuhmhmf
 npx --yes supabase@2.120.0 secrets list --project-ref cvpeezzkzsbosyuhmhmf
 ```
 
-Inspect the existing remote tables and functions before applying anything. Confirm that these four table names, two `autogtm_*` RPC names, and three Edge Function names are unused. The migration deliberately fails on collisions instead of replacing infrastructure. If remote migration history contains files absent from this checkout, reconcile that history in a separate checkout before proceeding; do not reset the database or repair migration history blindly.
+Inspect existing remote tables and functions before applying anything. For a fresh setup, confirm these five table names, two `autogtm_*` RPC names and four Edge Function names are unused. For an existing AutoGTM setup, inspect the first migration's objects and apply only the pending follow-up migration. New tables deliberately fail on collisions. If remote migration history differs from this checkout, reconcile it before proceeding; do not reset the database or repair migration history blindly.
+
+For the SQL-editor workflow, `supabase/sql/autogtm_setup.sql` is the combined **fresh setup**. If the original four-table setup has already run, use **only** `supabase/sql/autogtm_external_auth.sql` for this fix. Both require deployment approval. Do not run the fresh setup over existing tables.
 
 Once the linked project and history are confirmed, this command previews pending migrations without applying SQL:
 
@@ -74,7 +85,7 @@ Once the linked project and history are confirmed, this command previews pending
 npx --yes supabase@2.120.0 db push --linked --dry-run
 ```
 
-Check existing Supabase Auth settings: email sign-in must be enabled and the application's `/app-auto-gtm` URL must be an allowed redirect. Both magic-link emails and 6–8 digit OTP entry are supported. To use codes, the existing email template must include `{{ .Token }}`. Keep any existing SMTP/LinkedIn setup; do not enable or buy another service. Also inspect the hosting provider's existing environment variables, since they override checked-in frontend values.
+Keep existing Auth settings on `hpkmrpezybhtyjcsxfiq`. Its application's `/app-auto-gtm` URL must remain an allowed redirect. Keep its existing LinkedIn client and callback; LinkedIn does not need enabling on the research project. Email links and 6–8 digit OTP entry use the same original auth project. Inspect the hosting provider's environment variables and set both `VITE_AUTH_*` variables to the original project; hosting variables override checked-in values.
 
 ## Deployment commands — only after explicit approval
 
@@ -84,12 +95,13 @@ Run only after the project owner approves the inspected migration and functions:
 npx --yes supabase@2.120.0 db push --linked
 npx --yes supabase@2.120.0 functions deploy firecrawl-webhook --project-ref cvpeezzkzsbosyuhmhmf
 npx --yes supabase@2.120.0 functions deploy research-status --project-ref cvpeezzkzsbosyuhmhmf
+npx --yes supabase@2.120.0 functions deploy research-projects --project-ref cvpeezzkzsbosyuhmhmf
 npx --yes supabase@2.120.0 functions deploy start-research --project-ref cvpeezzkzsbosyuhmhmf
 ```
 
 Do not run `supabase secrets set` for the existing Firecrawl key. Supabase supplies `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` to the functions. No cron, queue extension, paid plan or additional provider is required.
 
-Publish the frontend through the existing hosting process after backend deployment, using the target public environment settings. No hosting infrastructure changes are included here.
+Publish the frontend through the existing hosting process with both public configuration pairs from `.env.example`. The auth client and LinkedIn redirect will use the original project as soon as that frontend is published; research requires the follow-up migration and updated functions. No hosting infrastructure changes are included here.
 
 ## Post-deployment smoke check
 

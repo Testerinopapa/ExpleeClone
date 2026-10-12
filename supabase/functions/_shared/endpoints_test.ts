@@ -1,11 +1,14 @@
 import { strict as assert } from 'node:assert';
 import { handler as start } from '../start-research/index.ts';
 import { handler as status } from '../research-status/index.ts';
+import { handler as projects } from '../research-projects/index.ts';
 import { handler as webhook } from '../firecrawl-webhook/index.ts';
 import { callbackToken } from './backend.ts';
 import { batchStatus } from './firecrawl.ts';
+import { AUTH_ISSUER, AUTH_PROJECT_URL } from './auth-project.ts';
 
 const owner = 'aaaaaaaa-aaaa-4aaa-aaaa-aaaaaaaaaaaa';
+const authSubject = 'dddddddd-dddd-4ddd-dddd-dddddddddddd';
 const jobId = 'bbbbbbbb-bbbb-4bbb-bbbb-bbbbbbbbbbbb';
 const provider = 'cccccccc-cccc-4ccc-cccc-cccccccccccc';
 const base = { id: jobId, project_id: jobId, owner_id: owner, status: 'scraping', provider_job_id: provider,
@@ -25,7 +28,16 @@ async function withMock(run: (calls: { url: URL; body: Record<string, unknown> |
     const url = new URL(input instanceof Request ? input.url : String(input));
     const body = typeof init?.body === 'string' ? JSON.parse(init.body) : null;
     calls.push({ url, body });
-    if (url.pathname === '/auth/v1/user') return Promise.resolve(response({ id: owner, email: 'user@company.com', is_anonymous: false }));
+    if (url.pathname === '/auth/v1/user') {
+      assert.equal(url.origin, AUTH_PROJECT_URL);
+      return Promise.resolve(response({ id: authSubject, email: 'user@company.com', is_anonymous: false }));
+    }
+    if (url.pathname === '/rest/v1/research_owners') {
+      assert.equal(url.origin, env.SUPABASE_URL);
+      assert.equal(body?.auth_issuer, AUTH_ISSUER);
+      assert.equal(body?.auth_subject, authSubject);
+      return Promise.resolve(response({ id: owner }));
+    }
     return Promise.resolve(route(url, body));
   };
   try { await run(calls); }
@@ -54,7 +66,10 @@ Deno.test('start sends only ten prioritized URLs and server-side callback creden
     const data = JSON.stringify(await result.json());
     assert.ok(!data.includes('test-firecrawl-key') && !data.includes('x-autogtm-token'));
   }, (url, body) => {
-    if (url.pathname.endsWith('/autogtm_reserve_job')) return response({ job: { ...base, status: 'mapping', provider_job_id: null }, created: true });
+    if (url.pathname.endsWith('/autogtm_reserve_job')) {
+      assert.equal(body?.p_owner, owner);
+      return response({ job: { ...base, status: 'mapping', provider_job_id: null }, created: true });
+    }
     if (url.pathname.endsWith('/autogtm_update_job')) return response({ ...base, status: body?.p_status });
     if (url.pathname === '/v2/map') return response({ success: true, links: ['about', 'pricing', 'contact', ...Array.from({ length: 20 }, (_, i) => `products/${i}`)].map(path => ({ url: `https://company.com/${path}` })) });
     if (url.pathname === '/v2/batch/scrape') return response({ success: true, id: provider });
@@ -68,13 +83,20 @@ Deno.test('duplicate request reuses job without calling Firecrawl', async () => 
     assert.ok(!calls.some(call => call.url.hostname === 'api.firecrawl.dev'));
   }, () => response({ job: base, created: false }));
 });
-Deno.test('status filters by authenticated owner before contacting Firecrawl', async () => {
+Deno.test('status and project listing filter by the mapped owner', async () => {
   await withMock(async calls => {
     const result = await status(request({ job_id: jobId }));
     assert.equal(result.status, 404);
+    const list = await projects(request({ domain: 'company.com', owner_id: authSubject }));
+    assert.equal(list.status, 200);
+    assert.deepEqual(await list.json(), { projects: [] });
     assert.ok(!calls.some(call => call.url.hostname === 'api.firecrawl.dev'));
   }, url => {
     assert.equal(url.searchParams.get('owner_id'), `eq.${owner}`);
+    if (url.pathname.endsWith('/projects')) {
+      assert.equal(url.searchParams.get('domain'), 'eq.company.com');
+      return response([]);
+    }
     return response(null);
   });
 });

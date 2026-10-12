@@ -63,18 +63,11 @@ export const researchStatus = (id, signal) => invoke('research-status', { job_id
 export const researchPath = (domain, jobId) => `/auto-gtm/company/${encodeURIComponent(domain)}/explore?job=${encodeURIComponent(jobId)}`;
 
 export async function listResearchProjects() {
-  const { data, error } = await supabase.from('projects')
-    .select('id, domain, updated_at, research_jobs(id, status, created_at)')
-    .order('updated_at', { ascending: false }).limit(50);
-  if (error) throw new Error('Saved projects are unavailable. Confirm the database migration has been deployed.');
-  return data.map(project => ({ ...project, latestJob: [...project.research_jobs].sort((a, b) => b.created_at.localeCompare(a.created_at))[0] }));
+  const { projects } = await invoke('research-projects', {});
+  return projects;
 }
 
 export async function latestJobForDomain(domain) {
-  const { data: project, error } = await supabase.from('projects').select('id').eq('domain', domain).maybeSingle();
-  if (error) throw new Error('Could not load the project. Confirm the database migration is deployed.');
-  if (!project) return null;
-  const { data, error: jobError } = await supabase.from('research_jobs').select('id').eq('project_id', project.id).order('created_at', { ascending: false }).limit(1);
-  if (jobError) throw new Error('Could not load saved research.');
-  return data[0]?.id || null;
+  const { projects } = await invoke('research-projects', { domain });
+  return projects[0]?.latestJob?.id || null;
 }

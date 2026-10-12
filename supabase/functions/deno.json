@@ -2,6 +2,6 @@
   "compilerOptions": { "strict": true },
   "tasks": {
     "test": "deno test --allow-env _shared/*_test.ts",
-    "check": "deno check start-research/index.ts research-status/index.ts firecrawl-webhook/index.ts"
+    "check": "deno check start-research/index.ts research-status/index.ts research-projects/index.ts firecrawl-webhook/index.ts"
   }
 }

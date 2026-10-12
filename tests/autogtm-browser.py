@@ -12,6 +12,7 @@ from playwright.sync_api import sync_playwright, expect
 
 BASE = 'http://127.0.0.1:4180'
 REF = 'cvpeezzkzsbosyuhmhmf'
+AUTH_REF = 'hpkmrpezybhtyjcsxfiq'
 JOB = 'bbbbbbbb-bbbb-4bbb-bbbb-bbbbbbbbbbbb'
 USER = {'id': 'aaaaaaaa-aaaa-4aaa-aaaa-aaaaaaaaaaaa', 'email': 'test@company.com', 'aud': 'authenticated', 'role': 'authenticated'}
 PROFILE = {'job_id': JOB, 'project_id': JOB, 'company_name': 'Test Company', 'business_description': 'Makes useful widgets.',
@@ -37,11 +38,15 @@ with sync_playwright() as p:
         url = urlparse(req.url)
         if url.hostname == '127.0.0.1':
             request_route.continue_(); return
-        if url.hostname != REF + '.supabase.co':
+        if url.hostname not in [REF + '.supabase.co', AUTH_REF + '.supabase.co']:
             request_route.abort(); return
         payload = {}
         code = 200
         path = url.path
+        if path.startswith('/auth/'):
+            assert url.hostname == AUTH_REF + '.supabase.co'
+        elif path.startswith('/functions/'):
+            assert url.hostname == REF + '.supabase.co'
         if path.endswith('/start-research'):
             state['starts'] += 1
             state['websites'].append(req.post_data_json['website'])
@@ -53,9 +58,9 @@ with sync_playwright() as p:
                        'project': {'id': JOB, 'domain': state['domain'], 'website_url': 'https://' + state['domain'] + '/'},
                        'profile': json.loads(json.dumps(PROFILE).replace('company.com', state['domain']).replace('Test Company', 'Profile for ' + state['domain'])) if state['status'] == 'completed' else None,
                        'events': [{'id': 1, 'message': 'Finding company pages', 'pages_completed': 0, 'created_at': '2026-10-12T12:00:00Z'}]}
-        elif path.endswith('/projects'):
-            payload = [{'id': JOB, 'domain': 'company.com', 'updated_at': '2026-10-12T12:00:00Z',
-                        'research_jobs': [{'id': JOB, 'status': state['status'], 'created_at': '2026-10-12T12:00:00Z'}]}]
+        elif path.endswith('/research-projects'):
+            payload = {'projects': [{'id': JOB, 'domain': 'company.com', 'updated_at': '2026-10-12T12:00:00Z',
+                        'latestJob': {'id': JOB, 'status': state['status'], 'created_at': '2026-10-12T12:00:00Z'}}]}
         elif path.endswith('/otp'):
             code = 429 if state['otp_error'] else 200
             payload = {'msg': 'Email rate limit exceeded', 'error_code': 'over_email_send_rate_limit'} if code != 200 else {}
@@ -70,7 +75,7 @@ with sync_playwright() as p:
 
     context = browser.new_context(viewport={'width': 320, 'height': 720})
     context.route('**/*', route)
-    context.add_init_script('localStorage.setItem(' + json.dumps('sb-' + REF + '-auth-token') + ', ' + json.dumps(json.dumps(session())) + ');')
+    context.add_init_script('localStorage.setItem(' + json.dumps('sb-' + AUTH_REF + '-auth-token') + ', ' + json.dumps(json.dumps(session())) + ');')
     page = context.new_page()
     errors = []
     page.on('pageerror', lambda error: errors.append(str(error)))

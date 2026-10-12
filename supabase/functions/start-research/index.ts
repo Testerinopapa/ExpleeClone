@@ -5,14 +5,14 @@ import { type Job, updateJob } from '../_shared/jobs.ts';
 
 export const handler = endpoint(async (req) => {
   const db = adminClient();
-  const user = await authenticate(req, db);
+  const { ownerId } = await authenticate(req, db);
   const body = await readBody(req);
   const website = companyUrl(body.website);
   website.pathname = '/';
   if (!isUuid(body.request_id)) throw new ResearchError('INVALID_REQUEST', 'A unique request ID is required.');
   secret('FIRECRAWL_API_KEY'); // Check availability before reserving a job; never return the value.
   const { data, error } = await db.rpc('autogtm_reserve_job', {
-    p_owner: user.id, p_domain: domainOf(website), p_url: website.href, p_request: body.request_id,
+    p_owner: ownerId, p_domain: domainOf(website), p_url: website.href, p_request: body.request_id,
   });
   if (error) {
     if (error.message.includes('DAILY_LIMIT')) throw new ResearchError('DAILY_LIMIT', 'You can start up to five research jobs in 24 hours.', 429);

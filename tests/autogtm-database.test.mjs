@@ -56,5 +56,22 @@ test('migration, ownership isolation, write permissions, idempotency and atomic 
     for (let i = 0; i < 4; i++) await reserve(owner, `company${i}.com`);
     await assert.rejects(reserve(owner, 'over-limit.com'), /DAILY_LIMIT/);
     assert.equal((await reserve(owner, 'company.com', request)).job.id, first.job.id);
+    // Apply the upgrade over existing data, then verify issuer isolation.
+    await db.exec('reset role');
+    await db.exec(await readFile(new URL('../supabase/migrations/20261012000200_autogtm_external_auth.sql', import.meta.url), 'utf8'));
+    await db.exec('set role service_role');
+    const externalOwner = (await db.query("insert into public.research_owners(auth_issuer, auth_subject) values ('https://hpkmrpezybhtyjcsxfiq.supabase.co/auth/v1', $1) returning id", [owner])).rows[0].id;
+    assert.notEqual(externalOwner, owner);
+    assert.equal((await db.query('select count(*)::int as n from public.projects where owner_id=$1', [externalOwner])).rows[0].n, 0);
+    assert.notEqual(externalOwner, other); // Neither local auth.users row is used.
+    assert.equal((await reserve(externalOwner, 'company.com')).job.owner_id, externalOwner);
+    assert.equal((await db.query('select count(*)::int as n from public.company_profiles')).rows[0].n, 1);
+    for (const role of ['anon', 'authenticated']) {
+      await db.exec(`set role ${role}`);
+      for (const table of ['research_owners', 'projects', 'research_jobs', 'company_profiles', 'job_events']) {
+        await assert.rejects(db.query(`select * from public.${table}`), /permission denied/);
+        await assert.rejects(db.query(`delete from public.${table}`), /permission denied/);
+      }
+    }
   } finally { await db.close(); }
 });

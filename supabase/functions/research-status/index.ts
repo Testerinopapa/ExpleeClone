@@ -4,10 +4,10 @@ import { findJob, reconcile, snapshot } from '../_shared/jobs.ts';
 
 export const handler = endpoint(async (req) => {
   const db = adminClient();
-  const user = await authenticate(req, db);
+  const { ownerId } = await authenticate(req, db);
   const body = await readBody(req);
   if (!isUuid(body.job_id)) throw new ResearchError('INVALID_REQUEST', 'A valid job ID is required.');
-  let job = await findJob(db, body.job_id, user.id);
+  let job = await findJob(db, body.job_id, ownerId);
   let warning: string | undefined;
   try { job = await reconcile(db, job); }
   catch (error) {
