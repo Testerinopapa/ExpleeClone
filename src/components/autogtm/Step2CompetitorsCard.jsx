@@ -2,55 +2,26 @@ import React, { useState } from 'react';
 import {
   normalizeDeterminants,
   normalizeSearchQueries,
-  normalizeCompetitors,
 } from '../../lib/autogtmNormalizer';
-
-const FALLBACK_DETERMINANTS = [
-  'Game-based English learning for ESL learners',
-  'English-only ESL focus, not a multi-language app',
-  'Vocabulary, speaking, reading, and grammar taught through games',
-  'Indie platform built on Lovable (keethub.lovable.app)',
-];
-
-const FALLBACK_QUERIES = [
-  'gamified English learning',
-  'ESL learning games',
-  'English vocabulary app',
-];
-
-const FALLBACK_COMPETITORS = [
-  { domain: 'langly.es' },
-  { domain: 'playdiom.com' },
-  { domain: 'wonderlang.net' },
-  { domain: 'the-conversationalists.com' },
-  { domain: 'revisionenglish.com' },
-  { domain: 'immersive-english.com' },
-  { domain: 'englishgeeks.com.br' },
-  { domain: 'oxford-gear-kids.com' },
-  { domain: 'ellinglish.com' },
-  { domain: 'cookieplay.kr' },
-  { domain: 'aslan.games' },
-  { domain: 'playeng.ru' },
-  { domain: 'letsgoreading.com' },
-  { domain: 'ei-den.com' },
-];
 
 export default function Step2CompetitorsCard({
   determinants = [],
   searchQueries = [],
   competitors = [],
+  error = null,
+  warnings = [],
   onNext = null,
 }) {
   const [showAll, setShowAll] = useState(false);
 
-  const normDets = normalizeDeterminants(determinants);
-  const defaultDeterminants = normDets.length > 0 ? normDets : FALLBACK_DETERMINANTS;
-
-  const normQueries = normalizeSearchQueries(searchQueries);
-  const defaultQueries = normQueries.length > 0 ? normQueries : FALLBACK_QUERIES;
-
-  const normComps = normalizeCompetitors(competitors);
-  const defaultCompetitors = normComps.length > 0 ? normComps : FALLBACK_COMPETITORS;
+  const defaultDeterminants = normalizeDeterminants(determinants);
+  const defaultQueries = normalizeSearchQueries(searchQueries);
+  const defaultCompetitors = competitors.filter(comp => comp?.domain && comp.source_urls?.length);
+  const details = (comp) => [comp.name, comp.description,
+    ...['products', 'customers', 'features', 'pricing'].map(field => comp[field]?.length
+      ? `${field}: ${comp[field].map(fact => fact.description || fact.name).join('; ')}` : null),
+    `${comp.relationship === 'direct' ? 'Direct' : 'Related'} match · ${comp.relevance_score}/100 (estimated)`, comp.ranking_reason,
+  ].filter(Boolean).join('\n');
 
   const displayedCompetitors = showAll ? defaultCompetitors : defaultCompetitors.slice(0, 12);
   const remainingCount = defaultCompetitors.length - 12;
@@ -120,16 +91,25 @@ export default function Step2CompetitorsCard({
             <div className="text-[11px] font-semibold text-gray-400 uppercase tracking-wider">
               COMPETITORS
             </div>
-            <div className="inline-flex items-center gap-1 rounded bg-black/[0.02] border border-black/[0.08] px-2 py-0.5 text-[11px] font-medium text-gray-700">
-              <span className="text-gray-500">✓</span>
-              <span>{defaultCompetitors.length} found</span>
+            <div title={warnings.join('\n')} className="inline-flex items-center gap-1 rounded bg-black/[0.02] border border-black/[0.08] px-2 py-0.5 text-[11px] font-medium text-gray-700">
+              <span className="text-gray-500">{error ? '!' : '✓'}</span>
+              <span>{error ? 'Failed' : `${defaultCompetitors.length} found`}</span>
             </div>
           </div>
 
           <div className="space-y-1">
+            {(error || !defaultCompetitors.length) && (
+              <div role={error ? 'alert' : 'status'} className="text-xs text-gray-600 leading-relaxed">
+                {error || 'No competitors with enough supporting evidence were found within this search limit.'}
+              </div>
+            )}
             {displayedCompetitors.map((comp, idx) => (
-              <div
+              <a
                 key={idx}
+                href={comp.source_urls[0]}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={details(comp)}
                 className="flex items-center gap-2 rounded-md bg-[#f8fafc] border border-black/[0.04] px-2.5 py-1 text-xs text-gray-700 hover:bg-gray-100 transition-colors"
               >
                 <img
@@ -141,7 +121,7 @@ export default function Step2CompetitorsCard({
                   }}
                 />
                 <span className="truncate text-xs font-mono">{comp.domain}</span>
-              </div>
+              </a>
             ))}
           </div>
 

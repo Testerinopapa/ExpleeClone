@@ -3,6 +3,8 @@ import { handler as start } from '../start-research/index.ts';
 import { handler as status } from '../research-status/index.ts';
 import { handler as projects } from '../research-projects/index.ts';
 import { handler as webhook } from '../firecrawl-webhook/index.ts';
+import { handler as competitors } from '../competitor-research/index.ts';
+import type { CompetitorState } from './competitor-core.ts';
 import { callbackToken } from './backend.ts';
 import { batchStatus } from './firecrawl.ts';
 import { AUTH_ISSUER, AUTH_PROJECT_URL } from './auth-project.ts';
@@ -128,4 +130,122 @@ Deno.test('completed batch pagination collects all pages', async () => {
     const result = await batchStatus(provider);
     assert.equal(result.data.length, 2);
   }, url => response({ status: 'completed', data: [{ json: { business_description: 'Evidence' } }], next: url.search ? null : `https://api.firecrawl.dev/v2/batch/scrape/${provider}?skip=1` }));
+});
+
+const initialCompetitors = (): CompetitorState => ({ status: 'pending', version: 0, queries: [], searches_used: 0,
+  candidates: [], results: [], warnings: [], batch_attempted: false, provider_job_id: null, pages_completed: 0 });
+const competitorProfile = (state: CompetitorState) => ({ job_id: jobId, project_id: jobId, owner_id: owner,
+  company_name: 'Company', business_description: 'English vocabulary learning games',
+  products: [{ name: 'English vocabulary games' }], customers: [{ name: 'ESL students' }],
+  source_urls: ['https://company.com/'], competitor_research: state });
+
+Deno.test('competitor endpoint enforces auth and owner before any Firecrawl calls', async () => {
+  await withMock(async calls => {
+    assert.equal((await competitors(new Request('https://local.test', { method: 'POST', body: '{}' }))).status, 401);
+    assert.equal((await competitors(request({ job_id: jobId, owner_id: owner }))).status, 404);
+    assert.ok(!calls.some(call => call.url.hostname === 'api.firecrawl.dev'));
+  }, url => {
+    assert.equal(url.searchParams.get('owner_id'), `eq.${owner}`);
+    return response(null);
+  });
+});
+
+Deno.test('competitors reserve at most three searches and one ten-page batch across duplicate requests and refresh', async () => {
+  let state = initialCompetitors();
+  await withMock(async calls => {
+    const simultaneous = await Promise.all([competitors(request({ job_id: jobId })), competitors(request({ job_id: jobId }))]);
+    assert.ok(simultaneous.every(res => res.status === 200));
+    for (let i = 0; i < 4; i++) assert.equal((await competitors(request({ job_id: jobId }))).status, 200);
+    const batch = calls.find(call => call.url.pathname === '/v2/batch/scrape')?.body;
+    assert.ok(batch);
+    assert.equal((batch.urls as string[]).length, 10);
+    assert.equal(calls.filter(call => call.url.pathname === '/v2/search').length, 3);
+    assert.equal(calls.filter(call => call.url.pathname === '/v2/batch/scrape').length, 1);
+    assert.equal(state.status, 'completed');
+    assert.equal(state.results.length, 1);
+    const before = calls.filter(call => call.url.hostname === 'api.firecrawl.dev').length;
+    const saved = await competitors(request({ job_id: jobId, retry: true }));
+    const serialized = JSON.stringify(await saved.json());
+    assert.ok(serialized.includes('rival0.com'));
+    assert.ok(!serialized.includes('test-firecrawl-key') && !serialized.includes('provider_job_id'));
+    assert.equal(calls.filter(call => call.url.hostname === 'api.firecrawl.dev').length, before);
+  }, (url, body) => {
+    if (url.pathname.endsWith('/company_profiles')) return response(competitorProfile(state));
+    if (url.pathname.endsWith('/autogtm_save_competitors')) {
+      assert.equal(body?.p_owner, owner);
+      if (body?.p_version !== state.version || state.status === 'completed') return response({ applied: false, state });
+      state = { ...(body?.p_state as CompetitorState), version: state.version + 1, updated_at: new Date().toISOString() };
+      return response({ applied: true, state });
+    }
+    if (url.pathname === '/v2/search') {
+      assert.equal(body?.scrapeOptions, undefined);
+      assert.equal(body?.limit, 8);
+      assert.equal(state.working, true);
+      const offset = (state.searches_used - 1) * 4;
+      return response({ success: true, data: { web: Array.from({ length: 8 }, (_, i) => ({ url: `https://rival${offset + i}.com/`, title: 'English vocabulary learning games for ESL students' })) } });
+    }
+    if (url.pathname === '/v2/batch/scrape') {
+      assert.equal(state.batch_attempted, true);
+      assert.ok(JSON.stringify(body?.webhook).includes('stage=competitors'));
+      return response({ success: true, id: provider });
+    }
+    if (url.pathname === `/v2/batch/scrape/${provider}`) return response({ status: 'completed', completed: 10, data: [{
+      metadata: { sourceURL: 'https://rival0.com/' }, markdown: 'Rival. English vocabulary learning games for ESL students.',
+      json: { is_business_website: true, company_name: 'Rival', description: { evidence_quote: 'English vocabulary learning games for ESL students' },
+        products: [], customers: [{ name: 'ESL students', evidence_quote: 'English vocabulary learning games for ESL students' }], features: [], pricing: [] },
+    }] });
+    throw new Error(`Unexpected ${url.pathname}`);
+  });
+});
+
+Deno.test('competitor search failures and interrupted reservations do not replay used searches', async () => {
+  let state = initialCompetitors();
+  await withMock(async calls => {
+    await competitors(request({ job_id: jobId }));
+    assert.equal(state.status, 'failed');
+    await competitors(request({ job_id: jobId }));
+    assert.equal(state.searches_used, 1);
+    await competitors(request({ job_id: jobId, retry: true }));
+    assert.equal(state.searches_used, 2);
+    state = { ...state, status: 'searching', working: true, updated_at: new Date(Date.now() - 180000).toISOString() };
+    await competitors(request({ job_id: jobId }));
+    assert.equal(state.searches_used, 3);
+    const result = await competitors(request({ job_id: jobId, retry: true }));
+    assert.equal((await result.json()).research.can_retry, false);
+    assert.equal(calls.filter(call => call.url.pathname === '/v2/search').length, 3);
+    assert.ok(!calls.some(call => call.url.pathname === '/v2/batch/scrape'));
+  }, (url, body) => {
+    if (url.pathname.endsWith('/company_profiles')) return response(competitorProfile(state));
+    if (url.pathname.endsWith('/autogtm_save_competitors')) {
+      state = { ...(body?.p_state as CompetitorState), version: state.version + 1, updated_at: new Date().toISOString() };
+      return response({ applied: true, state });
+    }
+    if (url.pathname === '/v2/search') return response({}, 429);
+    throw new Error(`Unexpected ${url.pathname}`);
+  });
+});
+
+Deno.test('competitor webhook is stage-scoped and recovers an unconfirmed batch without submitting twice', async () => {
+  let state: CompetitorState = { ...initialCompetitors(), status: 'submitting', batch_attempted: true,
+    queries: ['English learning games'], searches_used: 1, candidates: [{ domain: 'rival.com', url: 'https://rival.com/', discovery_urls: [], relevance: 1 }], updated_at: new Date().toISOString() };
+  await withMock(async calls => {
+    await competitors(request({ job_id: jobId, retry: true }));
+    assert.ok(!calls.some(call => call.url.hostname === 'api.firecrawl.dev'));
+    const callback = (token: string) => webhook(new Request(`https://local.test?job_id=${jobId}&stage=competitors`, {
+      method: 'POST', headers: { 'x-autogtm-token': token }, body: JSON.stringify({ id: provider, data: [{ name: 'Fake' }] }),
+    }));
+    assert.equal((await callback(await callbackToken(jobId))).status, 401);
+    assert.equal((await callback(await callbackToken(`${jobId}:competitors`))).status, 200);
+    assert.equal(state.provider_job_id, provider);
+    assert.equal(state.status, 'scraping');
+    assert.ok(!calls.some(call => call.url.pathname === '/v2/batch/scrape'));
+  }, (url, body) => {
+    if (url.pathname.endsWith('/company_profiles')) return response(competitorProfile(state));
+    if (url.pathname.endsWith('/autogtm_save_competitors')) {
+      state = { ...(body?.p_state as CompetitorState), version: state.version + 1, updated_at: new Date().toISOString() };
+      return response({ applied: true, state });
+    }
+    if (url.pathname === `/v2/batch/scrape/${provider}`) return response({ status: 'scraping', completed: 0, data: [] });
+    throw new Error(`Unexpected ${url.pathname}`);
+  });
 });

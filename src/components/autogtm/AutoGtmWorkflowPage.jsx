@@ -20,6 +20,7 @@ import AutoGtmErrorBoundary from './AutoGtmErrorBoundary';
 import { normalizeSegments, normalizeCompetitors } from '../../lib/autogtmNormalizer';
 import projectData from '../../data/autogtm_project_data.json';
 import useCompanyResearch from '../../hooks/useCompanyResearch';
+import useCompetitorResearch from '../../hooks/useCompetitorResearch';
 
 const PHASES = [
   'research_company_loading',
@@ -56,8 +57,20 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
     }
     return 'research_company_loading';
   });
-  // Saved phase links and manual controls cannot bypass real company research.
-  const phase = researchReady ? selectedPhase : 'research_company_loading';
+  const competitorEnabled = researchReady && PHASES.indexOf(selectedPhase) >= 2;
+  const { data: competitorData, error: competitorError, retry: retryCompetitors } = useCompetitorResearch(
+    research?.job.id, research?.project.id, session?.user.id, competitorEnabled,
+  );
+  const competitorsReady = competitorData?.status === 'completed' && !competitorError;
+  // Saved phase links and manual controls wait for the real results of steps 1–2.
+  const phase = !researchReady ? 'research_company_loading'
+    : competitorEnabled && !competitorsReady ? 'research_competitors_loading' : selectedPhase;
+  const [competitorAnimationReady, setCompetitorAnimationReady] = useState(false);
+  useEffect(() => {
+    if (!competitorEnabled) { setCompetitorAnimationReady(false); return; }
+    const timer = setTimeout(() => setCompetitorAnimationReady(true), 4600);
+    return () => clearTimeout(timer);
+  }, [competitorEnabled]);
   const [companyAnimationReady, setCompanyAnimationReady] = useState(false);
   useEffect(() => {
     const timer = setTimeout(() => setCompanyAnimationReady(true), 4800);
@@ -70,11 +83,17 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
 
   // Guarantee normalized data at boundary for all UI consumers
   const normalizedCampaigns = normalizeSegments(projectData?.segments);
-  const normalizedCompetitors = normalizeCompetitors(projectData?.competitors);
+  const normalizedCompetitors = normalizeCompetitors(competitorData?.results || []);
+  const determinants = [
+    ...(research?.profile?.products || []).map(item => item.description ? `${item.name}: ${item.description}` : item.name),
+    company.description,
+    ...(research?.profile?.customers || []).map(item => item.description ? `${item.name}: ${item.description}` : item.name),
+  ].filter(Boolean).slice(0, 4);
 
   // Sync phase change to URL with replaceState
   const changePhase = (nextPhase, userTriggered = false) => {
     if (!researchReady && nextPhase !== 'research_company_loading') return;
+    if (!competitorsReady && PHASES.indexOf(nextPhase) > 2) nextPhase = 'research_competitors_loading';
     if (userTriggered) setIsAutoPlay(false);
     setPhase(nextPhase);
 
@@ -124,7 +143,9 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
     } else if (phase === 'research_company') {
       timer = setTimeout(() => changePhase('research_competitors_loading'), 3500);
     } else if (phase === 'research_competitors_loading') {
-      timer = setTimeout(() => changePhase('research_competitors'), 4600);
+      if (competitorsReady && competitorAnimationReady) {
+        timer = setTimeout(() => changePhase('research_competitors'), 0);
+      }
     } else if (phase === 'research_competitors') {
       timer = setTimeout(() => changePhase('research_segments_loading'), 3500);
     } else if (phase === 'research_segments_loading') {
@@ -146,7 +167,7 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
     }
 
     return () => clearTimeout(timer);
-  }, [phase, isAutoPlay, researchReady, companyAnimationReady]);
+  }, [phase, isAutoPlay, researchReady, companyAnimationReady, competitorsReady, competitorAnimationReady]);
 
   // Jump to a step when clicked on the rail
   const handleStepClick = (step) => {
@@ -169,8 +190,8 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
     ],
     2: [
       `listing ${domain} products…`,
-      `searching "alternatives to ${domain}"…`,
-      'checking 12 candidates…',
+      competitorData?.queries?.length ? `searching "${competitorData.queries[Math.max(0, competitorData.searches_used - 1)]}"…` : 'finding relevant search queries…',
+      competitorData?.candidates_count ? `researching ${competitorData.candidates_count} candidate websites…` : 'searching for competing businesses…',
     ],
     3: [
       'analyzing value proposition…',
@@ -219,7 +240,8 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
   }, [phase, currentStep, isRunningPhase]);
 
   const currentStepTasks = WORKFLOW_STEP_TASKS[currentStep] || [];
-  const currentAgentItems = researchError ? [{ label: researchError.message, status: 'active' }] : isRunningPhase
+  const activeError = researchError || (currentStep === 2 ? competitorError : null);
+  const currentAgentItems = activeError ? [{ label: activeError.message, status: 'active' }] : isRunningPhase
     ? currentStepTasks.slice(0, subtaskIndex + 1).map((task, idx) => ({
         label: task,
         status: idx < subtaskIndex ? 'done' : 'active',
@@ -291,13 +313,19 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
                   retryResearch();
                   return;
                 }
+                if (currentStep === 2 && competitorError) {
+                  setPhase('research_competitors_loading');
+                  setIsAutoPlay(true);
+                  retryCompetitors();
+                  return;
+                }
                 const nextIdx = (PHASES.indexOf(phase) + 1) % PHASES.length;
                 changePhase(PHASES[nextIdx], true);
               }}
-              disabled={!researchReady && !researchError}
+              disabled={(!researchReady && !researchError) || (currentStep === 2 && !competitorsReady && (!competitorError || competitorError.canRetry === false))}
               className="text-[11px] px-2.5 py-1 rounded-md bg-[#0d9467] text-white hover:bg-[#0a7854] transition shadow-2xs cursor-pointer"
             >
-              {researchError ? 'Retry research' : 'Next Phase →'}
+              {activeError ? (activeError.canRetry === false ? 'Research failed' : 'Retry research') : 'Next Phase →'}
             </button>
           </div>
         </div>
@@ -337,15 +365,16 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
 
           {/* Phase 3: research_competitors_loading */}
           {phase === 'research_competitors_loading' && (
-            <CompetitorSkeletonCard />
+            competitorError ? <Step2CompetitorsCard determinants={determinants} searchQueries={competitorData?.queries || []} error={competitorError.message} /> : <CompetitorSkeletonCard />
           )}
 
           {/* Phase 4: research_competitors */}
           {phase === 'research_competitors' && (
             <Step2CompetitorsCard
-              determinants={projectData.determinants}
-              searchQueries={projectData.search_queries}
-              competitors={projectData.competitors}
+              determinants={determinants}
+              searchQueries={competitorData?.queries || []}
+              competitors={competitorData?.results || []}
+              warnings={competitorData?.warnings || []}
               onNext={() => changePhase('research_segments_loading', true)}
             />
           )}

@@ -60,6 +60,7 @@ export async function startResearch(value) {
 }
 
 export const researchStatus = (id, signal) => invoke('research-status', { job_id: id }, signal);
+export const competitorResearch = (id, retry, signal) => invoke('competitor-research', { job_id: id, retry }, signal);
 export const researchPath = (domain, jobId) => `/auto-gtm/company/${encodeURIComponent(domain)}/explore?job=${encodeURIComponent(jobId)}`;
 
 export async function listResearchProjects() {

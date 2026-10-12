@@ -66,8 +66,28 @@ test('migration, ownership isolation, write permissions, idempotency and atomic 
     assert.notEqual(externalOwner, other); // Neither local auth.users row is used.
     assert.equal((await reserve(externalOwner, 'company.com')).job.owner_id, externalOwner);
     assert.equal((await db.query('select count(*)::int as n from public.company_profiles')).rows[0].n, 1);
+    await db.exec('reset role');
+    await db.exec(await readFile(new URL('../supabase/migrations/20261012000300_autogtm_competitors.sql', import.meta.url), 'utf8'));
+    await db.exec('set role service_role');
+    let competitorState = (await db.query('select competitor_research from public.company_profiles where job_id=$1', [first.job.id])).rows[0].competitor_research;
+    const saveCompetitors = async (who, version, state) => (await db.query('select public.autogtm_save_competitors($1,$2,$3,$4) as result', [first.job.id, who, version, state])).rows[0].result;
+    assert.equal(competitorState.status, 'pending');
+    await assert.rejects(saveCompetitors(other, 0, competitorState), /PROFILE_NOT_FOUND/);
+    competitorState = (await saveCompetitors(owner, 0, { ...competitorState, status: 'searching', queries: ['a', 'b', 'c'], searches_used: 1 })).state;
+    assert.equal((await saveCompetitors(owner, 0, { ...competitorState, searches_used: 2 })).applied, false);
+    await assert.rejects(saveCompetitors(owner, 1, { ...competitorState, searches_used: 4 }), /COMPETITOR_LIMIT/);
+    await assert.rejects(saveCompetitors(owner, 1, { ...competitorState, searches_used: 0 }), /COMPETITOR_LIMIT/);
+    await assert.rejects(saveCompetitors(owner, 1, { ...competitorState, queries: ['new'] }), /COMPETITOR_LIMIT/);
+    await assert.rejects(saveCompetitors(owner, 1, { ...competitorState, candidates: Array(11).fill({ domain: 'rival.com' }) }), /COMPETITOR_LIMIT/);
+    competitorState = (await saveCompetitors(owner, 1, { ...competitorState, status: 'submitting', batch_attempted: true, candidates: [{ domain: 'rival.com' }] })).state;
+    await assert.rejects(saveCompetitors(owner, 2, { ...competitorState, batch_attempted: false }), /COMPETITOR_LIMIT/);
+    await assert.rejects(saveCompetitors(owner, 2, { ...competitorState, candidates: [] }), /COMPETITOR_LIMIT/);
+    competitorState = (await saveCompetitors(owner, 2, { ...competitorState, status: 'completed', results: [] })).state;
+    assert.equal((await saveCompetitors(owner, 3, { ...competitorState, status: 'failed' })).applied, false);
+    assert.equal((await db.query('select company_name from public.company_profiles where job_id=$1', [first.job.id])).rows[0].company_name, 'Company');
     for (const role of ['anon', 'authenticated']) {
       await db.exec(`set role ${role}`);
+      await assert.rejects(saveCompetitors(owner, 3, competitorState), /permission denied/);
       for (const table of ['research_owners', 'projects', 'research_jobs', 'company_profiles', 'job_events']) {
         await assert.rejects(db.query(`select * from public.${table}`), /permission denied/);
         await assert.rejects(db.query(`delete from public.${table}`), /permission denied/);
