@@ -14,7 +14,7 @@ BASE = 'http://127.0.0.1:4180'
 REF = 'cvpeezzkzsbosyuhmhmf'
 JOB = 'bbbbbbbb-bbbb-4bbb-bbbb-bbbbbbbbbbbb'
 USER = {'id': 'aaaaaaaa-aaaa-4aaa-aaaa-aaaaaaaaaaaa', 'email': 'test@company.com', 'aud': 'authenticated', 'role': 'authenticated'}
-PROFILE = {'company_name': 'Test Company', 'business_description': 'Makes useful widgets.',
+PROFILE = {'job_id': JOB, 'project_id': JOB, 'company_name': 'Test Company', 'business_description': 'Makes useful widgets.',
     'descriptions': [{'text': 'Makes useful widgets.', 'source_urls': ['https://company.com/']}],
     'products': [{'name': 'Widget', 'description': 'A useful product.', 'source_urls': ['https://company.com/products']}],
     'customers': [], 'locations': [], 'source_urls': ['https://company.com/', 'https://company.com/products'], 'warnings': []}
@@ -31,7 +31,7 @@ def check_width(page):
 
 with sync_playwright() as p:
     browser = p.chromium.launch(executable_path=r'C:\Program Files\Google\Chrome\Application\chrome.exe', headless=True)
-    state = {'status': 'scraping', 'starts': 0, 'otp_error': True, 'verify_error': True}
+    state = {'status': 'scraping', 'starts': 0, 'otp_error': True, 'verify_error': True, 'domain': 'company.com', 'websites': []}
     def route(request_route):
         req = request_route.request
         url = urlparse(req.url)
@@ -44,12 +44,14 @@ with sync_playwright() as p:
         path = url.path
         if path.endswith('/start-research'):
             state['starts'] += 1
+            state['websites'].append(req.post_data_json['website'])
+            state['domain'] = urlparse(req.post_data_json['website']).hostname.replace('www.', '', 1)
             payload = {'job': {'id': JOB}}
         elif path.endswith('/research-status'):
-            payload = {'job': {'id': JOB, 'status': state['status'], 'selected_urls': ['https://company.com/', 'https://company.com/products'],
+            payload = {'job': {'id': JOB, 'project_id': JOB, 'status': state['status'], 'selected_urls': ['https://company.com/', 'https://company.com/products'],
                               'pages_completed': 2 if state['status'] == 'completed' else 1, 'error_message': 'Website blocked scraping.'},
-                       'project': {'domain': 'company.com', 'website_url': 'https://company.com/'},
-                       'profile': PROFILE if state['status'] == 'completed' else None,
+                       'project': {'id': JOB, 'domain': state['domain'], 'website_url': 'https://' + state['domain'] + '/'},
+                       'profile': json.loads(json.dumps(PROFILE).replace('company.com', state['domain']).replace('Test Company', 'Profile for ' + state['domain'])) if state['status'] == 'completed' else None,
                        'events': [{'id': 1, 'message': 'Finding company pages', 'pages_completed': 0, 'created_at': '2026-10-12T12:00:00Z'}]}
         elif path.endswith('/projects'):
             payload = [{'id': JOB, 'domain': 'company.com', 'updated_at': '2026-10-12T12:00:00Z',
@@ -107,9 +109,35 @@ with sync_playwright() as p:
     page.get_by_role('button', name='Start a new attempt').click()
     expect(page.get_by_role('button', name='Start a new attempt')).to_be_enabled()
     assert state['starts'] == 2
+    # Regression: the exact submitted website must reach the backend from both entry forms.
+    state['status'] = 'completed'
+    page.goto(BASE + '/app-auto-gtm?website=google.com')
+    expect(page.get_by_role('textbox', name='Company website')).to_have_value('google.com')
+    page.get_by_role('button', name='Create my project').click()
+    expect(page.get_by_role('heading', name='Profile for google.com', exact=True)).to_be_visible()
+    assert '/company/google.com/explore?job=' in page.url
+    assert state['websites'][-1] == 'https://google.com/'
+    expect(page.get_by_text('PrimKeet', exact=False)).to_have_count(0)
+    page.goto(BASE + '/app-autogtm')
+    page.locator('#hero-website-input').fill('https://www.google.com/about?campaign=test')
+    page.get_by_role('button', name='Launch', exact=True).click()
+    expect(page.get_by_role('heading', name='Profile for google.com', exact=True)).to_be_visible()
+    assert state['websites'][-1] == 'https://www.google.com/'
+    assert urlparse(page.url).hostname == '127.0.0.1', 'Launch left this app'
+    check_width(page)
+    # A stale job/profile for a different company must never replace the entered domain.
+    starts_before_mismatch = state['starts']
+    state['domain'] = 'keethub.lovable.app'
+    page.reload()
+    expect(page.get_by_role('alert')).to_contain_text('does not match this website')
+    expect(page.get_by_role('article', name='Saved company profile')).to_have_count(0)
+    expect(page.get_by_role('heading', name='google.com', exact=True)).to_be_visible()
+    assert 'keethub.lovable.app' not in page.locator('body').inner_text()
+    assert state['starts'] == starts_before_mismatch
     assert not errors, errors
     context.close()
 
+    starts_before_login = state['starts']
     # Separate unsigned browser: real OTP UI must not grant access after an error.
     context = browser.new_context(viewport={'width': 320, 'height': 720})
     context.route('**/*', route)
@@ -132,9 +160,9 @@ with sync_playwright() as p:
     state['verify_error'] = False
     page.get_by_role('button', name='Continue', exact=True).click()
     expect(page.get_by_role('button', name='Create my project')).to_be_enabled()
-    expect(page.get_by_role('textbox', name='Company website')).to_have_value('company.com')
-    assert state['starts'] == 2, 'Login unexpectedly started a crawl'
+    expect(page.get_by_role('textbox', name='Company website')).to_have_value('https://company.com/')
+    assert state['starts'] == starts_before_login, 'Login unexpectedly started a crawl'
     context.close()
     browser.close()
-    print('PASS: mobile widths, live progress, sources, saved results, refresh, failure/retry, drawer and OTP errors/success')
+    print('PASS: mobile widths, live progress, sources, saved results, refresh, failure/retry, drawer, OTP, google.com from both forms and stale-profile rejection')
     print('Mobile screenshot: ' + screenshot)

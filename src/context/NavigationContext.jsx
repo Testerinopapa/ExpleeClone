@@ -71,7 +71,9 @@ export function resolveProductFromLocation() {
     pathname.match(/\/auto-gtm\/company\/([^/]+)\/explore/) ||
     hash.match(/\/auto-gtm\/company\/([^/]+)\/explore/);
   if (autoGtmExploreMatch) {
-    const domain = autoGtmExploreMatch[1];
+    let domain;
+    try { domain = decodeURIComponent(autoGtmExploreMatch[1]).replace(/^www\./, '').replace(/\.$/, ''); }
+    catch { return { product: 'unknown', canonicalPath: pathname }; }
     return {
       product: 'auto-gtm-explore',
       domain,
@@ -225,7 +227,7 @@ export function NavigationProvider({ children }) {
         authMode: routeState.authMode || 'sign-in',
         countrySlug: routeState.countrySlug,
         regionSlug: routeState.regionSlug,
-        domain: routeState.domain || 'keethub.lovable.app',
+        domain: routeState.domain || '',
         navigate,
       }}
     >

@@ -1,11 +1,35 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { ArrowRight, Gift } from 'lucide-react';
 import FlowCanvas from './FlowCanvas';
 import LogosCarousel from './LogosCarousel';
+import { useNavigation, PRODUCT_ROUTES } from '../context/NavigationContext';
+import useAuthSession from '../hooks/useAuthSession';
+import { normalizeWebsite, researchPath, startResearch } from '../lib/companyResearch';
 
 export default function HeroSection() {
   const [inputValue, setInputValue] = useState('');
   const [dialogOpen, setDialogOpen] = useState(false);
+  const [error, setError] = useState('');
+  const [starting, setStarting] = useState(false);
+  const submitting = useRef(false);
+  const { navigate } = useNavigation();
+  const { session, loading: authLoading } = useAuthSession();
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    if (submitting.current || authLoading) return;
+    setError('');
+    try {
+      const { website } = normalizeWebsite(inputValue);
+      sessionStorage.setItem('autogtm-pending-domain', website);
+      if (!session) { navigate(PRODUCT_ROUTES.SIGN_IN); return; }
+      submitting.current = true; setStarting(true);
+      const result = await startResearch(website);
+      sessionStorage.removeItem('autogtm-pending-domain');
+      navigate(researchPath(result.domain, result.job.id));
+    } catch (err) { setError(err.message); }
+    finally { submitting.current = false; setStarting(false); }
+  };
 
   return (
     <section className="hero relative overflow-hidden">
@@ -67,27 +91,27 @@ export default function HeroSection() {
 
               {/* Center Input Form */}
               <form
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  if (inputValue.trim()) {
-                    window.location.href = `https://app.explee.com/signup?website=${encodeURIComponent(inputValue.trim())}`;
-                  }
-                }}
+                onSubmit={handleSubmit}
                 className="glass-edge hero-launch-field relative rounded-2xl flex items-center bg-card pl-5 pr-1.5 py-1.5 gap-2 w-full border border-border shadow-plaque"
               >
                 <input
                   id="hero-website-input"
                   data-test="hero-website-input"
                   type="text"
+                  aria-label="Company website"
+                  inputMode="url"
+                  autoCapitalize="none"
+                  autoCorrect="off"
                   value={inputValue}
-                  onChange={(e) => setInputValue(e.target.value)}
+                  onChange={(e) => { setInputValue(e.target.value); setError(''); }}
                   placeholder="Paste your website, e.g., consolto.com"
                   autoComplete="off"
                   className="flex-1 min-w-0 bg-transparent outline-none text-foreground placeholder:text-muted-foreground py-2 text-base md:text-[15px]"
                 />
                 <button
                   type="submit"
-                  aria-label="Launch"
+                  aria-label={starting ? 'Starting research' : 'Launch'}
+                  disabled={starting || authLoading}
                   className={`inline-flex items-center justify-center bg-primary text-primary-foreground font-medium p-2.5 rounded-xl transition-all duration-300 hover:scale-105 flex-shrink-0 cursor-pointer ${
                     inputValue.trim().length > 0
                       ? 'opacity-100 pointer-events-auto shadow-sm'
@@ -114,6 +138,9 @@ export default function HeroSection() {
                 />
               </div>
             </div>
+
+            {starting && <p role="status" className="mt-3 text-sm text-muted-foreground">Starting research for your website…</p>}
+            {error && <p role="alert" className="mt-3 text-sm text-red-600">{error}</p>}
 
             {/* "I don't have a website" dialog link */}
             <button

@@ -3,12 +3,12 @@ import { useNavigation } from '../../context/NavigationContext';
 import AutoGtmNavigation from './AutoGtmNavigation';
 import CrispChatWidget from './CrispChatWidget';
 import useAuthSession from '../../hooks/useAuthSession';
-import { listResearchProjects, normalizeWebsite, researchPath, startResearch } from '../../lib/companyResearch';
+import { listResearchProjects, normalizeWebsite, requestedWebsite, researchPath, startResearch } from '../../lib/companyResearch';
 
 export default function AppAutoGtmPage() {
   const { navigate } = useNavigation();
   const { session, loading: authLoading } = useAuthSession();
-  const [domain, setDomain] = useState(() => sessionStorage.getItem('autogtm-pending-domain') || '');
+  const [domain, setDomain] = useState(requestedWebsite);
   const [error, setError] = useState('');
   const [saving, setSaving] = useState(false);
   const submitting = useRef(false);
@@ -33,7 +33,7 @@ export default function AppAutoGtmPage() {
     setError('');
     try {
       const normalized = normalizeWebsite(domain);
-      sessionStorage.setItem('autogtm-pending-domain', normalized.domain);
+      sessionStorage.setItem('autogtm-pending-domain', normalized.website);
       if (!session) { navigate('/sign-in'); return; }
       submitting.current = true; setSaving(true);
       const result = await startResearch(normalized.website);

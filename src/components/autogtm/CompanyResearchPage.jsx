@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useNavigation, PRODUCT_ROUTES } from '../../context/NavigationContext';
 import useAuthSession from '../../hooks/useAuthSession';
-import { latestJobForDomain, researchPath, researchStatus, startResearch } from '../../lib/companyResearch';
+import { latestJobForDomain, researchPath, researchStatus, startResearch, validateResearchResult } from '../../lib/companyResearch';
 import AutoGtmNavigation from './AutoGtmNavigation';
 import AutoGtmRail from './AutoGtmRail';
 import CrispChatWidget from './CrispChatWidget';
@@ -48,13 +48,14 @@ export default function CompanyResearchPage({ domain }) {
       try {
         const result = await researchStatus(id, controller.signal);
         if (!active) return;
+        validateResearchResult(result, domain, id);
         setData(result); setError(''); setLoading(false); failures = 0;
         if (!['completed', 'failed'].includes(result.job.status)) timer = setTimeout(() => poll(id), 5000);
       } catch (err) {
         if (!active || err.name === 'AbortError') return;
-        setError(err.message); setLoading(false);
+        setData(null); setError(err.message); setLoading(false);
         // Retry read-only status calls with backoff. Never resubmit a crawl automatically.
-        if (err.code !== 'UNAUTHORIZED' && err.code !== 'NOT_FOUND' && failures++ < 4) {
+        if (!['UNAUTHORIZED', 'NOT_FOUND', 'PROJECT_MISMATCH'].includes(err.code) && failures++ < 4) {
           timer = setTimeout(() => poll(id), Math.min(30000, 5000 * 2 ** failures));
         }
       }
@@ -80,7 +81,7 @@ export default function CompanyResearchPage({ domain }) {
     if (startingRef.current) return;
     startingRef.current = true; setStarting(true); setError('');
     try {
-      const result = await startResearch(data?.project.website_url || domain);
+      const result = await startResearch(domain);
       window.history.replaceState({}, '', researchPath(result.domain, result.job.id));
       setJobId(result.job.id); setReload(value => value + 1);
     } catch (err) { setError(err.message); }

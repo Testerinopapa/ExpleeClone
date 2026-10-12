@@ -3,32 +3,6 @@ import { useNavigation, PRODUCT_ROUTES } from '../../context/NavigationContext';
 import { normalizeSegments, normalizeCompetitors } from '../../lib/autogtmNormalizer';
 import AgentActivityFeed from './AgentActivityFeed';
 
-const DEFAULT_COMPETITORS = [
-  { domain: 'langly.es' },
-  { domain: 'playdiom.com' },
-  { domain: 'wonderlang.net' },
-  { domain: 'the-conversationalists.com' },
-  { domain: 'revisionenglish.com' },
-  { domain: 'immersive-english.com' },
-  { domain: 'englishgeeks.com.br' },
-  { domain: 'oxford-gear-kids.com' },
-  { domain: 'ellinglish.com' },
-  { domain: 'cookieplay.kr' },
-  { domain: 'aslan.games' },
-  { domain: 'playeng.ru' },
-  { domain: 'letsgoreading.com' },
-  { domain: 'ei-den.com' },
-];
-
-const DEFAULT_CAMPAIGNS = [
-  { id: 'ge7hll', label: 'ESL teachers', count: '8.0K', icon: 'graduation-cap', percentage: 30 },
-  { id: 'tqqyle', label: 'Language schools', count: '5.0K', icon: 'building', percentage: 22 },
-  { id: 'seg-3', label: 'Private tutors', count: '12.0K', icon: 'users', percentage: 20 },
-  { id: 'seg-4', label: 'After-school centers', count: '4.0K', icon: 'home', percentage: 15 },
-  { id: 'seg-5', label: 'Homeschool parents', count: '6.0K', icon: 'clock', percentage: 8 },
-  { id: 'seg-6', label: 'Small training firms', count: '1.2K', icon: 'building-2', percentage: 5 },
-];
-
 export default function AutoGtmSidebar({
   currentPhase = '',
   completedSteps = [],
@@ -56,10 +30,10 @@ export default function AutoGtmSidebar({
 
   // 2. Guarantee normalized array contracts
   const normalizedCampaigns = normalizeSegments(rawCampaignSource);
-  const campaigns = normalizedCampaigns.length > 0 ? normalizedCampaigns : DEFAULT_CAMPAIGNS;
+  const campaigns = normalizedCampaigns;
 
   const normalizedCompetitors = normalizeCompetitors(rawCompetitorSource);
-  const competitors = normalizedCompetitors.length > 0 ? normalizedCompetitors : DEFAULT_COMPETITORS;
+  const competitors = normalizedCompetitors;
 
   // Helper to determine which step has completed or is active
   const hasStep1Done = completedSteps.includes(1);
@@ -202,7 +176,7 @@ export default function AutoGtmSidebar({
                   <span>step 1 · Research your company</span>
                 </div>
 
-                {/* Collapsible PrimKeet Box */}
+                {/* Company summary */}
                 <div className="rounded-lg border border-black/[0.08] bg-[#fafafa] p-2.5 space-y-2">
                   <button
                     type="button"

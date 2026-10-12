@@ -2,13 +2,29 @@ import { supabase } from '../integrations/supabase/client';
 
 export function normalizeWebsite(value) {
   let url;
+  if (typeof value !== 'string' || !value.trim()) throw new Error('Enter a company website.');
   try { url = new URL(value.includes('://') ? value.trim() : `https://${value.trim()}`); }
   catch { throw new Error('Enter a valid company website.'); }
   if (!['https:', 'http:'].includes(url.protocol) || !url.hostname.includes('.') || url.username || url.password || url.port) {
     throw new Error('Enter a public company website without credentials or a custom port.');
   }
   url.pathname = '/'; url.search = ''; url.hash = '';
-  return { website: url.href, domain: url.hostname.replace(/^www\./, '') };
+  return { website: url.href, domain: url.hostname.replace(/^www\./, '').replace(/\.$/, '') };
+}
+
+export function requestedWebsite() {
+  return new URLSearchParams(window.location.search).get('website') || sessionStorage.getItem('autogtm-pending-domain') || '';
+}
+
+export function validateResearchResult(result, domain, jobId) {
+  const mismatch = () => Object.assign(new Error('The saved research does not match this website. Return to your projects and start research for the correct website.'), { code: 'PROJECT_MISMATCH' });
+  if (!result?.job || !result?.project || result.job.id !== jobId) throw mismatch();
+  let resultDomain;
+  try { resultDomain = normalizeWebsite(result.project.domain).domain; }
+  catch { throw mismatch(); }
+  if (resultDomain !== normalizeWebsite(domain).domain || result.job.project_id !== result.project.id ||
+      (result.profile && (result.profile.job_id !== jobId || result.profile.project_id !== result.project.id))) throw mismatch();
+  return result;
 }
 
 async function invoke(name, body, signal) {
@@ -38,6 +54,7 @@ export async function startResearch(value) {
   const requestId = sessionStorage.getItem(key) || crypto.randomUUID();
   sessionStorage.setItem(key, requestId);
   const result = await invoke('start-research', { website, request_id: requestId });
+  if (!result?.job?.id) throw new Error('The server did not return a research job. Please try again.');
   sessionStorage.removeItem(key);
   return { ...result, domain };
 }
