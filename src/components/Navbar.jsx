@@ -9,7 +9,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50">
-      <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
+      <div className="pointer-events-none absolute inset-0 bg-background/80 backdrop-blur-sm" />
       <div className="relative max-w-[1200px] mx-auto flex justify-between items-center py-4 px-4 xl:px-0">
         <a
           className="cursor-pointer"
@@ -74,7 +74,7 @@ export default function Navbar() {
 
       {/* Mobile menu dropdown */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-card border-b border-border px-4 py-4 space-y-2 shadow-lg">
+        <div className="relative md:hidden bg-card border-b border-border px-4 py-4 space-y-2 shadow-lg">
           <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider py-1">
             Products
           </div>

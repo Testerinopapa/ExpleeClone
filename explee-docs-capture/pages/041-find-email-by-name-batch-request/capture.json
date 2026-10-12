@@ -1,0 +1,216 @@
+{
+  "routeIndex": 41,
+  "label": "Find email by name (batch request)",
+  "url": "https://api.explee.com/public/api/docs#tag/contact/POST/public/api/v1/enrich/email/batch",
+  "hashRoute": "#tag/contact/POST/public/api/v1/enrich/email/batch",
+  "httpMethod": "POST",
+  "endpointPath": "/public/api/v1/enrich/email/batch",
+  "tag": "contact",
+  "capturedAt": "2026-09-29T03:02:44.939Z",
+  "documentTitle": "Explee Public API",
+  "pageHeading": "Find email by name (batch request)",
+  "headings": [
+    {
+      "tag": "H3",
+      "text": "Find email by name (batch request)",
+      "id": "scalar-refs-0-1109",
+      "className": "section-header-label"
+    },
+    {
+      "tag": "H4",
+      "text": "Body·BatchEnrichEmailPayload",
+      "id": null,
+      "className": "section-header-label request-body-title flex!"
+    },
+    {
+      "tag": "H4",
+      "text": "Responses",
+      "id": null,
+      "className": "section-header-label section-header-label--rule block! border-b pb-3 text-c-1 responses-title--tree mt-3 mb-0 block! leading-[1.45] font-medium"
+    }
+  ],
+  "paragraphs": [
+    "Find email addresses for multiple contacts in one request (async). How it works: Submit up to 100 contacts with first_name, last_name, company_domain Receive a task_id immediately Poll GET endpoint with task_id to check status and retrieve results Limits: Maximum 100 contacts per batch Pricing: basic: 1.5 credits per found email premium: 5 credits per found email Only charged for emails found (not found = 0 credits)",
+    "Find email addresses for multiple contacts in one request (async).",
+    "How it works:",
+    "Limits:",
+    "Pricing:",
+    "Request payload for batch email enrichment endpoint.",
+    "Request payload for batch email enrichment endpoint.",
+    "contactsType: array of ContactInput 1…100requiredExample{\"company_domain\":\"x.ai\",\"first_name\":\"Ma\",\"last_name\":\"Lin\"}{ company_domain, first_name, last_name }Copy link to contacts List of contacts to enrich (max 100) Properties: 3presetType: \"basic\" or \"premium\"enumDefaultbasicCopy link to preset Quality preset: basic (1 provider, fast) or premium (6 providers, validated)",
+    "List of contacts to enrich (max 100)",
+    "List of contacts to enrich (max 100)"
+  ],
+  "parameters": [
+    {
+      "name": "contacts",
+      "type": "array of ContactInput",
+      "required": true,
+      "description": "List of contacts to enrich (max 100)"
+    },
+    {
+      "name": "preset",
+      "type": "\"basic\" or \"premium\"",
+      "required": false,
+      "description": "Quality preset: basic (1 provider, fast) or premium (6 providers, validated)"
+    },
+    {
+      "name": "200",
+      "type": "application/json",
+      "required": false,
+      "description": "Successful Response"
+    },
+    {
+      "name": "401",
+      "type": "application/json",
+      "required": false,
+      "description": "Invalid or missing API key. Include X-API-Key header."
+    },
+    {
+      "name": "X-API-Key",
+      "type": null,
+      "required": false,
+      "description": null
+    },
+    {
+      "name": "402",
+      "type": "application/json",
+      "required": false,
+      "description": "Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account."
+    },
+    {
+      "name": "422",
+      "type": "application/json",
+      "required": false,
+      "description": "Validation error. Check request body and parameters."
+    },
+    {
+      "name": "429",
+      "type": "application/json",
+      "required": false,
+      "description": "Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan)."
+    },
+    {
+      "name": "500",
+      "type": "application/json",
+      "required": false,
+      "description": "Internal server error. Contact support if persists."
+    },
+    {
+      "name": "504",
+      "type": "application/json",
+      "required": false,
+      "description": "Request timeout. Please try again later."
+    }
+  ],
+  "responses": [],
+  "codeBlocksCount": 7,
+  "codeBlocksSample": [
+    {
+      "text": "task_id",
+      "className": null
+    },
+    {
+      "text": "task_id",
+      "className": null
+    },
+    {
+      "text": "X-API-Key",
+      "className": null
+    }
+  ],
+  "tabs": [
+    {
+      "text": "Status: 200",
+      "active": true
+    },
+    {
+      "text": "Status: 401",
+      "active": false
+    },
+    {
+      "text": "Status: 402",
+      "active": false
+    },
+    {
+      "text": "Status: 422",
+      "active": false
+    },
+    {
+      "text": "Status: 429",
+      "active": false
+    },
+    {
+      "text": "Status: 500",
+      "active": false
+    },
+    {
+      "text": "Status: 504",
+      "active": false
+    }
+  ],
+  "buttonsCount": 27,
+  "buttonsSample": [
+    "Copy link",
+    "Auth Required",
+    "Copy as Markdown",
+    "Example",
+    "{\"company_domain\":\"x.ai\",\"first_name\":\"Ma\",\"last_name\":\"Lin\"}",
+    "Copy link to contacts",
+    "Default",
+    "basic"
+  ],
+  "svgCount": 15,
+  "svgsSample": [
+    {
+      "className": "size-4.5",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-3",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-full",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": null,
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "scalar-icon size-3 group-hover:text-c-1 text-c-3 ml-auto min-h-3 min-w-3",
+      "viewBox": "0 0 24 24",
+      "width": 0,
+      "height": 0
+    }
+  ],
+  "visual": {
+    "geometry": {
+      "x": 348,
+      "y": 0,
+      "width": 1032,
+      "height": 1247
+    },
+    "typography": {
+      "fontFamily": "Inter, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "24px",
+      "fontWeight": "600",
+      "lineHeight": "34.8px",
+      "color": "rgb(27, 27, 27)"
+    },
+    "styling": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgba(0, 0, 0, 0.1)",
+      "borderRadius": "0px"
+    }
+  }
+}

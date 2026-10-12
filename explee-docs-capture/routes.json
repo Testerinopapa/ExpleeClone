@@ -1,0 +1,642 @@
+[
+  {
+    "index": 1,
+    "href": "#description/introduction",
+    "hash": "#description/introduction",
+    "label": "Introduction",
+    "method": null,
+    "endpointPath": null,
+    "tag": "description",
+    "url": "https://api.explee.com/public/api/docs#description/introduction"
+  },
+  {
+    "index": 2,
+    "href": "#tag/autogtm",
+    "hash": "#tag/autogtm",
+    "label": "AutoGTM",
+    "method": null,
+    "endpointPath": null,
+    "tag": "autogtm",
+    "url": "https://api.explee.com/public/api/docs#tag/autogtm"
+  },
+  {
+    "index": 3,
+    "href": "#tag/autogtm/GET/public/api/v1/autogtm/projects",
+    "hash": "#tag/autogtm/GET/public/api/v1/autogtm/projects",
+    "label": "List AutoGTM projects",
+    "method": "GET",
+    "endpointPath": "/public/api/v1/autogtm/projects",
+    "tag": "autogtm",
+    "url": "https://api.explee.com/public/api/docs#tag/autogtm/GET/public/api/v1/autogtm/projects"
+  },
+  {
+    "index": 4,
+    "href": "#tag/autogtm/GET/public/api/v1/autogtm/campaigns",
+    "hash": "#tag/autogtm/GET/public/api/v1/autogtm/campaigns",
+    "label": "List AutoGTM campaigns",
+    "method": "GET",
+    "endpointPath": "/public/api/v1/autogtm/campaigns",
+    "tag": "autogtm",
+    "url": "https://api.explee.com/public/api/docs#tag/autogtm/GET/public/api/v1/autogtm/campaigns"
+  },
+  {
+    "index": 5,
+    "href": "#tag/autogtm/GET/public/api/v1/autogtm/campaigns/{campaign_id}",
+    "hash": "#tag/autogtm/GET/public/api/v1/autogtm/campaigns/{campaign_id}",
+    "label": "Get campaign definition",
+    "method": "GET",
+    "endpointPath": "/public/api/v1/autogtm/campaigns/{campaign_id}",
+    "tag": "autogtm",
+    "url": "https://api.explee.com/public/api/docs#tag/autogtm/GET/public/api/v1/autogtm/campaigns/{campaign_id}"
+  },
+  {
+    "index": 6,
+    "href": "#tag/autogtm/PATCH/public/api/v1/autogtm/campaigns/{campaign_id}",
+    "hash": "#tag/autogtm/PATCH/public/api/v1/autogtm/campaigns/{campaign_id}",
+    "label": "Update campaign definition",
+    "method": "PATCH",
+    "endpointPath": "/public/api/v1/autogtm/campaigns/{campaign_id}",
+    "tag": "autogtm",
+    "url": "https://api.explee.com/public/api/docs#tag/autogtm/PATCH/public/api/v1/autogtm/campaigns/{campaign_id}"
+  },
+  {
+    "index": 7,
+    "href": "#tag/autogtm/POST/public/api/v1/autogtm/campaigns/import",
+    "hash": "#tag/autogtm/POST/public/api/v1/autogtm/campaigns/import",
+    "label": "Create a campaign from your own leads (import)",
+    "method": "POST",
+    "endpointPath": "/public/api/v1/autogtm/campaigns/import",
+    "tag": "autogtm",
+    "url": "https://api.explee.com/public/api/docs#tag/autogtm/POST/public/api/v1/autogtm/campaigns/import"
+  },
+  {
+    "index": 8,
+    "href": "#tag/autogtm/GET/public/api/v1/autogtm/campaigns/import/{task_id}",
+    "hash": "#tag/autogtm/GET/public/api/v1/autogtm/campaigns/import/{task_id}",
+    "label": "Campaign import status/result",
+    "method": "GET",
+    "endpointPath": "/public/api/v1/autogtm/campaigns/import/{task_id}",
+    "tag": "autogtm",
+    "url": "https://api.explee.com/public/api/docs#tag/autogtm/GET/public/api/v1/autogtm/campaigns/import/{task_id}"
+  },
+  {
+    "index": 9,
+    "href": "#tag/autogtm/GET/public/api/v1/autogtm/hot-leads",
+    "hash": "#tag/autogtm/GET/public/api/v1/autogtm/hot-leads",
+    "label": "List hot leads",
+    "method": "GET",
+    "endpointPath": "/public/api/v1/autogtm/hot-leads",
+    "tag": "autogtm",
+    "url": "https://api.explee.com/public/api/docs#tag/autogtm/GET/public/api/v1/autogtm/hot-leads"
+  },
+  {
+    "index": 10,
+    "href": "#tag/autogtm/GET/public/api/v1/autogtm/campaigns/{campaign_id}/inbox",
+    "hash": "#tag/autogtm/GET/public/api/v1/autogtm/campaigns/{campaign_id}/inbox",
+    "label": "List inbox conversations",
+    "method": "GET",
+    "endpointPath": "/public/api/v1/autogtm/campaigns/{campaign_id}/inbox",
+    "tag": "autogtm",
+    "url": "https://api.explee.com/public/api/docs#tag/autogtm/GET/public/api/v1/autogtm/campaigns/{campaign_id}/inbox"
+  },
+  {
+    "index": 11,
+    "href": "#tag/autogtm/GET/public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}",
+    "hash": "#tag/autogtm/GET/public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}",
+    "label": "Read a conversation thread",
+    "method": "GET",
+    "endpointPath": "/public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}",
+    "tag": "autogtm",
+    "url": "https://api.explee.com/public/api/docs#tag/autogtm/GET/public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}"
+  },
+  {
+    "index": 12,
+    "href": "#tag/autogtm/POST/public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}/reply",
+    "hash": "#tag/autogtm/POST/public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}/reply",
+    "label": "Reply in a thread",
+    "method": "POST",
+    "endpointPath": "/public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}/reply",
+    "tag": "autogtm",
+    "url": "https://api.explee.com/public/api/docs#tag/autogtm/POST/public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}/reply"
+  },
+  {
+    "index": 13,
+    "href": "#tag/autogtm/GET/public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}/note",
+    "hash": "#tag/autogtm/GET/public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}/note",
+    "label": "Read the lead note",
+    "method": "GET",
+    "endpointPath": "/public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}/note",
+    "tag": "autogtm",
+    "url": "https://api.explee.com/public/api/docs#tag/autogtm/GET/public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}/note"
+  },
+  {
+    "index": 14,
+    "href": "#tag/autogtm/POST/public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}/note",
+    "hash": "#tag/autogtm/POST/public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}/note",
+    "label": "Set the lead note",
+    "method": "POST",
+    "endpointPath": "/public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}/note",
+    "tag": "autogtm",
+    "url": "https://api.explee.com/public/api/docs#tag/autogtm/POST/public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}/note"
+  },
+  {
+    "index": 15,
+    "href": "#tag/autogtm/GET/public/api/v1/autogtm/projects/{project_id}/budget",
+    "hash": "#tag/autogtm/GET/public/api/v1/autogtm/projects/{project_id}/budget",
+    "label": "Get project daily budget",
+    "method": "GET",
+    "endpointPath": "/public/api/v1/autogtm/projects/{project_id}/budget",
+    "tag": "autogtm",
+    "url": "https://api.explee.com/public/api/docs#tag/autogtm/GET/public/api/v1/autogtm/projects/{project_id}/budget"
+  },
+  {
+    "index": 16,
+    "href": "#tag/autogtm/PATCH/public/api/v1/autogtm/projects/{project_id}/budget",
+    "hash": "#tag/autogtm/PATCH/public/api/v1/autogtm/projects/{project_id}/budget",
+    "label": "Set project daily budget",
+    "method": "PATCH",
+    "endpointPath": "/public/api/v1/autogtm/projects/{project_id}/budget",
+    "tag": "autogtm",
+    "url": "https://api.explee.com/public/api/docs#tag/autogtm/PATCH/public/api/v1/autogtm/projects/{project_id}/budget"
+  },
+  {
+    "index": 17,
+    "href": "#tag/autogtm/PATCH/public/api/v1/autogtm/campaigns/{campaign_id}/budget",
+    "hash": "#tag/autogtm/PATCH/public/api/v1/autogtm/campaigns/{campaign_id}/budget",
+    "label": "Set campaign daily budget",
+    "method": "PATCH",
+    "endpointPath": "/public/api/v1/autogtm/campaigns/{campaign_id}/budget",
+    "tag": "autogtm",
+    "url": "https://api.explee.com/public/api/docs#tag/autogtm/PATCH/public/api/v1/autogtm/campaigns/{campaign_id}/budget"
+  },
+  {
+    "index": 18,
+    "href": "#tag/autogtm/POST/public/api/v1/autogtm/campaigns/{campaign_id}/stop",
+    "hash": "#tag/autogtm/POST/public/api/v1/autogtm/campaigns/{campaign_id}/stop",
+    "label": "Stop campaign",
+    "method": "POST",
+    "endpointPath": "/public/api/v1/autogtm/campaigns/{campaign_id}/stop",
+    "tag": "autogtm",
+    "url": "https://api.explee.com/public/api/docs#tag/autogtm/POST/public/api/v1/autogtm/campaigns/{campaign_id}/stop"
+  },
+  {
+    "index": 19,
+    "href": "#tag/autogtm/POST/public/api/v1/autogtm/campaigns/{campaign_id}/start",
+    "hash": "#tag/autogtm/POST/public/api/v1/autogtm/campaigns/{campaign_id}/start",
+    "label": "Start campaign",
+    "method": "POST",
+    "endpointPath": "/public/api/v1/autogtm/campaigns/{campaign_id}/start",
+    "tag": "autogtm",
+    "url": "https://api.explee.com/public/api/docs#tag/autogtm/POST/public/api/v1/autogtm/campaigns/{campaign_id}/start"
+  },
+  {
+    "index": 20,
+    "href": "#tag/autogtm/GET/public/api/v1/autogtm/campaigns/{campaign_id}/analytics",
+    "hash": "#tag/autogtm/GET/public/api/v1/autogtm/campaigns/{campaign_id}/analytics",
+    "label": "Campaign analytics",
+    "method": "GET",
+    "endpointPath": "/public/api/v1/autogtm/campaigns/{campaign_id}/analytics",
+    "tag": "autogtm",
+    "url": "https://api.explee.com/public/api/docs#tag/autogtm/GET/public/api/v1/autogtm/campaigns/{campaign_id}/analytics"
+  },
+  {
+    "index": 21,
+    "href": "#tag/autogtm/GET/public/api/v1/autogtm/projects/{project_id}/analytics",
+    "hash": "#tag/autogtm/GET/public/api/v1/autogtm/projects/{project_id}/analytics",
+    "label": "Project analytics",
+    "method": "GET",
+    "endpointPath": "/public/api/v1/autogtm/projects/{project_id}/analytics",
+    "tag": "autogtm",
+    "url": "https://api.explee.com/public/api/docs#tag/autogtm/GET/public/api/v1/autogtm/projects/{project_id}/analytics"
+  },
+  {
+    "index": 22,
+    "href": "#tag/autogtm/GET/public/api/v1/autogtm/suppress-list/people",
+    "hash": "#tag/autogtm/GET/public/api/v1/autogtm/suppress-list/people",
+    "label": "People suppress lists",
+    "method": "GET",
+    "endpointPath": "/public/api/v1/autogtm/suppress-list/people",
+    "tag": "autogtm",
+    "url": "https://api.explee.com/public/api/docs#tag/autogtm/GET/public/api/v1/autogtm/suppress-list/people"
+  },
+  {
+    "index": 23,
+    "href": "#tag/autogtm/POST/public/api/v1/autogtm/suppress-list/people",
+    "hash": "#tag/autogtm/POST/public/api/v1/autogtm/suppress-list/people",
+    "label": "Suppress people",
+    "method": "POST",
+    "endpointPath": "/public/api/v1/autogtm/suppress-list/people",
+    "tag": "autogtm",
+    "url": "https://api.explee.com/public/api/docs#tag/autogtm/POST/public/api/v1/autogtm/suppress-list/people"
+  },
+  {
+    "index": 24,
+    "href": "#tag/autogtm/GET/public/api/v1/autogtm/suppress-list/people/{list_name}",
+    "hash": "#tag/autogtm/GET/public/api/v1/autogtm/suppress-list/people/{list_name}",
+    "label": "Read a people list",
+    "method": "GET",
+    "endpointPath": "/public/api/v1/autogtm/suppress-list/people/{list_name}",
+    "tag": "autogtm",
+    "url": "https://api.explee.com/public/api/docs#tag/autogtm/GET/public/api/v1/autogtm/suppress-list/people/{list_name}"
+  },
+  {
+    "index": 25,
+    "href": "#tag/autogtm/DELETE/public/api/v1/autogtm/suppress-list/people/{list_name}",
+    "hash": "#tag/autogtm/DELETE/public/api/v1/autogtm/suppress-list/people/{list_name}",
+    "label": "Delete a people list",
+    "method": "DEL",
+    "endpointPath": "/public/api/v1/autogtm/suppress-list/people/{list_name}",
+    "tag": "autogtm",
+    "url": "https://api.explee.com/public/api/docs#tag/autogtm/DELETE/public/api/v1/autogtm/suppress-list/people/{list_name}"
+  },
+  {
+    "index": 26,
+    "href": "#tag/autogtm/GET/public/api/v1/autogtm/suppress-list/companies",
+    "hash": "#tag/autogtm/GET/public/api/v1/autogtm/suppress-list/companies",
+    "label": "Company suppress lists",
+    "method": "GET",
+    "endpointPath": "/public/api/v1/autogtm/suppress-list/companies",
+    "tag": "autogtm",
+    "url": "https://api.explee.com/public/api/docs#tag/autogtm/GET/public/api/v1/autogtm/suppress-list/companies"
+  },
+  {
+    "index": 27,
+    "href": "#tag/autogtm/POST/public/api/v1/autogtm/suppress-list/companies",
+    "hash": "#tag/autogtm/POST/public/api/v1/autogtm/suppress-list/companies",
+    "label": "Suppress companies",
+    "method": "POST",
+    "endpointPath": "/public/api/v1/autogtm/suppress-list/companies",
+    "tag": "autogtm",
+    "url": "https://api.explee.com/public/api/docs#tag/autogtm/POST/public/api/v1/autogtm/suppress-list/companies"
+  },
+  {
+    "index": 28,
+    "href": "#tag/autogtm/GET/public/api/v1/autogtm/suppress-list/companies/{list_name}",
+    "hash": "#tag/autogtm/GET/public/api/v1/autogtm/suppress-list/companies/{list_name}",
+    "label": "Read a company list",
+    "method": "GET",
+    "endpointPath": "/public/api/v1/autogtm/suppress-list/companies/{list_name}",
+    "tag": "autogtm",
+    "url": "https://api.explee.com/public/api/docs#tag/autogtm/GET/public/api/v1/autogtm/suppress-list/companies/{list_name}"
+  },
+  {
+    "index": 29,
+    "href": "#tag/autogtm/DELETE/public/api/v1/autogtm/suppress-list/companies/{list_name}",
+    "hash": "#tag/autogtm/DELETE/public/api/v1/autogtm/suppress-list/companies/{list_name}",
+    "label": "Delete a company list",
+    "method": "DEL",
+    "endpointPath": "/public/api/v1/autogtm/suppress-list/companies/{list_name}",
+    "tag": "autogtm",
+    "url": "https://api.explee.com/public/api/docs#tag/autogtm/DELETE/public/api/v1/autogtm/suppress-list/companies/{list_name}"
+  },
+  {
+    "index": 30,
+    "href": "#tag/autogtm/GET/public/api/v1/autogtm/projects/{project_id}/autopilot",
+    "hash": "#tag/autogtm/GET/public/api/v1/autogtm/projects/{project_id}/autopilot",
+    "label": "Get autopilot settings",
+    "method": "GET",
+    "endpointPath": "/public/api/v1/autogtm/projects/{project_id}/autopilot",
+    "tag": "autogtm",
+    "url": "https://api.explee.com/public/api/docs#tag/autogtm/GET/public/api/v1/autogtm/projects/{project_id}/autopilot"
+  },
+  {
+    "index": 31,
+    "href": "#tag/autogtm/PATCH/public/api/v1/autogtm/projects/{project_id}/autopilot",
+    "hash": "#tag/autogtm/PATCH/public/api/v1/autogtm/projects/{project_id}/autopilot",
+    "label": "Set autopilot settings",
+    "method": "PATCH",
+    "endpointPath": "/public/api/v1/autogtm/projects/{project_id}/autopilot",
+    "tag": "autogtm",
+    "url": "https://api.explee.com/public/api/docs#tag/autogtm/PATCH/public/api/v1/autogtm/projects/{project_id}/autopilot"
+  },
+  {
+    "index": 32,
+    "href": "#tag/search",
+    "hash": "#tag/search",
+    "label": "Search",
+    "method": null,
+    "endpointPath": null,
+    "tag": "search",
+    "url": "https://api.explee.com/public/api/docs#tag/search"
+  },
+  {
+    "index": 33,
+    "href": "#tag/search/POST/public/api/v1/search/companies",
+    "hash": "#tag/search/POST/public/api/v1/search/companies",
+    "label": "Companies",
+    "method": "POST",
+    "endpointPath": "/public/api/v1/search/companies",
+    "tag": "search",
+    "url": "https://api.explee.com/public/api/docs#tag/search/POST/public/api/v1/search/companies"
+  },
+  {
+    "index": 34,
+    "href": "#tag/search/POST/public/api/v1/search/companies-by-domains",
+    "hash": "#tag/search/POST/public/api/v1/search/companies-by-domains",
+    "label": "Companies by Domains",
+    "method": "POST",
+    "endpointPath": "/public/api/v1/search/companies-by-domains",
+    "tag": "search",
+    "url": "https://api.explee.com/public/api/docs#tag/search/POST/public/api/v1/search/companies-by-domains"
+  },
+  {
+    "index": 35,
+    "href": "#tag/search/POST/public/api/v1/search/people",
+    "hash": "#tag/search/POST/public/api/v1/search/people",
+    "label": "People",
+    "method": "POST",
+    "endpointPath": "/public/api/v1/search/people",
+    "tag": "search",
+    "url": "https://api.explee.com/public/api/docs#tag/search/POST/public/api/v1/search/people"
+  },
+  {
+    "index": 36,
+    "href": "#tag/search/POST/public/api/v1/search/people-by-domains",
+    "hash": "#tag/search/POST/public/api/v1/search/people-by-domains",
+    "label": "People by Domains",
+    "method": "POST",
+    "endpointPath": "/public/api/v1/search/people-by-domains",
+    "tag": "search",
+    "url": "https://api.explee.com/public/api/docs#tag/search/POST/public/api/v1/search/people-by-domains"
+  },
+  {
+    "index": 37,
+    "href": "#tag/search/POST/public/api/v1/search/nl-to-filters",
+    "hash": "#tag/search/POST/public/api/v1/search/nl-to-filters",
+    "label": "NL to Filters",
+    "method": "POST",
+    "endpointPath": "/public/api/v1/search/nl-to-filters",
+    "tag": "search",
+    "url": "https://api.explee.com/public/api/docs#tag/search/POST/public/api/v1/search/nl-to-filters"
+  },
+  {
+    "index": 38,
+    "href": "#tag/contact",
+    "hash": "#tag/contact",
+    "label": "Contact",
+    "method": null,
+    "endpointPath": null,
+    "tag": "contact",
+    "url": "https://api.explee.com/public/api/docs#tag/contact"
+  },
+  {
+    "index": 39,
+    "href": "#tag/contact/POST/public/api/v1/enrich/email",
+    "hash": "#tag/contact/POST/public/api/v1/enrich/email",
+    "label": "Find email by name",
+    "method": "POST",
+    "endpointPath": "/public/api/v1/enrich/email",
+    "tag": "contact",
+    "url": "https://api.explee.com/public/api/docs#tag/contact/POST/public/api/v1/enrich/email"
+  },
+  {
+    "index": 40,
+    "href": "#tag/contact/POST/public/api/v1/enrich/phone",
+    "hash": "#tag/contact/POST/public/api/v1/enrich/phone",
+    "label": "Find phone by LinkedIn URL",
+    "method": "POST",
+    "endpointPath": "/public/api/v1/enrich/phone",
+    "tag": "contact",
+    "url": "https://api.explee.com/public/api/docs#tag/contact/POST/public/api/v1/enrich/phone"
+  },
+  {
+    "index": 41,
+    "href": "#tag/contact/POST/public/api/v1/enrich/email/batch",
+    "hash": "#tag/contact/POST/public/api/v1/enrich/email/batch",
+    "label": "Find email by name (batch request)",
+    "method": "POST",
+    "endpointPath": "/public/api/v1/enrich/email/batch",
+    "tag": "contact",
+    "url": "https://api.explee.com/public/api/docs#tag/contact/POST/public/api/v1/enrich/email/batch"
+  },
+  {
+    "index": 42,
+    "href": "#tag/contact/GET/public/api/v1/enrich/email/batch/{task_id}",
+    "hash": "#tag/contact/GET/public/api/v1/enrich/email/batch/{task_id}",
+    "label": "Find email by name (batch results)",
+    "method": "GET",
+    "endpointPath": "/public/api/v1/enrich/email/batch/{task_id}",
+    "tag": "contact",
+    "url": "https://api.explee.com/public/api/docs#tag/contact/GET/public/api/v1/enrich/email/batch/{task_id}"
+  },
+  {
+    "index": 43,
+    "href": "#tag/contact/POST/public/api/v1/find-and-enrich",
+    "hash": "#tag/contact/POST/public/api/v1/find-and-enrich",
+    "label": "Find people and enrich their emails (async)",
+    "method": "POST",
+    "endpointPath": "/public/api/v1/find-and-enrich",
+    "tag": "contact",
+    "url": "https://api.explee.com/public/api/docs#tag/contact/POST/public/api/v1/find-and-enrich"
+  },
+  {
+    "index": 44,
+    "href": "#tag/contact/GET/public/api/v1/find-and-enrich/{task_id}",
+    "hash": "#tag/contact/GET/public/api/v1/find-and-enrich/{task_id}",
+    "label": "Find-and-enrich job status and results",
+    "method": "GET",
+    "endpointPath": "/public/api/v1/find-and-enrich/{task_id}",
+    "tag": "contact",
+    "url": "https://api.explee.com/public/api/docs#tag/contact/GET/public/api/v1/find-and-enrich/{task_id}"
+  },
+  {
+    "index": 45,
+    "href": "#tag/agents",
+    "hash": "#tag/agents",
+    "label": "Agents",
+    "method": null,
+    "endpointPath": null,
+    "tag": "agents",
+    "url": "https://api.explee.com/public/api/docs#tag/agents"
+  },
+  {
+    "index": 46,
+    "href": "#tag/agents/GET/public/api/v1/agents",
+    "hash": "#tag/agents/GET/public/api/v1/agents",
+    "label": "List Explee agents",
+    "method": "GET",
+    "endpointPath": "/public/api/v1/agents",
+    "tag": "agents",
+    "url": "https://api.explee.com/public/api/docs#tag/agents/GET/public/api/v1/agents"
+  },
+  {
+    "index": 47,
+    "href": "#tag/agents/POST/public/api/v1/agents/{agent_id}/runs",
+    "hash": "#tag/agents/POST/public/api/v1/agents/{agent_id}/runs",
+    "label": "Run Explee agent",
+    "method": "POST",
+    "endpointPath": "/public/api/v1/agents/{agent_id}/runs",
+    "tag": "agents",
+    "url": "https://api.explee.com/public/api/docs#tag/agents/POST/public/api/v1/agents/{agent_id}/runs"
+  },
+  {
+    "index": 48,
+    "href": "#tag/agents/POST/public/api/v1/agents/runs",
+    "hash": "#tag/agents/POST/public/api/v1/agents/runs",
+    "label": "Run custom agent",
+    "method": "POST",
+    "endpointPath": "/public/api/v1/agents/runs",
+    "tag": "agents",
+    "url": "https://api.explee.com/public/api/docs#tag/agents/POST/public/api/v1/agents/runs"
+  },
+  {
+    "index": 49,
+    "href": "#tag/agents/GET/public/api/v1/agents/runs/{run_id}",
+    "hash": "#tag/agents/GET/public/api/v1/agents/runs/{run_id}",
+    "label": "Get agent run status",
+    "method": "GET",
+    "endpointPath": "/public/api/v1/agents/runs/{run_id}",
+    "tag": "agents",
+    "url": "https://api.explee.com/public/api/docs#tag/agents/GET/public/api/v1/agents/runs/{run_id}"
+  },
+  {
+    "index": 50,
+    "href": "#tag/tasks",
+    "hash": "#tag/tasks",
+    "label": "Tasks",
+    "method": null,
+    "endpointPath": null,
+    "tag": "tasks",
+    "url": "https://api.explee.com/public/api/docs#tag/tasks"
+  },
+  {
+    "index": 51,
+    "href": "#tag/tasks/GET/public/api/v1/tasks",
+    "hash": "#tag/tasks/GET/public/api/v1/tasks",
+    "label": "List async tasks",
+    "method": "GET",
+    "endpointPath": "/public/api/v1/tasks",
+    "tag": "tasks",
+    "url": "https://api.explee.com/public/api/docs#tag/tasks/GET/public/api/v1/tasks"
+  },
+  {
+    "index": 52,
+    "href": "#tag/billing",
+    "hash": "#tag/billing",
+    "label": "Billing",
+    "method": null,
+    "endpointPath": null,
+    "tag": "billing",
+    "url": "https://api.explee.com/public/api/docs#tag/billing"
+  },
+  {
+    "index": 53,
+    "href": "#tag/billing/GET/public/api/v1/billing/balance",
+    "hash": "#tag/billing/GET/public/api/v1/billing/balance",
+    "label": "Get balance",
+    "method": "GET",
+    "endpointPath": "/public/api/v1/billing/balance",
+    "tag": "billing",
+    "url": "https://api.explee.com/public/api/docs#tag/billing/GET/public/api/v1/billing/balance"
+  },
+  {
+    "index": 54,
+    "href": "#tag/feedback",
+    "hash": "#tag/feedback",
+    "label": "Feedback",
+    "method": null,
+    "endpointPath": null,
+    "tag": "feedback",
+    "url": "https://api.explee.com/public/api/docs#tag/feedback"
+  },
+  {
+    "index": 55,
+    "href": "#tag/feedback/POST/public/api/v1/feedback",
+    "hash": "#tag/feedback/POST/public/api/v1/feedback",
+    "label": "Send feedback",
+    "method": "POST",
+    "endpointPath": "/public/api/v1/feedback",
+    "tag": "feedback",
+    "url": "https://api.explee.com/public/api/docs#tag/feedback/POST/public/api/v1/feedback"
+  },
+  {
+    "index": 56,
+    "href": "#tag/deduplication",
+    "hash": "#tag/deduplication",
+    "label": "Deduplication",
+    "method": null,
+    "endpointPath": null,
+    "tag": "deduplication",
+    "url": "https://api.explee.com/public/api/docs#tag/deduplication"
+  },
+  {
+    "index": 57,
+    "href": "#tag/deduplication/GET/public/api/v1/dedup/people",
+    "hash": "#tag/deduplication/GET/public/api/v1/dedup/people",
+    "label": "People Lists",
+    "method": "GET",
+    "endpointPath": "/public/api/v1/dedup/people",
+    "tag": "deduplication",
+    "url": "https://api.explee.com/public/api/docs#tag/deduplication/GET/public/api/v1/dedup/people"
+  },
+  {
+    "index": 58,
+    "href": "#tag/deduplication/POST/public/api/v1/dedup/people",
+    "hash": "#tag/deduplication/POST/public/api/v1/dedup/people",
+    "label": "Create People List",
+    "method": "POST",
+    "endpointPath": "/public/api/v1/dedup/people",
+    "tag": "deduplication",
+    "url": "https://api.explee.com/public/api/docs#tag/deduplication/POST/public/api/v1/dedup/people"
+  },
+  {
+    "index": 59,
+    "href": "#tag/deduplication/GET/public/api/v1/dedup/people/{list_id}",
+    "hash": "#tag/deduplication/GET/public/api/v1/dedup/people/{list_id}",
+    "label": "Get People List",
+    "method": "GET",
+    "endpointPath": "/public/api/v1/dedup/people/{list_id}",
+    "tag": "deduplication",
+    "url": "https://api.explee.com/public/api/docs#tag/deduplication/GET/public/api/v1/dedup/people/{list_id}"
+  },
+  {
+    "index": 60,
+    "href": "#tag/deduplication/DELETE/public/api/v1/dedup/people/{list_id}",
+    "hash": "#tag/deduplication/DELETE/public/api/v1/dedup/people/{list_id}",
+    "label": "Delete People List",
+    "method": "DEL",
+    "endpointPath": "/public/api/v1/dedup/people/{list_id}",
+    "tag": "deduplication",
+    "url": "https://api.explee.com/public/api/docs#tag/deduplication/DELETE/public/api/v1/dedup/people/{list_id}"
+  },
+  {
+    "index": 61,
+    "href": "#tag/deduplication/GET/public/api/v1/dedup/companies",
+    "hash": "#tag/deduplication/GET/public/api/v1/dedup/companies",
+    "label": "Companies Lists",
+    "method": "GET",
+    "endpointPath": "/public/api/v1/dedup/companies",
+    "tag": "deduplication",
+    "url": "https://api.explee.com/public/api/docs#tag/deduplication/GET/public/api/v1/dedup/companies"
+  },
+  {
+    "index": 62,
+    "href": "#tag/deduplication/POST/public/api/v1/dedup/companies",
+    "hash": "#tag/deduplication/POST/public/api/v1/dedup/companies",
+    "label": "Create Companies List",
+    "method": "POST",
+    "endpointPath": "/public/api/v1/dedup/companies",
+    "tag": "deduplication",
+    "url": "https://api.explee.com/public/api/docs#tag/deduplication/POST/public/api/v1/dedup/companies"
+  },
+  {
+    "index": 63,
+    "href": "#tag/deduplication/GET/public/api/v1/dedup/companies/{list_id}",
+    "hash": "#tag/deduplication/GET/public/api/v1/dedup/companies/{list_id}",
+    "label": "Get Companies List",
+    "method": "GET",
+    "endpointPath": "/public/api/v1/dedup/companies/{list_id}",
+    "tag": "deduplication",
+    "url": "https://api.explee.com/public/api/docs#tag/deduplication/GET/public/api/v1/dedup/companies/{list_id}"
+  },
+  {
+    "index": 64,
+    "href": "#tag/deduplication/DELETE/public/api/v1/dedup/companies/{list_id}",
+    "hash": "#tag/deduplication/DELETE/public/api/v1/dedup/companies/{list_id}",
+    "label": "Delete Companies List",
+    "method": "DEL",
+    "endpointPath": "/public/api/v1/dedup/companies/{list_id}",
+    "tag": "deduplication",
+    "url": "https://api.explee.com/public/api/docs#tag/deduplication/DELETE/public/api/v1/dedup/companies/{list_id}"
+  }
+]

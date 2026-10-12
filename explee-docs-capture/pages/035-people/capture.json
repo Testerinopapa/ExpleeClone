@@ -1,0 +1,270 @@
+{
+  "routeIndex": 35,
+  "label": "People",
+  "url": "https://api.explee.com/public/api/docs#tag/search/POST/public/api/v1/search/people",
+  "hashRoute": "#tag/search/POST/public/api/v1/search/people",
+  "httpMethod": "POST",
+  "endpointPath": "/public/api/v1/search/people",
+  "tag": "search",
+  "capturedAt": "2026-09-29T03:02:20.821Z",
+  "documentTitle": "Explee Public API",
+  "pageHeading": "People",
+  "headings": [
+    {
+      "tag": "H3",
+      "text": "People",
+      "id": "scalar-refs-0-600",
+      "className": "section-header-label"
+    },
+    {
+      "tag": "H2",
+      "text": "How It Works",
+      "id": "api-1/tag/search/POST/public/api/v1/search/people/description/how-it-works",
+      "className": null
+    },
+    {
+      "tag": "H2",
+      "text": "AI Enrichment",
+      "id": "api-1/tag/search/POST/public/api/v1/search/people/description/ai-enrichment",
+      "className": null
+    },
+    {
+      "tag": "H2",
+      "text": "Pricing",
+      "id": "api-1/tag/search/POST/public/api/v1/search/people/description/pricing",
+      "className": null
+    },
+    {
+      "tag": "H2",
+      "text": "Deduplication",
+      "id": "api-1/tag/search/POST/public/api/v1/search/people/description/deduplication",
+      "className": null
+    },
+    {
+      "tag": "H4",
+      "text": "Body·SearchPeoplePayload",
+      "id": null,
+      "className": "section-header-label request-body-title flex!"
+    },
+    {
+      "tag": "H4",
+      "text": "Responses",
+      "id": null,
+      "className": "section-header-label section-header-label--rule block! border-b pb-3 text-c-1 responses-title--tree mt-3 mb-0 block! leading-[1.45] font-medium"
+    }
+  ],
+  "paragraphs": [
+    "Search for people (employees) at companies matching your criteria. How It Works Provide job_titles in people_filters to find people by their role. Use company_filters.definition to narrow down which companies to search. Use company_linkedin_ids to restrict results to a specific list of company LinkedIn IDs. Job title examples: [\"Head of Sales\", \"VP Sales\"] [\"CTO\", \"VP Engineering\"] [\"Founder\", \"CEO\"] AI Enrichment Use the criteria parameter in people_filters to score people against custom criteria. Each person will be evaluated and scored (0-5) with reasoning for each criterion. Pricing First 10 results are free (including AI enrichment) A positive credit balance is required for every request, free results included (an organization at 0 credits gets a 402) Entirely-free requests are limited per organization by plan: free 50/day + 10/min · starter 200/day + 15/min · growth 500/day + 20/min · pro 750/day + 25/min · agency 1500/day + 30/min · enterprise 3000/day + 30/min (429 beyond); billable requests are not affected 1.0 credit per person after the first 10 +0.1 credits per person per criterion after the first 10 Example: 150 people with 2 criteria = 50 billable × (1.0 + 0.1 × 2) = 60 credits (first 10 are free) Empty results = 0 credits. Deduplication Pass dedup list ids in exclude_lists to skip people you already own — they are not returned and not charged. Free results zone does not apply. See the Deduplication endpoints.",
+    "Search for people (employees) at companies matching your criteria.",
+    "Provide job_titles in people_filters to find people by their role. Use company_filters.definition to narrow down which companies to search. Use company_linkedin_ids to restrict results to a specific list of company LinkedIn IDs.",
+    "Job title examples:",
+    "Use the criteria parameter in people_filters to score people against custom criteria. Each person will be evaluated and scored (0-5) with reasoning for each criterion.",
+    "Example: 150 people with 2 criteria = 50 billable × (1.0 + 0.1 × 2) = 60 credits (first 10 are free)",
+    "Empty results = 0 credits.",
+    "Pass dedup list ids in exclude_lists to skip people you already own — they are not returned and not charged. Free results zone does not apply. See the Deduplication endpoints.",
+    "Request payload for people search.",
+    "Request payload for people search."
+  ],
+  "parameters": [
+    {
+      "name": "company_filters",
+      "type": "PublicCompaniesFilters",
+      "required": true,
+      "description": "Company filters to narrow down which companies to search people from. Use definition for semantic company search."
+    },
+    {
+      "name": "definition",
+      "type": null,
+      "required": false,
+      "description": null
+    },
+    {
+      "name": "people_filters",
+      "type": "PublicPeopleFilters",
+      "required": true,
+      "description": "People filters: job_titles, geo, criteria for AI enrichment (+0.1 credits per person per criterion)."
+    },
+    {
+      "name": "company_linkedin_ids",
+      "type": "array of integer",
+      "required": false,
+      "description": "Optional list of company LinkedIn IDs to restrict the search to these companies."
+    },
+    {
+      "name": "exclude_lists",
+      "type": "array of string",
+      "required": false,
+      "description": "Ids of your dedup lists (see Deduplication endpoints). Results already present in these lists are excluded and never charged. When set, the free results zone does not apply. Max 100 lists / 500000 values combined per request."
+    },
+    {
+      "name": "page",
+      "type": "integer",
+      "required": false,
+      "description": "Page number, starting from 1."
+    },
+    {
+      "name": "page_size",
+      "type": "integer",
+      "required": false,
+      "description": "Number of people per page. Default: 100, max: 1000."
+    },
+    {
+      "name": "200",
+      "type": "application/json",
+      "required": false,
+      "description": "Successful Response"
+    },
+    {
+      "name": "401",
+      "type": "application/json",
+      "required": false,
+      "description": "Invalid or missing API key. Include X-API-Key header."
+    },
+    {
+      "name": "X-API-Key",
+      "type": null,
+      "required": false,
+      "description": null
+    },
+    {
+      "name": "402",
+      "type": "application/json",
+      "required": false,
+      "description": "Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account."
+    },
+    {
+      "name": "422",
+      "type": "application/json",
+      "required": false,
+      "description": "Validation error. Check request body and parameters."
+    },
+    {
+      "name": "429",
+      "type": "application/json",
+      "required": false,
+      "description": "Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan)."
+    },
+    {
+      "name": "500",
+      "type": "application/json",
+      "required": false,
+      "description": "Internal server error. Contact support if persists."
+    },
+    {
+      "name": "504",
+      "type": "application/json",
+      "required": false,
+      "description": "Request timeout. Please try again later."
+    }
+  ],
+  "responses": [],
+  "codeBlocksCount": 10,
+  "codeBlocksSample": [
+    {
+      "text": "job_titles",
+      "className": null
+    },
+    {
+      "text": "people_filters",
+      "className": null
+    },
+    {
+      "text": "company_filters.definition",
+      "className": null
+    }
+  ],
+  "tabs": [
+    {
+      "text": "Status: 200",
+      "active": true
+    },
+    {
+      "text": "Status: 401",
+      "active": false
+    },
+    {
+      "text": "Status: 402",
+      "active": false
+    },
+    {
+      "text": "Status: 422",
+      "active": false
+    },
+    {
+      "text": "Status: 429",
+      "active": false
+    },
+    {
+      "text": "Status: 500",
+      "active": false
+    },
+    {
+      "text": "Status: 504",
+      "active": false
+    }
+  ],
+  "buttonsCount": 43,
+  "buttonsSample": [
+    "Copy link",
+    "Auth Required",
+    "Copy as Markdown",
+    "Example",
+    "{\"definition\":\"B2B SaaS company\"}",
+    "Copy link to company_filters",
+    "Example",
+    "{\"criteria\":[\"Has lead gen experience\"],\"geo\":[\"US\",\"GB\"],\"job_titles\":[\"Head of Sales\",\"VP Sales\"]}"
+  ],
+  "svgCount": 15,
+  "svgsSample": [
+    {
+      "className": "size-4.5",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-3",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-full",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": null,
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "scalar-icon size-3 group-hover:text-c-1 text-c-3 ml-auto min-h-3 min-w-3",
+      "viewBox": "0 0 24 24",
+      "width": 0,
+      "height": 0
+    }
+  ],
+  "visual": {
+    "geometry": {
+      "x": 348,
+      "y": 0,
+      "width": 1032,
+      "height": 2219
+    },
+    "typography": {
+      "fontFamily": "Inter, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "24px",
+      "fontWeight": "600",
+      "lineHeight": "34.8px",
+      "color": "rgb(27, 27, 27)"
+    },
+    "styling": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgba(0, 0, 0, 0.1)",
+      "borderRadius": "0px"
+    }
+  }
+}

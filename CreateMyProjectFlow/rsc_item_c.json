@@ -1,0 +1,28 @@
+[
+  [
+    "$",
+    "meta",
+    "0",
+    {
+      "charSet": "utf-8"
+    }
+  ],
+  [
+    "$",
+    "meta",
+    "1",
+    {
+      "name": "viewport",
+      "content": "width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content"
+    }
+  ],
+  [
+    "$",
+    "meta",
+    "2",
+    {
+      "name": "theme-color",
+      "content": "#0f0f13"
+    }
+  ]
+]

@@ -1,0 +1,66 @@
+{
+  "routeIndex": 2,
+  "label": "AutoGTM",
+  "url": "https://api.explee.com/public/api/docs#tag/autogtm",
+  "hashRoute": "#tag/autogtm",
+  "httpMethod": null,
+  "endpointPath": null,
+  "tag": "autogtm",
+  "capturedAt": "2026-09-29T00:42:37.431Z",
+  "documentTitle": "Explee Public API",
+  "pageHeading": "AutoGTM (Collapsed)",
+  "headings": [
+    {
+      "tag": "H2",
+      "text": "AutoGTM (Collapsed)",
+      "id": "scalar-refs-0-16",
+      "className": "section-header-label"
+    }
+  ],
+  "paragraphs": [
+    "Manage your AutoGTM outreach campaigns programmatically with the same X-API-Key: list campaigns, read and answer the inbox, set the project budget, start/stop campaigns, and pull per-campaign analytics — everything you need to build your own autopilot on top."
+  ],
+  "parameters": [],
+  "responses": [],
+  "codeBlocksCount": 1,
+  "codeBlocksSample": [
+    {
+      "text": "X-API-Key",
+      "className": null
+    }
+  ],
+  "tabs": [],
+  "buttonsCount": 1,
+  "buttonsSample": [
+    "Copy link"
+  ],
+  "svgCount": 1,
+  "svgsSample": [
+    {
+      "className": "size-4.5",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    }
+  ],
+  "visual": {
+    "geometry": {
+      "x": 348,
+      "y": 0,
+      "width": 1032,
+      "height": 865
+    },
+    "typography": {
+      "fontFamily": "Inter, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "24px",
+      "fontWeight": "600",
+      "lineHeight": "34.8px",
+      "color": "rgb(27, 27, 27)"
+    },
+    "styling": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgba(0, 0, 0, 0.1)",
+      "borderRadius": "0px"
+    }
+  }
+}

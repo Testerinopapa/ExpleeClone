@@ -1,0 +1,228 @@
+{
+  "routeIndex": 48,
+  "label": "Run custom agent",
+  "url": "https://api.explee.com/public/api/docs#tag/agents/POST/public/api/v1/agents/runs",
+  "hashRoute": "#tag/agents/POST/public/api/v1/agents/runs",
+  "httpMethod": "POST",
+  "endpointPath": "/public/api/v1/agents/runs",
+  "tag": "agents",
+  "capturedAt": "2026-09-29T03:03:06.653Z",
+  "documentTitle": "Explee Public API",
+  "pageHeading": "Run custom agent",
+  "headings": [
+    {
+      "tag": "H3",
+      "text": "Run custom agent",
+      "id": "scalar-refs-0-1543",
+      "className": "section-header-label"
+    },
+    {
+      "tag": "H4",
+      "text": "Body·StartAgentRunPayload",
+      "id": null,
+      "className": "section-header-label request-body-title flex!"
+    },
+    {
+      "tag": "H4",
+      "text": "Responses",
+      "id": null,
+      "className": "section-header-label section-header-label--rule block! border-b pb-3 text-c-1 responses-title--tree mt-3 mb-0 block! leading-[1.45] font-medium"
+    }
+  ],
+  "paragraphs": [
+    "Run a fully custom agent — you provide the system prompt, input/output schemas, and input data. Use this when Explee's pre-built agents don't fit your use case. The agent will execute asynchronously; poll GET /agents/runs/{job_id} for results. Cost: 1 credit per run.",
+    "Run a fully custom agent — you provide the system prompt, input/output schemas, and input data.",
+    "Use this when Explee's pre-built agents don't fit your use case. The agent will execute asynchronously; poll GET /agents/runs/{job_id} for results.",
+    "Cost: 1 credit per run.",
+    "input_dataType: Input DatarequiredExample{\"domain\":\"stripe.com\"}Copy link to input_datainput_schemaType: Input SchemarequiredExample{\"properties\":{\"domain\":{\"type\":\"string\"}},\"required\":[\"domain\"],\"type\":\"object\"}Copy link to input_schemaoutput_schemaType: Output SchemarequiredExample{\"properties\":{\"name\":{\"type\":\"string\"}},\"required\":[\"name\"],\"type\":\"object\"}Copy link to output_schemasystem_promptType: stringrequiredExampleFind the CEO, founders, and directors of the company by domain.Copy link to system_prompt",
+    "Successful Response",
+    "Successful Response",
+    "Invalid or missing API key. Include X-API-Key header.",
+    "Invalid or missing API key. Include X-API-Key header.",
+    "Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account."
+  ],
+  "parameters": [
+    {
+      "name": "input_data",
+      "type": "Input Data",
+      "required": true,
+      "description": null
+    },
+    {
+      "name": "input_schema",
+      "type": "Input Schema",
+      "required": true,
+      "description": null
+    },
+    {
+      "name": "output_schema",
+      "type": "Output Schema",
+      "required": true,
+      "description": null
+    },
+    {
+      "name": "system_prompt",
+      "type": "string",
+      "required": true,
+      "description": null
+    },
+    {
+      "name": "200",
+      "type": "application/json",
+      "required": false,
+      "description": "Successful Response"
+    },
+    {
+      "name": "401",
+      "type": "application/json",
+      "required": false,
+      "description": "Invalid or missing API key. Include X-API-Key header."
+    },
+    {
+      "name": "X-API-Key",
+      "type": null,
+      "required": false,
+      "description": null
+    },
+    {
+      "name": "402",
+      "type": "application/json",
+      "required": false,
+      "description": "Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account."
+    },
+    {
+      "name": "422",
+      "type": "application/json",
+      "required": false,
+      "description": "Validation error. Check request body and parameters."
+    },
+    {
+      "name": "429",
+      "type": "application/json",
+      "required": false,
+      "description": "Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan)."
+    },
+    {
+      "name": "500",
+      "type": "application/json",
+      "required": false,
+      "description": "Internal server error. Contact support if persists."
+    },
+    {
+      "name": "504",
+      "type": "application/json",
+      "required": false,
+      "description": "Request timeout. Please try again later."
+    }
+  ],
+  "responses": [],
+  "codeBlocksCount": 6,
+  "codeBlocksSample": [
+    {
+      "text": "GET /agents/runs/{job_id}",
+      "className": null
+    },
+    {
+      "text": "X-API-Key",
+      "className": null
+    },
+    {
+      "text": "curl /public/api/v1/agents/runs \\\n  --request POST \\\n  --header 'Content-Type: application/json' \\\n  --data '{\n  \"system_prompt\": \"Find the CEO, founders, and directors of the company by domain.\",\n  \"input_schema\": {\n    \"properties\": {\n      \"domain\": {\n        \"type\": \"string\"\n      }\n    },\n    \"required\": [\n      \"domain\"\n    ],\n    \"type\": \"object\"\n  },\n  \"output_schema\": {\n    \"properties\": {\n      \"name\": {\n        \"type\": \"string\"\n      }\n    },\n    \"required\": [\n      \"name\"\n    ],\n    \"type\": \"object\"\n  },\n  \"input_data\": {\n    \"domain\": \"stripe.com\"\n  }\n}'\n",
+      "className": "m-0 bg-transparent text-nowrap whitespace-pre w-fit"
+    }
+  ],
+  "tabs": [
+    {
+      "text": "Status: 200",
+      "active": true
+    },
+    {
+      "text": "Status: 401",
+      "active": false
+    },
+    {
+      "text": "Status: 402",
+      "active": false
+    },
+    {
+      "text": "Status: 422",
+      "active": false
+    },
+    {
+      "text": "Status: 429",
+      "active": false
+    },
+    {
+      "text": "Status: 500",
+      "active": false
+    },
+    {
+      "text": "Status: 504",
+      "active": false
+    }
+  ],
+  "buttonsCount": 33,
+  "buttonsSample": [
+    "Copy link",
+    "Auth Required",
+    "Copy as Markdown",
+    "Example",
+    "{\"domain\":\"stripe.com\"}",
+    "Copy link to input_data",
+    "Example",
+    "{\"properties\":{\"domain\":{\"type\":\"string\"}},\"required\":[\"domain\"],\"type\":\"object\"}"
+  ],
+  "svgCount": 15,
+  "svgsSample": [
+    {
+      "className": "size-4.5",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-3",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-full",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "scalar-icon size-3 group-hover:text-c-1 text-c-3 ml-auto min-h-3 min-w-3",
+      "viewBox": "0 0 24 24",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "className": "size-3.5",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    }
+  ],
+  "visual": {
+    "geometry": {
+      "x": 348,
+      "y": 0,
+      "width": 1032,
+      "height": 933
+    },
+    "typography": {
+      "fontFamily": "Inter, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "24px",
+      "fontWeight": "600",
+      "lineHeight": "34.8px",
+      "color": "rgb(27, 27, 27)"
+    },
+    "styling": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgba(0, 0, 0, 0.1)",
+      "borderRadius": "0px"
+    }
+  }
+}

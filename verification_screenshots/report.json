@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-09-29T06:26:40Z",
+  "totalRoutes": 1,
+  "averageSimilarity": 94.22,
+  "elapsedSeconds": 81.3,
+  "results": [
+    {
+      "index": 35,
+      "folder": "035-people",
+      "label": "People",
+      "tag": "search",
+      "hash": "#tag/search/POST/public/api/v1/search/people",
+      "ref_dimensions": [
+        1440,
+        2279
+      ],
+      "similarity": 94.22,
+      "composite_path": "verification_screenshots\\compare_035-people_side_by_side.png"
+    }
+  ]
+}

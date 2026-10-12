@@ -1,0 +1,138 @@
+{
+  "generatedAt": "2026-09-29T03:48:35.153Z",
+  "routesSampled": 33,
+  "typography": {
+    "fontFamilies": [
+      "Inter, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "\"JetBrains Mono\", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace"
+    ],
+    "fontSizes": [
+      "16px",
+      "14px",
+      "12px",
+      "10px",
+      "13px",
+      "24px",
+      "20px"
+    ],
+    "fontWeights": [
+      "400",
+      "500",
+      "600"
+    ],
+    "lineHeights": [
+      "18.4px",
+      "16px",
+      "14px",
+      "12px",
+      "14.95px",
+      "34.8px",
+      "26px",
+      "24px",
+      "20px",
+      "normal",
+      "22.75px",
+      "20.16px",
+      "16.1px",
+      "19.5px",
+      "22px",
+      "21.7px",
+      "23px",
+      "13.8px",
+      "21.125px",
+      "19.6px",
+      "23.2px",
+      "21px"
+    ],
+    "colors": [
+      "rgb(27, 27, 27)",
+      "rgb(142, 142, 142)",
+      "rgb(117, 117, 117)",
+      "rgb(10, 82, 175)",
+      "rgb(255, 170, 1)",
+      "rgb(0, 148, 133)",
+      "rgb(213, 43, 42)",
+      "rgba(255, 255, 255, 0.9)",
+      "rgb(120, 191, 253)",
+      "rgba(255, 255, 255, 0.62)",
+      "rgb(210, 168, 255)",
+      "rgb(40, 42, 53)",
+      "rgb(0, 0, 0)",
+      "rgb(149, 56, 0)",
+      "rgb(255, 166, 86)",
+      "rgb(130, 81, 223)",
+      "rgb(0, 204, 184)",
+      "rgb(229, 105, 91)"
+    ]
+  },
+  "colors": {
+    "backgroundColors": [
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0.1)",
+      "rgb(252, 252, 252)",
+      "rgb(27, 27, 27)",
+      "rgb(40, 42, 53)",
+      "rgb(48, 50, 61)",
+      "rgb(246, 246, 246)",
+      "rgb(248, 248, 248)",
+      "color(srgb 0.988235 0.988235 0.988235 / 0.5)",
+      "rgb(236, 248, 246)"
+    ],
+    "borderColors": [
+      "rgba(0, 0, 0, 0.1)",
+      "rgb(27, 27, 27)",
+      "rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgb(27, 27, 27)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(255, 255, 255, 0.1)",
+      "rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgb(27, 27, 27)",
+      "rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0.1) rgb(27, 27, 27) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0.1) rgb(27, 27, 27) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1)",
+      "rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgb(27, 27, 27) rgb(27, 27, 27)",
+      "rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgb(142, 142, 142)"
+    ]
+  },
+  "bordersAndRadii": [
+    "3px",
+    "8px",
+    "29997px",
+    "50%",
+    "6px",
+    "12px",
+    "8px 8px 0px 0px",
+    "0px 0px 3px 3px",
+    "0px 0px 6px 6px",
+    "0px 0px 8px 8px",
+    "16px",
+    "999px",
+    "9999px",
+    "3px 0px 0px",
+    "0px 3px 0px 0px"
+  ],
+  "shadows": [
+    "rgb(27, 27, 27) 0px 0px 0px 1px inset",
+    "rgba(0, 0, 0, 0.1) 0px 0px 0px 0.5px",
+    "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 0px 0px 0.5px inset",
+    "rgba(0, 0, 0, 0.1) 0px 0px 0px 1px inset",
+    "rgba(0, 0, 0, 0.1) 0px 0px 0px 0.5px inset"
+  ],
+  "dimensions": {
+    "buttonHeights": [
+      1,
+      15,
+      18,
+      22,
+      24,
+      26,
+      32,
+      33,
+      34,
+      36,
+      37
+    ],
+    "sidebarWidths": [
+      1440
+    ]
+  }
+}

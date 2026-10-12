@@ -1,0 +1,59 @@
+{
+  "routeIndex": 56,
+  "label": "Deduplication",
+  "url": "https://api.explee.com/public/api/docs#tag/deduplication",
+  "hashRoute": "#tag/deduplication",
+  "httpMethod": null,
+  "endpointPath": null,
+  "tag": "deduplication",
+  "capturedAt": "2026-09-29T03:03:26.855Z",
+  "documentTitle": "Explee Public API",
+  "pageHeading": "Deduplication (Collapsed)",
+  "headings": [
+    {
+      "tag": "H2",
+      "text": "Deduplication (Collapsed)",
+      "id": "scalar-refs-0-37",
+      "className": "section-header-label"
+    }
+  ],
+  "paragraphs": [],
+  "parameters": [],
+  "responses": [],
+  "codeBlocksCount": 0,
+  "codeBlocksSample": [],
+  "tabs": [],
+  "buttonsCount": 1,
+  "buttonsSample": [
+    "Copy link"
+  ],
+  "svgCount": 1,
+  "svgsSample": [
+    {
+      "className": "size-4.5",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    }
+  ],
+  "visual": {
+    "geometry": {
+      "x": 348,
+      "y": 508,
+      "width": 1032,
+      "height": 459
+    },
+    "typography": {
+      "fontFamily": "Inter, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "24px",
+      "fontWeight": "600",
+      "lineHeight": "34.8px",
+      "color": "rgb(27, 27, 27)"
+    },
+    "styling": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgba(0, 0, 0, 0.1)",
+      "borderRadius": "0px"
+    }
+  }
+}

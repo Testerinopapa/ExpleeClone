@@ -1,0 +1,61 @@
+{
+  "routeIndex": 52,
+  "label": "Billing",
+  "url": "https://api.explee.com/public/api/docs#tag/billing",
+  "hashRoute": "#tag/billing",
+  "httpMethod": null,
+  "endpointPath": null,
+  "tag": "billing",
+  "capturedAt": "2026-09-29T03:03:16.774Z",
+  "documentTitle": "Explee Public API",
+  "pageHeading": "Billing (Collapsed)",
+  "headings": [
+    {
+      "tag": "H2",
+      "text": "Billing (Collapsed)",
+      "id": "scalar-refs-0-31",
+      "className": "section-header-label"
+    }
+  ],
+  "paragraphs": [
+    "Check how many credits your organization has left, so your agent can see when it is running low. Credits are priced at 1 credit = $0.01; add more on your billing page at https://explee.com/app-auto-gtm/billing."
+  ],
+  "parameters": [],
+  "responses": [],
+  "codeBlocksCount": 0,
+  "codeBlocksSample": [],
+  "tabs": [],
+  "buttonsCount": 1,
+  "buttonsSample": [
+    "Copy link"
+  ],
+  "svgCount": 1,
+  "svgsSample": [
+    {
+      "className": "size-4.5",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    }
+  ],
+  "visual": {
+    "geometry": {
+      "x": 348,
+      "y": 0,
+      "width": 1032,
+      "height": 331
+    },
+    "typography": {
+      "fontFamily": "Inter, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "24px",
+      "fontWeight": "600",
+      "lineHeight": "34.8px",
+      "color": "rgb(27, 27, 27)"
+    },
+    "styling": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgba(0, 0, 0, 0.1)",
+      "borderRadius": "0px"
+    }
+  }
+}

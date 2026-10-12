@@ -1,0 +1,231 @@
+[
+  [
+    "$",
+    "title",
+    "0",
+    {
+      "children": "Explee — 24/7 AI-agent, that finds clients while you sleep"
+    }
+  ],
+  [
+    "$",
+    "meta",
+    "1",
+    {
+      "name": "description",
+      "content": "Enter your domain and let AI find ideal customers, write personalized emails, and handle follow-ups. Powered by 105M+ companies and 536M+ people profiles."
+    }
+  ],
+  [
+    "$",
+    "meta",
+    "2",
+    {
+      "name": "keywords",
+      "content": "outreach automation, AI sales agent, lead generation, cold email, ICP segmentation, B2B prospecting"
+    }
+  ],
+  [
+    "$",
+    "meta",
+    "3",
+    {
+      "name": "robots",
+      "content": "index"
+    }
+  ],
+  [
+    "$",
+    "meta",
+    "4",
+    {
+      "property": "og:title",
+      "content": "Explee — Your 24/7 Outreach Agent"
+    }
+  ],
+  [
+    "$",
+    "meta",
+    "5",
+    {
+      "property": "og:description",
+      "content": "AI finds your ideal customers, writes personalized emails, and handles follow-ups."
+    }
+  ],
+  [
+    "$",
+    "meta",
+    "6",
+    {
+      "property": "og:url",
+      "content": "https://explee.com"
+    }
+  ],
+  [
+    "$",
+    "meta",
+    "7",
+    {
+      "property": "og:site_name",
+      "content": "Explee"
+    }
+  ],
+  [
+    "$",
+    "meta",
+    "8",
+    {
+      "property": "og:image",
+      "content": "https://explee.com/static/og/explee.png"
+    }
+  ],
+  [
+    "$",
+    "meta",
+    "9",
+    {
+      "property": "og:image:width",
+      "content": "1200"
+    }
+  ],
+  [
+    "$",
+    "meta",
+    "10",
+    {
+      "property": "og:image:height",
+      "content": "630"
+    }
+  ],
+  [
+    "$",
+    "meta",
+    "11",
+    {
+      "property": "og:image:alt",
+      "content": "Explee"
+    }
+  ],
+  [
+    "$",
+    "meta",
+    "12",
+    {
+      "property": "og:type",
+      "content": "website"
+    }
+  ],
+  [
+    "$",
+    "meta",
+    "13",
+    {
+      "name": "twitter:card",
+      "content": "summary_large_image"
+    }
+  ],
+  [
+    "$",
+    "meta",
+    "14",
+    {
+      "name": "twitter:title",
+      "content": "Explee — Your 24/7 Outreach Agent"
+    }
+  ],
+  [
+    "$",
+    "meta",
+    "15",
+    {
+      "name": "twitter:description",
+      "content": "AI finds your ideal customers, writes personalized emails, and handles follow-ups."
+    }
+  ],
+  [
+    "$",
+    "meta",
+    "16",
+    {
+      "name": "twitter:image",
+      "content": "https://explee.com/static/og/explee.png"
+    }
+  ],
+  [
+    "$",
+    "meta",
+    "17",
+    {
+      "name": "twitter:image:alt",
+      "content": "Explee"
+    }
+  ],
+  [
+    "$",
+    "meta",
+    "18",
+    {
+      "name": "twitter:image:width",
+      "content": "1200"
+    }
+  ],
+  [
+    "$",
+    "meta",
+    "19",
+    {
+      "name": "twitter:image:height",
+      "content": "630"
+    }
+  ],
+  [
+    "$",
+    "link",
+    "20",
+    {
+      "rel": "icon",
+      "href": "/static/logo/explee/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ],
+  [
+    "$",
+    "link",
+    "21",
+    {
+      "rel": "icon",
+      "href": "/static/logo/explee/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ],
+  [
+    "$",
+    "link",
+    "22",
+    {
+      "rel": "icon",
+      "href": "/static/logo/explee/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+  ],
+  [
+    "$",
+    "link",
+    "23",
+    {
+      "rel": "apple-touch-icon",
+      "href": "/static/logo/explee/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  [
+    "$",
+    "$L1c",
+    "24",
+    {}
+  ]
+]

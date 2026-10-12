@@ -1,0 +1,200 @@
+{
+  "routeIndex": 55,
+  "label": "Send feedback",
+  "url": "https://api.explee.com/public/api/docs#tag/feedback/POST/public/api/v1/feedback",
+  "hashRoute": "#tag/feedback/POST/public/api/v1/feedback",
+  "httpMethod": "POST",
+  "endpointPath": "/public/api/v1/feedback",
+  "tag": "feedback",
+  "capturedAt": "2026-09-29T03:03:24.404Z",
+  "documentTitle": "Explee Public API",
+  "pageHeading": "Send feedback",
+  "headings": [
+    {
+      "tag": "H3",
+      "text": "Send feedback",
+      "id": "scalar-refs-0-1894",
+      "className": "section-header-label"
+    },
+    {
+      "tag": "H4",
+      "text": "Body·FeedbackPayload",
+      "id": null,
+      "className": "section-header-label request-body-title flex!"
+    },
+    {
+      "tag": "H4",
+      "text": "Responses",
+      "id": null,
+      "className": "section-header-label section-header-label--rule block! border-b pb-3 text-c-1 responses-title--tree mt-3 mb-0 block! leading-[1.45] font-medium"
+    }
+  ],
+  "paragraphs": [
+    "Send us freeform feedback about the API: request a feature, report a problem, tell us data is missing or wrong — anything, in your own words. The message lands directly with the Explee team. We read everything, though we don't guarantee an individual reply. No credits are charged.",
+    "Send us freeform feedback about the API: request a feature, report a problem, tell us data is missing or wrong — anything, in your own words.",
+    "The message lands directly with the Explee team. We read everything, though we don't guarantee an individual reply. No credits are charged.",
+    "messageType: stringmin length: 1max length: 10000requiredCopy link to message Freeform feedback: a feature request, a problem report, missing data, anything. Up to 10,000 characters.",
+    "Freeform feedback: a feature request, a problem report, missing data, anything. Up to 10,000 characters.",
+    "Freeform feedback: a feature request, a problem report, missing data, anything. Up to 10,000 characters.",
+    "Successful Response",
+    "Successful Response",
+    "Invalid or missing API key. Include X-API-Key header.",
+    "Invalid or missing API key. Include X-API-Key header."
+  ],
+  "parameters": [
+    {
+      "name": "message",
+      "type": "string",
+      "required": true,
+      "description": "Freeform feedback: a feature request, a problem report, missing data, anything. Up to 10,000 characters."
+    },
+    {
+      "name": "200",
+      "type": "application/json",
+      "required": false,
+      "description": "Successful Response"
+    },
+    {
+      "name": "401",
+      "type": "application/json",
+      "required": false,
+      "description": "Invalid or missing API key. Include X-API-Key header."
+    },
+    {
+      "name": "X-API-Key",
+      "type": null,
+      "required": false,
+      "description": null
+    },
+    {
+      "name": "422",
+      "type": "application/json",
+      "required": false,
+      "description": "Validation error. Check request body and parameters."
+    },
+    {
+      "name": "429",
+      "type": "application/json",
+      "required": false,
+      "description": "Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan)."
+    },
+    {
+      "name": "500",
+      "type": "application/json",
+      "required": false,
+      "description": "Internal server error. Contact support if persists."
+    },
+    {
+      "name": "504",
+      "type": "application/json",
+      "required": false,
+      "description": "Request timeout. Please try again later."
+    }
+  ],
+  "responses": [],
+  "codeBlocksCount": 5,
+  "codeBlocksSample": [
+    {
+      "text": "X-API-Key",
+      "className": null
+    },
+    {
+      "text": "curl /public/api/v1/feedback \\\n  --request POST \\\n  --header 'Content-Type: application/json' \\\n  --data '{\n  \"message\": \"\"\n}'\n",
+      "className": "m-0 bg-transparent text-nowrap whitespace-pre w-fit"
+    },
+    {
+      "text": "curl /public/api/v1/feedback \\\n  --request POST \\\n  --header 'Content-Type: application/json' \\\n  --data '{\n  \"message\": \"\"\n}'\n",
+      "className": "hljs language-curl"
+    }
+  ],
+  "tabs": [
+    {
+      "text": "Status: 200",
+      "active": true
+    },
+    {
+      "text": "Status: 401",
+      "active": false
+    },
+    {
+      "text": "Status: 422",
+      "active": false
+    },
+    {
+      "text": "Status: 429",
+      "active": false
+    },
+    {
+      "text": "Status: 500",
+      "active": false
+    },
+    {
+      "text": "Status: 504",
+      "active": false
+    }
+  ],
+  "buttonsCount": 20,
+  "buttonsSample": [
+    "Copy link",
+    "Auth Required",
+    "Copy as Markdown",
+    "Copy link to message",
+    "200\nSuccessful Response",
+    "401\nInvalid or missing API key. Include X-API-Key header.",
+    "422\nValidation error. Check request body and parameters.",
+    "429\nRate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan)."
+  ],
+  "svgCount": 15,
+  "svgsSample": [
+    {
+      "className": "size-4.5",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-3",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-full",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-3.5",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": null,
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    }
+  ],
+  "visual": {
+    "geometry": {
+      "x": 348,
+      "y": 0,
+      "width": 1032,
+      "height": 833
+    },
+    "typography": {
+      "fontFamily": "Inter, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "24px",
+      "fontWeight": "600",
+      "lineHeight": "34.8px",
+      "color": "rgb(27, 27, 27)"
+    },
+    "styling": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgba(0, 0, 0, 0.1)",
+      "borderRadius": "0px"
+    }
+  }
+}

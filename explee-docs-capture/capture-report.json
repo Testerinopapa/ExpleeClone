@@ -1,0 +1,13 @@
+{
+  "startedAt": "2026-09-29T03:02:08.737Z",
+  "routesDiscovered": 64,
+  "routesTargeted": 33,
+  "routesCaptured": 33,
+  "screenshotSuccesses": 33,
+  "screenshotFailures": 0,
+  "jsonCaptureFailures": 0,
+  "errors": [],
+  "elapsedMs": 121126,
+  "elapsedFormatted": "121.1s",
+  "completedAt": "2026-09-29T03:03:51.811Z"
+}

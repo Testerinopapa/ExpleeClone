@@ -1,0 +1,166 @@
+{
+  "routeIndex": 51,
+  "label": "List async tasks",
+  "url": "https://api.explee.com/public/api/docs#tag/tasks/GET/public/api/v1/tasks",
+  "hashRoute": "#tag/tasks/GET/public/api/v1/tasks",
+  "httpMethod": "GET",
+  "endpointPath": "/public/api/v1/tasks",
+  "tag": "tasks",
+  "capturedAt": "2026-09-29T03:03:14.088Z",
+  "documentTitle": "Explee Public API",
+  "pageHeading": "List async tasks",
+  "headings": [
+    {
+      "tag": "H3",
+      "text": "List async tasks",
+      "id": "scalar-refs-0-1705",
+      "className": "section-header-label"
+    },
+    {
+      "tag": "H4",
+      "text": "Query Parameters",
+      "id": "scalar-refs-0-1708",
+      "className": "section-header-label section-header-label--rule block! border-b pb-3 text-c-1 parameter-list-title--tree mt-3 mb-1.5 block! text-lg leading-[1.45] font-medium"
+    },
+    {
+      "tag": "H4",
+      "text": "Responses",
+      "id": null,
+      "className": "section-header-label section-header-label--rule block! border-b pb-3 text-c-1 responses-title--tree mt-3 mb-0 block! leading-[1.45] font-medium"
+    }
+  ],
+  "paragraphs": [
+    "List all async tasks for your organization, including find-and-enrich jobs, batch email enrichments, and campaign lead imports. Use cases: Track async jobs across every API key owned by the same organization Find task IDs you may have lost Monitor pending vs completed tasks Response: tasks — array of task objects with status and result URL total — total count for pagination Filtering: Use status parameter to filter by task status (pending, completed, failed)",
+    "List all async tasks for your organization, including find-and-enrich jobs, batch email enrichments, and campaign lead imports.",
+    "Use cases:",
+    "Response:",
+    "Filtering:",
+    "Filter by task status",
+    "Filter by task status",
+    "Maximum number of tasks to return",
+    "Maximum number of tasks to return",
+    "Number of tasks to skip (for pagination)"
+  ],
+  "parameters": [
+    {
+      "name": "status",
+      "type": "\"pending\" or \"completed\" or \"failed\"",
+      "required": false,
+      "description": "Filter by task status"
+    },
+    {
+      "name": "limit",
+      "type": "integer",
+      "required": false,
+      "description": "Maximum number of tasks to return"
+    },
+    {
+      "name": "offset",
+      "type": "integer",
+      "required": false,
+      "description": "Number of tasks to skip (for pagination)"
+    },
+    {
+      "name": "200",
+      "type": "application/json",
+      "required": false,
+      "description": "Successful Response"
+    },
+    {
+      "name": "422",
+      "type": "application/json",
+      "required": false,
+      "description": "Validation Error"
+    }
+  ],
+  "responses": [],
+  "codeBlocksCount": 5,
+  "codeBlocksSample": [
+    {
+      "text": "status",
+      "className": null
+    },
+    {
+      "text": "curl '/public/api/v1/tasks?limit=20&offset=0'\n",
+      "className": "m-0 bg-transparent text-nowrap whitespace-pre w-fit pr-6"
+    },
+    {
+      "text": "curl '/public/api/v1/tasks?limit=20&offset=0'\n",
+      "className": "hljs language-curl"
+    }
+  ],
+  "tabs": [
+    {
+      "text": "Status: 200",
+      "active": true
+    },
+    {
+      "text": "Status: 422",
+      "active": false
+    }
+  ],
+  "buttonsCount": 18,
+  "buttonsSample": [
+    "Copy link",
+    "Auth Required",
+    "Copy as Markdown",
+    "Copy link to status",
+    "Default",
+    "20",
+    "Copy link to limit",
+    "Default"
+  ],
+  "svgCount": 15,
+  "svgsSample": [
+    {
+      "className": "size-4.5",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-3",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-full",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-3.5",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "scalar-icon size-3 group-hover:text-c-1 text-c-3 ml-auto min-h-3 min-w-3",
+      "viewBox": "0 0 24 24",
+      "width": 0,
+      "height": 0
+    }
+  ],
+  "visual": {
+    "geometry": {
+      "x": 348,
+      "y": 0,
+      "width": 1032,
+      "height": 1093
+    },
+    "typography": {
+      "fontFamily": "Inter, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "24px",
+      "fontWeight": "600",
+      "lineHeight": "34.8px",
+      "color": "rgb(27, 27, 27)"
+    },
+    "styling": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgba(0, 0, 0, 0.1)",
+      "borderRadius": "0px"
+    }
+  }
+}

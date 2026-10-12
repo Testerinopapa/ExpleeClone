@@ -1,0 +1,320 @@
+{
+  "routeIndex": 6,
+  "label": "Update campaign definition",
+  "url": "https://api.explee.com/public/api/docs#tag/autogtm/PATCH/public/api/v1/autogtm/campaigns/{campaign_id}",
+  "hashRoute": "#tag/autogtm/PATCH/public/api/v1/autogtm/campaigns/{campaign_id}",
+  "httpMethod": "PATCH",
+  "endpointPath": "/public/api/v1/autogtm/campaigns/{campaign_id}",
+  "tag": "autogtm",
+  "capturedAt": "2026-09-29T00:42:48.686Z",
+  "documentTitle": "Explee Public API",
+  "pageHeading": "Update campaign definition",
+  "headings": [
+    {
+      "tag": "H3",
+      "text": "Update campaign definition",
+      "id": "scalar-refs-0-417",
+      "className": "section-header-label"
+    },
+    {
+      "tag": "H4",
+      "text": "Path Parameters",
+      "id": "scalar-refs-0-419",
+      "className": "section-header-label section-header-label--rule block! border-b pb-3 text-c-1 parameter-list-title--tree mt-3 mb-1.5 block! text-lg leading-[1.45] font-medium"
+    },
+    {
+      "tag": "H4",
+      "text": "Body·CampaignDefinitionUpdate",
+      "id": null,
+      "className": "section-header-label request-body-title flex!"
+    },
+    {
+      "tag": "H4",
+      "text": "Responses",
+      "id": null,
+      "className": "section-header-label section-header-label--rule block! border-b pb-3 text-c-1 responses-title--tree mt-3 mb-0 block! leading-[1.45] font-medium"
+    }
+  ],
+  "paragraphs": [
+    "Correct a campaign's definition — send only the fields you are changing. An omitted field keeps its value; an empty string, empty list or null clears it — except name, which a campaign always has, so clearing it is a 422. An unknown field name is rejected with 422 rather than silently ignored, so a typo can never look like a successful write. Returns the full definition as it now stands. Re-aiming costs leads. Changing target_role, target_geography, target_company_size, positive_criteria or negative_criteria is a retarget, exactly as in the app: the leads this campaign has not contacted yet are dropped and Explee searches again against the new targeting. Editing the offer or the email briefs does not — it only changes what is written to the leads still to come. Emails already sent are never affected. The rule for this endpoint: anything a person can edit on the campaign in the app, you can edit here — with the exceptions below, each of which exists because the app validates it in a second step this endpoint cannot reproduce. Read-only here: instructions and followup_instructions (the copy briefs — the app moderates them right after saving and shows you the verdict; this endpoint has no preview to show, and an unmoderated brief only fails later, at send time), target_url and reply_instructions (their own two-step save), keywords (Explee derives it; read-only in the app too) and followups (a project-level setting shared by every campaign of the project: sending the current values back is accepted, different ones are a 422). Budget has PATCH /public/api/v1/autogtm/campaigns/{campaign_id}/budget, status has start / stop. You can still SET the briefs when you create a campaign — POST /public/api/v1/autogtm/campaigns/import takes instructions, followup_instructions and language.",
+    "Correct a campaign's definition — send only the fields you are changing.",
+    "An omitted field keeps its value; an empty string, empty list or null clears it — except name, which a campaign always has, so clearing it is a 422. An unknown field name is rejected with 422 rather than silently ignored, so a typo can never look like a successful write. Returns the full definition as it now stands.",
+    "Re-aiming costs leads. Changing target_role, target_geography, target_company_size, positive_criteria or negative_criteria is a retarget, exactly as in the app: the leads this campaign has not contacted yet are dropped and Explee searches again against the new targeting. Editing the offer or the email briefs does not — it only changes what is written to the leads still to come. Emails already sent are never affected.",
+    "The rule for this endpoint: anything a person can edit on the campaign in the app, you can edit here — with the exceptions below, each of which exists because the app validates it in a second step this endpoint cannot reproduce.",
+    "Read-only here: instructions and followup_instructions (the copy briefs — the app moderates them right after saving and shows you the verdict; this endpoint has no preview to show, and an unmoderated brief only fails later, at send time), target_url and reply_instructions (their own two-step save), keywords (Explee derives it; read-only in the app too) and followups (a project-level setting shared by every campaign of the project: sending the current values back is accepted, different ones are a 422). Budget has PATCH /public/api/v1/autogtm/campaigns/{campaign_id}/budget, status has start / stop. You can still SET the briefs when you create a campaign — POST /public/api/v1/autogtm/campaigns/import takes instructions, followup_instructions and language.",
+    "Integer numbers.",
+    "Integer numbers.",
+    "Fields you may change on a campaign. Send only the ones you are changing — an omitted field keeps its value; an empty string or list (or null) clears it. The one exception is name: a campaign always has one, so an empty or null name is a 422.",
+    "Fields you may change on a campaign. Send only the ones you are changing — an omitted field keeps its value; an empty string or list (or null) clears it. The one exception is name: a campaign always has one, so an empty or null name is a 422."
+  ],
+  "parameters": [
+    {
+      "name": "campaign_id",
+      "type": "integer",
+      "required": true,
+      "description": "Integer numbers."
+    },
+    {
+      "name": "customer_problem",
+      "type": "string",
+      "required": false,
+      "description": "The problem this audience has."
+    },
+    {
+      "name": "example_clients",
+      "type": "array of string",
+      "required": false,
+      "description": "Recognizable companies that fit this ICP."
+    },
+    {
+      "name": "followups",
+      "type": "CampaignFollowupsUpdate",
+      "required": false,
+      "description": "Read-only per campaign: the follow-up sequence is a project-level setting. Sending the current values back is accepted; different values are a 422."
+    },
+    {
+      "name": "422",
+      "type": null,
+      "required": false,
+      "description": null
+    },
+    {
+      "name": "language",
+      "type": "string",
+      "required": false,
+      "description": "Language to write in: one of en-US, en-GB, de, fr, es, it, ja, pt, zh, ko, nl, id, tr, pl, ar, vi, th, ru, sv, he, hi, da, cs, ro, fi, hu, no, uk, el, sr, hr, or auto to pick per lead. Note the short form: de, not de-DE."
+    },
+    {
+      "name": "en-US",
+      "type": null,
+      "required": false,
+      "description": null
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "required": false,
+      "description": "Campaign name."
+    },
+    {
+      "name": "negative_criteria",
+      "type": "array of string",
+      "required": false,
+      "description": "Disqualifying signals — look-alikes that are NOT a fit. Re-aims the campaign, exactly like target_geography. On a campaign built from an imported lead list (targeting_editable: false) it is saved with 200 and re-aims nothing — the uploaded list is the audience, so there is no search to re-run."
+    },
+    {
+      "name": "Re-aims the campaign",
+      "type": null,
+      "required": false,
+      "description": null
+    },
+    {
+      "name": "offer",
+      "type": "string",
+      "required": false,
+      "description": "What you offer this audience."
+    },
+    {
+      "name": "positive_criteria",
+      "type": "array of string",
+      "required": false,
+      "description": "Signals that qualify a company for this campaign. Re-aims the campaign, exactly like target_geography. On a campaign built from an imported lead list (targeting_editable: false) it is saved with 200 and re-aims nothing — the uploaded list is the audience, so there is no search to re-run."
+    },
+    {
+      "name": "schedule",
+      "type": "CampaignScheduleUpdate",
+      "required": false,
+      "description": "Send days. Only the sub-fields you send are changed."
+    },
+    {
+      "name": "target_company_size",
+      "type": "string",
+      "required": false,
+      "description": "Target company size, free text (e.g. \"10-200 employees\"). Re-aims the campaign, exactly like target_geography."
+    },
+    {
+      "name": "target_geography",
+      "type": "string",
+      "required": false,
+      "description": "Target geographies, free text (e.g. \"Spain, Portugal\"). Re-aims the campaign: changing it drops the leads it has not contacted yet and makes Explee search again against the new targeting."
+    },
+    {
+      "name": "target_role",
+      "type": "string",
+      "required": false,
+      "description": "Who to reach at the prospect, by responsibility (e.g. \"Head of Compliance\"). Re-aims the campaign, exactly like target_geography. On a campaign built from an imported lead list (targeting_editable: false) it is saved with 200 and re-aims nothing — the uploaded list is the audience, so there is no search to re-run."
+    },
+    {
+      "name": "200",
+      "type": "application/json",
+      "required": false,
+      "description": "Successful Response"
+    },
+    {
+      "name": "401",
+      "type": "application/json",
+      "required": false,
+      "description": "Invalid or missing API key. Include X-API-Key header."
+    },
+    {
+      "name": "X-API-Key",
+      "type": null,
+      "required": false,
+      "description": null
+    },
+    {
+      "name": "402",
+      "type": "application/json",
+      "required": false,
+      "description": "Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account."
+    },
+    {
+      "name": "404",
+      "type": "application/json",
+      "required": false,
+      "description": "Campaign not found or not owned by your organization."
+    },
+    {
+      "name": "409",
+      "type": "application/json",
+      "required": false,
+      "description": "Targeting is locked: this campaign runs on your imported lead list."
+    },
+    {
+      "name": "429",
+      "type": "application/json",
+      "required": false,
+      "description": "Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan)."
+    },
+    {
+      "name": "500",
+      "type": "application/json",
+      "required": false,
+      "description": "Internal server error. Contact support if persists."
+    },
+    {
+      "name": "504",
+      "type": "application/json",
+      "required": false,
+      "description": "Request timeout. Please try again later."
+    }
+  ],
+  "responses": [],
+  "codeBlocksCount": 10,
+  "codeBlocksSample": [
+    {
+      "text": "target_role",
+      "className": null
+    },
+    {
+      "text": "target_geography",
+      "className": null
+    },
+    {
+      "text": "target_company_size",
+      "className": null
+    }
+  ],
+  "tabs": [
+    {
+      "text": "Status: 200",
+      "active": true
+    },
+    {
+      "text": "Status: 401",
+      "active": false
+    },
+    {
+      "text": "Status: 402",
+      "active": false
+    },
+    {
+      "text": "Status: 404",
+      "active": false
+    },
+    {
+      "text": "Status: 409",
+      "active": false
+    },
+    {
+      "text": "Status: 422",
+      "active": false
+    },
+    {
+      "text": "Status: 429",
+      "active": false
+    },
+    {
+      "text": "Status: 500",
+      "active": false
+    },
+    {
+      "text": "Status: 504",
+      "active": false
+    }
+  ],
+  "buttonsCount": 38,
+  "buttonsSample": [
+    "Copy link",
+    "Auth Required",
+    "Copy as Markdown",
+    "Copy link to campaign_id",
+    "Copy link to customer_problem",
+    "Copy link to example_clients",
+    "Copy link to followups",
+    "Copy link to language"
+  ],
+  "svgCount": 15,
+  "svgsSample": [
+    {
+      "className": "size-4.5",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-3",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-full",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-3.5",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-3.5",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    }
+  ],
+  "visual": {
+    "geometry": {
+      "x": 348,
+      "y": 0,
+      "width": 1032,
+      "height": 2922
+    },
+    "typography": {
+      "fontFamily": "Inter, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "24px",
+      "fontWeight": "600",
+      "lineHeight": "34.8px",
+      "color": "rgb(27, 27, 27)"
+    },
+    "styling": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgba(0, 0, 0, 0.1)",
+      "borderRadius": "0px"
+    }
+  }
+}

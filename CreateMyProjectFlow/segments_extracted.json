@@ -1,0 +1,213 @@
+[
+  {
+    "id": 11161525,
+    "type": "segment_ready",
+    "ts": "2026-09-29 19:07:38.136496+00:00",
+    "step": "segments",
+    "message": "Segment 1 ready: ESL teachers",
+    "segment": {
+      "label": "ESL teachers",
+      "icon": "graduation-cap",
+      "use_case": "Assign **game practice** for class, reinforce **vocabulary** and **grammar**, track progress",
+      "pain": "Students need practice between lessons",
+      "criteria": [
+        "Teaches English regularly",
+        "Uses digital class activities",
+        "Needs student engagement"
+      ],
+      "negative_criterias": [
+        "No formal classes",
+        "Only exam prep",
+        "Single tutoring hobby"
+      ],
+      "keywords": "esl teacher, english teacher, classroom games, vocabulary practice, grammar games",
+      "example_clients": [
+        "Wall Street English",
+        "Berlitz",
+        "English First",
+        "Pearson English teachers",
+        "EF English teachers"
+      ],
+      "percentage": 30,
+      "estimated_companies": 8000,
+      "buyer_type": "company",
+      "id": "ge7hll"
+    },
+    "index": 0
+  },
+  {
+    "id": 11161526,
+    "type": "segment_ready",
+    "ts": "2026-09-29 19:07:39.054251+00:00",
+    "step": "segments",
+    "message": "Segment 2 ready: Language schools",
+    "segment": {
+      "label": "Language schools",
+      "icon": "building",
+      "use_case": "Offer **interactive lessons**, boost **student retention**, add **leaderboard** motivation",
+      "pain": "Hard to keep learners active outside class",
+      "criteria": [
+        "Runs paid English courses",
+        "Needs retention tools",
+        "Has multiple learner groups"
+      ],
+      "negative_criterias": [
+        "Purely corporate training",
+        "No recurring students"
+      ],
+      "keywords": "language school, english academy, student retention, course engagement, learner app",
+      "example_clients": [
+        "Berlitz",
+        "Wall Street English",
+        "British Study Centres",
+        "Kaplan International",
+        "EF Education First"
+      ],
+      "percentage": 22,
+      "estimated_companies": 5000,
+      "buyer_type": "company",
+      "id": "tqqyle"
+    },
+    "index": 1
+  },
+  {
+    "id": 11161527,
+    "type": "segment_ready",
+    "ts": "2026-09-29 19:07:39.955452+00:00",
+    "step": "segments",
+    "message": "Segment 3 ready: Private tutors",
+    "segment": {
+      "label": "Private tutors",
+      "icon": "users",
+      "use_case": "Give clients **home practice**, support **speaking drills**, make lessons more engaging",
+      "pain": "Tutors need a simple way to extend lessons",
+      "criteria": [
+        "Independent English tutor",
+        "Works with repeat students",
+        "Sells personalized lessons"
+      ],
+      "negative_criterias": [
+        "Only one-off sessions",
+        "Focuses on other subjects"
+      ],
+      "keywords": "english tutor, private tutor, speaking practice, home practice, student drills",
+      "example_clients": [
+        "freelance english tutor",
+        "online esl tutor",
+        "private conversation coach",
+        "home-based english tutor",
+        "independent exam tutor"
+      ],
+      "percentage": 18,
+      "estimated_companies": 12000,
+      "buyer_type": "individual",
+      "id": "nxnub0"
+    },
+    "index": 2
+  },
+  {
+    "id": 11161528,
+    "type": "segment_ready",
+    "ts": "2026-09-29 19:07:40.857463+00:00",
+    "step": "segments",
+    "message": "Segment 4 ready: After-school centers",
+    "segment": {
+      "label": "After-school centers",
+      "icon": "home",
+      "use_case": "Run **club activities**, reward **attendance**, build fun **English practice** routines",
+      "pain": "Kids need structured learning after school",
+      "criteria": [
+        "Serves children or teens",
+        "Offers enrichment programs",
+        "Needs low-prep activities"
+      ],
+      "negative_criterias": [
+        "Adult-only education",
+        "Strict exam curriculum"
+      ],
+      "keywords": "after school, english club, enrichment program, kids learning, game lessons",
+      "example_clients": [
+        "Kumon",
+        "Helen Doron",
+        "Oxford Learning",
+        "Busy Bees",
+        "Kiddie Academy"
+      ],
+      "percentage": 15,
+      "estimated_companies": 4000,
+      "buyer_type": "company",
+      "id": "99yfoo"
+    },
+    "index": 3
+  },
+  {
+    "id": 11161529,
+    "type": "segment_ready",
+    "ts": "2026-09-29 19:07:41.960903+00:00",
+    "step": "segments",
+    "message": "Segment 5 ready: Homeschool parents",
+    "segment": {
+      "label": "Homeschool parents",
+      "icon": "baby",
+      "use_case": "Turn study time into **playful practice**, build **reading** and **vocabulary** habits",
+      "pain": "Children resist repetitive English worksheets",
+      "criteria": [
+        "Teaches at home",
+        "Uses online learning tools",
+        "Wants child engagement"
+      ],
+      "negative_criterias": [
+        "School district buyer",
+        "Only adult learners"
+      ],
+      "keywords": "homeschool english, kids practice, learning games, reading practice, vocabulary games",
+      "example_clients": [
+        "homeschool families in urban areas",
+        "bilingual parents teaching english",
+        "parents of primary learners",
+        "unschooling families",
+        "remote-learning households"
+      ],
+      "percentage": 10,
+      "estimated_companies": 6000,
+      "buyer_type": "individual",
+      "id": "yj8lf1"
+    },
+    "index": 4
+  },
+  {
+    "id": 11161530,
+    "type": "segment_ready",
+    "ts": "2026-09-29 19:07:42.889309+00:00",
+    "step": "segments",
+    "message": "Segment 6 ready: Small training firms",
+    "segment": {
+      "label": "Small training firms",
+      "icon": "briefcase",
+      "use_case": "Add **English modules** to client programs, support **group practice**, improve outcomes",
+      "pain": "Need affordable English content without building it",
+      "criteria": [
+        "Trains adult professionals",
+        "Sells group workshops",
+        "Needs ready-made content"
+      ],
+      "negative_criterias": [
+        "Large enterprise vendor",
+        "No language training"
+      ],
+      "keywords": "training company, language module, corporate english, group workshop, skills training",
+      "example_clients": [
+        "local corporate trainers",
+        "regional training consultancies",
+        "small workforce academies",
+        "business communication coaches",
+        "professional development firms"
+      ],
+      "percentage": 5,
+      "estimated_companies": 1200,
+      "buyer_type": "company",
+      "id": "0rn3u0"
+    },
+    "index": 5
+  }
+]

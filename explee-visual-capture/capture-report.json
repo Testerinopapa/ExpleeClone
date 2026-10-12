@@ -1,0 +1,14 @@
+{
+  "startedAt": "2026-09-29T03:11:21.618Z",
+  "routesDiscovered": 64,
+  "routesTargeted": 33,
+  "routesCaptured": 33,
+  "screenshotSuccesses": 33,
+  "visualJsonSuccesses": 33,
+  "failures": 0,
+  "errors": [],
+  "elapsedMs": 2249614,
+  "elapsedFormatted": "2249.6s",
+  "completedAt": "2026-09-29T03:48:35.156Z",
+  "outputSizeMb": "2930.88 MB"
+}

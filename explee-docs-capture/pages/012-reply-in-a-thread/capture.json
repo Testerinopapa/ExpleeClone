@@ -1,0 +1,254 @@
+{
+  "routeIndex": 12,
+  "label": "Reply in a thread",
+  "url": "https://api.explee.com/public/api/docs#tag/autogtm/POST/public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}/reply",
+  "hashRoute": "#tag/autogtm/POST/public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}/reply",
+  "httpMethod": "POST",
+  "endpointPath": "/public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}/reply",
+  "tag": "autogtm",
+  "capturedAt": "2026-09-29T00:43:05.418Z",
+  "documentTitle": "Explee Public API",
+  "pageHeading": "Reply in a thread",
+  "headings": [
+    {
+      "tag": "H3",
+      "text": "Reply in a thread",
+      "id": "scalar-refs-0-863",
+      "className": "section-header-label"
+    },
+    {
+      "tag": "H4",
+      "text": "Path Parameters",
+      "id": "scalar-refs-0-865",
+      "className": "section-header-label section-header-label--rule block! border-b pb-3 text-c-1 parameter-list-title--tree mt-3 mb-1.5 block! text-lg leading-[1.45] font-medium"
+    },
+    {
+      "tag": "H4",
+      "text": "Body·SendReplyBody",
+      "id": null,
+      "className": "section-header-label request-body-title flex!"
+    },
+    {
+      "tag": "H4",
+      "text": "Responses",
+      "id": null,
+      "className": "section-header-label section-header-label--rule block! border-b pb-3 text-c-1 responses-title--tree mt-3 mb-0 block! leading-[1.45] font-medium"
+    }
+  ],
+  "paragraphs": [
+    "Reply to this contact — send just the message text. You reply to the lead, not to an email address: the server resolves the recipient, the subject (Re: …) and the threading from the contact's real conversation, so a reply can only ever go back to the person who wrote to you — never to an address you supply. The message goes through the same compliance gate and content moderation as replies sent from the app. Allowed only for a contact who has replied and isn't unsubscribe — otherwise 403. You may send at most three replies per message the lead sent you (429 if exceeded). The send is recorded under your organization's owner identity (an API key carries no user).",
+    "Reply to this contact — send just the message text.",
+    "You reply to the lead, not to an email address: the server resolves the recipient, the subject (Re: …) and the threading from the contact's real conversation, so a reply can only ever go back to the person who wrote to you — never to an address you supply. The message goes through the same compliance gate and content moderation as replies sent from the app.",
+    "Allowed only for a contact who has replied and isn't unsubscribe — otherwise 403. You may send at most three replies per message the lead sent you (429 if exceeded). The send is recorded under your organization's owner identity (an API key carries no user).",
+    "Integer numbers.",
+    "Integer numbers.",
+    "Body for replying to a contact — just the message text. You reply to the lead, not to an email address: the server resolves the recipient, the subject (Re: …), and the threading from the contact's real conversation, so a reply can only ever go back to the person who wrote to you — never to an arbitrary address. Replies are allowed only to contacts who have replied and aren't unsubscribe.",
+    "Body for replying to a contact — just the message text.",
+    "You reply to the lead, not to an email address: the server resolves the recipient, the subject (Re: …), and the threading from the contact's real conversation, so a reply can only ever go back to the person who wrote to you — never to an arbitrary address. Replies are allowed only to contacts who have replied and aren't unsubscribe.",
+    "body_textType: stringmin length: 1max length: 10000requiredCopy link to body_text Plain-text reply body."
+  ],
+  "parameters": [
+    {
+      "name": "campaign_id",
+      "type": "integer",
+      "required": true,
+      "description": "Integer numbers."
+    },
+    {
+      "name": "person_id",
+      "type": "string",
+      "required": true,
+      "description": null
+    },
+    {
+      "name": "body_text",
+      "type": "string",
+      "required": true,
+      "description": "Plain-text reply body."
+    },
+    {
+      "name": "200",
+      "type": "application/json",
+      "required": false,
+      "description": "Successful Response"
+    },
+    {
+      "name": "401",
+      "type": "application/json",
+      "required": false,
+      "description": "Invalid or missing API key. Include X-API-Key header."
+    },
+    {
+      "name": "X-API-Key",
+      "type": null,
+      "required": false,
+      "description": null
+    },
+    {
+      "name": "402",
+      "type": "application/json",
+      "required": false,
+      "description": "Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account."
+    },
+    {
+      "name": "403",
+      "type": null,
+      "required": false,
+      "description": "Reply blocked: unsubscribe thread, or the contact never replied."
+    },
+    {
+      "name": "unsubscribe",
+      "type": null,
+      "required": false,
+      "description": null
+    },
+    {
+      "name": "404",
+      "type": null,
+      "required": false,
+      "description": "Campaign not found or not owned by your organization."
+    },
+    {
+      "name": "422",
+      "type": "application/json",
+      "required": false,
+      "description": "Validation error. Check request body and parameters."
+    },
+    {
+      "name": "429",
+      "type": null,
+      "required": false,
+      "description": "Too many replies to this contact in the last 24h."
+    },
+    {
+      "name": "500",
+      "type": "application/json",
+      "required": false,
+      "description": "Internal server error. Contact support if persists."
+    },
+    {
+      "name": "504",
+      "type": "application/json",
+      "required": false,
+      "description": "Request timeout. Please try again later."
+    }
+  ],
+  "responses": [],
+  "codeBlocksCount": 8,
+  "codeBlocksSample": [
+    {
+      "text": "unsubscribe",
+      "className": null
+    },
+    {
+      "text": "unsubscribe",
+      "className": null
+    },
+    {
+      "text": "X-API-Key",
+      "className": null
+    }
+  ],
+  "tabs": [
+    {
+      "text": "Status: 200",
+      "active": true
+    },
+    {
+      "text": "Status: 401",
+      "active": false
+    },
+    {
+      "text": "Status: 402",
+      "active": false
+    },
+    {
+      "text": "Status: 403",
+      "active": false
+    },
+    {
+      "text": "Status: 404",
+      "active": false
+    },
+    {
+      "text": "Status: 422",
+      "active": false
+    },
+    {
+      "text": "Status: 429",
+      "active": false
+    },
+    {
+      "text": "Status: 500",
+      "active": false
+    },
+    {
+      "text": "Status: 504",
+      "active": false
+    }
+  ],
+  "buttonsCount": 28,
+  "buttonsSample": [
+    "Copy link",
+    "Auth Required",
+    "Copy as Markdown",
+    "Copy link to campaign_id",
+    "Copy link to person_id",
+    "Copy link to body_text",
+    "200\nSuccessful Response",
+    "401\nInvalid or missing API key. Include X-API-Key header."
+  ],
+  "svgCount": 15,
+  "svgsSample": [
+    {
+      "className": "size-4.5",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-3",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-full",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-3.5",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-3.5",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    }
+  ],
+  "visual": {
+    "geometry": {
+      "x": 348,
+      "y": 0,
+      "width": 1032,
+      "height": 1466
+    },
+    "typography": {
+      "fontFamily": "Inter, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "24px",
+      "fontWeight": "600",
+      "lineHeight": "34.8px",
+      "color": "rgb(27, 27, 27)"
+    },
+    "styling": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgba(0, 0, 0, 0.1)",
+      "borderRadius": "0px"
+    }
+  }
+}

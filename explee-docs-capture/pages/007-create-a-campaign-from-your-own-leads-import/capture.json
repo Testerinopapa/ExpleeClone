@@ -1,0 +1,262 @@
+{
+  "routeIndex": 7,
+  "label": "Create a campaign from your own leads (import)",
+  "url": "https://api.explee.com/public/api/docs#tag/autogtm/POST/public/api/v1/autogtm/campaigns/import",
+  "hashRoute": "#tag/autogtm/POST/public/api/v1/autogtm/campaigns/import",
+  "httpMethod": "POST",
+  "endpointPath": "/public/api/v1/autogtm/campaigns/import",
+  "tag": "autogtm",
+  "capturedAt": "2026-09-29T00:42:51.704Z",
+  "documentTitle": "Explee Public API",
+  "pageHeading": "Create a campaign from your own leads (import)",
+  "headings": [
+    {
+      "tag": "H3",
+      "text": "Create a campaign from your own leads (import)",
+      "id": "scalar-refs-0-524",
+      "className": "section-header-label"
+    },
+    {
+      "tag": "H4",
+      "text": "Body·CampaignImportPayload",
+      "id": null,
+      "className": "section-header-label request-body-title flex!"
+    },
+    {
+      "tag": "H4",
+      "text": "Responses",
+      "id": null,
+      "className": "section-header-label section-header-label--rule block! border-b pb-3 text-c-1 responses-title--tree mt-3 mb-0 block! leading-[1.45] font-medium"
+    }
+  ],
+  "paragraphs": [
+    "Create a new campaign from your own lead list (async). Each call creates a new campaign in the given project — the campaign is built for your leads only (no agent lead discovery) and starts sending automatically once live, within your project budget. How it works: Submit project_id, a campaign name, and up to 30,000 leads Receive a task_id immediately Poll GET /public/api/v1/autogtm/campaigns/import/{task_id} until completed result.campaign_id is your new campaign — it appears in the campaigns list Per lead — mandatory: email, first_name, last_name, company_domain, job_title; recommended: linkedin_url (enriches the lead from Explee's contact base for a richer email). Leads missing mandatory fields are skipped (reported in the result), never a request-level error. Duplicates of leads already contacted in the project and do-not-contact entries are dropped. Your copy brief — optional instructions (first email), followup_instructions (all follow-ups) and language: the same brief you would type in the app's email editor, set here at import time so no manual step is needed. Omit them and the campaign is briefed from your project description alone. Pricing: the import itself is free. Emails are verified at send time at Explee's cost; sending is billed as usual.",
+    "Create a new campaign from your own lead list (async).",
+    "Each call creates a new campaign in the given project — the campaign is built for your leads only (no agent lead discovery) and starts sending automatically once live, within your project budget.",
+    "How it works:",
+    "Per lead — mandatory: email, first_name, last_name, company_domain, job_title; recommended: linkedin_url (enriches the lead from Explee's contact base for a richer email). Leads missing mandatory fields are skipped (reported in the result), never a request-level error. Duplicates of leads already contacted in the project and do-not-contact entries are dropped.",
+    "Your copy brief — optional instructions (first email), followup_instructions (all follow-ups) and language: the same brief you would type in the app's email editor, set here at import time so no manual step is needed. Omit them and the campaign is briefed from your project description alone.",
+    "Pricing: the import itself is free. Emails are verified at send time at Explee's cost; sending is billed as usual.",
+    "Body for creating a campaign from your own lead list.",
+    "Body for creating a campaign from your own lead list.",
+    "leadsType: array of ImportLeadIn 1…30000required{ company_domain, company_name, email, +4 }Copy link to leads Your leads (1–30,000 per import). Each import creates a new campaign. Properties: 7nameType: stringmin length: 1max length: 80requiredCopy link to name Name for the new campaign. project_idType: integerrequiredCopy link to project_id Project to create the campaign in (see GET /public/api/v1/autogtm/projects). followup_instructionsType: stringmax length: 3000DefaultCopy link to followup_instructions The same, for every follow-up in the sequence (optional). One shared brief covers all follow-ups. instructionsType: stringmax length: 3000DefaultCopy link to instructions Your brief for the first email: what to pitch, tone, call to action (optional, up to 3,000 characters). Written in plain language — the copy itself is still generated per lead. Omit it and the campaign is briefed from your project description alone, as it is today. languageType: stringmax length: 16DefaultCopy link to language Language to write in (optional): one of en-US, en-GB, de, fr, es, it, ja, pt, zh, ko, nl, id, tr, pl, ar, vi, th, ru, sv, he, hi, da, cs, ro, fi, hu, no, uk, el, sr, hr. Omit it or send auto to pick the language per lead. Note the short form: de, not de-DE."
+  ],
+  "parameters": [
+    {
+      "name": "leads",
+      "type": "array of ImportLeadIn",
+      "required": true,
+      "description": "Your leads (1–30,000 per import). Each import creates a new campaign."
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "required": true,
+      "description": "Name for the new campaign."
+    },
+    {
+      "name": "project_id",
+      "type": "integer",
+      "required": true,
+      "description": "Project to create the campaign in (see GET /public/api/v1/autogtm/projects)."
+    },
+    {
+      "name": "GET /public/api/v1/autogtm/projects",
+      "type": null,
+      "required": false,
+      "description": null
+    },
+    {
+      "name": "followup_instructions",
+      "type": "string",
+      "required": false,
+      "description": "The same, for every follow-up in the sequence (optional). One shared brief covers all follow-ups."
+    },
+    {
+      "name": "instructions",
+      "type": "string",
+      "required": false,
+      "description": "Your brief for the first email: what to pitch, tone, call to action (optional, up to 3,000 characters). Written in plain language — the copy itself is still generated per lead. Omit it and the campaign is briefed from your project description alone, as it is today."
+    },
+    {
+      "name": "language",
+      "type": "string",
+      "required": false,
+      "description": "Language to write in (optional): one of en-US, en-GB, de, fr, es, it, ja, pt, zh, ko, nl, id, tr, pl, ar, vi, th, ru, sv, he, hi, da, cs, ro, fi, hu, no, uk, el, sr, hr. Omit it or send auto to pick the language per lead. Note the short form: de, not de-DE."
+    },
+    {
+      "name": "en-US",
+      "type": null,
+      "required": false,
+      "description": null
+    },
+    {
+      "name": "200",
+      "type": "application/json",
+      "required": false,
+      "description": "Successful Response"
+    },
+    {
+      "name": "401",
+      "type": "application/json",
+      "required": false,
+      "description": "Invalid or missing API key. Include X-API-Key header."
+    },
+    {
+      "name": "X-API-Key",
+      "type": null,
+      "required": false,
+      "description": null
+    },
+    {
+      "name": "402",
+      "type": "application/json",
+      "required": false,
+      "description": "Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account."
+    },
+    {
+      "name": "404",
+      "type": "application/json",
+      "required": false,
+      "description": "Unknown project_id (or not your project)."
+    },
+    {
+      "name": "422",
+      "type": "application/json",
+      "required": false,
+      "description": "Validation error. Check request body and parameters."
+    },
+    {
+      "name": "429",
+      "type": "application/json",
+      "required": false,
+      "description": "Too many pending imports."
+    },
+    {
+      "name": "500",
+      "type": "application/json",
+      "required": false,
+      "description": "Internal server error. Contact support if persists."
+    },
+    {
+      "name": "504",
+      "type": "application/json",
+      "required": false,
+      "description": "Request timeout. Please try again later."
+    }
+  ],
+  "responses": [],
+  "codeBlocksCount": 10,
+  "codeBlocksSample": [
+    {
+      "text": "project_id",
+      "className": null
+    },
+    {
+      "text": "task_id",
+      "className": null
+    },
+    {
+      "text": "GET /public/api/v1/autogtm/campaigns/import/{task_id}",
+      "className": null
+    }
+  ],
+  "tabs": [
+    {
+      "text": "Status: 200",
+      "active": true
+    },
+    {
+      "text": "Status: 401",
+      "active": false
+    },
+    {
+      "text": "Status: 402",
+      "active": false
+    },
+    {
+      "text": "Status: 404",
+      "active": false
+    },
+    {
+      "text": "Status: 422",
+      "active": false
+    },
+    {
+      "text": "Status: 429",
+      "active": false
+    },
+    {
+      "text": "Status: 500",
+      "active": false
+    },
+    {
+      "text": "Status: 504",
+      "active": false
+    }
+  ],
+  "buttonsCount": 32,
+  "buttonsSample": [
+    "Copy link",
+    "Auth Required",
+    "Copy as Markdown",
+    "Copy link to leads",
+    "Copy link to name",
+    "Copy link to project_id",
+    "Default",
+    "Copy link to followup_instructions"
+  ],
+  "svgCount": 15,
+  "svgsSample": [
+    {
+      "className": "size-4.5",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-3",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-full",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": null,
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-3.5",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    }
+  ],
+  "visual": {
+    "geometry": {
+      "x": 348,
+      "y": 0,
+      "width": 1032,
+      "height": 2014
+    },
+    "typography": {
+      "fontFamily": "Inter, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "24px",
+      "fontWeight": "600",
+      "lineHeight": "34.8px",
+      "color": "rgb(27, 27, 27)"
+    },
+    "styling": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgba(0, 0, 0, 0.1)",
+      "borderRadius": "0px"
+    }
+  }
+}

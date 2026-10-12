@@ -1,0 +1,242 @@
+{
+  "routeIndex": 17,
+  "label": "Set campaign daily budget",
+  "url": "https://api.explee.com/public/api/docs#tag/autogtm/PATCH/public/api/v1/autogtm/campaigns/{campaign_id}/budget",
+  "hashRoute": "#tag/autogtm/PATCH/public/api/v1/autogtm/campaigns/{campaign_id}/budget",
+  "httpMethod": "PATCH",
+  "endpointPath": "/public/api/v1/autogtm/campaigns/{campaign_id}/budget",
+  "tag": "autogtm",
+  "capturedAt": "2026-09-29T00:43:18.718Z",
+  "documentTitle": "Explee Public API",
+  "pageHeading": "Set campaign daily budget",
+  "headings": [
+    {
+      "tag": "H3",
+      "text": "Set campaign daily budget",
+      "id": "scalar-refs-0-1189",
+      "className": "section-header-label"
+    },
+    {
+      "tag": "H4",
+      "text": "Path Parameters",
+      "id": "scalar-refs-0-1191",
+      "className": "section-header-label section-header-label--rule block! border-b pb-3 text-c-1 parameter-list-title--tree mt-3 mb-1.5 block! text-lg leading-[1.45] font-medium"
+    },
+    {
+      "tag": "H4",
+      "text": "Body·SetCampaignBudgetBody",
+      "id": null,
+      "className": "section-header-label request-body-title flex!"
+    },
+    {
+      "tag": "H4",
+      "text": "Responses",
+      "id": null,
+      "className": "section-header-label section-header-label--rule block! border-b pb-3 text-c-1 responses-title--tree mt-3 mb-0 block! leading-[1.45] font-medium"
+    }
+  ],
+  "paragraphs": [
+    "Set one campaign's daily budget. The campaign's daily_limit_usd is set directly and the project's total daily budget follows as the sum of its running campaigns — the other campaigns are not touched (grow or shrink the total spend, not redistribute a fixed one). Editable only while Autopilot is OFF (GET/PATCH …/projects/{id}/autopilot): while it's ON the agent owns the split and this returns 409. A paused / not-yet- running campaign holds no allocation, so setting its budget also returns 409 — resume it first. To set the whole-project budget instead, use PATCH …/projects/{id}/budget.",
+    "Set one campaign's daily budget.",
+    "The campaign's daily_limit_usd is set directly and the project's total daily budget follows as the sum of its running campaigns — the other campaigns are not touched (grow or shrink the total spend, not redistribute a fixed one).",
+    "Editable only while Autopilot is OFF (GET/PATCH …/projects/{id}/autopilot): while it's ON the agent owns the split and this returns 409. A paused / not-yet- running campaign holds no allocation, so setting its budget also returns 409 — resume it first. To set the whole-project budget instead, use PATCH …/projects/{id}/budget.",
+    "Integer numbers.",
+    "Integer numbers.",
+    "Body for setting one campaign's daily budget.",
+    "Body for setting one campaign's daily budget.",
+    "daily_limit_usdType: integermin: 1max: 300requiredExample30Copy link to daily_limit_usd This campaign's daily budget (USD/day), 1–300. The project's total daily budget follows as the sum of its running campaigns — the other campaigns are not touched. Editable only while Auto-manage campaigns is OFF and the campaign is running.",
+    "This campaign's daily budget (USD/day), 1–300. The project's total daily budget follows as the sum of its running campaigns — the other campaigns are not touched. Editable only while Auto-manage campaigns is OFF and the campaign is running."
+  ],
+  "parameters": [
+    {
+      "name": "campaign_id",
+      "type": "integer",
+      "required": true,
+      "description": "Integer numbers."
+    },
+    {
+      "name": "daily_limit_usd",
+      "type": "integer",
+      "required": true,
+      "description": "This campaign's daily budget (USD/day), 1–300. The project's total daily budget follows as the sum of its running campaigns — the other campaigns are not touched. Editable only while Auto-manage campaigns is OFF and the campaign is running."
+    },
+    {
+      "name": "200",
+      "type": "application/json",
+      "required": false,
+      "description": "Successful Response"
+    },
+    {
+      "name": "401",
+      "type": "application/json",
+      "required": false,
+      "description": "Invalid or missing API key. Include X-API-Key header."
+    },
+    {
+      "name": "X-API-Key",
+      "type": null,
+      "required": false,
+      "description": null
+    },
+    {
+      "name": "402",
+      "type": "application/json",
+      "required": false,
+      "description": "Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account."
+    },
+    {
+      "name": "404",
+      "type": "application/json",
+      "required": false,
+      "description": "Campaign not found or not owned by your organization."
+    },
+    {
+      "name": "409",
+      "type": "application/json",
+      "required": false,
+      "description": "Auto-manage campaigns is ON (budget is agent-managed) or the campaign is not running."
+    },
+    {
+      "name": "422",
+      "type": "application/json",
+      "required": false,
+      "description": "Validation error. Check request body and parameters."
+    },
+    {
+      "name": "429",
+      "type": "application/json",
+      "required": false,
+      "description": "Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan)."
+    },
+    {
+      "name": "500",
+      "type": "application/json",
+      "required": false,
+      "description": "Internal server error. Contact support if persists."
+    },
+    {
+      "name": "504",
+      "type": "application/json",
+      "required": false,
+      "description": "Request timeout. Please try again later."
+    }
+  ],
+  "responses": [],
+  "codeBlocksCount": 8,
+  "codeBlocksSample": [
+    {
+      "text": "daily_limit_usd",
+      "className": null
+    },
+    {
+      "text": "GET/PATCH …/projects/{id}/autopilot",
+      "className": null
+    },
+    {
+      "text": "PATCH …/projects/{id}/budget",
+      "className": null
+    }
+  ],
+  "tabs": [
+    {
+      "text": "Status: 200",
+      "active": true
+    },
+    {
+      "text": "Status: 401",
+      "active": false
+    },
+    {
+      "text": "Status: 402",
+      "active": false
+    },
+    {
+      "text": "Status: 404",
+      "active": false
+    },
+    {
+      "text": "Status: 409",
+      "active": false
+    },
+    {
+      "text": "Status: 422",
+      "active": false
+    },
+    {
+      "text": "Status: 429",
+      "active": false
+    },
+    {
+      "text": "Status: 500",
+      "active": false
+    },
+    {
+      "text": "Status: 504",
+      "active": false
+    }
+  ],
+  "buttonsCount": 29,
+  "buttonsSample": [
+    "Copy link",
+    "Auth Required",
+    "Copy as Markdown",
+    "Copy link to campaign_id",
+    "Example",
+    "30",
+    "Copy link to daily_limit_usd",
+    "200\nSuccessful Response"
+  ],
+  "svgCount": 15,
+  "svgsSample": [
+    {
+      "className": "size-4.5",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-3",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-full",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-3.5",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "scalar-icon size-3 text-c-3 group-hover:text-c-1 ml-auto min-h-3 min-w-3",
+      "viewBox": "0 0 24 24",
+      "width": 0,
+      "height": 0
+    }
+  ],
+  "visual": {
+    "geometry": {
+      "x": 348,
+      "y": 0,
+      "width": 1032,
+      "height": 1292
+    },
+    "typography": {
+      "fontFamily": "Inter, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "24px",
+      "fontWeight": "600",
+      "lineHeight": "34.8px",
+      "color": "rgb(27, 27, 27)"
+    },
+    "styling": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgba(0, 0, 0, 0.1)",
+      "borderRadius": "0px"
+    }
+  }
+}

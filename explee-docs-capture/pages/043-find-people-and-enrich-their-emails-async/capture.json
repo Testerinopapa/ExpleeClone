@@ -1,0 +1,258 @@
+{
+  "routeIndex": 43,
+  "label": "Find people and enrich their emails (async)",
+  "url": "https://api.explee.com/public/api/docs#tag/contact/POST/public/api/v1/find-and-enrich",
+  "hashRoute": "#tag/contact/POST/public/api/v1/find-and-enrich",
+  "httpMethod": "POST",
+  "endpointPath": "/public/api/v1/find-and-enrich",
+  "tag": "contact",
+  "capturedAt": "2026-09-29T03:02:51.491Z",
+  "documentTitle": "Explee Public API",
+  "pageHeading": "Find people and enrich their emails (async)",
+  "headings": [
+    {
+      "tag": "H3",
+      "text": "Find people and enrich their emails (async)",
+      "id": "scalar-refs-0-1220",
+      "className": "section-header-label"
+    },
+    {
+      "tag": "H4",
+      "text": "Body·FindAndEnrichPayload",
+      "id": null,
+      "className": "section-header-label request-body-title flex!"
+    },
+    {
+      "tag": "H4",
+      "text": "Responses",
+      "id": null,
+      "className": "section-header-label section-header-label--rule block! border-b pb-3 text-c-1 responses-title--tree mt-3 mb-0 block! leading-[1.45] font-medium"
+    }
+  ],
+  "paragraphs": [
+    "Search for people matching your filters and enrich their emails in a single async job. How it works: Submit search filters + max_contacts (how many contacts with emails you want, max 500 per call) Receive a task_id immediately Poll the GET endpoint with task_id for progress (with eta_seconds) and results For more than max_contacts, call again with the previous response's next_cursor Pricing: Search is free — you are never charged for people searched. basic: 1.5 credits per found email · premium: 5 credits per found email. You are charged ONLY for emails actually found. Worst-case credits are held up front (402 if insufficient). Deduplication: pass exclude_lists to skip people you already own — they are not enriched and not charged.",
+    "Search for people matching your filters and enrich their emails in a single async job.",
+    "How it works:",
+    "Pricing:",
+    "Deduplication: pass exclude_lists to skip people you already own — they are not enriched and not charged.",
+    "Request payload for the find-and-enrich endpoint.",
+    "Request payload for the find-and-enrich endpoint.",
+    "company_filtersType: PublicCompaniesFiltersrequired{ criteria, definition, definition_exclude, +46 }Copy link to company_filters Company filters to narrow down which companies to search people from. Use definition for semantic company search. Properties: 49max_contactsType: integermin: 1max: 500requiredExample500Copy link to max_contacts How many enriched contacts (found emails) you want. The search runs as wide as needed to reach this many found emails — you are charged ONLY for emails actually found, never for the search. Capped by your plan export limit. people_filtersType: PublicPeopleFiltersrequired{ criteria, followers, geo, +4 }Copy link to people_filters People filters used to find candidates: job_titles, geo, followers, etc. Properties: 7company_linkedin_idsType: array of integernullableCopy link to company_linkedin_ids Optional list of company LinkedIn IDs to restrict the search to these companies. cursorType: stringnullableCopy link to cursor Pagination cursor. Omit for the first page; on later pages pass the next_cursor returned by the previous completed job (with the SAME filters/preset) to fetch the next batch. exclude_listsType: array of string …100nullableExample[\"9f6c1c2e-1f7d-4b1a-9a55-3f1f8a2a4b10\"]Copy link to exclude_lists Ids of your dedup lists (see Deduplication endpoints). Results already present in these lists are excluded and never charged. When set, the free results zone does not apply. Max 100 lists / 500000 values combined per request. presetType: \"basic\" or \"premium\"enumDefaultbasicCopy link to preset Quality preset: basic (1.5 credits per found email) or premium (5 credits per found email).",
+    "Company filters to narrow down which companies to search people from. Use definition for semantic company search.",
+    "Company filters to narrow down which companies to search people from. Use definition for semantic company search."
+  ],
+  "parameters": [
+    {
+      "name": "company_filters",
+      "type": "PublicCompaniesFilters",
+      "required": true,
+      "description": "Company filters to narrow down which companies to search people from. Use definition for semantic company search."
+    },
+    {
+      "name": "definition",
+      "type": null,
+      "required": false,
+      "description": null
+    },
+    {
+      "name": "max_contacts",
+      "type": "integer",
+      "required": true,
+      "description": "How many enriched contacts (found emails) you want. The search runs as wide as needed to reach this many found emails — you are charged ONLY for emails actually found, never for the search. Capped by your plan export limit."
+    },
+    {
+      "name": "people_filters",
+      "type": "PublicPeopleFilters",
+      "required": true,
+      "description": "People filters used to find candidates: job_titles, geo, followers, etc."
+    },
+    {
+      "name": "company_linkedin_ids",
+      "type": "array of integer",
+      "required": false,
+      "description": "Optional list of company LinkedIn IDs to restrict the search to these companies."
+    },
+    {
+      "name": "cursor",
+      "type": "string",
+      "required": false,
+      "description": "Pagination cursor. Omit for the first page; on later pages pass the next_cursor returned by the previous completed job (with the SAME filters/preset) to fetch the next batch."
+    },
+    {
+      "name": "next_cursor",
+      "type": null,
+      "required": false,
+      "description": null
+    },
+    {
+      "name": "exclude_lists",
+      "type": "array of string",
+      "required": false,
+      "description": "Ids of your dedup lists (see Deduplication endpoints). Results already present in these lists are excluded and never charged. When set, the free results zone does not apply. Max 100 lists / 500000 values combined per request."
+    },
+    {
+      "name": "preset",
+      "type": "\"basic\" or \"premium\"",
+      "required": false,
+      "description": "Quality preset: basic (1.5 credits per found email) or premium (5 credits per found email)."
+    },
+    {
+      "name": "200",
+      "type": "application/json",
+      "required": false,
+      "description": "Successful Response"
+    },
+    {
+      "name": "401",
+      "type": "application/json",
+      "required": false,
+      "description": "Invalid or missing API key. Include X-API-Key header."
+    },
+    {
+      "name": "X-API-Key",
+      "type": null,
+      "required": false,
+      "description": null
+    },
+    {
+      "name": "402",
+      "type": "application/json",
+      "required": false,
+      "description": "Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account."
+    },
+    {
+      "name": "422",
+      "type": "application/json",
+      "required": false,
+      "description": "Validation error. Check request body and parameters."
+    },
+    {
+      "name": "429",
+      "type": "application/json",
+      "required": false,
+      "description": "Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan)."
+    },
+    {
+      "name": "500",
+      "type": "application/json",
+      "required": false,
+      "description": "Internal server error. Contact support if persists."
+    },
+    {
+      "name": "504",
+      "type": "application/json",
+      "required": false,
+      "description": "Request timeout. Please try again later."
+    }
+  ],
+  "responses": [],
+  "codeBlocksCount": 10,
+  "codeBlocksSample": [
+    {
+      "text": "max_contacts",
+      "className": null
+    },
+    {
+      "text": "task_id",
+      "className": null
+    },
+    {
+      "text": "task_id",
+      "className": null
+    }
+  ],
+  "tabs": [
+    {
+      "text": "Status: 200",
+      "active": true
+    },
+    {
+      "text": "Status: 401",
+      "active": false
+    },
+    {
+      "text": "Status: 402",
+      "active": false
+    },
+    {
+      "text": "Status: 422",
+      "active": false
+    },
+    {
+      "text": "Status: 429",
+      "active": false
+    },
+    {
+      "text": "Status: 500",
+      "active": false
+    },
+    {
+      "text": "Status: 504",
+      "active": false
+    }
+  ],
+  "buttonsCount": 34,
+  "buttonsSample": [
+    "Copy link",
+    "Auth Required",
+    "Copy as Markdown",
+    "Copy link to company_filters",
+    "Example",
+    "500",
+    "Copy link to max_contacts",
+    "Copy link to people_filters"
+  ],
+  "svgCount": 15,
+  "svgsSample": [
+    {
+      "className": "size-4.5",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-3",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-full",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": null,
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-3.5",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    }
+  ],
+  "visual": {
+    "geometry": {
+      "x": 348,
+      "y": 0,
+      "width": 1032,
+      "height": 1942
+    },
+    "typography": {
+      "fontFamily": "Inter, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "24px",
+      "fontWeight": "600",
+      "lineHeight": "34.8px",
+      "color": "rgb(27, 27, 27)"
+    },
+    "styling": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgba(0, 0, 0, 0.1)",
+      "borderRadius": "0px"
+    }
+  }
+}

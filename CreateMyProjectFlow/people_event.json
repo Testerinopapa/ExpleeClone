@@ -1,0 +1,9 @@
+{
+  "t": 28752.1,
+  "type": "fetch.request",
+  "url": "https://explee.com/auto-gtm/company/keethub.lovable.app/explore?src=cabinet&phase=research_company",
+  "id": "50a453e0-18e5-4d6d-82ed-53e4c376dfc3",
+  "method": "GET",
+  "requestUrl": "https://explee.com/api/agent/278198be-69aa-40db-ac20-9c03e333a2a4/file/_people.parquet?limit=100",
+  "body": null
+}

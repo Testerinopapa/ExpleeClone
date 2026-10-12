@@ -1,0 +1,125 @@
+{
+  "routeIndex": 1,
+  "label": "Introduction",
+  "url": "https://api.explee.com/public/api/docs#description/introduction",
+  "hashRoute": "#description/introduction",
+  "httpMethod": null,
+  "endpointPath": null,
+  "tag": "description",
+  "capturedAt": "2026-09-29T00:42:34.412Z",
+  "documentTitle": "Explee Public API",
+  "pageHeading": "Explee Public API",
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "Explee Public API",
+      "id": null,
+      "className": "section-header-label"
+    },
+    {
+      "tag": "H2",
+      "text": "AuthenticationRequired",
+      "id": null,
+      "className": "text-c-1 m-0 flex flex-1 items-center gap-1.5 leading-[20px]"
+    }
+  ],
+  "paragraphs": [
+    "Tip: This documentation is designed for humans. To integrate with AI agents, provide them with the OpenAPI schema at https://api.explee.com/public/api/openapi.json instead. Search millions of companies worldwide using natural language queries and structured filters! Rate limit: 10000 requests per hour, 150 concurrent requests per organization. Timeout: 90s.",
+    "Tip: This documentation is designed for humans. To integrate with AI agents, provide them with the OpenAPI schema at https://api.explee.com/public/api/openapi.json instead. Search millions of companies worldwide using natural language queries and structured filters! Rate limit: 10000 requests per hour, 150 concurrent requests per organization. Timeout: 90s.",
+    "Tip: This documentation is designed for humans. To integrate with AI agents, provide them with the OpenAPI schema at https://api.explee.com/public/api/openapi.json instead.",
+    "Search millions of companies worldwide using natural language queries and structured filters!",
+    "Rate limit: 10000 requests per hour, 150 concurrent requests per organization. Timeout: 90s.",
+    "Get your API key at API Keys",
+    "Get your API key at API Keys"
+  ],
+  "parameters": [],
+  "responses": [],
+  "codeBlocksCount": 0,
+  "codeBlocksSample": [],
+  "tabs": [
+    {
+      "text": "Shell",
+      "active": true
+    },
+    {
+      "text": "Ruby",
+      "active": false
+    },
+    {
+      "text": "Node.js",
+      "active": false
+    },
+    {
+      "text": "PHP",
+      "active": false
+    },
+    {
+      "text": "Python",
+      "active": false
+    }
+  ],
+  "buttonsCount": 12,
+  "buttonsSample": [
+    "Download OpenAPI Documentjson",
+    "Download OpenAPI Documentyaml",
+    "AuthenticationRequired",
+    "Selected Auth Type: ApiKeyAuth",
+    "Clear Value",
+    "Show Password",
+    "Shell",
+    "Ruby"
+  ],
+  "svgCount": 11,
+  "svgsSample": [
+    {
+      "className": "size-3 text-current",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-3 text-current",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-3 shrink-0 transition-transform duration-100 group-aria-expanded/combobox-button:rotate-180",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-full",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-full",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    }
+  ],
+  "visual": {
+    "geometry": {
+      "x": 348,
+      "y": 0,
+      "width": 1032,
+      "height": 548
+    },
+    "typography": {
+      "fontFamily": "Inter, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "24px",
+      "fontWeight": "600",
+      "lineHeight": "34.8px",
+      "color": "rgb(27, 27, 27)"
+    },
+    "styling": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgba(0, 0, 0, 0.1)",
+      "borderRadius": "0px"
+    }
+  }
+}

@@ -1,0 +1,170 @@
+[537] [section] mb-16 -> None
+    sel: body.h-full.\[-webkit-font-smoothing\:antialiased\] > div.min-h-screen.flex.flex-col:nth-of-type(2) > main.flex-1 > div > div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3)
+[538] [h2] text-2xl md:text-3xl font-bold text-foreground mb-8 text-center -> "What's Inside Our Database"
+    sel: body.h-full.\[-webkit-font-smoothing\:antialiased\] > div.min-h-screen.flex.flex-col:nth-of-type(2) > main.flex-1 > div > div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > h2.text-2xl.md\:text-3xl.font-bold
+[539] [div] flex flex-col lg:flex-row gap-6 -> None
+    sel: body.h-full.\[-webkit-font-smoothing\:antialiased\] > div.min-h-screen.flex.flex-col:nth-of-type(2) > main.flex-1 > div > div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row
+[540] [nav] lg:w-72 shrink-0 -> None
+    sel: div.min-h-screen.flex.flex-col:nth-of-type(2) > main.flex-1 > div > div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > nav.lg\:w-72.shrink-0
+[541] [div] lg:sticky lg:top-24 bg-card rounded-2xl border border-border overflow-hidden -> None
+    sel: main.flex-1 > div > div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > nav.lg\:w-72.shrink-0 > div.lg\:sticky.lg\:top-24.bg-card
+[542] [div] p-4 border-b border-border bg-muted -> None
+    sel: div > div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > nav.lg\:w-72.shrink-0 > div.lg\:sticky.lg\:top-24.bg-card > div.p-4.border-b.border-border
+[543] [h3] font-semibold text-foreground text-sm -> 'Data Categories'
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > nav.lg\:w-72.shrink-0 > div.lg\:sticky.lg\:top-24.bg-card > div.p-4.border-b.border-border > h3.font-semibold.text-foreground.text-sm
+[544] [ul] divide-y divide-border max-h-[60vh] overflow-y-auto lg:max-h-none lg:overflow-visible -> None
+    sel: div > div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > nav.lg\:w-72.shrink-0 > div.lg\:sticky.lg\:top-24.bg-card > ul.divide-y.divide-border.max-h-\[60vh\]
+[545] [li]  -> None
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > nav.lg\:w-72.shrink-0 > div.lg\:sticky.lg\:top-24.bg-card > ul.divide-y.divide-border.max-h-\[60vh\] > li:nth-of-type(1)
+[546] [button] w-full text-left px-4 py-3 flex items-center gap-3 transition-colors duration-150 bg-brand-500/10 text-brand-500 border-l-2 border-brand-500 -> None
+    sel: section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > nav.lg\:w-72.shrink-0 > div.lg\:sticky.lg\:top-24.bg-card > ul.divide-y.divide-border.max-h-\[60vh\] > li:nth-of-type(1) > button.w-full.text-left.px-4
+[551] [li]  -> None
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > nav.lg\:w-72.shrink-0 > div.lg\:sticky.lg\:top-24.bg-card > ul.divide-y.divide-border.max-h-\[60vh\] > li:nth-of-type(2)
+[552] [button] w-full text-left px-4 py-3 flex items-center gap-3 transition-colors duration-150 hover:bg-muted text-muted-foreground border-l-2 border-transparent -> None
+    sel: section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > nav.lg\:w-72.shrink-0 > div.lg\:sticky.lg\:top-24.bg-card > ul.divide-y.divide-border.max-h-\[60vh\] > li:nth-of-type(2) > button.w-full.text-left.px-4
+[557] [li]  -> None
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > nav.lg\:w-72.shrink-0 > div.lg\:sticky.lg\:top-24.bg-card > ul.divide-y.divide-border.max-h-\[60vh\] > li:nth-of-type(3)
+[558] [button] w-full text-left px-4 py-3 flex items-center gap-3 transition-colors duration-150 hover:bg-muted text-muted-foreground border-l-2 border-transparent -> None
+    sel: section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > nav.lg\:w-72.shrink-0 > div.lg\:sticky.lg\:top-24.bg-card > ul.divide-y.divide-border.max-h-\[60vh\] > li:nth-of-type(3) > button.w-full.text-left.px-4
+[563] [li]  -> None
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > nav.lg\:w-72.shrink-0 > div.lg\:sticky.lg\:top-24.bg-card > ul.divide-y.divide-border.max-h-\[60vh\] > li:nth-of-type(4)
+[564] [button] w-full text-left px-4 py-3 flex items-center gap-3 transition-colors duration-150 hover:bg-muted text-muted-foreground border-l-2 border-transparent -> None
+    sel: section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > nav.lg\:w-72.shrink-0 > div.lg\:sticky.lg\:top-24.bg-card > ul.divide-y.divide-border.max-h-\[60vh\] > li:nth-of-type(4) > button.w-full.text-left.px-4
+[569] [li]  -> None
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > nav.lg\:w-72.shrink-0 > div.lg\:sticky.lg\:top-24.bg-card > ul.divide-y.divide-border.max-h-\[60vh\] > li:nth-of-type(5)
+[570] [button] w-full text-left px-4 py-3 flex items-center gap-3 transition-colors duration-150 hover:bg-muted text-muted-foreground border-l-2 border-transparent -> None
+    sel: section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > nav.lg\:w-72.shrink-0 > div.lg\:sticky.lg\:top-24.bg-card > ul.divide-y.divide-border.max-h-\[60vh\] > li:nth-of-type(5) > button.w-full.text-left.px-4
+[575] [li]  -> None
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > nav.lg\:w-72.shrink-0 > div.lg\:sticky.lg\:top-24.bg-card > ul.divide-y.divide-border.max-h-\[60vh\] > li:nth-of-type(6)
+[576] [button] w-full text-left px-4 py-3 flex items-center gap-3 transition-colors duration-150 hover:bg-muted text-muted-foreground border-l-2 border-transparent -> None
+    sel: section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > nav.lg\:w-72.shrink-0 > div.lg\:sticky.lg\:top-24.bg-card > ul.divide-y.divide-border.max-h-\[60vh\] > li:nth-of-type(6) > button.w-full.text-left.px-4
+[581] [li]  -> None
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > nav.lg\:w-72.shrink-0 > div.lg\:sticky.lg\:top-24.bg-card > ul.divide-y.divide-border.max-h-\[60vh\] > li:nth-of-type(7)
+[582] [button] w-full text-left px-4 py-3 flex items-center gap-3 transition-colors duration-150 hover:bg-muted text-muted-foreground border-l-2 border-transparent -> None
+    sel: section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > nav.lg\:w-72.shrink-0 > div.lg\:sticky.lg\:top-24.bg-card > ul.divide-y.divide-border.max-h-\[60vh\] > li:nth-of-type(7) > button.w-full.text-left.px-4
+[587] [li]  -> None
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > nav.lg\:w-72.shrink-0 > div.lg\:sticky.lg\:top-24.bg-card > ul.divide-y.divide-border.max-h-\[60vh\] > li:nth-of-type(8)
+[588] [button] w-full text-left px-4 py-3 flex items-center gap-3 transition-colors duration-150 hover:bg-muted text-muted-foreground border-l-2 border-transparent -> None
+    sel: section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > nav.lg\:w-72.shrink-0 > div.lg\:sticky.lg\:top-24.bg-card > ul.divide-y.divide-border.max-h-\[60vh\] > li:nth-of-type(8) > button.w-full.text-left.px-4
+[593] [li]  -> None
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > nav.lg\:w-72.shrink-0 > div.lg\:sticky.lg\:top-24.bg-card > ul.divide-y.divide-border.max-h-\[60vh\] > li:nth-of-type(9)
+[594] [a] gtm-demo-cta w-full text-left px-4 py-3 flex items-center gap-3 transition-colors duration-150 hover:bg-brand-500/10 text-brand-500 border-l-2 border-transparent hover:border-brand-500 [&>*]:pointer-events-none -> None
+    sel: section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > nav.lg\:w-72.shrink-0 > div.lg\:sticky.lg\:top-24.bg-card > ul.divide-y.divide-border.max-h-\[60vh\] > li:nth-of-type(9) > a.gtm-demo-cta.w-full.text-left
+[599] [li]  -> None
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > nav.lg\:w-72.shrink-0 > div.lg\:sticky.lg\:top-24.bg-card > ul.divide-y.divide-border.max-h-\[60vh\] > li:nth-of-type(10)
+[600] [a] gtm-demo-cta w-full text-left px-4 py-3 flex items-center gap-3 transition-colors duration-150 hover:bg-brand-500/10 text-brand-500 border-l-2 border-transparent hover:border-brand-500 [&>*]:pointer-events-none -> None
+    sel: section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > nav.lg\:w-72.shrink-0 > div.lg\:sticky.lg\:top-24.bg-card > ul.divide-y.divide-border.max-h-\[60vh\] > li:nth-of-type(10) > a.gtm-demo-cta.w-full.text-left
+[607] [div] flex-1 min-w-0 space-y-8 -> None
+    sel: div.min-h-screen.flex.flex-col:nth-of-type(2) > main.flex-1 > div > div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8
+[609] [div] bg-muted rounded-t-2xl p-4 border border-b-0 border-border flex items-center justify-between -> None
+    sel: div > div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(1) > div.bg-muted.rounded-t-2xl.p-4:nth-of-type(1)
+[610] [h2] font-semibold text-foreground text-sm -> 'General Information'
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(1) > div.bg-muted.rounded-t-2xl.p-4:nth-of-type(1) > h2.font-semibold.text-foreground.text-sm
+[611] [span] text-xs text-muted-foreground -> '12 fields'
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(1) > div.bg-muted.rounded-t-2xl.p-4:nth-of-type(1) > span.text-xs.text-muted-foreground
+[612] [div] bg-card rounded-b-2xl border border-t-0 border-border -> None
+    sel: div > div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(1) > div.bg-card.rounded-b-2xl.border:nth-of-type(2)
+[613] [div] grid grid-cols-1 lg:grid-cols-2 gap-6 p-6 -> None
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(1) > div.bg-card.rounded-b-2xl.border:nth-of-type(2) > div.grid.grid-cols-1.lg\:grid-cols-2
+[614] [div] space-y-1 divide-y divide-border -> None
+    sel: section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(1) > div.bg-card.rounded-b-2xl.border:nth-of-type(2) > div.grid.grid-cols-1.lg\:grid-cols-2 > div.space-y-1.divide-y.divide-border:nth-of-type(1)
+[711] [div] h-fit -> None
+    sel: section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(1) > div.bg-card.rounded-b-2xl.border:nth-of-type(2) > div.grid.grid-cols-1.lg\:grid-cols-2 > div.h-fit:nth-of-type(2)
+[772] [div] bg-muted rounded-t-2xl p-4 border border-b-0 border-border flex items-center justify-between -> None
+    sel: div > div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(2) > div.bg-muted.rounded-t-2xl.p-4:nth-of-type(1)
+[773] [h2] font-semibold text-foreground text-sm -> 'Location Data'
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(2) > div.bg-muted.rounded-t-2xl.p-4:nth-of-type(1) > h2.font-semibold.text-foreground.text-sm
+[774] [span] text-xs text-muted-foreground -> '5 fields'
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(2) > div.bg-muted.rounded-t-2xl.p-4:nth-of-type(1) > span.text-xs.text-muted-foreground
+[775] [div] bg-card rounded-b-2xl border border-t-0 border-border -> None
+    sel: div > div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(2) > div.bg-card.rounded-b-2xl.border:nth-of-type(2)
+[776] [div] grid grid-cols-1 lg:grid-cols-2 gap-6 p-6 -> None
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(2) > div.bg-card.rounded-b-2xl.border:nth-of-type(2) > div.grid.grid-cols-1.lg\:grid-cols-2
+[777] [div] space-y-1 divide-y divide-border -> None
+    sel: section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(2) > div.bg-card.rounded-b-2xl.border:nth-of-type(2) > div.grid.grid-cols-1.lg\:grid-cols-2 > div.space-y-1.divide-y.divide-border:nth-of-type(1)
+[818] [div] h-fit -> None
+    sel: section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(2) > div.bg-card.rounded-b-2xl.border:nth-of-type(2) > div.grid.grid-cols-1.lg\:grid-cols-2 > div.h-fit:nth-of-type(2)
+[858] [div] bg-muted rounded-t-2xl p-4 border border-b-0 border-border flex items-center justify-between -> None
+    sel: div > div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(3) > div.bg-muted.rounded-t-2xl.p-4:nth-of-type(1)
+[859] [h2] font-semibold text-foreground text-sm -> 'Contact Information'
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(3) > div.bg-muted.rounded-t-2xl.p-4:nth-of-type(1) > h2.font-semibold.text-foreground.text-sm
+[860] [span] text-xs text-muted-foreground -> '3 fields'
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(3) > div.bg-muted.rounded-t-2xl.p-4:nth-of-type(1) > span.text-xs.text-muted-foreground
+[861] [div] bg-card rounded-b-2xl border border-t-0 border-border -> None
+    sel: div > div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(3) > div.bg-card.rounded-b-2xl.border:nth-of-type(2)
+[862] [div] grid grid-cols-1 lg:grid-cols-2 gap-6 p-6 -> None
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(3) > div.bg-card.rounded-b-2xl.border:nth-of-type(2) > div.grid.grid-cols-1.lg\:grid-cols-2
+[863] [div] space-y-1 divide-y divide-border -> None
+    sel: section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(3) > div.bg-card.rounded-b-2xl.border:nth-of-type(2) > div.grid.grid-cols-1.lg\:grid-cols-2 > div.space-y-1.divide-y.divide-border:nth-of-type(1)
+[888] [div] h-fit -> None
+    sel: section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(3) > div.bg-card.rounded-b-2xl.border:nth-of-type(2) > div.grid.grid-cols-1.lg\:grid-cols-2 > div.h-fit:nth-of-type(2)
+[914] [div] bg-muted rounded-t-2xl p-4 border border-b-0 border-border flex items-center justify-between -> None
+    sel: div > div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(4) > div.bg-muted.rounded-t-2xl.p-4:nth-of-type(1)
+[915] [h2] font-semibold text-foreground text-sm -> 'Reviews & Ratings'
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(4) > div.bg-muted.rounded-t-2xl.p-4:nth-of-type(1) > h2.font-semibold.text-foreground.text-sm
+[916] [span] text-xs text-muted-foreground -> '7 fields'
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(4) > div.bg-muted.rounded-t-2xl.p-4:nth-of-type(1) > span.text-xs.text-muted-foreground
+[917] [div] bg-card rounded-b-2xl border border-t-0 border-border -> None
+    sel: div > div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(4) > div.bg-card.rounded-b-2xl.border:nth-of-type(2)
+[918] [div] grid grid-cols-1 lg:grid-cols-2 gap-6 p-6 -> None
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(4) > div.bg-card.rounded-b-2xl.border:nth-of-type(2) > div.grid.grid-cols-1.lg\:grid-cols-2
+[919] [div] space-y-1 divide-y divide-border -> None
+    sel: section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(4) > div.bg-card.rounded-b-2xl.border:nth-of-type(2) > div.grid.grid-cols-1.lg\:grid-cols-2 > div.space-y-1.divide-y.divide-border:nth-of-type(1)
+[976] [div] h-fit -> None
+    sel: section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(4) > div.bg-card.rounded-b-2xl.border:nth-of-type(2) > div.grid.grid-cols-1.lg\:grid-cols-2 > div.h-fit:nth-of-type(2)
+[1023] [div] bg-muted rounded-t-2xl p-4 border border-b-0 border-border flex items-center justify-between -> None
+    sel: div > div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(5) > div.bg-muted.rounded-t-2xl.p-4:nth-of-type(1)
+[1024] [h2] font-semibold text-foreground text-sm -> 'Visitor Information'
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(5) > div.bg-muted.rounded-t-2xl.p-4:nth-of-type(1) > h2.font-semibold.text-foreground.text-sm
+[1025] [span] text-xs text-muted-foreground -> '5 fields'
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(5) > div.bg-muted.rounded-t-2xl.p-4:nth-of-type(1) > span.text-xs.text-muted-foreground
+[1026] [div] bg-card rounded-b-2xl border border-t-0 border-border -> None
+    sel: div > div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(5) > div.bg-card.rounded-b-2xl.border:nth-of-type(2)
+[1027] [div] grid grid-cols-1 lg:grid-cols-2 gap-6 p-6 -> None
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(5) > div.bg-card.rounded-b-2xl.border:nth-of-type(2) > div.grid.grid-cols-1.lg\:grid-cols-2
+[1028] [div] space-y-1 divide-y divide-border -> None
+    sel: section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(5) > div.bg-card.rounded-b-2xl.border:nth-of-type(2) > div.grid.grid-cols-1.lg\:grid-cols-2 > div.space-y-1.divide-y.divide-border:nth-of-type(1)
+[1069] [div] h-fit -> None
+    sel: section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(5) > div.bg-card.rounded-b-2xl.border:nth-of-type(2) > div.grid.grid-cols-1.lg\:grid-cols-2 > div.h-fit:nth-of-type(2)
+[1109] [div] bg-muted rounded-t-2xl p-4 border border-b-0 border-border flex items-center justify-between -> None
+    sel: div > div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(6) > div.bg-muted.rounded-t-2xl.p-4:nth-of-type(1)
+[1110] [h2] font-semibold text-foreground text-sm -> 'Media Content'
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(6) > div.bg-muted.rounded-t-2xl.p-4:nth-of-type(1) > h2.font-semibold.text-foreground.text-sm
+[1111] [span] text-xs text-muted-foreground -> '2 fields'
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(6) > div.bg-muted.rounded-t-2xl.p-4:nth-of-type(1) > span.text-xs.text-muted-foreground
+[1112] [div] bg-card rounded-b-2xl border border-t-0 border-border -> None
+    sel: div > div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(6) > div.bg-card.rounded-b-2xl.border:nth-of-type(2)
+[1113] [div] grid grid-cols-1 lg:grid-cols-2 gap-6 p-6 -> None
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(6) > div.bg-card.rounded-b-2xl.border:nth-of-type(2) > div.grid.grid-cols-1.lg\:grid-cols-2
+[1114] [div] space-y-1 divide-y divide-border -> None
+    sel: section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(6) > div.bg-card.rounded-b-2xl.border:nth-of-type(2) > div.grid.grid-cols-1.lg\:grid-cols-2 > div.space-y-1.divide-y.divide-border:nth-of-type(1)
+[1131] [div] h-fit -> None
+    sel: section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(6) > div.bg-card.rounded-b-2xl.border:nth-of-type(2) > div.grid.grid-cols-1.lg\:grid-cols-2 > div.h-fit:nth-of-type(2)
+[1150] [div] bg-muted rounded-t-2xl p-4 border border-b-0 border-border flex items-center justify-between -> None
+    sel: div > div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(7) > div.bg-muted.rounded-t-2xl.p-4:nth-of-type(1)
+[1151] [h2] font-semibold text-foreground text-sm -> 'Hospitality Features'
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(7) > div.bg-muted.rounded-t-2xl.p-4:nth-of-type(1) > h2.font-semibold.text-foreground.text-sm
+[1152] [span] text-xs text-muted-foreground -> '2 fields'
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(7) > div.bg-muted.rounded-t-2xl.p-4:nth-of-type(1) > span.text-xs.text-muted-foreground
+[1153] [div] bg-card rounded-b-2xl border border-t-0 border-border -> None
+    sel: div > div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(7) > div.bg-card.rounded-b-2xl.border:nth-of-type(2)
+[1154] [div] grid grid-cols-1 lg:grid-cols-2 gap-6 p-6 -> None
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(7) > div.bg-card.rounded-b-2xl.border:nth-of-type(2) > div.grid.grid-cols-1.lg\:grid-cols-2
+[1155] [div] space-y-1 divide-y divide-border -> None
+    sel: section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(7) > div.bg-card.rounded-b-2xl.border:nth-of-type(2) > div.grid.grid-cols-1.lg\:grid-cols-2 > div.space-y-1.divide-y.divide-border:nth-of-type(1)
+[1172] [div] h-fit -> None
+    sel: section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(7) > div.bg-card.rounded-b-2xl.border:nth-of-type(2) > div.grid.grid-cols-1.lg\:grid-cols-2 > div.h-fit:nth-of-type(2)
+[1191] [div] bg-muted rounded-t-2xl p-4 border border-b-0 border-border flex items-center justify-between -> None
+    sel: div > div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(8) > div.bg-muted.rounded-t-2xl.p-4:nth-of-type(1)
+[1192] [h2] font-semibold text-foreground text-sm -> 'Place Labels & Attributes'
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(8) > div.bg-muted.rounded-t-2xl.p-4:nth-of-type(1) > h2.font-semibold.text-foreground.text-sm
+[1193] [span] text-xs text-muted-foreground -> '18 fields'
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(8) > div.bg-muted.rounded-t-2xl.p-4:nth-of-type(1) > span.text-xs.text-muted-foreground
+[1194] [div] bg-card rounded-b-2xl border border-t-0 border-border -> None
+    sel: div > div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(8) > div.bg-card.rounded-b-2xl.border:nth-of-type(2)
+[1195] [div] grid grid-cols-1 lg:grid-cols-2 gap-6 p-6 -> None
+    sel: div.container.mx-auto.max-w-\[1200px\]:nth-of-type(2) > section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(8) > div.bg-card.rounded-b-2xl.border:nth-of-type(2) > div.grid.grid-cols-1.lg\:grid-cols-2
+[1196] [div] space-y-1 divide-y divide-border -> None
+    sel: section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(8) > div.bg-card.rounded-b-2xl.border:nth-of-type(2) > div.grid.grid-cols-1.lg\:grid-cols-2 > div.space-y-1.divide-y.divide-border:nth-of-type(1)
+[1341] [div] h-fit -> None
+    sel: section.mb-16:nth-of-type(3) > div.flex.flex-col.lg\:flex-row > div.flex-1.min-w-0.space-y-8 > section.scroll-mt-24:nth-of-type(8) > div.bg-card.rounded-b-2xl.border:nth-of-type(2) > div.grid.grid-cols-1.lg\:grid-cols-2 > div.h-fit:nth-of-type(2)

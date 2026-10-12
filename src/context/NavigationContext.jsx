@@ -79,10 +79,12 @@ export function resolveProductFromLocation() {
     };
   }
 
-  // 0d. AutoGTM Landing (/app-auto-gtm)
+  // 0d. AutoGTM Landing (/app-auto-gtm, with /app-autogtm as an alias)
   if (
     pathname.includes('/app-auto-gtm') ||
-    hash.includes('app-auto-gtm')
+    pathname.includes('/app-autogtm') ||
+    hash.includes('app-auto-gtm') ||
+    hash.includes('app-autogtm')
   ) {
     return {
       product: 'app-auto-gtm',

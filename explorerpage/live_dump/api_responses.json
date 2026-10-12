@@ -1,0 +1,8 @@
+{
+  "https://explee.com/api/track": null,
+  "https://ipapi.co/json/": {
+    "error": true,
+    "reason": "RateLimited",
+    "message": "Visit https://ipapi.co/ratelimited/ for details"
+  }
+}

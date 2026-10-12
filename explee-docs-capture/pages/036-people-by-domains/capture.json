@@ -1,0 +1,228 @@
+{
+  "routeIndex": 36,
+  "label": "People by Domains",
+  "url": "https://api.explee.com/public/api/docs#tag/search/POST/public/api/v1/search/people-by-domains",
+  "hashRoute": "#tag/search/POST/public/api/v1/search/people-by-domains",
+  "httpMethod": "POST",
+  "endpointPath": "/public/api/v1/search/people-by-domains",
+  "tag": "search",
+  "capturedAt": "2026-09-29T03:02:24.687Z",
+  "documentTitle": "Explee Public API",
+  "pageHeading": "People by Domains",
+  "headings": [
+    {
+      "tag": "H3",
+      "text": "People by Domains",
+      "id": "scalar-refs-0-683",
+      "className": "section-header-label"
+    },
+    {
+      "tag": "H4",
+      "text": "Body·SearchPeopleByDomainsPayload",
+      "id": null,
+      "className": "section-header-label request-body-title flex!"
+    },
+    {
+      "tag": "H4",
+      "text": "Responses",
+      "id": null,
+      "className": "section-header-label section-header-label--rule block! border-b pb-3 text-c-1 responses-title--tree mt-3 mb-0 block! leading-[1.45] font-medium"
+    }
+  ],
+  "paragraphs": [
+    "Find people at companies by their domains. How it works: Provide a list of company domains (up to 1000) and job titles to search for The system finds companies by domains Returns up to people_per_company people per found company with matching job titles Job title matching: Uses semantic search: \"Head of Sales\" will match \"VP Sales\", \"Sales Director\", etc. Multiple job titles are combined with OR logic Parameters: people_per_company: Number of people to return per company (1-1000, default: 1) Limits: Maximum 1000 domains per request Maximum 20 job titles per request Maximum 1000 people per company Maximum 10000 people per response (total) Billing: 1 credit per person returned Deduplication: Pass dedup list ids in exclude_lists — matched people are not returned and not charged",
+    "Find people at companies by their domains.",
+    "How it works:",
+    "Job title matching:",
+    "Parameters:",
+    "Limits:",
+    "Billing:",
+    "Deduplication:",
+    "Request payload for people search by domains (batch mode).",
+    "Request payload for people search by domains (batch mode)."
+  ],
+  "parameters": [
+    {
+      "name": "domains",
+      "type": "array of string",
+      "required": true,
+      "description": "List of company domains (max 1000). Each domain will be normalized."
+    },
+    {
+      "name": "job_titles",
+      "type": "array of string",
+      "required": true,
+      "description": "Job titles to search for (max 20, OR logic). Supports semantic matching."
+    },
+    {
+      "name": "exclude_lists",
+      "type": "array of string",
+      "required": false,
+      "description": "Ids of your dedup lists (see Deduplication endpoints). Results already present in these lists are excluded and never charged. When set, the free results zone does not apply. Max 100 lists / 500000 values combined per request."
+    },
+    {
+      "name": "people_per_company",
+      "type": "integer",
+      "required": false,
+      "description": "Number of people to return per company (1-1000). Default: 1."
+    },
+    {
+      "name": "200",
+      "type": "application/json",
+      "required": false,
+      "description": "Successful Response"
+    },
+    {
+      "name": "401",
+      "type": "application/json",
+      "required": false,
+      "description": "Invalid or missing API key. Include X-API-Key header."
+    },
+    {
+      "name": "X-API-Key",
+      "type": null,
+      "required": false,
+      "description": null
+    },
+    {
+      "name": "402",
+      "type": "application/json",
+      "required": false,
+      "description": "Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account."
+    },
+    {
+      "name": "422",
+      "type": "application/json",
+      "required": false,
+      "description": "Validation error. Check request body and parameters."
+    },
+    {
+      "name": "429",
+      "type": "application/json",
+      "required": false,
+      "description": "Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan)."
+    },
+    {
+      "name": "500",
+      "type": "application/json",
+      "required": false,
+      "description": "Internal server error. Contact support if persists."
+    },
+    {
+      "name": "504",
+      "type": "application/json",
+      "required": false,
+      "description": "Request timeout. Please try again later."
+    }
+  ],
+  "responses": [],
+  "codeBlocksCount": 8,
+  "codeBlocksSample": [
+    {
+      "text": "people_per_company",
+      "className": null
+    },
+    {
+      "text": "people_per_company",
+      "className": null
+    },
+    {
+      "text": "exclude_lists",
+      "className": null
+    }
+  ],
+  "tabs": [
+    {
+      "text": "Status: 200",
+      "active": true
+    },
+    {
+      "text": "Status: 401",
+      "active": false
+    },
+    {
+      "text": "Status: 402",
+      "active": false
+    },
+    {
+      "text": "Status: 422",
+      "active": false
+    },
+    {
+      "text": "Status: 429",
+      "active": false
+    },
+    {
+      "text": "Status: 500",
+      "active": false
+    },
+    {
+      "text": "Status: 504",
+      "active": false
+    }
+  ],
+  "buttonsCount": 35,
+  "buttonsSample": [
+    "Copy link",
+    "Auth Required",
+    "Copy as Markdown",
+    "Example",
+    "[\"bmw.com\", \"mercedes-benz.com\", \"audi.com\"]",
+    "Copy link to domains",
+    "Example",
+    "[\"Head of Sales\", \"VP Marketing\"]"
+  ],
+  "svgCount": 15,
+  "svgsSample": [
+    {
+      "className": "size-4.5",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-3",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-full",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "scalar-icon size-3 group-hover:text-c-1 text-c-3 ml-auto min-h-3 min-w-3",
+      "viewBox": "0 0 24 24",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "className": "size-3.5",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    }
+  ],
+  "visual": {
+    "geometry": {
+      "x": 348,
+      "y": 0,
+      "width": 1032,
+      "height": 1822
+    },
+    "typography": {
+      "fontFamily": "Inter, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "24px",
+      "fontWeight": "600",
+      "lineHeight": "34.8px",
+      "color": "rgb(27, 27, 27)"
+    },
+    "styling": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgba(0, 0, 0, 0.1)",
+      "borderRadius": "0px"
+    }
+  }
+}

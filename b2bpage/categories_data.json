@@ -1,0 +1,72 @@
+[
+  {
+    "id": "general",
+    "name": "General data",
+    "fieldCount": 0,
+    "fields": [],
+    "code": ""
+  },
+  {
+    "id": "market_segments",
+    "name": "AI-powered Market Segments",
+    "fieldCount": 0,
+    "fields": [],
+    "code": ""
+  },
+  {
+    "id": "geography",
+    "name": "Geography data",
+    "fieldCount": 0,
+    "fields": [],
+    "code": ""
+  },
+  {
+    "id": "size_revenue_funding",
+    "name": "Size, Revenue and Funding data",
+    "fieldCount": 0,
+    "fields": [],
+    "code": ""
+  },
+  {
+    "id": "contact",
+    "name": "Contact data",
+    "fieldCount": 0,
+    "fields": [],
+    "code": ""
+  },
+  {
+    "id": "marketing_traffic",
+    "name": "Marketing and traffic data",
+    "fieldCount": 0,
+    "fields": [],
+    "code": ""
+  },
+  {
+    "id": "linkedin",
+    "name": "Professional Network and Employees Data",
+    "fieldCount": 0,
+    "fields": [],
+    "code": ""
+  },
+  {
+    "id": "web_data",
+    "name": "Full Web Data",
+    "fieldCount": 0,
+    "fields": [],
+    "code": ""
+  },
+  {
+    "id": "google_maps",
+    "name": "Google Maps Data",
+    "fieldCount": 0,
+    "fields": [],
+    "code": ""
+  },
+  {
+    "id": "technologies",
+    "name": "Technologies",
+    "fieldCount": 0,
+    "fields": [],
+    "code": ""
+  }
+]

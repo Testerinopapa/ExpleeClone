@@ -1,0 +1,17 @@
+{
+  "name": "explee-docs-crawler",
+  "version": "1.0.0",
+  "description": "High-fidelity automated crawler for Explee Public API documentation",
+  "main": "crawler.js",
+  "type": "module",
+  "scripts": {
+    "capture": "node crawler.js",
+    "capture:visual": "node visual-crawler.js"
+  },
+  "dependencies": {
+    "playwright": "^1.49.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

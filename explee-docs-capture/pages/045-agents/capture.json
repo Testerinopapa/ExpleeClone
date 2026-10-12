@@ -1,0 +1,59 @@
+{
+  "routeIndex": 45,
+  "label": "Agents",
+  "url": "https://api.explee.com/public/api/docs#tag/agents",
+  "hashRoute": "#tag/agents",
+  "httpMethod": null,
+  "endpointPath": null,
+  "tag": "agents",
+  "capturedAt": "2026-09-29T03:02:58.257Z",
+  "documentTitle": "Explee Public API",
+  "pageHeading": "Agents (Collapsed)",
+  "headings": [
+    {
+      "tag": "H2",
+      "text": "Agents (Collapsed)",
+      "id": "scalar-refs-0-25",
+      "className": "section-header-label"
+    }
+  ],
+  "paragraphs": [],
+  "parameters": [],
+  "responses": [],
+  "codeBlocksCount": 0,
+  "codeBlocksSample": [],
+  "tabs": [],
+  "buttonsCount": 1,
+  "buttonsSample": [
+    "Copy link"
+  ],
+  "svgCount": 1,
+  "svgsSample": [
+    {
+      "className": "size-4.5",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    }
+  ],
+  "visual": {
+    "geometry": {
+      "x": 348,
+      "y": 0,
+      "width": 1032,
+      "height": 372
+    },
+    "typography": {
+      "fontFamily": "Inter, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "24px",
+      "fontWeight": "600",
+      "lineHeight": "34.8px",
+      "color": "rgb(27, 27, 27)"
+    },
+    "styling": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgba(0, 0, 0, 0.1)",
+      "borderRadius": "0px"
+    }
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "routeIndex": 16,
+  "label": "Set project daily budget",
+  "url": "https://api.explee.com/public/api/docs#tag/autogtm/PATCH/public/api/v1/autogtm/projects/{project_id}/budget",
+  "hashRoute": "#tag/autogtm/PATCH/public/api/v1/autogtm/projects/{project_id}/budget",
+  "httpMethod": "PATCH",
+  "endpointPath": "/public/api/v1/autogtm/projects/{project_id}/budget",
+  "tag": "autogtm",
+  "capturedAt": "2026-09-29T00:43:15.517Z",
+  "documentTitle": "Explee Public API",
+  "pageHeading": "Set project daily budget",
+  "headings": [
+    {
+      "tag": "H3",
+      "text": "Set project daily budget",
+      "id": "scalar-refs-0-1070",
+      "className": "section-header-label"
+    },
+    {
+      "tag": "H4",
+      "text": "Path Parameters",
+      "id": "scalar-refs-0-1072",
+      "className": "section-header-label section-header-label--rule block! border-b pb-3 text-c-1 parameter-list-title--tree mt-3 mb-1.5 block! text-lg leading-[1.45] font-medium"
+    },
+    {
+      "tag": "H4",
+      "text": "Body·SetProjectBudgetBody",
+      "id": null,
+      "className": "section-header-label request-body-title flex!"
+    },
+    {
+      "tag": "H4",
+      "text": "Responses",
+      "id": null,
+      "className": "section-header-label section-header-label--rule block! border-b pb-3 text-c-1 responses-title--tree mt-3 mb-0 block! leading-[1.45] font-medium"
+    }
+  ],
+  "paragraphs": [
+    "Set the project's total daily outreach budget. The change is spread across the project's active campaigns proportionally — exactly what the dashboard slider does. 0 pauses all sending while keeping campaigns configured (the explicit off switch).",
+    "Set the project's total daily outreach budget.",
+    "The change is spread across the project's active campaigns proportionally — exactly what the dashboard slider does. 0 pauses all sending while keeping campaigns configured (the explicit off switch).",
+    "Integer numbers.",
+    "Integer numbers.",
+    "Body for setting the project budget cap.",
+    "Body for setting the project budget cap.",
+    "daily_budget_usdType: integermin: 0max: 1000000requiredExample50Copy link to daily_budget_usd New total daily budget (USD/day). 0 explicitly pauses all sending while keeping campaigns configured. The change is spread across active campaigns proportionally.",
+    "New total daily budget (USD/day). 0 explicitly pauses all sending while keeping campaigns configured. The change is spread across active campaigns proportionally.",
+    "New total daily budget (USD/day). 0 explicitly pauses all sending while keeping campaigns configured. The change is spread across active campaigns proportionally."
+  ],
+  "parameters": [
+    {
+      "name": "project_id",
+      "type": "integer",
+      "required": true,
+      "description": "Integer numbers."
+    },
+    {
+      "name": "daily_budget_usd",
+      "type": "integer",
+      "required": true,
+      "description": "New total daily budget (USD/day). 0 explicitly pauses all sending while keeping campaigns configured. The change is spread across active campaigns proportionally."
+    },
+    {
+      "name": "0",
+      "type": null,
+      "required": false,
+      "description": null
+    },
+    {
+      "name": "200",
+      "type": "application/json",
+      "required": false,
+      "description": "Successful Response"
+    },
+    {
+      "name": "401",
+      "type": "application/json",
+      "required": false,
+      "description": "Invalid or missing API key. Include X-API-Key header."
+    },
+    {
+      "name": "X-API-Key",
+      "type": null,
+      "required": false,
+      "description": null
+    },
+    {
+      "name": "402",
+      "type": "application/json",
+      "required": false,
+      "description": "Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account."
+    },
+    {
+      "name": "404",
+      "type": null,
+      "required": false,
+      "description": "Project not found or not owned by your organization."
+    },
+    {
+      "name": "422",
+      "type": "application/json",
+      "required": false,
+      "description": "Validation error. Check request body and parameters."
+    },
+    {
+      "name": "429",
+      "type": "application/json",
+      "required": false,
+      "description": "Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan)."
+    },
+    {
+      "name": "500",
+      "type": "application/json",
+      "required": false,
+      "description": "Internal server error. Contact support if persists."
+    },
+    {
+      "name": "504",
+      "type": "application/json",
+      "required": false,
+      "description": "Request timeout. Please try again later."
+    }
+  ],
+  "responses": [],
+  "codeBlocksCount": 5,
+  "codeBlocksSample": [
+    {
+      "text": "X-API-Key",
+      "className": null
+    },
+    {
+      "text": "curl /public/api/v1/autogtm/projects/1/budget \\\n  --request PATCH \\\n  --header 'Content-Type: application/json' \\\n  --data '{\n  \"daily_budget_usd\": 50\n}'\n",
+      "className": "m-0 bg-transparent text-nowrap whitespace-pre w-fit"
+    },
+    {
+      "text": "curl /public/api/v1/autogtm/projects/1/budget \\\n  --request PATCH \\\n  --header 'Content-Type: application/json' \\\n  --data '{\n  \"daily_budget_usd\": 50\n}'\n",
+      "className": "hljs language-curl"
+    }
+  ],
+  "tabs": [
+    {
+      "text": "Status: 200",
+      "active": true
+    },
+    {
+      "text": "Status: 401",
+      "active": false
+    },
+    {
+      "text": "Status: 402",
+      "active": false
+    },
+    {
+      "text": "Status: 404",
+      "active": false
+    },
+    {
+      "text": "Status: 422",
+      "active": false
+    },
+    {
+      "text": "Status: 429",
+      "active": false
+    },
+    {
+      "text": "Status: 500",
+      "active": false
+    },
+    {
+      "text": "Status: 504",
+      "active": false
+    }
+  ],
+  "buttonsCount": 27,
+  "buttonsSample": [
+    "Copy link",
+    "Auth Required",
+    "Copy as Markdown",
+    "Copy link to project_id",
+    "Example",
+    "50",
+    "Copy link to daily_budget_usd",
+    "200\nSuccessful Response"
+  ],
+  "svgCount": 15,
+  "svgsSample": [
+    {
+      "className": "size-4.5",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-3",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-full",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-3.5",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "scalar-icon size-3 text-c-3 group-hover:text-c-1 ml-auto min-h-3 min-w-3",
+      "viewBox": "0 0 24 24",
+      "width": 0,
+      "height": 0
+    }
+  ],
+  "visual": {
+    "geometry": {
+      "x": 348,
+      "y": 0,
+      "width": 1032,
+      "height": 1101
+    },
+    "typography": {
+      "fontFamily": "Inter, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "24px",
+      "fontWeight": "600",
+      "lineHeight": "34.8px",
+      "color": "rgb(27, 27, 27)"
+    },
+    "styling": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgba(0, 0, 0, 0.1)",
+      "borderRadius": "0px"
+    }
+  }
+}

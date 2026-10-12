@@ -1,0 +1,1386 @@
+{
+  "company": {
+    "id": "c320baed-66ca-42bf-a86c-c7c76bc0af00",
+    "domain": "keethub.lovable.app",
+    "name": "PrimKeet",
+    "description": "PrimKeet is an English learning platform that teaches vocabulary, speaking, reading, and grammar through games designed for ESL learners. Users practice by playing games, earning points and badges, and competing on leaderboards.",
+    "logo_url": "",
+    "founded": null,
+    "size_on_linkedin": null,
+    "industry": "EdTech / Language Learning",
+    "geo_city": "",
+    "geo_country": "",
+    "traffic": null,
+    "traffic_growth": null,
+    "traffic_history": null,
+    "funding_stage": null,
+    "is_saas": null,
+    "is_b2b": null,
+    "is_tech": null,
+    "product_summary": "Game-based English learning for ESL learners",
+    "determinants": "[\"Game-based English learning for ESL learners\", \"English-only ESL focus, not a multi-language app\", \"Vocabulary, speaking, reading, and grammar taught through games\", \"Indie platform built on Lovable (keethub.lovable.app)\"]",
+    "search_queries": "[\"gamified English learning\", \"ESL learning games\", \"English vocabulary app\"]",
+    "competitors": "[{\"domain\": \"langly.es\"}, {\"domain\": \"playdiom.com\"}, {\"domain\": \"wonderlang.net\"}, {\"domain\": \"the-conversationalists.com\"}, {\"domain\": \"revisionenglish.com\"}, {\"domain\": \"immersive-english.com\"}, {\"domain\": \"englishgeeks.com.br\"}, {\"domain\": \"oxford-gear-kids.com\"}, {\"domain\": \"ellinglish.com\"}, {\"domain\": \"cookieplay.kr\"}, {\"domain\": \"aslan.games\"}, {\"domain\": \"playeng.ru\"}, {\"domain\": \"letsgoreading.com\"}, {\"domain\": \"ei-den.com\"}]",
+    "created_at": "2026-09-29T19:07:25.793399+00:00",
+    "updated_at": "2026-09-29T19:07:44.479225+00:00",
+    "explee_id": null,
+    "domains_json": [
+      {
+        "domain": "getprimkeet.io",
+        "available": true
+      },
+      {
+        "domain": "withprimkeet.io",
+        "available": true
+      },
+      {
+        "domain": "primkeethq.com",
+        "available": true
+      },
+      {
+        "domain": "goprimkeet.com",
+        "available": true
+      },
+      {
+        "domain": "sendprimkeet.com",
+        "available": true
+      },
+      {
+        "domain": "helloprimkeet.co",
+        "available": true
+      },
+      {
+        "domain": "try-primkeet.com",
+        "available": true
+      },
+      {
+        "domain": "meetprimkeet.app",
+        "available": true
+      },
+      {
+        "domain": "primkeet-team.dev",
+        "available": true
+      },
+      {
+        "domain": "primkeetreach.dev",
+        "available": true
+      },
+      {
+        "domain": "primkeet-outreach.app",
+        "available": true
+      },
+      {
+        "domain": "primkeet-mail.co",
+        "available": true
+      }
+    ],
+    "deleted_at": null,
+    "decision_maker": null,
+    "target_geo": null,
+    "gen_version": "control",
+    "gen_version_at": "2026-09-29T19:07:36.598181+00:00",
+    "employees": [],
+    "keywords": [],
+    "domain_aliases": []
+  },
+  "determinants": [
+    "Game-based English learning for ESL learners",
+    "English-only ESL focus, not a multi-language app",
+    "Vocabulary, speaking, reading, and grammar taught through games",
+    "Indie platform built on Lovable (keethub.lovable.app)"
+  ],
+  "competitors": [
+    {
+      "domain": "langly.es"
+    },
+    {
+      "domain": "playdiom.com"
+    },
+    {
+      "domain": "wonderlang.net"
+    },
+    {
+      "domain": "the-conversationalists.com"
+    },
+    {
+      "domain": "revisionenglish.com"
+    },
+    {
+      "domain": "immersive-english.com"
+    },
+    {
+      "domain": "englishgeeks.com.br"
+    },
+    {
+      "domain": "oxford-gear-kids.com"
+    },
+    {
+      "domain": "ellinglish.com"
+    },
+    {
+      "domain": "cookieplay.kr"
+    },
+    {
+      "domain": "aslan.games"
+    },
+    {
+      "domain": "playeng.ru"
+    },
+    {
+      "domain": "letsgoreading.com"
+    },
+    {
+      "domain": "ei-den.com"
+    }
+  ],
+  "search_queries": [
+    "gamified English learning",
+    "ESL learning games",
+    "English vocabulary app"
+  ],
+  "segments": [
+    {
+      "label": "ESL teachers",
+      "icon": "graduation-cap",
+      "use_case": "Assign **game practice** for class, reinforce **vocabulary** and **grammar**, track progress",
+      "pain": "Students need practice between lessons",
+      "criteria": [
+        "Teaches English regularly",
+        "Uses digital class activities",
+        "Needs student engagement"
+      ],
+      "negative_criterias": [
+        "No formal classes",
+        "Only exam prep",
+        "Single tutoring hobby"
+      ],
+      "keywords": "esl teacher, english teacher, classroom games, vocabulary practice, grammar games",
+      "example_clients": [
+        "Wall Street English",
+        "Berlitz",
+        "English First",
+        "Pearson English teachers",
+        "EF English teachers"
+      ],
+      "percentage": 30,
+      "estimated_companies": 8000,
+      "buyer_type": "company",
+      "id": "ge7hll",
+      "decision_maker": "We look for ESL teachers who plan class activities and assign vocabulary and grammar practice between lessons."
+    },
+    {
+      "label": "Language schools",
+      "icon": "building",
+      "use_case": "Offer **interactive lessons**, boost **student retention**, add **leaderboard** motivation",
+      "pain": "Hard to keep learners active outside class",
+      "criteria": [
+        "Runs paid English courses",
+        "Needs retention tools",
+        "Has multiple learner groups"
+      ],
+      "negative_criterias": [
+        "Purely corporate training",
+        "No recurring students"
+      ],
+      "keywords": "language school, english academy, student retention, course engagement, learner app",
+      "example_clients": [
+        "Berlitz",
+        "Wall Street English",
+        "British Study Centres",
+        "Kaplan International",
+        "EF Education First"
+      ],
+      "percentage": 22,
+      "estimated_companies": 5000,
+      "buyer_type": "company",
+      "id": "tqqyle",
+      "decision_maker": "We look for academic directors and school leaders who own curriculum and learner retention at the language school."
+    },
+    {
+      "label": "Private tutors",
+      "icon": "users",
+      "use_case": "Give clients **home practice**, support **speaking drills**, make lessons more engaging",
+      "pain": "Tutors need a simple way to extend lessons",
+      "criteria": [
+        "Independent English tutor",
+        "Works with repeat students",
+        "Sells personalized lessons"
+      ],
+      "negative_criterias": [
+        "Only one-off sessions",
+        "Focuses on other subjects"
+      ],
+      "keywords": "english tutor, private tutor, speaking practice, home practice, student drills",
+      "example_clients": [
+        "freelance english tutor",
+        "online esl tutor",
+        "private conversation coach",
+        "home-based english tutor",
+        "independent exam tutor"
+      ],
+      "percentage": 18,
+      "estimated_companies": 12000,
+      "buyer_type": "individual",
+      "id": "nxnub0",
+      "decision_maker": "We look for independent English tutors who design their own lessons and give clients home practice."
+    },
+    {
+      "label": "After-school centers",
+      "icon": "home",
+      "use_case": "Run **club activities**, reward **attendance**, build fun **English practice** routines",
+      "pain": "Kids need structured learning after school",
+      "criteria": [
+        "Serves children or teens",
+        "Offers enrichment programs",
+        "Needs low-prep activities"
+      ],
+      "negative_criterias": [
+        "Adult-only education",
+        "Strict exam curriculum"
+      ],
+      "keywords": "after school, english club, enrichment program, kids learning, game lessons",
+      "example_clients": [
+        "Kumon",
+        "Helen Doron",
+        "Oxford Learning",
+        "Busy Bees",
+        "Kiddie Academy"
+      ],
+      "percentage": 15,
+      "estimated_companies": 4000,
+      "buyer_type": "company",
+      "id": "99yfoo",
+      "decision_maker": "We look for center managers and program coordinators who organize after-school club activities and English learning routines."
+    },
+    {
+      "label": "Homeschool parents",
+      "icon": "baby",
+      "use_case": "Turn study time into **playful practice**, build **reading** and **vocabulary** habits",
+      "pain": "Children resist repetitive English worksheets",
+      "criteria": [
+        "Teaches at home",
+        "Uses online learning tools",
+        "Wants child engagement"
+      ],
+      "negative_criterias": [
+        "School district buyer",
+        "Only adult learners"
+      ],
+      "keywords": "homeschool english, kids practice, learning games, reading practice, vocabulary games",
+      "example_clients": [
+        "homeschool families in urban areas",
+        "bilingual parents teaching english",
+        "parents of primary learners",
+        "unschooling families",
+        "remote-learning households"
+      ],
+      "percentage": 10,
+      "estimated_companies": 6000,
+      "buyer_type": "individual",
+      "id": "yj8lf1"
+    },
+    {
+      "label": "Small training firms",
+      "icon": "briefcase",
+      "use_case": "Add **English modules** to client programs, support **group practice**, improve outcomes",
+      "pain": "Need affordable English content without building it",
+      "criteria": [
+        "Trains adult professionals",
+        "Sells group workshops",
+        "Needs ready-made content"
+      ],
+      "negative_criterias": [
+        "Large enterprise vendor",
+        "No language training"
+      ],
+      "keywords": "training company, language module, corporate english, group workshop, skills training",
+      "example_clients": [
+        "local corporate trainers",
+        "regional training consultancies",
+        "small workforce academies",
+        "business communication coaches",
+        "professional development firms"
+      ],
+      "percentage": 5,
+      "estimated_companies": 1200,
+      "buyer_type": "company",
+      "id": "0rn3u0",
+      "decision_maker": "We look for training firm owners and program leads who build the content in client training programs."
+    }
+  ],
+  "segment_runs": {
+    "ge7hll": {
+      "status": "done",
+      "live_status": "done"
+    },
+    "tqqyle": null,
+    "nxnub0": null,
+    "99yfoo": null,
+    "yj8lf1": null,
+    "0rn3u0": null
+  },
+  "domains": [
+    {
+      "domain": "getprimkeet.io",
+      "available": true
+    },
+    {
+      "domain": "withprimkeet.io",
+      "available": true
+    },
+    {
+      "domain": "primkeethq.com",
+      "available": true
+    },
+    {
+      "domain": "goprimkeet.com",
+      "available": true
+    },
+    {
+      "domain": "sendprimkeet.com",
+      "available": true
+    },
+    {
+      "domain": "helloprimkeet.co",
+      "available": true
+    },
+    {
+      "domain": "try-primkeet.com",
+      "available": true
+    },
+    {
+      "domain": "meetprimkeet.app",
+      "available": true
+    },
+    {
+      "domain": "primkeet-team.dev",
+      "available": true
+    },
+    {
+      "domain": "primkeetreach.dev",
+      "available": true
+    },
+    {
+      "domain": "primkeet-outreach.app",
+      "available": true
+    },
+    {
+      "domain": "primkeet-mail.co",
+      "available": true
+    }
+  ],
+  "pipeline_log": [
+    {
+      "id": 11161501,
+      "type": "step_update",
+      "ts": "2026-09-29T19:07:15.382729+00:00",
+      "step": "fetch",
+      "status": "running",
+      "message": "Looking up keethub.lovable.app..."
+    },
+    {
+      "id": 11161510,
+      "type": "step_update",
+      "ts": "2026-09-29T19:07:25.803521+00:00",
+      "step": "fetch",
+      "status": "done",
+      "message": "Found: PrimKeet",
+      "company_name": "PrimKeet",
+      "logo_url": "",
+      "domain": "keethub.lovable.app",
+      "explee_id": "",
+      "description": "PrimKeet is an English learning platform that teaches vocabulary, speaking, reading, and grammar through games designed for ESL learners. Users practice by playing games, earning points and badges, and competing on leaderboards.",
+      "founded": null,
+      "size_on_linkedin": null,
+      "geo_city": "",
+      "geo_country": "",
+      "traffic": null,
+      "traffic_growth": null,
+      "traffic_history": null,
+      "funding_stage": null,
+      "employees": null,
+      "keywords": [
+        "English learning",
+        "ESL",
+        "vocabulary games",
+        "speaking practice",
+        "reading challenges",
+        "grammar missions",
+        "gamified learning",
+        "leaderboard",
+        "language education"
+      ],
+      "elapsed_ms": 10420
+    },
+    {
+      "id": 11161511,
+      "type": "step_update",
+      "ts": "2026-09-29T19:07:25.806423+00:00",
+      "step": "determinants",
+      "status": "running",
+      "message": "Analyzing company identity...",
+      "wait_ms": 2
+    },
+    {
+      "id": 11161512,
+      "type": "step_update",
+      "ts": "2026-09-29T19:07:25.808921+00:00",
+      "step": "search_queries",
+      "status": "running",
+      "message": "Generating search queries...",
+      "wait_ms": 5
+    },
+    {
+      "id": 11161518,
+      "type": "step_update",
+      "ts": "2026-09-29T19:07:32.891984+00:00",
+      "step": "determinants",
+      "status": "done",
+      "message": "4 determinants",
+      "determinants": "1. Game-based English learning for ESL learners\n2.1 English-only ESL focus, not a multi-language app\n2.2 Vocabulary, speaking, reading, and grammar taught through games\n2.3 Indie platform built on Lovable (keethub.lovable.app)",
+      "elapsed_ms": 7085
+    },
+    {
+      "id": 11161519,
+      "type": "step_update",
+      "ts": "2026-09-29T19:07:32.905012+00:00",
+      "step": "search_queries",
+      "status": "done",
+      "message": "3 queries",
+      "queries": [
+        "gamified English learning",
+        "ESL learning games",
+        "English vocabulary app"
+      ],
+      "elapsed_ms": 7096
+    },
+    {
+      "id": 11161520,
+      "type": "step_update",
+      "ts": "2026-09-29T19:07:32.909210+00:00",
+      "step": "competitors",
+      "status": "running",
+      "message": "Finding similar companies...",
+      "wait_ms": 4
+    },
+    {
+      "id": 11161522,
+      "type": "step_update",
+      "ts": "2026-09-29T19:07:36.584342+00:00",
+      "step": "competitors",
+      "status": "done",
+      "message": "14 found",
+      "competitors": [
+        {
+          "domain": "langly.es"
+        },
+        {
+          "domain": "playdiom.com"
+        },
+        {
+          "domain": "wonderlang.net"
+        },
+        {
+          "domain": "the-conversationalists.com"
+        },
+        {
+          "domain": "revisionenglish.com"
+        },
+        {
+          "domain": "immersive-english.com"
+        },
+        {
+          "domain": "englishgeeks.com.br"
+        },
+        {
+          "domain": "oxford-gear-kids.com"
+        },
+        {
+          "domain": "ellinglish.com"
+        },
+        {
+          "domain": "cookieplay.kr"
+        },
+        {
+          "domain": "aslan.games"
+        },
+        {
+          "domain": "playeng.ru"
+        },
+        {
+          "domain": "letsgoreading.com"
+        },
+        {
+          "domain": "ei-den.com"
+        }
+      ],
+      "elapsed_ms": 3675
+    },
+    {
+      "id": 11161523,
+      "type": "step_update",
+      "ts": "2026-09-29T19:07:36.591938+00:00",
+      "step": "segments",
+      "status": "running",
+      "message": "Generating ICP segments...",
+      "wait_ms": 7
+    },
+    {
+      "id": 11161524,
+      "type": "gen_version",
+      "ts": "2026-09-29T19:07:36.601884+00:00",
+      "step": "segments",
+      "gen_version": "control"
+    },
+    {
+      "id": 11161525,
+      "type": "segment_ready",
+      "ts": "2026-09-29T19:07:38.136496+00:00",
+      "step": "segments",
+      "message": "Segment 1 ready: ESL teachers",
+      "segment": {
+        "label": "ESL teachers",
+        "icon": "graduation-cap",
+        "use_case": "Assign **game practice** for class, reinforce **vocabulary** and **grammar**, track progress",
+        "pain": "Students need practice between lessons",
+        "criteria": [
+          "Teaches English regularly",
+          "Uses digital class activities",
+          "Needs student engagement"
+        ],
+        "negative_criterias": [
+          "No formal classes",
+          "Only exam prep",
+          "Single tutoring hobby"
+        ],
+        "keywords": "esl teacher, english teacher, classroom games, vocabulary practice, grammar games",
+        "example_clients": [
+          "Wall Street English",
+          "Berlitz",
+          "English First",
+          "Pearson English teachers",
+          "EF English teachers"
+        ],
+        "percentage": 30,
+        "estimated_companies": 8000,
+        "buyer_type": "company",
+        "id": "ge7hll"
+      },
+      "index": 0
+    },
+    {
+      "id": 11161526,
+      "type": "segment_ready",
+      "ts": "2026-09-29T19:07:39.054251+00:00",
+      "step": "segments",
+      "message": "Segment 2 ready: Language schools",
+      "segment": {
+        "label": "Language schools",
+        "icon": "building",
+        "use_case": "Offer **interactive lessons**, boost **student retention**, add **leaderboard** motivation",
+        "pain": "Hard to keep learners active outside class",
+        "criteria": [
+          "Runs paid English courses",
+          "Needs retention tools",
+          "Has multiple learner groups"
+        ],
+        "negative_criterias": [
+          "Purely corporate training",
+          "No recurring students"
+        ],
+        "keywords": "language school, english academy, student retention, course engagement, learner app",
+        "example_clients": [
+          "Berlitz",
+          "Wall Street English",
+          "British Study Centres",
+          "Kaplan International",
+          "EF Education First"
+        ],
+        "percentage": 22,
+        "estimated_companies": 5000,
+        "buyer_type": "company",
+        "id": "tqqyle"
+      },
+      "index": 1
+    },
+    {
+      "id": 11161527,
+      "type": "segment_ready",
+      "ts": "2026-09-29T19:07:39.955452+00:00",
+      "step": "segments",
+      "message": "Segment 3 ready: Private tutors",
+      "segment": {
+        "label": "Private tutors",
+        "icon": "users",
+        "use_case": "Give clients **home practice**, support **speaking drills**, make lessons more engaging",
+        "pain": "Tutors need a simple way to extend lessons",
+        "criteria": [
+          "Independent English tutor",
+          "Works with repeat students",
+          "Sells personalized lessons"
+        ],
+        "negative_criterias": [
+          "Only one-off sessions",
+          "Focuses on other subjects"
+        ],
+        "keywords": "english tutor, private tutor, speaking practice, home practice, student drills",
+        "example_clients": [
+          "freelance english tutor",
+          "online esl tutor",
+          "private conversation coach",
+          "home-based english tutor",
+          "independent exam tutor"
+        ],
+        "percentage": 18,
+        "estimated_companies": 12000,
+        "buyer_type": "individual",
+        "id": "nxnub0"
+      },
+      "index": 2
+    },
+    {
+      "id": 11161528,
+      "type": "segment_ready",
+      "ts": "2026-09-29T19:07:40.857463+00:00",
+      "step": "segments",
+      "message": "Segment 4 ready: After-school centers",
+      "segment": {
+        "label": "After-school centers",
+        "icon": "home",
+        "use_case": "Run **club activities**, reward **attendance**, build fun **English practice** routines",
+        "pain": "Kids need structured learning after school",
+        "criteria": [
+          "Serves children or teens",
+          "Offers enrichment programs",
+          "Needs low-prep activities"
+        ],
+        "negative_criterias": [
+          "Adult-only education",
+          "Strict exam curriculum"
+        ],
+        "keywords": "after school, english club, enrichment program, kids learning, game lessons",
+        "example_clients": [
+          "Kumon",
+          "Helen Doron",
+          "Oxford Learning",
+          "Busy Bees",
+          "Kiddie Academy"
+        ],
+        "percentage": 15,
+        "estimated_companies": 4000,
+        "buyer_type": "company",
+        "id": "99yfoo"
+      },
+      "index": 3
+    },
+    {
+      "id": 11161529,
+      "type": "segment_ready",
+      "ts": "2026-09-29T19:07:41.960903+00:00",
+      "step": "segments",
+      "message": "Segment 5 ready: Homeschool parents",
+      "segment": {
+        "label": "Homeschool parents",
+        "icon": "baby",
+        "use_case": "Turn study time into **playful practice**, build **reading** and **vocabulary** habits",
+        "pain": "Children resist repetitive English worksheets",
+        "criteria": [
+          "Teaches at home",
+          "Uses online learning tools",
+          "Wants child engagement"
+        ],
+        "negative_criterias": [
+          "School district buyer",
+          "Only adult learners"
+        ],
+        "keywords": "homeschool english, kids practice, learning games, reading practice, vocabulary games",
+        "example_clients": [
+          "homeschool families in urban areas",
+          "bilingual parents teaching english",
+          "parents of primary learners",
+          "unschooling families",
+          "remote-learning households"
+        ],
+        "percentage": 10,
+        "estimated_companies": 6000,
+        "buyer_type": "individual",
+        "id": "yj8lf1"
+      },
+      "index": 4
+    },
+    {
+      "id": 11161530,
+      "type": "segment_ready",
+      "ts": "2026-09-29T19:07:42.889309+00:00",
+      "step": "segments",
+      "message": "Segment 6 ready: Small training firms",
+      "segment": {
+        "label": "Small training firms",
+        "icon": "briefcase",
+        "use_case": "Add **English modules** to client programs, support **group practice**, improve outcomes",
+        "pain": "Need affordable English content without building it",
+        "criteria": [
+          "Trains adult professionals",
+          "Sells group workshops",
+          "Needs ready-made content"
+        ],
+        "negative_criterias": [
+          "Large enterprise vendor",
+          "No language training"
+        ],
+        "keywords": "training company, language module, corporate english, group workshop, skills training",
+        "example_clients": [
+          "local corporate trainers",
+          "regional training consultancies",
+          "small workforce academies",
+          "business communication coaches",
+          "professional development firms"
+        ],
+        "percentage": 5,
+        "estimated_companies": 1200,
+        "buyer_type": "company",
+        "id": "0rn3u0"
+      },
+      "index": 5
+    },
+    {
+      "id": 11161531,
+      "type": "step_update",
+      "ts": "2026-09-29T19:07:42.905253+00:00",
+      "step": "segments",
+      "status": "done",
+      "message": "6 segments",
+      "segments": [
+        {
+          "label": "ESL teachers",
+          "icon": "graduation-cap",
+          "use_case": "Assign **game practice** for class, reinforce **vocabulary** and **grammar**, track progress",
+          "pain": "Students need practice between lessons",
+          "criteria": [
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]"
+          ],
+          "negative_criterias": [
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]"
+          ],
+          "keywords": "esl teacher, english teacher, classroom games, vocabulary practice, grammar games",
+          "example_clients": [
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]"
+          ],
+          "percentage": 30,
+          "estimated_companies": 8000,
+          "buyer_type": "company",
+          "id": "ge7hll"
+        },
+        {
+          "label": "Language schools",
+          "icon": "building",
+          "use_case": "Offer **interactive lessons**, boost **student retention**, add **leaderboard** motivation",
+          "pain": "Hard to keep learners active outside class",
+          "criteria": [
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]"
+          ],
+          "negative_criterias": [
+            "[max-depth]",
+            "[max-depth]"
+          ],
+          "keywords": "language school, english academy, student retention, course engagement, learner app",
+          "example_clients": [
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]"
+          ],
+          "percentage": 22,
+          "estimated_companies": 5000,
+          "buyer_type": "company",
+          "id": "tqqyle"
+        },
+        {
+          "label": "Private tutors",
+          "icon": "users",
+          "use_case": "Give clients **home practice**, support **speaking drills**, make lessons more engaging",
+          "pain": "Tutors need a simple way to extend lessons",
+          "criteria": [
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]"
+          ],
+          "negative_criterias": [
+            "[max-depth]",
+            "[max-depth]"
+          ],
+          "keywords": "english tutor, private tutor, speaking practice, home practice, student drills",
+          "example_clients": [
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]"
+          ],
+          "percentage": 18,
+          "estimated_companies": 12000,
+          "buyer_type": "individual",
+          "id": "nxnub0"
+        },
+        {
+          "label": "After-school centers",
+          "icon": "home",
+          "use_case": "Run **club activities**, reward **attendance**, build fun **English practice** routines",
+          "pain": "Kids need structured learning after school",
+          "criteria": [
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]"
+          ],
+          "negative_criterias": [
+            "[max-depth]",
+            "[max-depth]"
+          ],
+          "keywords": "after school, english club, enrichment program, kids learning, game lessons",
+          "example_clients": [
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]"
+          ],
+          "percentage": 15,
+          "estimated_companies": 4000,
+          "buyer_type": "company",
+          "id": "99yfoo"
+        },
+        {
+          "label": "Homeschool parents",
+          "icon": "baby",
+          "use_case": "Turn study time into **playful practice**, build **reading** and **vocabulary** habits",
+          "pain": "Children resist repetitive English worksheets",
+          "criteria": [
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]"
+          ],
+          "negative_criterias": [
+            "[max-depth]",
+            "[max-depth]"
+          ],
+          "keywords": "homeschool english, kids practice, learning games, reading practice, vocabulary games",
+          "example_clients": [
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]"
+          ],
+          "percentage": 10,
+          "estimated_companies": 6000,
+          "buyer_type": "individual",
+          "id": "yj8lf1"
+        },
+        {
+          "label": "Small training firms",
+          "icon": "briefcase",
+          "use_case": "Add **English modules** to client programs, support **group practice**, improve outcomes",
+          "pain": "Need affordable English content without building it",
+          "criteria": [
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]"
+          ],
+          "negative_criterias": [
+            "[max-depth]",
+            "[max-depth]"
+          ],
+          "keywords": "training company, language module, corporate english, group workshop, skills training",
+          "example_clients": [
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]"
+          ],
+          "percentage": 5,
+          "estimated_companies": 1200,
+          "buyer_type": "company",
+          "id": "0rn3u0"
+        }
+      ],
+      "count": 6,
+      "elapsed_ms": 6313
+    },
+    {
+      "id": 11161532,
+      "type": "step_update",
+      "ts": "2026-09-29T19:07:42.910322+00:00",
+      "step": "targeting",
+      "status": "running",
+      "message": "Inferring decision maker and target geo per segment...",
+      "wait_ms": 5
+    },
+    {
+      "id": 11161533,
+      "type": "step_update",
+      "ts": "2026-09-29T19:07:42.916674+00:00",
+      "step": "infra",
+      "status": "running",
+      "message": "Generating outreach domains...",
+      "wait_ms": 11
+    },
+    {
+      "id": 11161534,
+      "type": "infra_progress",
+      "ts": "2026-09-29T19:07:42.923838+00:00",
+      "step": "infra",
+      "message": "Generating domain candidates..."
+    },
+    {
+      "id": 11161535,
+      "type": "infra_progress",
+      "ts": "2026-09-29T19:07:44.421812+00:00",
+      "step": "infra",
+      "message": "Checking 12 domains..."
+    },
+    {
+      "id": 11161536,
+      "type": "domain_ready",
+      "ts": "2026-09-29T19:07:44.434639+00:00",
+      "step": "infra",
+      "domain": "getprimkeet.io",
+      "available": true
+    },
+    {
+      "id": 11161537,
+      "type": "domain_ready",
+      "ts": "2026-09-29T19:07:44.438511+00:00",
+      "step": "infra",
+      "domain": "withprimkeet.io",
+      "available": true
+    },
+    {
+      "id": 11161538,
+      "type": "domain_ready",
+      "ts": "2026-09-29T19:07:44.441849+00:00",
+      "step": "infra",
+      "domain": "primkeethq.com",
+      "available": true
+    },
+    {
+      "id": 11161539,
+      "type": "domain_ready",
+      "ts": "2026-09-29T19:07:44.446666+00:00",
+      "step": "infra",
+      "domain": "goprimkeet.com",
+      "available": true
+    },
+    {
+      "id": 11161540,
+      "type": "domain_ready",
+      "ts": "2026-09-29T19:07:44.450006+00:00",
+      "step": "infra",
+      "domain": "sendprimkeet.com",
+      "available": true
+    },
+    {
+      "id": 11161541,
+      "type": "domain_ready",
+      "ts": "2026-09-29T19:07:44.453565+00:00",
+      "step": "infra",
+      "domain": "helloprimkeet.co",
+      "available": true
+    },
+    {
+      "id": 11161542,
+      "type": "domain_ready",
+      "ts": "2026-09-29T19:07:44.456325+00:00",
+      "step": "infra",
+      "domain": "try-primkeet.com",
+      "available": true
+    },
+    {
+      "id": 11161543,
+      "type": "domain_ready",
+      "ts": "2026-09-29T19:07:44.459041+00:00",
+      "step": "infra",
+      "domain": "meetprimkeet.app",
+      "available": true
+    },
+    {
+      "id": 11161544,
+      "type": "domain_ready",
+      "ts": "2026-09-29T19:07:44.462588+00:00",
+      "step": "infra",
+      "domain": "primkeet-team.dev",
+      "available": true
+    },
+    {
+      "id": 11161545,
+      "type": "domain_ready",
+      "ts": "2026-09-29T19:07:44.468494+00:00",
+      "step": "infra",
+      "domain": "primkeetreach.dev",
+      "available": true
+    },
+    {
+      "id": 11161546,
+      "type": "domain_ready",
+      "ts": "2026-09-29T19:07:44.471991+00:00",
+      "step": "infra",
+      "domain": "primkeet-outreach.app",
+      "available": true
+    },
+    {
+      "id": 11161547,
+      "type": "domain_ready",
+      "ts": "2026-09-29T19:07:44.474715+00:00",
+      "step": "infra",
+      "domain": "primkeet-mail.co",
+      "available": true
+    },
+    {
+      "id": 11161548,
+      "type": "step_update",
+      "ts": "2026-09-29T19:07:44.482754+00:00",
+      "step": "infra",
+      "status": "done",
+      "message": "12 available domains",
+      "domains": [
+        {
+          "domain": "getprimkeet.io",
+          "available": true
+        },
+        {
+          "domain": "withprimkeet.io",
+          "available": true
+        },
+        {
+          "domain": "primkeethq.com",
+          "available": true
+        },
+        {
+          "domain": "goprimkeet.com",
+          "available": true
+        },
+        {
+          "domain": "sendprimkeet.com",
+          "available": true
+        },
+        {
+          "domain": "helloprimkeet.co",
+          "available": true
+        },
+        {
+          "domain": "try-primkeet.com",
+          "available": true
+        },
+        {
+          "domain": "meetprimkeet.app",
+          "available": true
+        },
+        {
+          "domain": "primkeet-team.dev",
+          "available": true
+        },
+        {
+          "domain": "primkeetreach.dev",
+          "available": true
+        },
+        {
+          "domain": "primkeet-outreach.app",
+          "available": true
+        },
+        {
+          "domain": "primkeet-mail.co",
+          "available": true
+        }
+      ],
+      "count": 12,
+      "elapsed_ms": 1566
+    },
+    {
+      "id": 11161549,
+      "type": "step_update",
+      "ts": "2026-09-29T19:07:49.327945+00:00",
+      "step": "targeting",
+      "status": "done",
+      "message": "6 segments with targeting hints",
+      "targeting": {
+        "ge7hll": {
+          "decision_maker": "We look for ESL teachers who plan class activities and assign vocabulary and grammar practice between lessons.",
+          "target_geo": ""
+        },
+        "tqqyle": {
+          "decision_maker": "We look for academic directors and school leaders who own curriculum and learner retention at the language school.",
+          "target_geo": ""
+        },
+        "nxnub0": {
+          "decision_maker": "We look for independent English tutors who design their own lessons and give clients home practice.",
+          "target_geo": ""
+        },
+        "99yfoo": {
+          "decision_maker": "We look for center managers and program coordinators who organize after-school club activities and English learning routines.",
+          "target_geo": ""
+        },
+        "yj8lf1": {
+          "decision_maker": "",
+          "target_geo": ""
+        },
+        "0rn3u0": {
+          "decision_maker": "We look for training firm owners and program leads who build the content in client training programs.",
+          "target_geo": ""
+        }
+      },
+      "elapsed_ms": 6417
+    },
+    {
+      "id": 11161550,
+      "type": "start",
+      "ts": "2026-09-29T19:07:49.343114+00:00",
+      "task": "# Research Task\n\n## Company Context\nName: PrimKeet\nDomain: keethub.lovable.app\nDeterminants: Game-based English learning for ESL learners, English-only ESL focus, not a multi-language app, Vocabulary,"
+    },
+    {
+      "id": 11161551,
+      "type": "tool_call",
+      "ts": "2026-09-29T19:07:51.813400+00:00",
+      "tool": "search_companies",
+      "input": {
+        "query": "English language school",
+        "filters": {
+          "geo_include": [
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]",
+            "[max-depth]"
+          ],
+          "size": {
+            "max": "[max-depth]"
+          }
+        }
+      },
+      "description": "search_companies(query=\"English language school\", filters={\"geo_include\": [\"US\", \"GB\", \"BE\", \"BG\", \"HR\", \"CY\", \"CZ\", \")",
+      "intent": ""
+    },
+    {
+      "id": 11161552,
+      "type": "step_update",
+      "ts": "2026-09-29T19:07:51.818555+00:00",
+      "step": "companies",
+      "status": "running",
+      "wait_ms": 2490
+    },
+    {
+      "id": 11161554,
+      "type": "step_update",
+      "ts": "2026-09-29T19:07:55.485141+00:00",
+      "step": "companies",
+      "status": "done",
+      "count": 200,
+      "timings": {
+        "total_ms": 3657,
+        "lav_ms": 1542,
+        "sql_ms": 1964,
+        "dedup_ms": 2,
+        "ai_enrich_ms": 0,
+        "build_ms": 18,
+        "parse_ms": 2,
+        "save_ms": 126,
+        "count_ms": 4,
+        "found": 200,
+        "inserted": 200,
+        "spans": {
+          "generate_sql": 0,
+          "lav_search": 1542,
+          "clickhouse_query": 1960,
+          "deduplication": 2
+        }
+      },
+      "elapsed_ms": 3666
+    },
+    {
+      "id": 11161555,
+      "type": "preview_updated",
+      "ts": "2026-09-29T19:07:55.489197+00:00"
+    },
+    {
+      "id": 11161556,
+      "type": "tool_result",
+      "ts": "2026-09-29T19:07:55.492111+00:00",
+      "tool_id": "toolu_01BMet2vZra713kYTGVJWSD4",
+      "output": "{\"status\": \"ok\", \"companies_found\": 200, \"lav_definitions_matched\": 380, \"sample\": [{\"domain\": \"myes.school\", \"name\": \"My English School Italia\", \"description_short\": \"Italian English school with mother-tongue teachers using flexible, CEFR-aligned courses for personal/business learners worldwide.\", \"geo_country\": \"IT\", \"geo_hq_city\": \"firenze\", \"size\": 65, \"size_range\": \"51-200\", \"traffic\": 381074, \"traffic_growth\": 36.0, \"industry\": \"Language Schools\", \"linkedin_id\": 2461508, \"url\": \"https://my"
+    },
+    {
+      "id": 11161557,
+      "type": "tool_call",
+      "ts": "2026-09-29T19:07:57.729696+00:00",
+      "tool": "search_people",
+      "input": {
+        "job_titles": [
+          "English Teacher",
+          "ESL Teacher",
+          "Director of Studies",
+          "Academic Director",
+          "Head of English"
+        ],
+        "geo": [
+          "US",
+          "GB",
+          "BE",
+          "BG",
+          "HR",
+          "CY",
+          "CZ",
+          "DK",
+          "EE",
+          "FI",
+          "FR",
+          "GR",
+          "HU",
+          "IE",
+          "IT",
+          "LV",
+          "LT",
+          "LU",
+          "MT",
+          "NL",
+          "PL",
+          "PT",
+          "RO",
+          "SK",
+          "SI",
+          "ES",
+          "SE"
+        ],
+        "people_per_company": 3
+      },
+      "description": "search_people(job_titles=[\"English Teacher\", \"ESL Teacher\", \"Director of Studies\", \"A, geo=[\"US\", \"GB\", \"BE\", \"BG\", \"HR\"",
+      "intent": ""
+    },
+    {
+      "id": 11161558,
+      "type": "step_update",
+      "ts": "2026-09-29T19:07:57.735213+00:00",
+      "step": "people",
+      "status": "running",
+      "wait_ms": 2250
+    },
+    {
+      "id": 11161568,
+      "type": "step_update",
+      "ts": "2026-09-29T19:08:04.884293+00:00",
+      "step": "people",
+      "status": "done",
+      "count": 818,
+      "timings": {
+        "total_ms": 7140,
+        "lav_ms": 3520,
+        "sql_ms": 974,
+        "dedup_ms": 65,
+        "ai_enrich_ms": 0,
+        "build_ms": 2110,
+        "parse_ms": 19,
+        "save_ms": 449,
+        "count_ms": 3,
+        "found": 1000,
+        "inserted": 818,
+        "spans": {
+          "generate_sql": 2105,
+          "lav_search": 3520,
+          "clickhouse_query": 944,
+          "deduplication": 65
+        }
+      },
+      "elapsed_ms": 7149
+    },
+    {
+      "id": 11161569,
+      "type": "preview_updated",
+      "ts": "2026-09-29T19:08:04.890435+00:00"
+    },
+    {
+      "id": 11161570,
+      "type": "tool_result",
+      "ts": "2026-09-29T19:08:04.894719+00:00",
+      "tool_id": "toolu_017mrpM4j1hG7hsciKppUXXp",
+      "output": "{\"status\": \"ok\", \"people_found\": 818, \"companies_with_people\": 560, \"sample\": [{\"first_name\": \"Marie\", \"last_name\": \"Dubreuil\", \"title\": \"English teacher\", \"profile_url\": \"https://www.linkedin.com/in/dubreuilmarie\", \"profile_photo_url\": \"https://media.licdn.com/dms/image/v2/D4D03AQHKOFcJNRSYhg/profile-displayphoto-shrink_200_200/B4DZPopQJjGUAY-/0/1734774949075?e=2147483647&v=beta&t=S4TsJXoJHQ9XeoTG8SQHZKSTic5VseIETvvJspn7SWk\", \"headline\": \"Communication Atelier Manager\", \"country_iso_2\": \"IT\", \""
+    },
+    {
+      "id": 11161577,
+      "type": "text",
+      "ts": "2026-09-29T19:08:09.142424+00:00",
+      "content": "I found 200 English language schools and 818 people who work at them, including 560 companies that have at least one matching person. I didn't review the full lists, only the top five results from each search.\n\n- **Companies:** I searched for \"English language school\" with a headcount cap of 200 employees. The geography was the US, the UK and the EU, using the codes you gave. Top results:\n  - My English School Italia (Italy)\n  - Hancock International College (US)\n  - The London School of English (UK)\n  - Leap High School (US)\n  - A Pearson-affiliated language school\n- **People:** I searched for English Teacher, ESL Teacher, Director of Studies, Academic Director and Head of English, with up to 3 people per company. Sample matches:\n  - Marie Dubreuil and David Pearce (My English School Italia)\n  - Jen Bunce (Hancock International College)\n  - Linda Stott and Douglas Kelly (The London School of English)\n- **Fit:** The classroom teachers are the closest match to your target, since they plan activities and assign practice between lessons. The Director of Studies and Academic Director titles are more likely to decide on a tool for a whole school.\n- **Misfit:** The Pearson-affiliated result is a small language school, not Pearson itself. The named example clients (Wall Street English, Berlitz, EF) are large, so the 200-employee cap probably excludes them."
+    },
+    {
+      "id": 11161578,
+      "type": "done",
+      "ts": "2026-09-29T19:08:09.146568+00:00",
+      "reason": "no_tool_calls"
+    },
+    {
+      "id": 11161579,
+      "type": "finished",
+      "ts": "2026-09-29T19:08:09.151741+00:00",
+      "status": "done"
+    },
+    {
+      "id": 11161580,
+      "type": "finished",
+      "ts": "2026-09-29T19:08:09.163799+00:00",
+      "status": "done"
+    },
+    {
+      "id": 11161602,
+      "type": "step_update",
+      "ts": "2026-09-29T19:08:17.502320+00:00",
+      "step": "draft_shown",
+      "status": "running",
+      "wait_ms": 12618
+    },
+    {
+      "id": 11161718,
+      "type": "step_update",
+      "ts": "2026-09-29T19:08:49.476126+00:00",
+      "step": "draft_shown",
+      "status": "done",
+      "elapsed_ms": 31973
+    },
+    {
+      "id": 11209377,
+      "type": "step_update",
+      "ts": "2026-09-30T04:17:57.950307+00:00",
+      "step": "draft_shown",
+      "status": "done"
+    }
+  ]
+}

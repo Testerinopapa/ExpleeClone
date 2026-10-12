@@ -1,0 +1,775 @@
+{
+  "timestamp": "2026-09-29T04:50:37Z",
+  "totalRoutes": 59,
+  "averageSimilarity": 93.62,
+  "elapsedSeconds": 217.9,
+  "results": [
+    {
+      "index": 6,
+      "folder": "006-update-campaign-definition",
+      "label": "Update campaign definition",
+      "tag": "autogtm",
+      "hash": "#tag/autogtm/PATCH/public/api/v1/autogtm/campaigns/{campaign_id}",
+      "ref_dimensions": [
+        1440,
+        2983
+      ],
+      "similarity": 92.03,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_006-update-campaign-definition_side_by_side.png"
+    },
+    {
+      "index": 7,
+      "folder": "007-create-a-campaign-from-your-own-leads-import",
+      "label": "Create a campaign from your own leads (import)",
+      "tag": "autogtm",
+      "hash": "#tag/autogtm/POST/public/api/v1/autogtm/campaigns/import",
+      "ref_dimensions": [
+        1440,
+        2075
+      ],
+      "similarity": 91.91,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_007-create-a-campaign-from-your-own-leads-import_side_by_side.png"
+    },
+    {
+      "index": 8,
+      "folder": "008-campaign-import-statusresult",
+      "label": "Campaign import status/result",
+      "tag": "autogtm",
+      "hash": "#tag/autogtm/GET/public/api/v1/autogtm/campaigns/import/{task_id}",
+      "ref_dimensions": [
+        1440,
+        1031
+      ],
+      "similarity": 95.53,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_008-campaign-import-statusresult_side_by_side.png"
+    },
+    {
+      "index": 9,
+      "folder": "009-list-hot-leads",
+      "label": "List hot leads",
+      "tag": "autogtm",
+      "hash": "#tag/autogtm/GET/public/api/v1/autogtm/hot-leads",
+      "ref_dimensions": [
+        1440,
+        1270
+      ],
+      "similarity": 95.58,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_009-list-hot-leads_side_by_side.png"
+    },
+    {
+      "index": 10,
+      "folder": "010-list-inbox-conversations",
+      "label": "List inbox conversations",
+      "tag": "autogtm",
+      "hash": "#tag/autogtm/GET/public/api/v1/autogtm/campaigns/{campaign_id}/inbox",
+      "ref_dimensions": [
+        1440,
+        1191
+      ],
+      "similarity": 95.87,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_010-list-inbox-conversations_side_by_side.png"
+    },
+    {
+      "index": 11,
+      "folder": "011-read-a-conversation-thread",
+      "label": "Read a conversation thread",
+      "tag": "autogtm",
+      "hash": "#tag/autogtm/GET/public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}",
+      "ref_dimensions": [
+        1440,
+        1000
+      ],
+      "similarity": 95.37,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_011-read-a-conversation-thread_side_by_side.png"
+    },
+    {
+      "index": 12,
+      "folder": "012-reply-in-a-thread",
+      "label": "Reply in a thread",
+      "tag": "autogtm",
+      "hash": "#tag/autogtm/POST/public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}/reply",
+      "ref_dimensions": [
+        1440,
+        1527
+      ],
+      "similarity": 95.16,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_012-reply-in-a-thread_side_by_side.png"
+    },
+    {
+      "index": 13,
+      "folder": "013-read-the-lead-note",
+      "label": "Read the lead note",
+      "tag": "autogtm",
+      "hash": "#tag/autogtm/GET/public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}/note",
+      "ref_dimensions": [
+        1440,
+        1000
+      ],
+      "similarity": 95.53,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_013-read-the-lead-note_side_by_side.png"
+    },
+    {
+      "index": 14,
+      "folder": "014-set-the-lead-note",
+      "label": "Set the lead note",
+      "tag": "autogtm",
+      "hash": "#tag/autogtm/POST/public/api/v1/autogtm/campaigns/{campaign_id}/inbox/{person_id}/note",
+      "ref_dimensions": [
+        1440,
+        1103
+      ],
+      "similarity": 95.32,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_014-set-the-lead-note_side_by_side.png"
+    },
+    {
+      "index": 15,
+      "folder": "015-get-project-daily-budget",
+      "label": "Get project daily budget",
+      "tag": "autogtm",
+      "hash": "#tag/autogtm/GET/public/api/v1/autogtm/projects/{project_id}/budget",
+      "ref_dimensions": [
+        1440,
+        1000
+      ],
+      "similarity": 95.73,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_015-get-project-daily-budget_side_by_side.png"
+    },
+    {
+      "index": 16,
+      "folder": "016-set-project-daily-budget",
+      "label": "Set project daily budget",
+      "tag": "autogtm",
+      "hash": "#tag/autogtm/PATCH/public/api/v1/autogtm/projects/{project_id}/budget",
+      "ref_dimensions": [
+        1440,
+        1161
+      ],
+      "similarity": 95.32,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_016-set-project-daily-budget_side_by_side.png"
+    },
+    {
+      "index": 17,
+      "folder": "017-set-campaign-daily-budget",
+      "label": "Set campaign daily budget",
+      "tag": "autogtm",
+      "hash": "#tag/autogtm/PATCH/public/api/v1/autogtm/campaigns/{campaign_id}/budget",
+      "ref_dimensions": [
+        1440,
+        1352
+      ],
+      "similarity": 95.01,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_017-set-campaign-daily-budget_side_by_side.png"
+    },
+    {
+      "index": 18,
+      "folder": "018-stop-campaign",
+      "label": "Stop campaign",
+      "tag": "autogtm",
+      "hash": "#tag/autogtm/POST/public/api/v1/autogtm/campaigns/{campaign_id}/stop",
+      "ref_dimensions": [
+        1440,
+        1000
+      ],
+      "similarity": 95.95,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_018-stop-campaign_side_by_side.png"
+    },
+    {
+      "index": 19,
+      "folder": "019-start-campaign",
+      "label": "Start campaign",
+      "tag": "autogtm",
+      "hash": "#tag/autogtm/POST/public/api/v1/autogtm/campaigns/{campaign_id}/start",
+      "ref_dimensions": [
+        1440,
+        1235
+      ],
+      "similarity": 96.19,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_019-start-campaign_side_by_side.png"
+    },
+    {
+      "index": 20,
+      "folder": "020-campaign-analytics",
+      "label": "Campaign analytics",
+      "tag": "autogtm",
+      "hash": "#tag/autogtm/GET/public/api/v1/autogtm/campaigns/{campaign_id}/analytics",
+      "ref_dimensions": [
+        1440,
+        1134
+      ],
+      "similarity": 95.65,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_020-campaign-analytics_side_by_side.png"
+    },
+    {
+      "index": 21,
+      "folder": "021-project-analytics",
+      "label": "Project analytics",
+      "tag": "autogtm",
+      "hash": "#tag/autogtm/GET/public/api/v1/autogtm/projects/{project_id}/analytics",
+      "ref_dimensions": [
+        1440,
+        1134
+      ],
+      "similarity": 95.61,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_021-project-analytics_side_by_side.png"
+    },
+    {
+      "index": 22,
+      "folder": "022-people-suppress-lists",
+      "label": "People suppress lists",
+      "tag": "autogtm",
+      "hash": "#tag/autogtm/GET/public/api/v1/autogtm/suppress-list/people",
+      "ref_dimensions": [
+        1440,
+        1000
+      ],
+      "similarity": 89.1,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_022-people-suppress-lists_side_by_side.png"
+    },
+    {
+      "index": 23,
+      "folder": "023-suppress-people",
+      "label": "Suppress people",
+      "tag": "autogtm",
+      "hash": "#tag/autogtm/POST/public/api/v1/autogtm/suppress-list/people",
+      "ref_dimensions": [
+        1440,
+        1627
+      ],
+      "similarity": 92.91,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_023-suppress-people_side_by_side.png"
+    },
+    {
+      "index": 24,
+      "folder": "024-read-a-people-list",
+      "label": "Read a people list",
+      "tag": "autogtm",
+      "hash": "#tag/autogtm/GET/public/api/v1/autogtm/suppress-list/people/{list_name}",
+      "ref_dimensions": [
+        1440,
+        1038
+      ],
+      "similarity": 95.85,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_024-read-a-people-list_side_by_side.png"
+    },
+    {
+      "index": 25,
+      "folder": "025-delete-a-people-list",
+      "label": "Delete a people list",
+      "tag": "autogtm",
+      "hash": "#tag/autogtm/DELETE/public/api/v1/autogtm/suppress-list/people/{list_name}",
+      "ref_dimensions": [
+        1440,
+        1000
+      ],
+      "similarity": 95.04,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_025-delete-a-people-list_side_by_side.png"
+    },
+    {
+      "index": 26,
+      "folder": "026-company-suppress-lists",
+      "label": "Company suppress lists",
+      "tag": "autogtm",
+      "hash": "#tag/autogtm/GET/public/api/v1/autogtm/suppress-list/companies",
+      "ref_dimensions": [
+        1440,
+        1000
+      ],
+      "similarity": 88.97,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_026-company-suppress-lists_side_by_side.png"
+    },
+    {
+      "index": 27,
+      "folder": "027-suppress-companies",
+      "label": "Suppress companies",
+      "tag": "autogtm",
+      "hash": "#tag/autogtm/POST/public/api/v1/autogtm/suppress-list/companies",
+      "ref_dimensions": [
+        1440,
+        1471
+      ],
+      "similarity": 94.33,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_027-suppress-companies_side_by_side.png"
+    },
+    {
+      "index": 28,
+      "folder": "028-read-a-company-list",
+      "label": "Read a company list",
+      "tag": "autogtm",
+      "hash": "#tag/autogtm/GET/public/api/v1/autogtm/suppress-list/companies/{list_name}",
+      "ref_dimensions": [
+        1440,
+        1038
+      ],
+      "similarity": 95.98,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_028-read-a-company-list_side_by_side.png"
+    },
+    {
+      "index": 29,
+      "folder": "029-delete-a-company-list",
+      "label": "Delete a company list",
+      "tag": "autogtm",
+      "hash": "#tag/autogtm/DELETE/public/api/v1/autogtm/suppress-list/companies/{list_name}",
+      "ref_dimensions": [
+        1440,
+        1000
+      ],
+      "similarity": 95.14,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_029-delete-a-company-list_side_by_side.png"
+    },
+    {
+      "index": 30,
+      "folder": "030-get-autopilot-settings",
+      "label": "Get autopilot settings",
+      "tag": "autogtm",
+      "hash": "#tag/autogtm/GET/public/api/v1/autogtm/projects/{project_id}/autopilot",
+      "ref_dimensions": [
+        1440,
+        1040
+      ],
+      "similarity": 95.85,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_030-get-autopilot-settings_side_by_side.png"
+    },
+    {
+      "index": 31,
+      "folder": "031-set-autopilot-settings",
+      "label": "Set autopilot settings",
+      "tag": "autogtm",
+      "hash": "#tag/autogtm/PATCH/public/api/v1/autogtm/projects/{project_id}/autopilot",
+      "ref_dimensions": [
+        1440,
+        1274
+      ],
+      "similarity": 93.57,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_031-set-autopilot-settings_side_by_side.png"
+    },
+    {
+      "index": 32,
+      "folder": "032-search",
+      "label": "Search",
+      "tag": "search",
+      "hash": "#tag/search",
+      "ref_dimensions": [
+        1440,
+        1000
+      ],
+      "similarity": 92.43,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_032-search_side_by_side.png"
+    },
+    {
+      "index": 33,
+      "folder": "033-companies",
+      "label": "Companies",
+      "tag": "search",
+      "hash": "#tag/search/POST/public/api/v1/search/companies",
+      "ref_dimensions": [
+        1440,
+        2120
+      ],
+      "similarity": 93.47,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_033-companies_side_by_side.png"
+    },
+    {
+      "index": 34,
+      "folder": "034-companies-by-domains",
+      "label": "Companies by Domains",
+      "tag": "search",
+      "hash": "#tag/search/POST/public/api/v1/search/companies-by-domains",
+      "ref_dimensions": [
+        1440,
+        1617
+      ],
+      "similarity": 92.32,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_034-companies-by-domains_side_by_side.png"
+    },
+    {
+      "index": 35,
+      "folder": "035-people",
+      "label": "People",
+      "tag": "search",
+      "hash": "#tag/search/POST/public/api/v1/search/people",
+      "ref_dimensions": [
+        1440,
+        2279
+      ],
+      "similarity": 91.23,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_035-people_side_by_side.png"
+    },
+    {
+      "index": 36,
+      "folder": "036-people-by-domains",
+      "label": "People by Domains",
+      "tag": "search",
+      "hash": "#tag/search/POST/public/api/v1/search/people-by-domains",
+      "ref_dimensions": [
+        1440,
+        1882
+      ],
+      "similarity": 92.93,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_036-people-by-domains_side_by_side.png"
+    },
+    {
+      "index": 37,
+      "folder": "037-nl-to-filters",
+      "label": "NL to Filters",
+      "tag": "search",
+      "hash": "#tag/search/POST/public/api/v1/search/nl-to-filters",
+      "ref_dimensions": [
+        1440,
+        1419
+      ],
+      "similarity": 95.44,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_037-nl-to-filters_side_by_side.png"
+    },
+    {
+      "index": 38,
+      "folder": "038-contact",
+      "label": "Contact",
+      "tag": "contact",
+      "hash": "#tag/contact",
+      "ref_dimensions": [
+        1440,
+        1000
+      ],
+      "similarity": 92.51,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_038-contact_side_by_side.png"
+    },
+    {
+      "index": 39,
+      "folder": "039-find-email-by-name",
+      "label": "Find email by name",
+      "tag": "contact",
+      "hash": "#tag/contact/POST/public/api/v1/enrich/email",
+      "ref_dimensions": [
+        1440,
+        1553
+      ],
+      "similarity": 94.78,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_039-find-email-by-name_side_by_side.png"
+    },
+    {
+      "index": 40,
+      "folder": "040-find-phone-by-linkedin-url",
+      "label": "Find phone by LinkedIn URL",
+      "tag": "contact",
+      "hash": "#tag/contact/POST/public/api/v1/enrich/phone",
+      "ref_dimensions": [
+        1440,
+        1452
+      ],
+      "similarity": 95.34,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_040-find-phone-by-linkedin-url_side_by_side.png"
+    },
+    {
+      "index": 41,
+      "folder": "041-find-email-by-name-batch-request",
+      "label": "Find email by name (batch request)",
+      "tag": "contact",
+      "hash": "#tag/contact/POST/public/api/v1/enrich/email/batch",
+      "ref_dimensions": [
+        1440,
+        1308
+      ],
+      "similarity": 90.66,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_041-find-email-by-name-batch-request_side_by_side.png"
+    },
+    {
+      "index": 42,
+      "folder": "042-find-email-by-name-batch-results",
+      "label": "Find email by name (batch results)",
+      "tag": "contact",
+      "hash": "#tag/contact/GET/public/api/v1/enrich/email/batch/{task_id}",
+      "ref_dimensions": [
+        1440,
+        1404
+      ],
+      "similarity": 96.38,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_042-find-email-by-name-batch-results_side_by_side.png"
+    },
+    {
+      "index": 43,
+      "folder": "043-find-people-and-enrich-their-emails-async",
+      "label": "Find people and enrich their emails (async)",
+      "tag": "contact",
+      "hash": "#tag/contact/POST/public/api/v1/find-and-enrich",
+      "ref_dimensions": [
+        1440,
+        2003
+      ],
+      "similarity": 91.55,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_043-find-people-and-enrich-their-emails-async_side_by_side.png"
+    },
+    {
+      "index": 44,
+      "folder": "044-find-and-enrich-job-status-and-results",
+      "label": "Find-and-enrich job status and results",
+      "tag": "contact",
+      "hash": "#tag/contact/GET/public/api/v1/find-and-enrich/{task_id}",
+      "ref_dimensions": [
+        1440,
+        1120
+      ],
+      "similarity": 95.64,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_044-find-and-enrich-job-status-and-results_side_by_side.png"
+    },
+    {
+      "index": 45,
+      "folder": "045-agents",
+      "label": "Agents",
+      "tag": "agents",
+      "hash": "#tag/agents",
+      "ref_dimensions": [
+        1440,
+        1000
+      ],
+      "similarity": 91.28,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_045-agents_side_by_side.png"
+    },
+    {
+      "index": 46,
+      "folder": "046-list-explee-agents",
+      "label": "List Explee agents",
+      "tag": "agents",
+      "hash": "#tag/agents/GET/public/api/v1/agents",
+      "ref_dimensions": [
+        1440,
+        1000
+      ],
+      "similarity": 94.52,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_046-list-explee-agents_side_by_side.png"
+    },
+    {
+      "index": 47,
+      "folder": "047-run-explee-agent",
+      "label": "Run Explee agent",
+      "tag": "agents",
+      "hash": "#tag/agents/POST/public/api/v1/agents/{agent_id}/runs",
+      "ref_dimensions": [
+        1440,
+        1054
+      ],
+      "similarity": 94.14,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_047-run-explee-agent_side_by_side.png"
+    },
+    {
+      "index": 48,
+      "folder": "048-run-custom-agent",
+      "label": "Run custom agent",
+      "tag": "agents",
+      "hash": "#tag/agents/POST/public/api/v1/agents/runs",
+      "ref_dimensions": [
+        1440,
+        1000
+      ],
+      "similarity": 87.61,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_048-run-custom-agent_side_by_side.png"
+    },
+    {
+      "index": 49,
+      "folder": "049-get-agent-run-status",
+      "label": "Get agent run status",
+      "tag": "agents",
+      "hash": "#tag/agents/GET/public/api/v1/agents/runs/{run_id}",
+      "ref_dimensions": [
+        1440,
+        1000
+      ],
+      "similarity": 95.82,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_049-get-agent-run-status_side_by_side.png"
+    },
+    {
+      "index": 50,
+      "folder": "050-tasks",
+      "label": "Tasks",
+      "tag": "tasks",
+      "hash": "#tag/tasks",
+      "ref_dimensions": [
+        1440,
+        1000
+      ],
+      "similarity": 90.73,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_050-tasks_side_by_side.png"
+    },
+    {
+      "index": 51,
+      "folder": "051-list-async-tasks",
+      "label": "List async tasks",
+      "tag": "tasks",
+      "hash": "#tag/tasks/GET/public/api/v1/tasks",
+      "ref_dimensions": [
+        1440,
+        1154
+      ],
+      "similarity": 96.12,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_051-list-async-tasks_side_by_side.png"
+    },
+    {
+      "index": 52,
+      "folder": "052-billing",
+      "label": "Billing",
+      "tag": "billing",
+      "hash": "#tag/billing",
+      "ref_dimensions": [
+        1440,
+        1000
+      ],
+      "similarity": 88.34,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_052-billing_side_by_side.png"
+    },
+    {
+      "index": 53,
+      "folder": "053-get-balance",
+      "label": "Get balance",
+      "tag": "billing",
+      "hash": "#tag/billing/GET/public/api/v1/billing/balance",
+      "ref_dimensions": [
+        1440,
+        1000
+      ],
+      "similarity": 95.66,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_053-get-balance_side_by_side.png"
+    },
+    {
+      "index": 54,
+      "folder": "054-feedback",
+      "label": "Feedback",
+      "tag": "feedback",
+      "hash": "#tag/feedback",
+      "ref_dimensions": [
+        1440,
+        1000
+      ],
+      "similarity": 91.92,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_054-feedback_side_by_side.png"
+    },
+    {
+      "index": 55,
+      "folder": "055-send-feedback",
+      "label": "Send feedback",
+      "tag": "feedback",
+      "hash": "#tag/feedback/POST/public/api/v1/feedback",
+      "ref_dimensions": [
+        1440,
+        1000
+      ],
+      "similarity": 94.93,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_055-send-feedback_side_by_side.png"
+    },
+    {
+      "index": 56,
+      "folder": "056-deduplication",
+      "label": "Deduplication",
+      "tag": "deduplication",
+      "hash": "#tag/deduplication",
+      "ref_dimensions": [
+        1440,
+        1000
+      ],
+      "similarity": 92.53,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_056-deduplication_side_by_side.png"
+    },
+    {
+      "index": 57,
+      "folder": "057-people-lists",
+      "label": "People Lists",
+      "tag": "deduplication",
+      "hash": "#tag/deduplication/GET/public/api/v1/dedup/people",
+      "ref_dimensions": [
+        1440,
+        1000
+      ],
+      "similarity": 90.43,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_057-people-lists_side_by_side.png"
+    },
+    {
+      "index": 58,
+      "folder": "058-create-people-list",
+      "label": "Create People List",
+      "tag": "deduplication",
+      "hash": "#tag/deduplication/POST/public/api/v1/dedup/people",
+      "ref_dimensions": [
+        1440,
+        1407
+      ],
+      "similarity": 91.68,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_058-create-people-list_side_by_side.png"
+    },
+    {
+      "index": 59,
+      "folder": "059-get-people-list",
+      "label": "Get People List",
+      "tag": "deduplication",
+      "hash": "#tag/deduplication/GET/public/api/v1/dedup/people/{list_id}",
+      "ref_dimensions": [
+        1440,
+        1000
+      ],
+      "similarity": 92.9,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_059-get-people-list_side_by_side.png"
+    },
+    {
+      "index": 60,
+      "folder": "060-delete-people-list",
+      "label": "Delete People List",
+      "tag": "deduplication",
+      "hash": "#tag/deduplication/DELETE/public/api/v1/dedup/people/{list_id}",
+      "ref_dimensions": [
+        1440,
+        1000
+      ],
+      "similarity": 93.99,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_060-delete-people-list_side_by_side.png"
+    },
+    {
+      "index": 61,
+      "folder": "061-companies-lists",
+      "label": "Companies Lists",
+      "tag": "deduplication",
+      "hash": "#tag/deduplication/GET/public/api/v1/dedup/companies",
+      "ref_dimensions": [
+        1440,
+        1000
+      ],
+      "similarity": 90.35,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_061-companies-lists_side_by_side.png"
+    },
+    {
+      "index": 62,
+      "folder": "062-create-companies-list",
+      "label": "Create Companies List",
+      "tag": "deduplication",
+      "hash": "#tag/deduplication/POST/public/api/v1/dedup/companies",
+      "ref_dimensions": [
+        1440,
+        1140
+      ],
+      "similarity": 93.97,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_062-create-companies-list_side_by_side.png"
+    },
+    {
+      "index": 63,
+      "folder": "063-get-companies-list",
+      "label": "Get Companies List",
+      "tag": "deduplication",
+      "hash": "#tag/deduplication/GET/public/api/v1/dedup/companies/{list_id}",
+      "ref_dimensions": [
+        1440,
+        1000
+      ],
+      "similarity": 92.92,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_063-get-companies-list_side_by_side.png"
+    },
+    {
+      "index": 64,
+      "folder": "064-delete-companies-list",
+      "label": "Delete Companies List",
+      "tag": "deduplication",
+      "hash": "#tag/deduplication/DELETE/public/api/v1/dedup/companies/{list_id}",
+      "ref_dimensions": [
+        1440,
+        1000
+      ],
+      "similarity": 90.54,
+      "composite_path": "verification_screenshots\\batch_6_to_64\\compare_064-delete-companies-list_side_by_side.png"
+    }
+  ]
+}

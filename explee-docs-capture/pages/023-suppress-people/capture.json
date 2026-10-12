@@ -1,0 +1,228 @@
+{
+  "routeIndex": 23,
+  "label": "Suppress people",
+  "url": "https://api.explee.com/public/api/docs#tag/autogtm/POST/public/api/v1/autogtm/suppress-list/people",
+  "hashRoute": "#tag/autogtm/POST/public/api/v1/autogtm/suppress-list/people",
+  "httpMethod": "POST",
+  "endpointPath": "/public/api/v1/autogtm/suppress-list/people",
+  "tag": "autogtm",
+  "capturedAt": "2026-09-29T00:43:33.921Z",
+  "documentTitle": "Explee Public API",
+  "pageHeading": "Suppress people",
+  "headings": [
+    {
+      "tag": "H3",
+      "text": "Suppress people",
+      "id": "scalar-refs-0-1534",
+      "className": "section-header-label"
+    },
+    {
+      "tag": "H4",
+      "text": "Body·SuppressPeopleBody",
+      "id": null,
+      "className": "section-header-label request-body-title flex!"
+    },
+    {
+      "tag": "H4",
+      "text": "Responses",
+      "id": null,
+      "className": "section-header-label section-header-label--rule block! border-b pb-3 text-c-1 responses-title--tree mt-3 mb-0 block! leading-[1.45] font-medium"
+    }
+  ],
+  "paragraphs": [
+    "Store a list of people to suppress — the same lists the Suppress list page in the app shows, so a list pushed from your CRM sits next to the CSVs your team uploaded and behaves identically. The suppress list is organization-wide: it applies to every AutoGTM campaign, running or not. Every email is checked against it right before it goes out, so an address added here stops a sequence that is already mid-flight, not just future ones. Matching is exact: a person by their email address (case-insensitive, but jane+crm@acme.com and jane@acme.com are two different entries), a company by its domain (the lead's company domain or the domain of its email address — acme.com does not cover eu.acme.com, list each domain you use). One call = one list, exactly like uploading one CSV: a list name that is already taken gets a (2) suffix rather than merging, and lists are independent — the same person on two lists is suppressed until both are gone. Delete a list you no longer want. Each person needs at least one identifier: an email, a LinkedIn URL, or a full name; a row left without a usable one (including a malformed address) comes back in skipped instead of failing the whole batch. Outreach stops on the email — the name and LinkedIn fields are stored but not actively used today; they are kept because a suppressed person is more than their email address, and the day outreach runs somewhere other than email (LinkedIn and the like) those are the fields that will match. To suppress everyone at a company use the companies endpoint.",
+    "Store a list of people to suppress — the same lists the Suppress list page in the app shows, so a list pushed from your CRM sits next to the CSVs your team uploaded and behaves identically.",
+    "The suppress list is organization-wide: it applies to every AutoGTM campaign, running or not. Every email is checked against it right before it goes out, so an address added here stops a sequence that is already mid-flight, not just future ones.",
+    "Matching is exact: a person by their email address (case-insensitive, but jane+crm@acme.com and jane@acme.com are two different entries), a company by its domain (the lead's company domain or the domain of its email address — acme.com does not cover eu.acme.com, list each domain you use).",
+    "One call = one list, exactly like uploading one CSV: a list name that is already taken gets a (2) suffix rather than merging, and lists are independent — the same person on two lists is suppressed until both are gone. Delete a list you no longer want.",
+    "Each person needs at least one identifier: an email, a LinkedIn URL, or a full name; a row left without a usable one (including a malformed address) comes back in skipped instead of failing the whole batch. Outreach stops on the email — the name and LinkedIn fields are stored but not actively used today; they are kept because a suppressed person is more than their email address, and the day outreach runs somewhere other than email (LinkedIn and the like) those are the fields that will match. To suppress everyone at a company use the companies endpoint.",
+    "Add people to a named suppress list.",
+    "Add people to a named suppress list.",
+    "peopleType: array of SuppressPersonItem 1…10000required{ company_domain, email, first_name, +2 }Copy link to people People to suppress (1–10,000 per request — send a bigger ledger as several lists). Properties: 5listType: stringmin length: 1max length: 255DefaultAPIPattern^[^/]+$Examplecrm-syncCopy link to list Name for this list, exactly like a CSV filename in the app. A name already in use gets a (2) suffix — the previous list stays until you delete it. No slashes: the name is a path segment on the read and delete endpoints.",
+    "People to suppress (1–10,000 per request — send a bigger ledger as several lists)."
+  ],
+  "parameters": [
+    {
+      "name": "people",
+      "type": "array of SuppressPersonItem",
+      "required": true,
+      "description": "People to suppress (1–10,000 per request — send a bigger ledger as several lists)."
+    },
+    {
+      "name": "list",
+      "type": "string",
+      "required": false,
+      "description": "Name for this list, exactly like a CSV filename in the app. A name already in use gets a (2) suffix — the previous list stays until you delete it. No slashes: the name is a path segment on the read and delete endpoints."
+    },
+    {
+      "name": "^[^/]+$",
+      "type": null,
+      "required": false,
+      "description": null
+    },
+    {
+      "name": "(2)",
+      "type": null,
+      "required": false,
+      "description": null
+    },
+    {
+      "name": "200",
+      "type": "application/json",
+      "required": false,
+      "description": "Successful Response"
+    },
+    {
+      "name": "401",
+      "type": "application/json",
+      "required": false,
+      "description": "Invalid or missing API key. Include X-API-Key header."
+    },
+    {
+      "name": "X-API-Key",
+      "type": null,
+      "required": false,
+      "description": null
+    },
+    {
+      "name": "402",
+      "type": "application/json",
+      "required": false,
+      "description": "Insufficient credit balance. Every request needs a positive balance, including requests that fall entirely inside the free results zone. Top up your account."
+    },
+    {
+      "name": "422",
+      "type": "application/json",
+      "required": false,
+      "description": "Validation error. Check request body and parameters."
+    },
+    {
+      "name": "429",
+      "type": "application/json",
+      "required": false,
+      "description": "Rate limit exceeded (10000/hour), concurrent limit reached (150 per organization), or free preview quota exceeded (search requests entirely within the free results zone; the quota depends on your plan)."
+    },
+    {
+      "name": "500",
+      "type": "application/json",
+      "required": false,
+      "description": "Internal server error. Contact support if persists."
+    },
+    {
+      "name": "504",
+      "type": "application/json",
+      "required": false,
+      "description": "Request timeout. Please try again later."
+    }
+  ],
+  "responses": [],
+  "codeBlocksCount": 10,
+  "codeBlocksSample": [
+    {
+      "text": "jane+crm@acme.com",
+      "className": null
+    },
+    {
+      "text": "jane@acme.com",
+      "className": null
+    },
+    {
+      "text": "acme.com",
+      "className": null
+    }
+  ],
+  "tabs": [
+    {
+      "text": "Status: 200",
+      "active": true
+    },
+    {
+      "text": "Status: 401",
+      "active": false
+    },
+    {
+      "text": "Status: 402",
+      "active": false
+    },
+    {
+      "text": "Status: 422",
+      "active": false
+    },
+    {
+      "text": "Status: 429",
+      "active": false
+    },
+    {
+      "text": "Status: 500",
+      "active": false
+    },
+    {
+      "text": "Status: 504",
+      "active": false
+    }
+  ],
+  "buttonsCount": 29,
+  "buttonsSample": [
+    "Copy link",
+    "Auth Required",
+    "Copy as Markdown",
+    "Copy link to people",
+    "Default",
+    "API",
+    "Pattern",
+    "^[^/]+$"
+  ],
+  "svgCount": 15,
+  "svgsSample": [
+    {
+      "className": "size-4.5",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-3",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-full",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": null,
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    },
+    {
+      "className": "size-3.5",
+      "viewBox": "0 0 256 256",
+      "width": "1em",
+      "height": "1em"
+    }
+  ],
+  "visual": {
+    "geometry": {
+      "x": 348,
+      "y": 0,
+      "width": 1032,
+      "height": 1566
+    },
+    "typography": {
+      "fontFamily": "Inter, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "24px",
+      "fontWeight": "600",
+      "lineHeight": "34.8px",
+      "color": "rgb(27, 27, 27)"
+    },
+    "styling": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "0px solid rgba(0, 0, 0, 0.1)",
+      "borderRadius": "0px"
+    }
+  }
+}
