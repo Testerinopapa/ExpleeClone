@@ -1,6 +1,6 @@
 # AutoGTM company research
 
-Status: implementation prepared locally. **No remote migrations or functions have been deployed.**
+Status: **deployed to the research project on 2026-10-12 with explicit owner approval.** Both migrations and all four Edge Functions are live. The original login project's configuration was not changed.
 
 Research project: `cvpeezzkzsbosyuhmhmf` (`https://cvpeezzkzsbosyuhmhmf.supabase.co`).
 
@@ -12,8 +12,8 @@ Login project: `hpkmrpezybhtyjcsxfiq` (`https://hpkmrpezybhtyjcsxfiq.supabase.co
 - The four local/frontend environment files referenced `hpkmrpezybhtyjcsxfiq`.
 - `VITE_SUPABASE_URL` and `VITE_SUPABASE_PUBLISHABLE_KEY` now identify the research project. The separate `VITE_AUTH_SUPABASE_URL` and `VITE_AUTH_SUPABASE_PUBLISHABLE_KEY` identify the original login project. All local environment files and `.env.example` include both pairs. The auth client only reads `VITE_AUTH_*`; research requests use the research pair.
 - There were no existing SQL migrations or Edge Functions in this checkout.
-- Supabase CLI 2.120.0 is available through `npx`; its read-only project-list request reported that no access token is configured. Remote schema, migration history and function names have **not** been inspected yet. Public Auth settings confirmed that LinkedIn OIDC is enabled on the original login project and disabled on the research project.
-- `FIRECRAWL_API_KEY` is expected to exist on Supabase as supplied by the project owner. Its value was neither requested nor read. Do not put it in any `VITE_` variable.
+- Supabase CLI 2.120.0 was authenticated and linked to the existing research project. Before deployment, remote inspection confirmed there were no public tables, AutoGTM database functions, deployed Edge Functions or applied migrations. The dry run identified only the two prepared migrations. Public Auth settings previously confirmed that LinkedIn OIDC is enabled on the original login project and disabled on the research project.
+- The remote secrets inventory confirmed `FIRECRAWL_API_KEY` exists. Its secret value was neither requested nor read, and no secrets were changed. Do not put it in any `VITE_` variable.
 
 ## Implementation
 
@@ -41,6 +41,14 @@ Firecrawl Map discovers at most 100 candidate URLs; discovery is not 100 page sc
 JSON extraction uses Firecrawl's existing service, with no additional AI provider. Every description/product/customer/location keeps source URLs from the returned page metadata. Missing facts stay empty, failed/empty pages produce a partial-results warning, and a wholly empty extraction fails. Extracted facts should still be reviewed against their citations. Firecrawl's JSON extraction and Map may consume credits beyond the number of scraped pages; a 10-page limit is not a 10-credit guarantee. Quota/rate-limit errors are surfaced without upgrading a plan or purchasing credits.
 
 The frontend now uses real jobs and stored profiles. Refreshing or opening a saved project only retrieves results. The previous timed demo progression is removed from the live workflow. Competitor discovery, leads and outbound email remain future steps; this implementation does not fabricate those results or send outreach. Existing landing-page routing and the mobile navigation are retained.
+
+## Deployment verification — 2026-10-12
+
+- Remote migration history contains `20261012000100` and `20261012000200`.
+- All four deployed endpoints return HTTP 204 to browser CORS preflight requests, including the required `authorization`, `apikey` and `content-type` headers. Previously they returned HTTP 404.
+- Unauthenticated POST requests return the handlers' HTTP 401 responses; the webhook also rejects missing callback credentials.
+- All five research tables have RLS enabled. Anonymous and authenticated database roles have no direct SELECT permission; the service role has access. Both AutoGTM RPCs restrict execution to the service role, and project ownership references `research_owners`.
+- A complete signed-in Firecrawl run still needs verification in the app. Deployment checks did not start a crawl or consume Firecrawl credits.
 
 ## Local verification
 
