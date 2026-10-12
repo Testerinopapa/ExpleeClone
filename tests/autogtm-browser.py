@@ -5,6 +5,7 @@ Requires Python Playwright and installed Google Chrome.
 import base64
 import json
 import os
+import re
 import tempfile
 import time
 from urllib.parse import urlparse
@@ -32,7 +33,7 @@ def check_width(page):
 
 with sync_playwright() as p:
     browser = p.chromium.launch(executable_path=r'C:\Program Files\Google\Chrome\Application\chrome.exe', headless=True)
-    state = {'status': 'scraping', 'starts': 0, 'otp_error': True, 'verify_error': True, 'domain': 'company.com', 'websites': []}
+    state = {'status': 'scraping', 'starts': 0, 'otp_error': True, 'verify_error': True, 'domain': 'company.com', 'websites': [], 'saved': set()}
     def route(request_route):
         req = request_route.request
         url = urlparse(req.url)
@@ -51,6 +52,7 @@ with sync_playwright() as p:
             state['starts'] += 1
             state['websites'].append(req.post_data_json['website'])
             state['domain'] = urlparse(req.post_data_json['website']).hostname.replace('www.', '', 1)
+            state['saved'].add(state['domain'])
             payload = {'job': {'id': JOB}}
         elif path.endswith('/research-status'):
             payload = {'job': {'id': JOB, 'project_id': JOB, 'status': state['status'], 'selected_urls': ['https://company.com/', 'https://company.com/products'],
@@ -59,8 +61,9 @@ with sync_playwright() as p:
                        'profile': json.loads(json.dumps(PROFILE).replace('company.com', state['domain']).replace('Test Company', 'Profile for ' + state['domain'])) if state['status'] == 'completed' else None,
                        'events': [{'id': 1, 'message': 'Finding company pages', 'pages_completed': 0, 'created_at': '2026-10-12T12:00:00Z'}]}
         elif path.endswith('/research-projects'):
-            payload = {'projects': [{'id': JOB, 'domain': 'company.com', 'updated_at': '2026-10-12T12:00:00Z',
-                        'latestJob': {'id': JOB, 'status': state['status'], 'created_at': '2026-10-12T12:00:00Z'}}]}
+            domain = req.post_data_json.get('domain')
+            payload = {'projects': [{'id': JOB, 'domain': domain, 'updated_at': '2026-10-12T12:00:00Z',
+                        'latestJob': {'id': JOB, 'status': state['status'], 'created_at': '2026-10-12T12:00:00Z'}}] if domain in state['saved'] else []}
         elif path.endswith('/otp'):
             code = 429 if state['otp_error'] else 200
             payload = {'msg': 'Email rate limit exceeded', 'error_code': 'over_email_send_rate_limit'} if code != 200 else {}
@@ -84,16 +87,26 @@ with sync_playwright() as p:
     check_width(page)
     page.get_by_role('textbox', name='Company website').fill('company.com')
     page.get_by_role('button', name='Create my project').click()
-    expect(page.get_by_role('status', name='Company research progress')).to_be_visible()
-    expect(page.get_by_role('heading', name='company.com', exact=True)).to_be_visible()
+    expect(page.get_by_role('status')).to_have_text('Researching')
+    expect(page.locator('main').get_by_text('company.com', exact=True)).to_be_visible()
+    expect(page).to_have_url(re.compile('job=' + JOB))
     assert state['starts'] == 1
     check_width(page)
+    # The original animation must stay visible beyond its old demo deadline.
+    page.wait_for_timeout(5100)
+    expect(page.get_by_role('status')).to_have_text('Researching')
+    expect(page.get_by_role('button', name='Next Phase')).to_be_disabled()
+    page.get_by_role('button', name='Pause Auto-play').click()
     state['status'] = 'completed'
-    expect(page.get_by_role('article', name='Saved company profile')).to_be_visible(timeout=12000)
-    profile_card = page.get_by_role('article', name='Saved company profile')
+    expect(page.get_by_role('button', name='Next Phase')).to_be_enabled(timeout=12000)
+    expect(page.get_by_role('status')).to_have_text('Researching')
+    page.get_by_role('button', name='Resume Auto-play').click()
+    expect(page.get_by_role('heading', name='Profile for company.com', exact=True)).to_be_visible()
+    page.get_by_role('button', name='Pause Auto-play').click()
+    profile_card = page.locator('main')
     expect(profile_card).to_contain_text('Makes useful widgets.')
     expect(profile_card).to_contain_text('Found')
-    expect(profile_card.get_by_role('button', name='Continue to competitors')).to_be_disabled()
+    expect(profile_card.get_by_role('button', name='Continue to competitors')).to_be_enabled()
     expect(page.get_by_role('heading', name='Products and services')).to_have_count(0)
     expect(page.get_by_role('heading', name='Research activity')).to_have_count(0)
     expect(page.get_by_role('heading', name='Researched sources')).to_have_count(0)
@@ -109,31 +122,40 @@ with sync_playwright() as p:
     screenshot = os.path.join(tempfile.gettempdir(), 'autogtm-company-research-mobile.png')
     page.screenshot(path=screenshot, full_page=True)
     page.reload()
-    expect(page.get_by_role('article', name='Saved company profile')).to_be_visible()
+    expect(page.get_by_role('heading', name='Profile for company.com', exact=True)).to_be_visible()
+    page.get_by_role('button', name='Pause Auto-play').click()
     assert state['starts'] == 1, 'Reload resubmitted a crawl'
+    # Existing placeholder stages and their navigation continue after real phase 1.
+    page.get_by_role('button', name='Continue to competitors').click()
+    page.get_by_role('button', name='Next Phase').click()
+    expect(page.locator('main').get_by_text('langly.es', exact=True)).to_be_visible()
+    assert state['starts'] == 1, 'Later visual stages started another crawl'
     page.get_by_role('link', name='Explee home').first.click()
-    page.get_by_role('button', name='company.com completed').click()
-    expect(page.get_by_role('article', name='Saved company profile')).to_be_visible()
+    page.get_by_role('textbox', name='Company website').fill('company.com')
+    page.get_by_role('button', name='Create my project').click()
+    expect(page.get_by_role('heading', name='Profile for company.com', exact=True)).to_be_visible(timeout=10000)
+    assert state['starts'] == 1, 'Opening the same company resubmitted a crawl'
     state['status'] = 'failed'
     page.reload()
-    expect(page.get_by_role('heading', name='Research could not finish')).to_be_visible()
+    expect(page.get_by_role('alert')).to_contain_text('Website blocked scraping.')
     assert state['starts'] == 1
-    page.get_by_role('button', name='Start a new attempt').click()
-    expect(page.get_by_role('button', name='Start a new attempt')).to_be_enabled()
+    page.get_by_role('button', name='Retry research').click()
+    expect(page.get_by_role('button', name='Retry research')).to_be_enabled()
     assert state['starts'] == 2
     # Regression: the exact submitted website must reach the backend from both entry forms.
     state['status'] = 'completed'
     page.goto(BASE + '/app-auto-gtm?website=google.com')
     expect(page.get_by_role('textbox', name='Company website')).to_have_value('google.com')
     page.get_by_role('button', name='Create my project').click()
-    expect(page.get_by_role('heading', name='Profile for google.com', exact=True)).to_be_visible()
-    assert '/company/google.com/explore?job=' in page.url
+    expect(page.get_by_role('heading', name='Profile for google.com', exact=True)).to_be_visible(timeout=10000)
+    assert '/company/google.com/explore?' in page.url and 'job=' + JOB in page.url
     assert state['websites'][-1] == 'https://google.com/'
     expect(page.get_by_text('PrimKeet', exact=False)).to_have_count(0)
+    state['saved'].discard('google.com')
     page.goto(BASE + '/app-autogtm')
     page.locator('#hero-website-input').fill('https://www.google.com/about?campaign=test')
     page.get_by_role('button', name='Launch', exact=True).click()
-    expect(page.get_by_role('heading', name='Profile for google.com', exact=True)).to_be_visible()
+    expect(page.get_by_role('heading', name='Profile for google.com', exact=True)).to_be_visible(timeout=10000)
     assert state['websites'][-1] == 'https://www.google.com/'
     assert urlparse(page.url).hostname == '127.0.0.1', 'Launch left this app'
     check_width(page)
@@ -142,8 +164,8 @@ with sync_playwright() as p:
     state['domain'] = 'keethub.lovable.app'
     page.reload()
     expect(page.get_by_role('alert')).to_contain_text('does not match this website')
-    expect(page.get_by_role('article', name='Saved company profile')).to_have_count(0)
-    expect(page.get_by_role('heading', name='google.com', exact=True)).to_be_visible()
+    expect(page.get_by_role('heading', name='Profile for google.com', exact=True)).to_have_count(0)
+    expect(page.locator('main').get_by_text('google.com', exact=True)).to_be_visible()
     assert 'keethub.lovable.app' not in page.locator('body').inner_text()
     assert state['starts'] == starts_before_mismatch
     assert not errors, errors
@@ -156,7 +178,7 @@ with sync_playwright() as p:
     page = context.new_page()
     page.goto(BASE + '/app-auto-gtm')
     page.get_by_role('textbox', name='Company website').fill('company.com')
-    page.get_by_role('button', name='Sign in to research').click()
+    page.get_by_role('button', name='Create my project').click()
     page.locator('#email-input').fill('test@company.com')
     page.locator('button[type="submit"]').click()
     expect(page.get_by_role('alert')).to_contain_text('rate limit')
@@ -176,5 +198,5 @@ with sync_playwright() as p:
     assert state['starts'] == starts_before_login, 'Login unexpectedly started a crawl'
     context.close()
     browser.close()
-    print('PASS: original company card and loading view, pending later steps, mobile widths, saved results, refresh, failure/retry, drawer, OTP, google.com from both forms and stale-profile rejection')
+    print('PASS: live phase 1 inside original animation/card, pause/resume, later placeholder stages, mobile widths, saved results, refresh, failure/retry, drawer, OTP, google.com from both forms and stale-profile rejection')
     print('Mobile screenshot: ' + screenshot)

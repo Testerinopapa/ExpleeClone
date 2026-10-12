@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigation } from '../../context/NavigationContext';
 import AutoGtmNavigation from './AutoGtmNavigation';
 import AutoGtmRail from './AutoGtmRail';
@@ -19,6 +19,7 @@ import CrispChatWidget from './CrispChatWidget';
 import AutoGtmErrorBoundary from './AutoGtmErrorBoundary';
 import { normalizeSegments, normalizeCompetitors } from '../../lib/autogtmNormalizer';
 import projectData from '../../data/autogtm_project_data.json';
+import useCompanyResearch from '../../hooks/useCompanyResearch';
 
 const PHASES = [
   'research_company_loading',
@@ -38,9 +39,16 @@ const PHASES = [
 
 export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) {
   const { navigate } = useNavigation();
+  const { data: research, error: researchError, retry: retryResearch, session } = useCompanyResearch(domain);
+  const researchReady = research?.job.status === 'completed' && Boolean(research?.profile) && !researchError;
+  const company = {
+    name: research?.profile?.company_name || domain,
+    domain,
+    description: research?.profile?.business_description || research?.profile?.descriptions?.map(item => item.text).join(' ') || 'No business description was found on the researched pages.',
+  };
 
   // Resolve initial phase from query string or default to first
-  const [phase, setPhase] = useState(() => {
+  const [selectedPhase, setPhase] = useState(() => {
     if (typeof window !== 'undefined') {
       const params = new URLSearchParams(window.location.search);
       const qPhase = params.get('phase');
@@ -48,6 +56,13 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
     }
     return 'research_company_loading';
   });
+  // Saved phase links and manual controls cannot bypass real company research.
+  const phase = researchReady ? selectedPhase : 'research_company_loading';
+  const [companyAnimationReady, setCompanyAnimationReady] = useState(false);
+  useEffect(() => {
+    const timer = setTimeout(() => setCompanyAnimationReady(true), 4800);
+    return () => clearTimeout(timer);
+  }, []);
 
   const [activeSegment, setActiveSegment] = useState(null);
   const [isTrialModalOpen, setIsTrialModalOpen] = useState(false);
@@ -59,6 +74,7 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
 
   // Sync phase change to URL with replaceState
   const changePhase = (nextPhase, userTriggered = false) => {
+    if (!researchReady && nextPhase !== 'research_company_loading') return;
     if (userTriggered) setIsAutoPlay(false);
     setPhase(nextPhase);
 
@@ -102,7 +118,9 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
 
     let timer;
     if (phase === 'research_company_loading') {
-      timer = setTimeout(() => changePhase('research_company'), 4800);
+      if (researchReady && companyAnimationReady) {
+        timer = setTimeout(() => changePhase('research_company'), 0);
+      }
     } else if (phase === 'research_company') {
       timer = setTimeout(() => changePhase('research_competitors_loading'), 3500);
     } else if (phase === 'research_competitors_loading') {
@@ -128,7 +146,7 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
     }
 
     return () => clearTimeout(timer);
-  }, [phase, isAutoPlay]);
+  }, [phase, isAutoPlay, researchReady, companyAnimationReady]);
 
   // Jump to a step when clicked on the rail
   const handleStepClick = (step) => {
@@ -201,7 +219,7 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
   }, [phase, currentStep, isRunningPhase]);
 
   const currentStepTasks = WORKFLOW_STEP_TASKS[currentStep] || [];
-  const currentAgentItems = isRunningPhase
+  const currentAgentItems = researchError ? [{ label: researchError.message, status: 'active' }] : isRunningPhase
     ? currentStepTasks.slice(0, subtaskIndex + 1).map((task, idx) => ({
         label: task,
         status: idx < subtaskIndex ? 'done' : 'active',
@@ -233,13 +251,13 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
         <AutoGtmNavigation
           currentPhase={phase}
           completedSteps={completedSteps}
-          companyData={projectData.company}
+          companyData={company}
           competitors={normalizedCompetitors}
           campaigns={normalizedCampaigns}
           activeSegment={activeSegment}
           onSelectSegment={(seg) => setActiveSegment(seg)}
           onRestart={() => navigate('/app-auto-gtm')}
-          userEmail={localStorage.getItem('auth_email') || 'gmalavaes@gmail.com'}
+          userEmail={session?.user.email || 'Not signed in'}
           activeAgentStep={isRunningPhase ? currentStep : null}
           activeAgentItems={currentAgentItems}
         />
@@ -267,12 +285,19 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
             <button
               type="button"
               onClick={() => {
+                if (researchError) {
+                  setPhase('research_company_loading');
+                  setIsAutoPlay(true);
+                  retryResearch();
+                  return;
+                }
                 const nextIdx = (PHASES.indexOf(phase) + 1) % PHASES.length;
                 changePhase(PHASES[nextIdx], true);
               }}
+              disabled={!researchReady && !researchError}
               className="text-[11px] px-2.5 py-1 rounded-md bg-[#0d9467] text-white hover:bg-[#0a7854] transition shadow-2xs cursor-pointer"
             >
-              Next Phase →
+              {researchError ? 'Retry research' : 'Next Phase →'}
             </button>
           </div>
         </div>
@@ -295,7 +320,7 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
           {/* Phase 1: research_company_loading */}
           {phase === 'research_company_loading' && (
             <div className="flex-1 flex flex-col items-center justify-center min-h-[55vh] space-y-2 select-none animate-card-enter">
-              <div className="text-xs font-normal text-gray-400">Researching</div>
+              <div role={researchError ? 'alert' : 'status'} className="text-xs font-normal text-gray-400">{researchError ? researchError.message : 'Researching'}</div>
               <div className="max-w-full break-all text-center text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight font-mono">
                 {domain}
               </div>
@@ -305,7 +330,7 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
           {/* Phase 2: research_company */}
           {phase === 'research_company' && (
             <Step1CompanyCard
-              company={projectData.company}
+              company={company}
               onNext={() => changePhase('research_competitors_loading', true)}
             />
           )}
@@ -392,7 +417,7 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
           {/* Phase 13: final */}
           {phase === 'final' && (
             <FinalProjectDashboard
-              companyData={projectData.company}
+              companyData={company}
               onOpenTrialModal={() => setIsTrialModalOpen(true)}
             />
           )}
@@ -403,7 +428,7 @@ export default function AutoGtmWorkflowPage({ domain = 'keethub.lovable.app' }) 
           isOpen={isTrialModalOpen}
           onClose={() => setIsTrialModalOpen(false)}
           companyDomain={domain}
-          userEmail={localStorage.getItem('auth_email') || 'gmalavaes@gmail.com'}
+          userEmail={session?.user.email || 'Not signed in'}
         />
 
         {/* Crisp Chat Widget */}

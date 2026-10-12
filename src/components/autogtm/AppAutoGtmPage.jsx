@@ -2,22 +2,25 @@ import React, { useState } from 'react';
 import { useNavigation } from '../../context/NavigationContext';
 import AutoGtmNavigation from './AutoGtmNavigation';
 import CrispChatWidget from './CrispChatWidget';
+import useAuthSession from '../../hooks/useAuthSession';
+import { normalizeWebsite, requestedWebsite } from '../../lib/companyResearch';
 
 export default function AppAutoGtmPage() {
   const { navigate } = useNavigation();
-  const [domain, setDomain] = useState('keethub.lovable.app');
+  const { session, loading: authLoading } = useAuthSession();
+  const [domain, setDomain] = useState(() => requestedWebsite() || 'keethub.lovable.app');
   const [error, setError] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const cleanDomain = domain.trim().replace(/^https?:\/\//, '').replace(/\/$/, '');
-    if (!cleanDomain) {
-      setError('Please enter a valid website domain');
-      return;
-    }
-
-    // Navigate to workflow explore route
-    navigate(`/auto-gtm/company/${cleanDomain}/explore?src=cabinet&phase=research_company_loading`);
+    if (authLoading) return;
+    try {
+      const normalized = normalizeWebsite(domain);
+      sessionStorage.setItem('autogtm-pending-domain', normalized.website);
+      if (!session) { navigate('/sign-in'); return; }
+      // Open the original animation immediately; its data hook starts the job.
+      navigate(`/auto-gtm/company/${encodeURIComponent(normalized.domain)}/explore?src=cabinet&phase=research_company_loading`);
+    } catch (err) { setError(err.message); }
   };
 
   return (
@@ -25,7 +28,7 @@ export default function AppAutoGtmPage() {
       {/* Sidebar */}
       <AutoGtmNavigation
         completedSteps={[]}
-        userEmail={localStorage.getItem('auth_email') || 'gmalavaes@gmail.com'}
+        userEmail={session?.user.email || 'Not signed in'}
       />
 
       {/* Main Area */}
@@ -67,6 +70,7 @@ export default function AppAutoGtmPage() {
 
               <button
                 type="submit"
+                disabled={authLoading}
                 className="min-h-11 px-4 rounded-lg bg-[#0d9467] hover:bg-[#0a7854] active:scale-[0.98] text-white text-sm font-semibold inline-flex items-center justify-center gap-1.5 transition-all shadow-xs cursor-pointer shrink-0"
               >
                 <span>Create my project</span>

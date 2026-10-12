@@ -4,18 +4,23 @@ import FlowCanvas from './FlowCanvas';
 import LogosCarousel from './LogosCarousel';
 import { useNavigation } from '../context/NavigationContext';
 import { normalizeWebsite } from '../lib/companyResearch';
+import useAuthSession from '../hooks/useAuthSession';
 
 export default function HeroSection() {
   const [inputValue, setInputValue] = useState('');
   const [dialogOpen, setDialogOpen] = useState(false);
   const [error, setError] = useState('');
   const { navigate } = useNavigation();
+  const { session, loading: authLoading } = useAuthSession();
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    if (authLoading) return;
     setError('');
     try {
-      const { domain } = normalizeWebsite(inputValue);
+      const { domain, website } = normalizeWebsite(inputValue);
+      sessionStorage.setItem('autogtm-pending-domain', website);
+      if (!session) { navigate('/sign-in'); return; }
       navigate(`/auto-gtm/company/${encodeURIComponent(domain)}/explore?src=landing&phase=research_company_loading`);
     } catch (err) { setError(err.message); }
   };
@@ -100,6 +105,7 @@ export default function HeroSection() {
                 <button
                   type="submit"
                   aria-label="Launch"
+                  disabled={authLoading}
                   className={`inline-flex items-center justify-center bg-primary text-primary-foreground font-medium p-2.5 rounded-xl transition-all duration-300 hover:scale-105 flex-shrink-0 cursor-pointer ${
                     inputValue.trim().length > 0
                       ? 'opacity-100 pointer-events-auto shadow-sm'

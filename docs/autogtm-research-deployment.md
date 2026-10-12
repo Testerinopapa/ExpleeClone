@@ -2,7 +2,7 @@
 
 Status: **deployed to the research project on 2026-10-12 with explicit owner approval.** Both migrations and all four Edge Functions are live. The original login project's configuration was not changed.
 
-Frontend status: at the owner's request, the active AutoGTM workflow and launcher now use the original PrimKeet placeholder flow from commit `6c061a1`, including all six animated stages. Landing-page Launch also opens that flow without starting a research job. The live research screen and backend implementation are retained for future integration; the live-research browser checks apply when that screen is reconnected.
+Frontend status: phase 1 now connects the deployed research backend to the original workflow from commit `6c061a1`. The existing loading animation, activity feed, company card, sidebar summary, controls and six-stage presentation are retained. Only the company name, domain and description are replaced with real research data; no new report panels or screens are added. Stages 2–6 retain their original placeholder data and animations until their own integrations are implemented.
 
 Research project: `cvpeezzkzsbosyuhmhmf` (`https://cvpeezzkzsbosyuhmhmf.supabase.co`).
 
@@ -42,7 +42,7 @@ Firecrawl Map discovers at most 100 candidate URLs; discovery is not 100 page sc
 
 JSON extraction uses Firecrawl's existing service, with no additional AI provider. Every description/product/customer/location keeps source URLs from the returned page metadata. Missing facts stay empty, failed/empty pages produce a partial-results warning, and a wholly empty extraction fails. Extracted facts should still be reviewed against their citations. Firecrawl's JSON extraction and Map may consume credits beyond the number of scraped pages; a 10-page limit is not a 10-credit guarantee. Quota/rate-limit errors are surfaced without upgrading a plan or purchasing credits.
 
-The frontend now uses real jobs and stored profiles. Refreshing or opening a saved project only retrieves results. The previous timed demo progression is removed from the live workflow. Competitor discovery, leads and outbound email remain future steps; this implementation does not fabricate those results or send outreach. Existing landing-page routing and the mobile navigation are retained.
+Both entry forms preserve the submitted website through the existing sign-in flow and open the original research animation immediately. A data-only hook resumes the latest job for that company or starts one if none exists. Refreshing uses the job ID retained in the URL without submitting another crawl. Phase 1 cannot show the company card or advance until a matching real profile arrives; pause/resume still controls the presentation. Errors use the existing status text and Next Phase button as a retry action. Only an explicit retry of a failed job starts another crawl. Later stages continue their original demo progression and do not perform real competitor research, lead discovery or outreach. Existing landing-page routing and mobile navigation are retained.
 
 ## Deployment verification — 2026-10-12
 
@@ -117,7 +117,7 @@ Publish the frontend through the existing hosting process with both public confi
 
 1. Sign in using a real Supabase session and submit a company you are permitted to research.
 2. Confirm the Firecrawl batch contains no more than 10 URLs and progress updates in AutoGTM.
-3. Close the browser during research, then return to confirm the callback saved the profile. Check products, customers, locations and source links.
+3. Close the browser during research, then return to confirm the callback saved the profile. Check the company name, domain and description in the original company card and sidebar. Products, customers, locations and source URLs remain stored in the profile for later integrations; they do not introduce new phase 1 panels.
 4. Reload the profile and confirm no new crawl starts. Use a second account to confirm the first account's job/profile cannot be read.
 5. Check free-plan quota and error displays before requesting another run. Each explicit new attempt can consume more existing credits.
 
