@@ -84,12 +84,19 @@ with sync_playwright() as p:
     check_width(page)
     page.get_by_role('textbox', name='Company website').fill('company.com')
     page.get_by_role('button', name='Create my project').click()
-    expect(page.get_by_role('progressbar', name='Pages scraped')).to_be_visible()
+    expect(page.get_by_role('status', name='Company research progress')).to_be_visible()
+    expect(page.get_by_role('heading', name='company.com', exact=True)).to_be_visible()
     assert state['starts'] == 1
     check_width(page)
     state['status'] = 'completed'
     expect(page.get_by_role('article', name='Saved company profile')).to_be_visible(timeout=12000)
-    expect(page.get_by_role('heading', name='Products and services')).to_be_visible()
+    profile_card = page.get_by_role('article', name='Saved company profile')
+    expect(profile_card).to_contain_text('Makes useful widgets.')
+    expect(profile_card).to_contain_text('Found')
+    expect(profile_card.get_by_role('button', name='Continue to competitors')).to_be_disabled()
+    expect(page.get_by_role('heading', name='Products and services')).to_have_count(0)
+    expect(page.get_by_role('heading', name='Research activity')).to_have_count(0)
+    expect(page.get_by_role('heading', name='Researched sources')).to_have_count(0)
     check_width(page)
     for width in [320, 375, 390, 768, 1440]:
         page.set_viewport_size({'width': width, 'height': 900})
@@ -104,7 +111,7 @@ with sync_playwright() as p:
     page.reload()
     expect(page.get_by_role('article', name='Saved company profile')).to_be_visible()
     assert state['starts'] == 1, 'Reload resubmitted a crawl'
-    page.get_by_role('button', name='All projects').click()
+    page.get_by_role('link', name='Explee home').first.click()
     page.get_by_role('button', name='company.com completed').click()
     expect(page.get_by_role('article', name='Saved company profile')).to_be_visible()
     state['status'] = 'failed'
@@ -169,5 +176,5 @@ with sync_playwright() as p:
     assert state['starts'] == starts_before_login, 'Login unexpectedly started a crawl'
     context.close()
     browser.close()
-    print('PASS: mobile widths, live progress, sources, saved results, refresh, failure/retry, drawer, OTP, google.com from both forms and stale-profile rejection')
+    print('PASS: original company card and loading view, pending later steps, mobile widths, saved results, refresh, failure/retry, drawer, OTP, google.com from both forms and stale-profile rejection')
     print('Mobile screenshot: ' + screenshot)
