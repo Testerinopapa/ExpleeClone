@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Hide the branding badge injected by Lovable hosting. */
+#lovable-badge,
+#lovable-badge-container {
+  display: none !important;
+}
+
 :root {
   --brand-50: #f3fcf9;
   --brand-100: #dbf5ec;
@@ -877,6 +883,5 @@ body {
   background: rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-
 
 

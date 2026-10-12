@@ -78,7 +78,7 @@ function MainRouter() {
     case 'app-auto-gtm':
       return <AppAutoGtmPage />;
     case 'auto-gtm-explore':
-      return <AutoGtmWorkflowPage domain={domain} />;
+      return <AutoGtmWorkflowPage key={`${domain}:${window.location.search}`} domain={domain} />;
     case 'outreach':
       return <OutreachAgentPage />;
     case 'database':

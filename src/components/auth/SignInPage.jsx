@@ -8,7 +8,7 @@ export default function SignInPage({ initialMode }) {
   const [email, setEmail] = useState('');
   const [isFocused, setIsFocused] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState('');
 
   const isVerificationInitial =
     initialMode === 'verification-code' ||
@@ -89,35 +89,17 @@ export default function SignInPage({ initialMode }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!email) return;
-    setIsLoading(true);
-    if (typeof window !== 'undefined') {
-      localStorage.setItem('auth_email', email);
-    }
-
+    setIsLoading(true); setError('');
     try {
-      if (supabase?.auth?.signInWithOtp) {
-        await supabase.auth.signInWithOtp({
-          email,
-          options: {
-            emailRedirectTo: window.location.origin + PRODUCT_ROUTES.AUTO_GTM,
-            shouldCreateUser: true,
-          },
-        });
-      }
-    } catch (err) {
-      console.warn('Supabase OTP notification:', err);
-    }
-
-    setIsLoading(false);
-    if (mode === 'register') {
-      const search = window.location.search || '';
-      const params = new URLSearchParams(search);
-      params.set('email', email);
-      navigate(PRODUCT_ROUTES.VERIFICATION_CODE + '?' + params.toString());
-    } else {
-      setSubmitted(true);
-      navigate(PRODUCT_ROUTES.AUTO_GTM);
-    }
+      const { error: authError } = await supabase.auth.signInWithOtp({
+        email: email.trim(),
+        options: { emailRedirectTo: window.location.origin + PRODUCT_ROUTES.AUTO_GTM, shouldCreateUser: true },
+      });
+      if (authError) throw authError;
+      localStorage.setItem('auth_email', email.trim());
+      navigate(PRODUCT_ROUTES.VERIFICATION_CODE + '?email=' + encodeURIComponent(email.trim()));
+    } catch (err) { setError(err.message || 'Could not send the sign-in email.'); }
+    finally { setIsLoading(false); }
   };
 
   if (mode === 'verification-code') {
@@ -134,10 +116,10 @@ export default function SignInPage({ initialMode }) {
         },
       });
       if (error) {
-        console.error('LinkedIn auth error:', error.message);
+        setError(error.message);
       }
     } catch (err) {
-      console.error('LinkedIn auth exception:', err);
+      setError(err.message || 'Could not sign in with LinkedIn.');
     } finally {
       setIsLoading(false);
     }
@@ -173,6 +155,7 @@ export default function SignInPage({ initialMode }) {
             </div>
           </div>
 
+          {error && <p role="alert" className="mb-4 text-sm text-red-400">{error}</p>}
           {/* Form */}
           <form onSubmit={handleSubmit} className="w-full flex flex-col">
             {/* Outlined Material Email Input */}

@@ -40,7 +40,7 @@ export default function AutoGtmSidebar({
   onSelectSegment = null,
   onRestart = null,
   onClose = null,
-  userEmail = 'gmalavaes@gmail.com',
+  userEmail = 'Not signed in',
   activeAgentStep = null,
   activeAgentItems = []
 }) {
@@ -51,9 +51,6 @@ export default function AutoGtmSidebar({
 
   // 1. Inspect runtime shapes
   const rawCampaignSource = rawCampaigns ?? rawSegments ?? companyData?.segments;
-  console.log('AutoGtmSidebar campaign source:', rawCampaignSource);
-  console.log('isArray:', Array.isArray(rawCampaignSource));
-  console.log('type:', typeof rawCampaignSource);
 
   const rawCompetitorSource = rawCompetitors ?? companyData?.competitors;
 
@@ -151,6 +148,7 @@ export default function AutoGtmSidebar({
           <div className="px-3 pb-2.5">
             <button
               type="button"
+              onClick={() => onRestart ? onRestart() : navigate(PRODUCT_ROUTES.AUTO_GTM)}
               className="w-full flex items-center justify-between rounded-lg px-2.5 py-1.5 text-left text-sm font-medium text-gray-800 hover:bg-black/[0.04] transition-colors group"
             >
               <div className="flex items-center gap-2.5 min-w-0">
@@ -217,10 +215,10 @@ export default function AutoGtmSidebar({
                       </div>
                       <div className="min-w-0">
                         <div className="font-semibold text-gray-900 text-[12px] truncate">
-                          {companyData?.name || 'PrimKeet'}
+                          {companyData?.name || 'Company'}
                         </div>
                         <div className="text-gray-400 text-[10px] truncate">
-                          {companyData?.domain || 'keethub.lovable.app'}
+                          {companyData?.domain || ''}
                         </div>
                       </div>
                     </div>
@@ -243,7 +241,7 @@ export default function AutoGtmSidebar({
                   {isPrimkeetOpen && (
                     <p className="text-[11px] text-gray-600 leading-relaxed pt-1 border-t border-black/[0.04]">
                       {companyData?.description ||
-                        'PrimKeet is an English learning platform that teaches vocabulary, speaking, reading, and grammar through games designed for ESL learners. Users practice by playing games, earning points and badges, and competing on leaderboards.'}
+                        'No business description was found on the researched pages.'}
                     </p>
                   )}
                 </div>

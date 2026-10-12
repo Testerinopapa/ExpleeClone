@@ -1,1 +1,12 @@
-project_id = "emlggkmtbosahpzrxaul"
+project_id = "cvpeezzkzsbosyuhmhmf"
+
+# JWT validation is performed with auth.getUser inside the user-facing functions.
+# The webhook uses a per-job HMAC token, supplied only to Firecrawl.
+[functions.start-research]
+verify_jwt = false
+
+[functions.research-status]
+verify_jwt = false
+
+[functions.firecrawl-webhook]
+verify_jwt = false

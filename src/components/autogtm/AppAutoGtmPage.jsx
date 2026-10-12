@@ -1,23 +1,46 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useNavigation } from '../../context/NavigationContext';
 import AutoGtmNavigation from './AutoGtmNavigation';
 import CrispChatWidget from './CrispChatWidget';
+import useAuthSession from '../../hooks/useAuthSession';
+import { listResearchProjects, normalizeWebsite, researchPath, startResearch } from '../../lib/companyResearch';
 
 export default function AppAutoGtmPage() {
   const { navigate } = useNavigation();
-  const [domain, setDomain] = useState('keethub.lovable.app');
+  const { session, loading: authLoading } = useAuthSession();
+  const [domain, setDomain] = useState(() => sessionStorage.getItem('autogtm-pending-domain') || '');
   const [error, setError] = useState('');
+  const [saving, setSaving] = useState(false);
+  const submitting = useRef(false);
+  const [projects, setProjects] = useState([]);
+  const [projectsError, setProjectsError] = useState('');
+  const [projectsLoading, setProjectsLoading] = useState(false);
 
-  const handleSubmit = (e) => {
+  useEffect(() => {
+    let active = true;
+    setProjects([]); setProjectsError('');
+    if (!session) return;
+    setProjectsLoading(true);
+    listResearchProjects().then(data => { if (active) setProjects(data); })
+      .catch(err => { if (active) setProjectsError(err.message); })
+      .finally(() => { if (active) setProjectsLoading(false); });
+    return () => { active = false; };
+  }, [session?.user.id]);
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const cleanDomain = domain.trim().replace(/^https?:\/\//, '').replace(/\/$/, '');
-    if (!cleanDomain) {
-      setError('Please enter a valid website domain');
-      return;
-    }
-
-    // Navigate to workflow explore route
-    navigate(`/auto-gtm/company/${cleanDomain}/explore?src=cabinet&phase=research_company_loading`);
+    if (submitting.current || authLoading) return;
+    setError('');
+    try {
+      const normalized = normalizeWebsite(domain);
+      sessionStorage.setItem('autogtm-pending-domain', normalized.domain);
+      if (!session) { navigate('/sign-in'); return; }
+      submitting.current = true; setSaving(true);
+      const result = await startResearch(normalized.website);
+      sessionStorage.removeItem('autogtm-pending-domain');
+      navigate(researchPath(result.domain, result.job.id));
+    } catch (err) { setError(err.message); }
+    finally { submitting.current = false; setSaving(false); }
   };
 
   return (
@@ -25,7 +48,7 @@ export default function AppAutoGtmPage() {
       {/* Sidebar */}
       <AutoGtmNavigation
         completedSteps={[]}
-        userEmail={localStorage.getItem('auth_email') || 'gmalavaes@gmail.com'}
+        userEmail={session?.user.email || 'Not signed in'}
       />
 
       {/* Main Area */}
@@ -43,7 +66,7 @@ export default function AppAutoGtmPage() {
 
           {/* Subtitle */}
           <p className="mt-2.5 text-sm text-gray-500 leading-relaxed">
-            Your AI go-to-market agent. Enter your company website and we'll spin up your project — research, campaigns and outreach, all set up for you.
+            Enter your company website to research up to 10 pages and save a company profile with sources.
           </p>
 
           {/* Form */}
@@ -67,9 +90,10 @@ export default function AppAutoGtmPage() {
 
               <button
                 type="submit"
+                disabled={saving || authLoading}
                 className="min-h-11 px-4 rounded-lg bg-[#0d9467] hover:bg-[#0a7854] active:scale-[0.98] text-white text-sm font-semibold inline-flex items-center justify-center gap-1.5 transition-all shadow-xs cursor-pointer shrink-0"
               >
-                <span>Create my project</span>
+                <span>{saving ? 'Starting research…' : authLoading ? 'Loading…' : session ? 'Create my project' : 'Sign in to research'}</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="14"
@@ -88,11 +112,28 @@ export default function AppAutoGtmPage() {
             </div>
 
             {error && (
-              <p className="mt-2 text-xs text-red-500">{error}</p>
+              <p role="alert" className="mt-2 text-sm text-red-600">{error}</p>
             )}
           </form>
 
-          {/* 3 Feature Cards */}
+          <section className="mt-8" aria-label="Saved projects">
+            <h2 className="text-sm font-semibold">Your projects</h2>
+            {projectsLoading && <p role="status" className="mt-2 text-sm text-gray-500">Loading projects…</p>}
+            {projectsError && <p role="alert" className="mt-2 text-sm text-red-600">{projectsError}</p>}
+            {!session && !authLoading && <p className="mt-2 text-sm text-gray-500">Sign in to create projects and view saved research.</p>}
+            {session && !projectsLoading && !projectsError && !projects.length && <p className="mt-2 text-sm text-gray-500">Your first company profile will appear here.</p>}
+            <div className="mt-3 space-y-2">
+              {projects.filter(project => project.latestJob).map(project => (
+                <button key={project.id} type="button" onClick={() => navigate(researchPath(project.domain, project.latestJob.id))}
+                  className="flex min-h-12 w-full items-center justify-between gap-3 rounded-lg border border-black/10 p-3 text-left hover:bg-gray-50">
+                  <span className="min-w-0 break-all text-sm font-medium">{project.domain}</span>
+                  <span className="shrink-0 text-xs capitalize text-gray-500">{project.latestJob.status}</span>
+                </button>
+              ))}
+            </div>
+          </section>
+
+          {/* Research details */}
           <div className="mt-9 space-y-3">
             {/* Card 1 */}
             <div className="rounded-xl border border-black/[0.08] bg-white p-4 flex items-start gap-3.5 shadow-2xs hover:border-black/15 transition-all">
@@ -117,7 +158,7 @@ export default function AppAutoGtmPage() {
                   We research your company
                 </div>
                 <div className="mt-0.5 text-xs text-gray-500 leading-relaxed">
-                  Pull your positioning and map the market in seconds.
+                  Read About, Products, Pricing and Contact pages first.
                 </div>
               </div>
             </div>
@@ -143,10 +184,10 @@ export default function AppAutoGtmPage() {
               </span>
               <div className="min-w-0">
                 <div className="text-xs font-semibold text-gray-900 leading-tight">
-                  We build targeted campaigns
+                  We organize company facts
                 </div>
                 <div className="mt-0.5 text-xs text-gray-500 leading-relaxed">
-                  Ready-made segments of the customers worth reaching.
+                  Save business descriptions, products, customers and locations.
                 </div>
               </div>
             </div>
@@ -171,10 +212,10 @@ export default function AppAutoGtmPage() {
               </span>
               <div className="min-w-0">
                 <div className="text-xs font-semibold text-gray-900 leading-tight">
-                  We reach out for you
+                  We keep the sources
                 </div>
                 <div className="mt-0.5 text-xs text-gray-500 leading-relaxed">
-                  Personalized emails to the right people, sent for you.
+                  Review the original pages behind each extracted fact.
                 </div>
               </div>
             </div>

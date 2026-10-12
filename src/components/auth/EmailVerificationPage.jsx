@@ -1,17 +1,17 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigation, PRODUCT_ROUTES } from '../../context/NavigationContext';
+import { supabase } from '../../integrations/supabase/client';
 
 export default function EmailVerificationPage({ email: propEmail, onBack: propOnBack }) {
   const { navigate } = useNavigation();
-  const [code, setCode] = useState(['', '', '', '', '', '']);
-  const [focusedIndex, setFocusedIndex] = useState(0);
-  const [countdown, setCountdown] = useState(11);
+  const [code, setCode] = useState('');
+  const [error, setError] = useState('');
+  const [countdown, setCountdown] = useState(60);
   const [isLoading, setIsLoading] = useState(false);
   const [isResending, setIsResending] = useState(false);
-  const inputRefs = useRef([]);
 
   // Resolve email from prop, search query, or localStorage, with reference fallback
-  const [displayEmail, setDisplayEmail] = useState(() => {
+  const [displayEmail] = useState(() => {
     if (propEmail) return propEmail;
     if (typeof window !== 'undefined') {
       const params = new URLSearchParams(window.location.search);
@@ -20,19 +20,12 @@ export default function EmailVerificationPage({ email: propEmail, onBack: propOn
       const stored = localStorage.getItem('auth_email');
       if (stored) return stored;
     }
-    return 'rnalavado@live.com';
+    return '';
   });
 
   // Dynamic document title
   useEffect(() => {
     document.title = 'Verify your email';
-  }, []);
-
-  // Auto focus first input on mount
-  useEffect(() => {
-    if (inputRefs.current[0]) {
-      inputRefs.current[0].focus();
-    }
   }, []);
 
   // Countdown timer
@@ -53,67 +46,29 @@ export default function EmailVerificationPage({ email: propEmail, onBack: propOn
     navigate(PRODUCT_ROUTES.REGISTER + search);
   };
 
-  const handleChange = (index, value) => {
-    // Only accept numeric input
-    const cleaned = value.replace(/\D/g, '');
-    if (!cleaned && value !== '') return;
-
-    const newCode = [...code];
-    newCode[index] = cleaned.slice(-1);
-    setCode(newCode);
-
-    // Auto advance
-    if (cleaned && index < 5) {
-      inputRefs.current[index + 1]?.focus();
-    }
-  };
-
-  const handleKeyDown = (index, e) => {
-    if (e.key === 'Backspace') {
-      if (!code[index] && index > 0) {
-        inputRefs.current[index - 1]?.focus();
-      }
-    } else if (e.key === 'ArrowLeft' && index > 0) {
-      e.preventDefault();
-      inputRefs.current[index - 1]?.focus();
-    } else if (e.key === 'ArrowRight' && index < 5) {
-      e.preventDefault();
-      inputRefs.current[index + 1]?.focus();
-    }
-  };
-
-  const handlePaste = (e) => {
-    e.preventDefault();
-    const pasteData = e.clipboardData.getData('text').replace(/\D/g, '').slice(0, 6);
-    if (!pasteData) return;
-
-    const newCode = [...code];
-    for (let i = 0; i < pasteData.length; i++) {
-      newCode[i] = pasteData[i];
-    }
-    setCode(newCode);
-
-    const focusIdx = Math.min(pasteData.length, 5);
-    inputRefs.current[focusIdx]?.focus();
-  };
-
-  const handleResend = () => {
-    setIsResending(true);
-    setTimeout(() => {
-      setIsResending(false);
+  const handleResend = async () => {
+    if (isResending || countdown > 0) return;
+    setIsResending(true); setError('');
+    try {
+      const { error: authError } = await supabase.auth.signInWithOtp({ email: displayEmail,
+        options: { emailRedirectTo: window.location.origin + PRODUCT_ROUTES.AUTO_GTM } });
+      if (authError) throw authError;
       setCountdown(60);
-    }, 500);
+    } catch (err) { setError(err.message || 'Could not resend your sign-in email.'); }
+    finally { setIsResending(false); }
   };
 
-  const handleContinue = (e) => {
+  const handleContinue = async (e) => {
     e.preventDefault();
-    const fullCode = code.join('');
-    if (fullCode.length < 6) return;
-    setIsLoading(true);
-    setTimeout(() => {
-      setIsLoading(false);
+    if (!/^\d{6,8}$/.test(code) || isLoading) return;
+    setIsLoading(true); setError('');
+    try {
+      const { data, error: authError } = await supabase.auth.verifyOtp({ email: displayEmail, token: code, type: 'email' });
+      if (authError) throw authError;
+      if (!data.session) throw new Error('Verification did not create a session. Request a new email.');
       navigate(PRODUCT_ROUTES.AUTO_GTM);
-    }, 800);
+    } catch (err) { setError(err.message || 'The verification code is invalid or expired.'); }
+    finally { setIsLoading(false); }
   };
 
   return (
@@ -163,39 +118,18 @@ export default function EmailVerificationPage({ email: propEmail, onBack: propOn
 
             {/* Subtitle / Email */}
             <div className="text-[14px] text-[#a1a1a1] leading-[20px] mb-8 text-left w-full">
-              <div>The verification code has been sent to your email</div>
+              <div>Open the sign-in link in your email, or enter the code if your email includes one.</div>
               <div className="text-[#a1a1a1]">{displayEmail}</div>
             </div>
 
             {/* 6 Passcode Input Boxes */}
             <form onSubmit={handleContinue} className="w-full flex flex-col items-start">
-              <div
-                className="w-full flex justify-between gap-3 mb-6"
-                onPaste={handlePaste}
-              >
-                {code.map((digit, index) => (
-                  <input
-                    key={index}
-                    ref={(el) => (inputRefs.current[index] = el)}
-                    id={`passcode-input-${index}`}
-                    type="text"
-                    inputMode="numeric"
-                    pattern="[0-9]*"
-                    maxLength={1}
-                    autoComplete={index === 0 ? 'one-time-code' : 'off'}
-                    value={digit}
-                    onChange={(e) => handleChange(index, e.target.value)}
-                    onKeyDown={(e) => handleKeyDown(index, e)}
-                    onFocus={() => setFocusedIndex(index)}
-                    onBlur={() => setFocusedIndex(null)}
-                    className={`w-[44px] h-[44px] rounded-[8px] bg-transparent text-center text-[16px] font-medium text-[#fafafa] outline-none transition-all ${
-                      focusedIndex === index
-                        ? 'border border-[#00ad74] shadow-[0_0_0_1px_#00ad74]'
-                        : 'border border-white/[0.12] hover:border-white/[0.2]'
-                    }`}
-                  />
-                ))}
-              </div>
+              <label htmlFor="verification-code" className="mb-2 text-sm text-gray-300">Verification code</label>
+              <input id="verification-code" type="text" inputMode="numeric" autoComplete="one-time-code"
+                pattern="[0-9]{6,8}" minLength={6} maxLength={8} required autoFocus value={code}
+                onChange={e => setCode(e.target.value.replace(/\D/g, '').slice(0, 8))}
+                className="mb-4 h-12 w-full rounded-lg border border-white/20 bg-transparent px-3 text-center text-lg tracking-widest text-white focus:border-emerald-500 focus:outline-none" />
+              {error && <p role="alert" className="mb-4 text-sm text-red-400">{error}</p>}
 
               {/* Resend Countdown Message */}
               <div className="w-full text-left text-[14px] text-[#a1a1a1] leading-[20px] mb-6">
@@ -219,7 +153,7 @@ export default function EmailVerificationPage({ email: propEmail, onBack: propOn
               {/* Continue Button */}
               <button
                 type="submit"
-                disabled={isLoading}
+                disabled={isLoading || !displayEmail || code.length < 6}
                 className="w-full h-[44px] rounded-[8px] bg-[#00ad74] hover:bg-[#009b67] active:bg-[#00895a] text-white font-medium text-[14px] shadow-[0_1px_2px_0_rgba(0,0,0,0.3)] flex items-center justify-center transition-all duration-150 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
               >
                 {isLoading ? (
