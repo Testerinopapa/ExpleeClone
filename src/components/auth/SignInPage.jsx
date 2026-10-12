@@ -51,6 +51,18 @@ export default function SignInPage({ initialMode }) {
     setMode(isReg ? 'register' : 'sign-in');
   }, [authMode, currentPath]);
 
+  // If already signed in (e.g. returning from LinkedIn), leave the login page
+  useEffect(() => {
+    if (!supabase?.auth) return;
+    supabase.auth.getSession().then(({ data }) => {
+      if (data?.session) navigate(PRODUCT_ROUTES.AUTO_GTM);
+    });
+    const { data: sub } = supabase.auth.onAuthStateChange((_e, session) => {
+      if (session) navigate(PRODUCT_ROUTES.AUTO_GTM);
+    });
+    return () => sub?.subscription?.unsubscribe();
+  }, []);
+
   // Dynamic document title
   useEffect(() => {
     if (mode === 'verification-code') {
@@ -118,7 +130,7 @@ export default function SignInPage({ initialMode }) {
       const { error } = await supabase.auth.signInWithOAuth({
         provider: 'linkedin_oidc',
         options: {
-          redirectTo: `${window.location.origin}/sign-in`,
+          redirectTo: window.location.origin + PRODUCT_ROUTES.AUTO_GTM,
         },
       });
       if (error) {
