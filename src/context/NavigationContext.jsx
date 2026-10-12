@@ -79,12 +79,10 @@ export function resolveProductFromLocation() {
     };
   }
 
-  // 0d. AutoGTM Landing (/app-auto-gtm, with /app-autogtm as an alias)
+  // 0d. AutoGTM app entry (/app-auto-gtm)
   if (
     pathname.includes('/app-auto-gtm') ||
-    pathname.includes('/app-autogtm') ||
-    hash.includes('app-auto-gtm') ||
-    hash.includes('app-autogtm')
+    hash.includes('app-auto-gtm')
   ) {
     return {
       product: 'app-auto-gtm',
@@ -154,13 +152,16 @@ export function resolveProductFromLocation() {
     return { product: 'explorer', canonicalPath: PRODUCT_ROUTES.EXPLORER };
   }
 
-  // 5. Outreach Agent / Main Landing Page (/ or /outreach-agent or /index.html or /landing)
+  // 5. Public landing page, including the /app-autogtm entry URL
   if (
     pathname === '/' ||
     pathname === '' ||
+    pathname === '/app-autogtm' ||
+    pathname === '/app-autogtm/' ||
     pathname.endsWith('/index.html') ||
     pathname.includes('/outreach') ||
     pathname.includes('/landing') ||
+    /^#\/?app-autogtm\/?$/.test(hash) ||
     hash.includes('outreach')
   ) {
     return { product: 'outreach', canonicalPath: PRODUCT_ROUTES.OUTREACH };
