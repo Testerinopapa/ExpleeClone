@@ -6,28 +6,6 @@ export type Json =
   | { [key: string]: Json | undefined }
   | Json[]
 
-// Read models for the staged AutoGTM migration. Writes are backend-only.
-type ReadTable<Row, Relationships extends unknown[] = []> = {
-  Row: Row
-  Insert: never
-  Update: never
-  Relationships: Relationships
-}
-type Owned = { id: string; owner_id: string; created_at: string }
-type ProjectRow = Owned & { domain: string; website_url: string; updated_at: string }
-type JobRow = Owned & {
-  project_id: string; request_id: string; status: 'mapping' | 'scraping' | 'completed' | 'failed'
-  provider_job_id: string | null; selected_urls: string[]; pages_completed: number
-  error_code: string | null; error_message: string | null; updated_at: string; finished_at: string | null
-}
-type ProfileRow = Owned & {
-  project_id: string; job_id: string; company_name: string | null; business_description: string | null
-  descriptions: Json; products: Json; customers: Json; locations: Json; source_urls: string[]; warnings: string[]
-}
-type EventRow = Omit<Owned, 'id'> & {
-  id: number; project_id: string; job_id: string; status: string; message: string; pages_completed: number
-}
-
 export type Database = {
   // Allows to automatically instantiate createClient with right options
   // instead of createClient<Database, { PostgrestVersion: 'XX' }>(URL, KEY)
@@ -36,16 +14,7 @@ export type Database = {
   }
   public: {
     Tables: {
-      projects: ReadTable<ProjectRow>
-      research_jobs: ReadTable<JobRow, [{
-        foreignKeyName: 'research_jobs_project_id_owner_id_fkey'
-        columns: ['project_id', 'owner_id']
-        isOneToOne: false
-        referencedRelation: 'projects'
-        referencedColumns: ['id', 'owner_id']
-      }]>
-      company_profiles: ReadTable<ProfileRow>
-      job_events: ReadTable<EventRow>
+      [_ in never]: never
     }
     Views: {
       [_ in never]: never
