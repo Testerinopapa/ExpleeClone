@@ -33,7 +33,10 @@ def check_width(page):
 
 with sync_playwright() as p:
     browser = p.chromium.launch(executable_path=r'C:\Program Files\Google\Chrome\Application\chrome.exe', headless=True)
-    state = {'status': 'scraping', 'starts': 0, 'otp_error': True, 'verify_error': True, 'domain': 'company.com', 'websites': [], 'saved': set()}
+    state = {'status': 'scraping', 'starts': 0, 'otp_error': True, 'verify_error': True, 'domain': 'company.com', 'websites': [], 'saved': set(),
+             'competitors': 'searching', 'competitor_requests': 0, 'competitor_results': [
+                 {'domain': 'real-rival.com', 'name': 'Real Rival', 'description': 'Makes useful widgets.', 'products': [], 'customers': [],
+                  'features': [], 'pricing': [], 'source_urls': ['https://real-rival.com/'], 'relationship': 'direct', 'relevance_score': 80, 'ranking_reason': 'Shared widget products.'}]}
     def route(request_route):
         req = request_route.request
         url = urlparse(req.url)
@@ -60,6 +63,14 @@ with sync_playwright() as p:
                        'project': {'id': JOB, 'domain': state['domain'], 'website_url': 'https://' + state['domain'] + '/'},
                        'profile': json.loads(json.dumps(PROFILE).replace('company.com', state['domain']).replace('Test Company', 'Profile for ' + state['domain'])) if state['status'] == 'completed' else None,
                        'events': [{'id': 1, 'message': 'Finding company pages', 'pages_completed': 0, 'created_at': '2026-10-12T12:00:00Z'}]}
+        elif path.endswith('/competitor-research'):
+            assert req.post_data_json['job_id'] == JOB
+            state['competitor_requests'] += 1
+            payload = {'job_id': JOB, 'project_id': JOB, 'research': {
+                'status': state['competitors'], 'queries': ['useful widget alternatives'], 'searches_used': 1,
+                'candidates_count': 1, 'pages_completed': 1 if state['competitors'] == 'completed' else 0,
+                'results': state['competitor_results'] if state['competitors'] == 'completed' else [], 'warnings': [],
+                'error': 'Firecrawl is busy. Please retry.' if state['competitors'] == 'failed' else None, 'can_retry': True}}
         elif path.endswith('/research-projects'):
             domain = req.post_data_json.get('domain')
             payload = {'projects': [{'id': JOB, 'domain': domain, 'updated_at': '2026-10-12T12:00:00Z',
@@ -125,10 +136,43 @@ with sync_playwright() as p:
     expect(page.get_by_role('heading', name='Profile for company.com', exact=True)).to_be_visible()
     page.get_by_role('button', name='Pause Auto-play').click()
     assert state['starts'] == 1, 'Reload resubmitted a crawl'
-    # Existing placeholder stages and their navigation continue after real phase 1.
+    # Step 2 waits for real results, keeping the original card and skeleton.
     page.get_by_role('button', name='Continue to competitors').click()
+    expect(page.get_by_role('button', name='Next Phase')).to_be_disabled()
+    expect(page.locator('main').get_by_text('COMPETITORS', exact=True)).to_be_visible()
+    page.wait_for_timeout(5100)
+    expect(page.get_by_role('button', name='Next Phase')).to_be_disabled()
+    expect(page.locator('main').get_by_text('langly.es', exact=True)).to_have_count(0)
+    check_width(page)
+    state['competitors'] = 'failed'
+    expect(page.get_by_role('alert')).to_contain_text('Firecrawl is busy', timeout=12000)
+    state['competitors'] = 'completed'
+    page.get_by_role('button', name='Retry research').click()
+    expect(page.locator('main').get_by_role('link', name='real-rival.com', exact=True)).to_be_visible(timeout=10000)
+    page.get_by_role('button', name='Pause Auto-play').click()
+    expect(page.locator('main')).to_contain_text('1 found')
+    expect(page.locator('main')).to_contain_text('useful widget alternatives')
+    expect(page.locator('main').get_by_role('link', name='real-rival.com', exact=True)).to_have_attribute('href', 'https://real-rival.com/')
+    for width in [320, 375, 390, 768, 1440]:
+        page.set_viewport_size({'width': width, 'height': 900})
+        check_width(page)
+    page.set_viewport_size({'width': 390, 'height': 844})
+    competitor_screenshot = os.path.join(tempfile.gettempdir(), 'autogtm-competitor-research-mobile.png')
+    page.screenshot(path=competitor_screenshot, full_page=True)
+    page.reload()
+    expect(page.locator('main').get_by_role('link', name='real-rival.com', exact=True)).to_be_visible(timeout=10000)
+    page.get_by_role('button', name='Pause Auto-play').click()
+    assert state['starts'] == 1, 'Competitor reload restarted company research'
+    state['competitor_results'] = []
+    page.reload()
+    expect(page.locator('main')).to_contain_text('0 found', timeout=10000)
+    page.get_by_role('button', name='Pause Auto-play').click()
+    expect(page.locator('main')).to_contain_text('No competitors with enough supporting evidence')
+    expect(page.locator('main').get_by_text('langly.es', exact=True)).to_have_count(0)
+    # Stages 3–6 keep their existing navigation and presentation.
+    page.get_by_role('button', name='Continue to campaigns').click()
     page.get_by_role('button', name='Next Phase').click()
-    expect(page.locator('main').get_by_text('langly.es', exact=True)).to_be_visible()
+    expect(page.locator('main').get_by_text('real-rival.com', exact=True)).to_have_count(0)
     assert state['starts'] == 1, 'Later visual stages started another crawl'
     page.get_by_role('link', name='Explee home').first.click()
     page.get_by_role('textbox', name='Company website').fill('company.com')
@@ -198,5 +242,6 @@ with sync_playwright() as p:
     assert state['starts'] == starts_before_login, 'Login unexpectedly started a crawl'
     context.close()
     browser.close()
-    print('PASS: live phase 1 inside original animation/card, pause/resume, later placeholder stages, mobile widths, saved results, refresh, failure/retry, drawer, OTP, google.com from both forms and stale-profile rejection')
+    print('PASS: initial null session/job, original phase 1 and 2 animation/cards, loading, failure/retry, real competitors, empty results, refresh, mobile widths, later stages, OTP, input website and stale-profile rejection')
     print('Mobile screenshot: ' + screenshot)
+    print('Competitor screenshot: ' + competitor_screenshot)

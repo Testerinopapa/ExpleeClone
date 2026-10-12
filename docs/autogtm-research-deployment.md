@@ -1,8 +1,43 @@
 # AutoGTM company research
 
-Status: **deployed to the research project on 2026-10-12 with explicit owner approval.** Both migrations and all four Edge Functions are live. The original login project's configuration was not changed.
+Phase 1 status: **deployed to the research project on 2026-10-12 with explicit owner approval.** Migrations `20261012000100` and `20261012000200` and the original four Edge Functions are live. The original login project's configuration was not changed.
 
-Frontend status: phase 1 now connects the deployed research backend to the original workflow from commit `6c061a1`. The existing loading animation, activity feed, company card, sidebar summary, controls and six-stage presentation are retained. Only the company name, domain and description are replaced with real research data; no new report panels or screens are added. Stages 2–6 retain their original placeholder data and animations until their own integrations are implemented.
+Step 2 status: **implemented locally; migration and backend deployment require approval.** See the Step 2 commands below. No new remote changes or Firecrawl jobs were started while preparing this implementation.
+
+Frontend status: phases 1 and 2 connect real research data to the original workflow from commit `6c061a1`. The existing loading animation, activity feed, company card, competitor card, sidebar summary, controls and six-stage presentation are retained. Step 2 waits for real results; empty results stay empty. Stages 3–6 retain their existing placeholder data and animations.
+
+## Step 2: competitor discovery
+
+`20261012000300_autogtm_competitors.sql` adds one JSONB column, `company_profiles.competitor_research`, and one service-role-only compare-and-swap RPC. Results inherit the profile's project, job, ownership and RLS; no new table or service is introduced. Each researched profile has a separate immutable search budget and saved results.
+
+The new `competitor-research` function authenticates through the existing login project and looks up the completed profile by both job ID and owner. The original profile's products, description and target customers generate up to **three Firecrawl v2 Search requests**, each returning up to eight web links without scraping. The function reserves each search before the provider call, merges duplicate business domains (including subdomains and country suffixes), excludes the original company and common directories/social sites, and retains at most ten candidates.
+
+It submits **one batch of at most ten homepage scrapes**, one per candidate, requesting Markdown and structured extraction. Names and evidence quotes must appear in the returned page text; unverified facts, cross-business redirects and non-business pages are discarded. Descriptions and fact details use the supporting quotes. Missing pricing stays empty. Results retain source URLs and are deduplicated again by business name. This first implementation reads homepages only, so pricing or other details available exclusively on deeper pages will be absent. Search and structured extraction can consume credits beyond the number of pages; these limits are not a guarantee that every run fits the remaining free allowance.
+
+Ranking is a deterministic estimate based on shared product and audience terms. Matches with sufficient product overlap and an explicitly shared audience rank as direct; others rank as related. It favors evidence over filling all ten slots, may miss synonyms or sparse websites, and does not claim the ranking is a verified market assessment. The existing domain rows link to the source; their native hover text contains the extracted details and estimated relevance. No new result panel, animation or stylesheet is introduced.
+
+The data hook advances one search per request and polls progress. Refreshes resume saved work; concurrent tabs cannot reserve the same search or submit a second batch. A two-minute lease allows an interrupted search to resume with the next unused query, counting the interrupted query against the limit. Failed searches require an explicit retry and only remaining budget is available. A batch submission is never repeated, even if its response was lost. The existing webhook uses a separate stage-specific HMAC to recover the provider ID and save results while the browser is closed. If the browser closes before batch submission, opening the project resumes the remaining searches. Quota failures and exhausted budgets appear in the existing competitor card and controls. Only completed results unlock further workflow progression.
+
+Inspect the linked project's pending changes first (read-only):
+
+```powershell
+npx --yes supabase@2.120.0 migration list --linked
+npx --yes supabase@2.120.0 db push --linked --dry-run
+```
+
+Expected pending migration: **only `20261012000300_autogtm_competitors.sql`**. If the list differs, investigate before applying it. After explicit approval, deploy only this migration, the new function and the updated shared webhook:
+
+```powershell
+npx --yes supabase@2.120.0 db push --linked
+npx --yes supabase@2.120.0 functions deploy firecrawl-webhook --project-ref cvpeezzkzsbosyuhmhmf
+npx --yes supabase@2.120.0 functions deploy competitor-research --project-ref cvpeezzkzsbosyuhmhmf
+```
+
+Then publish the frontend through the existing hosting process. No new secret, auth change, subscription or infrastructure replacement is required. Do not run the original fresh-setup SQL against this existing project. The SQL-editor alternative is the new migration itself, after approval; do not also apply it through the CLI without reconciling migration history.
+
+Local checks cover all three migrations, access isolation, the three-search/ten-candidate limits, concurrent requests, failed/interrupted searches, webhook scope/recovery, evidence validation, ranking, deduplication, initial null auth/job state, mobile widths, failure/retry, saved results and empty results. All provider traffic in these checks is mocked. A signed-in live run remains a post-deployment check; it will consume existing Firecrawl credits.
+
+Step 2 API reference: [Firecrawl v2 Search](https://docs.firecrawl.dev/api-reference/endpoint/search).
 
 Research project: `cvpeezzkzsbosyuhmhmf` (`https://cvpeezzkzsbosyuhmhmf.supabase.co`).
 
@@ -42,7 +77,7 @@ Firecrawl Map discovers at most 100 candidate URLs; discovery is not 100 page sc
 
 JSON extraction uses Firecrawl's existing service, with no additional AI provider. Every description/product/customer/location keeps source URLs from the returned page metadata. Missing facts stay empty, failed/empty pages produce a partial-results warning, and a wholly empty extraction fails. Extracted facts should still be reviewed against their citations. Firecrawl's JSON extraction and Map may consume credits beyond the number of scraped pages; a 10-page limit is not a 10-credit guarantee. Quota/rate-limit errors are surfaced without upgrading a plan or purchasing credits.
 
-Both entry forms preserve the submitted website through the existing sign-in flow and open the original research animation immediately. A data-only hook resumes the latest job for that company or starts one if none exists. Refreshing uses the job ID retained in the URL without submitting another crawl. Phase 1 cannot show the company card or advance until a matching real profile arrives; pause/resume still controls the presentation. Errors use the existing status text and Next Phase button as a retry action. Only an explicit retry of a failed job starts another crawl. Later stages continue their original demo progression and do not perform real competitor research, lead discovery or outreach. Existing landing-page routing and mobile navigation are retained.
+Both entry forms preserve the submitted website through the existing sign-in flow and open the original research animation immediately. A data-only hook resumes the latest job for that company or starts one if none exists. Refreshing uses the job ID retained in the URL without submitting another crawl. Phase 1 cannot show the company card or advance until a matching real profile arrives; pause/resume still controls the presentation. Errors use the existing status text and Next Phase button as a retry action. Only an explicit retry of a failed company job starts another company crawl. Stages 3–6 continue their original demo progression and do not perform real lead discovery or outreach. Existing landing-page routing and mobile navigation are retained.
 
 ## Deployment verification — 2026-10-12
 
@@ -62,7 +97,7 @@ npm run check:edge
 npm run build
 ```
 
-The existing database check runs both actual migrations in in-memory PostgreSQL (PGlite). It checks ownership, forbidden client access, the 10-page constraint, request deduplication, the daily limit, atomic/idempotent completion and upgrading existing data to isolated external identities. It does not replace a staging check against the hosted Supabase runtime.
+The existing database check runs all three actual migrations in in-memory PostgreSQL (PGlite). It checks ownership, forbidden client access, page/search limits, request deduplication, the daily limit, atomic/idempotent completion and upgrading existing data to isolated external identities. It does not replace a staging check against the hosted Supabase runtime.
 
 Edge tests mock all HTTP calls; no credentials or paid credits are needed. Browser tests mock all Supabase/provider traffic and cover research progress, saved profiles/sources, refresh, retry, mobile widths and OTP failure/success.
 

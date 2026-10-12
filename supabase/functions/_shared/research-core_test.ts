@@ -18,8 +18,7 @@ Deno.test('competitor queries use the researched business and candidates dedupli
     { url: 'http://127.0.0.1' }, { url: 'https://different.lovable.app/', title: 'English learning games' },
   ]);
   assert.equal(candidates.length, 2);
-  assert.equal(candidates[0].domain, 'rival.co.uk');
-  assert.equal(candidates[0].discovery_urls.length, 2);
+  assert.equal(candidates.find(candidate => candidate.domain === 'rival.co.uk')?.discovery_urls.length, 2);
   assert.equal(businessDomain('https://other.github.io'), 'other.github.io');
   const before = JSON.stringify(candidates);
   collectCandidates(profile, candidates, [{ url: 'https://rival.co.uk/pricing', title: 'English learning games for ESL students' }]);

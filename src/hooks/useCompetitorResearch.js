@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { competitorResearch } from '../lib/companyResearch';
 
 // Step 2 data only; its card, skeleton and animation timing remain in the workflow.
@@ -6,6 +6,7 @@ export default function useCompetitorResearch(jobId, projectId, userId, enabled)
   const [snapshot, setSnapshot] = useState(null);
   const [failure, setFailure] = useState(null);
   const [attempt, setAttempt] = useState(0);
+  const retryRequest = useRef(null);
   useEffect(() => {
     if (!enabled || !jobId || !userId) return;
     let active = true;
@@ -17,7 +18,7 @@ export default function useCompetitorResearch(jobId, projectId, userId, enabled)
       try {
         const result = await competitorResearch(jobId, retry, controller.signal);
         if (!active) return;
-        if (result.job_id !== jobId || result.project_id !== projectId || !result.research || !Array.isArray(result.research.results)) {
+        if (result?.job_id !== jobId || result?.project_id !== projectId || !result?.research || !Array.isArray(result.research.results)) {
           throw Object.assign(new Error('The saved competitors do not match this project.'), { code: 'PROJECT_MISMATCH' });
         }
         const data = result.research;
@@ -33,12 +34,14 @@ export default function useCompetitorResearch(jobId, projectId, userId, enabled)
         }
       }
     };
-    poll(attempt > 0);
+    const retry = retryRequest.current?.jobId === jobId && retryRequest.current?.userId === userId;
+    retryRequest.current = null;
+    poll(retry);
     return () => { active = false; clearTimeout(timer); controller.abort(); };
   }, [jobId, projectId, userId, enabled, attempt]);
   return {
-    data: snapshot?.jobId === jobId && snapshot?.userId === userId ? snapshot.data : null,
-    error: failure?.jobId === jobId && failure?.userId === userId ? failure.error : null,
-    retry: () => { setFailure(null); setAttempt(value => value + 1); },
+    data: snapshot && snapshot.jobId === jobId && snapshot.userId === userId ? snapshot.data : null,
+    error: failure && failure.jobId === jobId && failure.userId === userId ? failure.error : null,
+    retry: () => { retryRequest.current = { jobId, userId }; setFailure(null); setAttempt(value => value + 1); },
   };
 }
